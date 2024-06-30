@@ -1,0 +1,31 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "nob",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "f\nfar perish idiot far apple\\textbf{nob} vigor\n\\section{g}\ngroot perish idiot far apple vigor",
+    "timestamp": "06_30_2024_17_42_27.174475",
+    "input_hash": -8130600735502693383,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "idiot\njargon",
+            "Reference": "i\nbanana qualify idiot oops ra\\textbf{idiot}vi\\includegraphics[width=0.5\\textwidth]{lj.gif}sh\n\\section{j}\ncafe qualify \\textbf{jargon}idiot oops ravis\\includegraphics[width=0.5\\textwidth]{mj.jpg}h"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "c\nkangaroo kangaroo salvage apple lam\\includegraphics[width=0.5\\textwidth]{ng.jpeg}b cafe\n\\section{d}\nlamb kangaroo salvage apple lam\\includegraphics[width=0.5\\textwidth]{og.png}b cafe"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for macro textbf, and everything after \\\\textbf{ and before the first } encountered is bold text."
+}

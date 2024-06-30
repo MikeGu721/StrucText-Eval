@@ -1,0 +1,31 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "sf.jpg\nrf.jpeg\nuf.png\ntf.jpg\nvf.jpg",
+    "Label": {
+        "typename": "org",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "e\ntransformer banana yogurt salvage transformer idiot perish jargon far[[rf.jpeg]] zen oops unique\n* f\nunique banana yogurt salvage transformer idiot perish jargon far zen oops unique\n** g\nvigor banana yogurt salvage transformer idiot perish jargon far zen oops u*vigor*[[sf.jpg]]ge transformer idiot perish jargon far zen oops unique\n** h\nwake banana yogurt *wake*[[tf.jpg]]ana yogurt salvage transformer idiot perish jargon far zen oops unique\n* i\nX-ray banana yogurt salvage transformer idiot perish jargon*X-ray* far zen o[[uf.png]]ops unique\n** j\nyogurt banana yogurt salvage transformer idiot p[[vf.jpg]]erish jargon far zen oops unique\n** k\nzen banana yogurt salvage transformer idiot perish jargon far zen oops unique",
+    "timestamp": "06_30_2024_17_42_27.193126",
+    "input_hash": 2993671131368898489,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ai.jpg\nbi.jpg",
+            "Reference": "g\nsalvage halo cafe yogurt transformer apple X-ray nob qualify transformer banana zen\n* h\ntrans*oops*former halo cafe yogurt transformer apple X-ray nob qualify[[ai.jpg]] transformer banana zen\n** i\nun*perish*ique halo cafe yogurt transformer apple X-ray nob qualify transformer banana zen\n** j\nvigor halo cafe yogurt transformer apple X-ray nob [[bi.jpg]]qualify transformer banana zen\n* k\nwake halo cafe yogurt transformer apple X-ray nob qualif*qualify*y transformer banana zen\n** l\nX-ray halo cafe yogurt transformer apple X-ray nob qualify transformer banana zen\n** m\nyogurt halo cafe yogurt transformer apple X-r*ravish*ay nob qualify transformer banana zen"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "be.png\nee.gif\nce.jpeg\nde.jpeg",
+            "Reference": "y\nbanana idiot qualif*essence*y perish banana unique groot kangaroo transformer wake kanga[[be.png]]roo zen\n* z\ncafe idiot qualify perish banana unique groot kangaroo tr*far*[[ce.jpeg]]aroo transformer wake kangaroo zen\n** ab\ndentist idiot qualify perish banana unique groot kangaroo transformer wake kangaroo zen\n** bb\nessence idiot qualify perish banana unique groot kangaroo t*groot*ransformer wake kangaroo zen\n* cb\nfar idiot qualify perish banana unique groot kangaroo transformer wake *halo*kangaroo zen\n** db\ngroot idiot qualify perish banana unique groot kangaroo transformer wake k*idiot*[[de.jpeg]]iot qualify perish banana unique groot kangaroo transformer wake kangaroo zen\n** eb\nhalo idiot qualify perish banana unique groot ka[[ee.gif]]ngaroo transformer wake kangaroo zen"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching [[TARGET]], the TARGET part is filename."
+}

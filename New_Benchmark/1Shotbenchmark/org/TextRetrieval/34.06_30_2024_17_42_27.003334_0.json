@@ -1,0 +1,26 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "No bold texts presented in file.",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "i\ndentist groot perish perish apple lamb\n* j\nessence groot pe[[ve.jpg]]rish perish apple lamb",
+    "timestamp": "06_30_2024_17_42_27.003334",
+    "input_hash": 8716681039725076437,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "essence",
+            "Reference": "g\nuniq*essence*ue apple wa[[gj.png]]ke jargon X-ray unique\n* h\nvigor apple wake jargon X-ray unique"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for single star, i.e., *, the content between two occurrences of single star is the bold texts. Note that the bold range should start from the single star occurring at i-th spot throughout the whole input file, where i is odd, and end with single star occurring at jth spot where j is even. For example, text between single star appearing first and second time."
+}

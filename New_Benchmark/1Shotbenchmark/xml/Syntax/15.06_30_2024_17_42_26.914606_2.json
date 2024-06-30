@@ -1,0 +1,26 @@
+{
+    "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+    "Answer": "True",
+    "Label": {
+        "typename": "xml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Syntax"
+        ]
+    },
+    "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"f\">\n <B Y=\"e\" X=\"d\" W=\"c\" V=\"b\">\n  banana\n apple",
+    "timestamp": "06_30_2024_17_42_26.914606",
+    "input_hash": -460601683778338600,
+    "examples": [
+        {
+            "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"u\" Y=\"t\" X=\"s\" W=\"r\" V=\"q\" U=\"p\">\n <B T=\"o\" S=\"n\" R=\"m\">\n  banana\n apple"
+        }
+    ],
+    "RuleHint": "To find the error in the xml file, you need to parse the xml file and report any syntax error if encountered any. Potential errors include missing ending tags."
+}

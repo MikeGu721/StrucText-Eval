@@ -1,0 +1,26 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "ve.jpg",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "i\ndentist groot perish perish apple lamb\n* j\nessence groot pe[[ve.jpg]]rish perish apple lamb",
+    "timestamp": "06_30_2024_17_42_27.003742",
+    "input_hash": 8716681039725076437,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "gj.png",
+            "Reference": "g\nuniq*essence*ue apple wa[[gj.png]]ke jargon X-ray unique\n* h\nvigor apple wake jargon X-ray unique"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching [[TARGET]], the TARGET part is filename."
+}

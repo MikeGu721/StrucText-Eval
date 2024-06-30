@@ -1,0 +1,47 @@
+{
+  "#": {
+    "output_dir": "../New_Benchmark",  
+  "few_shots":
+    [0,1,3]
+  },
+  "csv": {
+    "nodes": [1,2,3,4],
+  "n_ary_ratio": 1,
+  "para_len_ratio": 6
+  },
+  "json": {
+    "nodes": [1,2,3,4],
+  "n_ary_ratio": 1,
+  "para_len_ratio": 6
+  },
+  "latex": {
+    "nodes": [1,2,3,4],
+  "n_ary_ratio": 1,
+  "para_len_ratio": 6
+  },
+  "markdown": {
+    "nodes": [1,2,3,4],
+  "n_ary_ratio": 1,
+  "para_len_ratio": 6
+  },
+  "org": {
+    "nodes": [1,2,3,4],
+  "n_ary_ratio": 1,
+  "para_len_ratio": 6
+  },
+  "tree": {
+    "nodes": [1,2,3,4],
+  "n_ary_ratio": 1,
+  "para_len_ratio": 6
+  },
+  "xml": {
+    "nodes": [1,2,3,4],
+  "n_ary_ratio": 1,
+  "para_len_ratio": 6
+  },
+  "yaml": {
+    "nodes": [1,2,3,4],
+  "n_ary_ratio": 1,
+  "para_len_ratio": 6
+  }
+}

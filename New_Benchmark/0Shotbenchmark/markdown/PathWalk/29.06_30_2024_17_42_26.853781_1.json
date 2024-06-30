@@ -1,0 +1,19 @@
+{
+    "Question": "What is the content of 1th subsection under 2th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section.",
+    "Answer": "## v\nyogurt vigor zen halo halo quali![alt](eh.jpg \"hover text\")fy transformer oops far oops qualify unique",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "q\ntransformer vigor zen halo halo qualify transformer oops far oops qualify unique\n# r\nunique vi**dentist**gor zen halo halo qualify transformer oops far oops qualify unique\n## s\nvi**essence**gor vigor zen halo halo qualify transformer oops far oops qualify unique\n## t\nwake vigor zen halo halo qual![alt](ch.png \"hover text\")ify transformer oops far oops qualify unique\n# u\nX-ray vigor zen halo halo qualify transformer oops far oops qualify uni**far**![alt](dh.jpeg \"hover text\")lify transformer oops far oops qualify unique\n## v\nyogurt vigor zen halo halo quali![alt](eh.jpg \"hover text\")fy transformer oops far oops qualify unique\n## w\nzen vigor zen halo halo qualify tra**groot**![alt](fh.jpg \"hover text\")alify transformer oops far oops qualify unique",
+    "timestamp": "06_30_2024_17_42_26.853781",
+    "input_hash": -666717368588852790,
+    "RuleHint": "To find the content of certain section, starting from the headings start with one hashtag, and go to the ith heading as specified in number of sections. Then start from that line, look for j-th heading with 2 hashtags as specified in subsection number. For kth subsubsection, look for kth heading with 3 hashtags starting from the located subsubsection. Stop searching early if the subsection or subsubsection is not queried."
+}

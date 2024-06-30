@@ -1,0 +1,26 @@
+{
+    "Question": "What is the age of record with primeKey a",
+    "Answer": "63",
+    "Label": {
+        "typename": "csv",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,female,63,b,141,71,black\nb,male,31,c,155,81,white\n\nprimeKey,status,salary,company,location\na,employed,355122,NVIDIA,WA\nb,unemployed,589172,NVIDIA,GA",
+    "timestamp": "06_30_2024_17_42_26.875979",
+    "input_hash": -3318831220008400477,
+    "examples": [
+        {
+            "Question": "\nWhat is the weight of record with primeKey b\n",
+            "Answer": "120",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,39,h,168,133,olive\nb,female,28,i,157,120,olive\n\nprimeKey,status,salary,company,location\na,retired,934307,Google,TX\nb,retired,120371,Twitter,TX"
+        }
+    ],
+    "RuleHint": "To find the value of specific field of record with specified primeKey. You have to first, locate the line with the specific primeKey. Then find the required value under the desired column in that line."
+}

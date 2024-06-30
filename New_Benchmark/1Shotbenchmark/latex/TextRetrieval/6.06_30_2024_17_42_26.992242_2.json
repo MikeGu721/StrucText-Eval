@@ -1,0 +1,26 @@
+{
+    "Question": "Extract all included figure files. Print those file names separated by \\n.",
+    "Answer": "jj.png\nhj.png\nkj.jpg\nij.jpg",
+    "Label": {
+        "typename": "latex",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "z\njargon jargon X-ray X-ray salvage monkey\\textbf{far}\\includegraphics[width=0.5\\textwidth]{hj.png}e monkey idiot kangaroo jargon salvage qualify lamb\n\\section{ab}\nkangaroo jargon X-ray X-ray salvage monkey idiot kangaroo jarg\\includegraphics[width=0.5\\textwidth]{ij.jpg}on salvage qualify lamb\n\\section{bb}\nlamb jargon X-ray X-ray salvage monkey idiot kangaroo jargon salvage qualify lamb\n\\section{cb}\nmonkey jargon X-ray X-ray salvage monkey idiot kangaroo jargon sa\\textbf{groot}\\includegraphics[width=0.5\\textwidth]{jj.png}lvage monkey idiot kangaroo jargon salvage qualify lamb\n\\section{db}\nnob jargon X-ray X-ray salvage monkey idiot kangaroo jargon salvage qualify lamb\n\\section{eb}\noops jargon X-ray X-ray salvage monkey idiot kangaroo jargo\\textbf{halo}n salvage qualify lamb\n\\section{fb}\nperish \\includegraphics[width=0.5\\textwidth]{kj.jpg}jargon X-ray X-ray salvage monkey idiot kangaroo jargon salvage qualify lamb",
+    "timestamp": "06_30_2024_17_42_26.992242",
+    "input_hash": -6854060519072561146,
+    "examples": [
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "aj.png",
+            "Reference": "t\nyogurt idiot salvage yogurt cafe\\textbf{yogurt} vigor zen nob cafe groot kangaroo salvage\n\\section{u}\nzen idiot salvage yogurt cafe vigor ze\\textbf{zen}n nob cafe groot kangaroo salvage\n\\section{v}\napple jargon salvage yogurt cafe vigor zen nob cafe g\\textbf{apple banana}root kangaroo salvage\n\\section{w}\nbanana jargon salvage yogurt cafe vigor zen nob cafe groot \\textbf{banana banana}kangaroo salvage\n\\section{x}\ncafe jargon salvage yogurt cafe vigor\\includegraphics[width=0.5\\textwidth]{aj.png} zen nob cafe groot kangaroo salvage\n\\section{y}\ndentist jargon salvage yogurt cafe vigor zen no\\textbf{cafe banana}b cafe groot kangaroo salvage\n\\section{z}\nessence jargon salvage yo\\textbf{dentist banana}gurt cafe vigor zen nob cafe groot kangaroo salvage"
+        }
+    ],
+    "RuleHint": "To find the image files imported, search for pattern \\\\includegraphics[*]{TARGET}, the TARGET part is the filename. Star means any text is possible."
+}

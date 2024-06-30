@@ -1,0 +1,26 @@
+{
+    "Question": "What is the content of tag B? The content should be an excerpt as it appears in the XML file.",
+    "Answer": "banana",
+    "Label": {
+        "typename": "xml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"f\">\n <B Y=\"e\" X=\"d\" W=\"c\" V=\"b\">\n  banana\n </B>\n apple\n</A>",
+    "timestamp": "06_30_2024_17_42_26.914197",
+    "input_hash": 3330431635484602748,
+    "examples": [
+        {
+            "Question": "What is the content of tag A? The content should be an excerpt as it appears in the XML file. ",
+            "Answer": " <B T=\"o\" S=\"n\" R=\"m\">\n  banana\n </B>\n apple",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"u\" Y=\"t\" X=\"s\" W=\"r\" V=\"q\" U=\"p\">\n <B T=\"o\" S=\"n\" R=\"m\">\n  banana\n </B>\n apple\n</A>"
+        }
+    ],
+    "RuleHint": "To find the content of a specific tag, you need to search for desired tag throughout the xml file. Once located, find the surrounding left and right angle, these area is tha starting tag. Then find the ending tag, which is the tag surrounded by angle with exception that right angle is preceded by a slash. The content between starting and ending tags is the answer."
+}

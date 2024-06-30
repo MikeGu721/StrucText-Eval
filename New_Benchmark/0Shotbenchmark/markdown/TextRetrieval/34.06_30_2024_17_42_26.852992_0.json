@@ -1,0 +1,19 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "perish",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "z\nsalvage transformer apple wa**perish**ke perish halo\n# ab\ntransformer transformer apple wake perish halo",
+    "timestamp": "06_30_2024_17_42_26.852992",
+    "input_hash": 3554666516284879078,
+    "RuleHint": "To find the bold texts, search for double stars, i.e., **, the content between two occurrences of double stars is the bold texts. Note that the bold range should start from the double stars occurring at i-th spot throughout the whole input file, where i is odd, and end with double stars occurring at jth spot where j is even. For example, text between double stars appearing first and second time."
+}

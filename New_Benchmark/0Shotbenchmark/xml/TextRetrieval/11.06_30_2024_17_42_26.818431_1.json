@@ -1,0 +1,19 @@
+{
+    "Question": "What is the tag with attribute of value sx?",
+    "Answer": "F",
+    "Label": {
+        "typename": "xml",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"n\" Y=\"m\" X=\"l\" W=\"k\" V=\"j\" U=\"i\" T=\"h\">\n <B S=\"g\" R=\"f\" Q=\"e\" P=\"d\" O=\"c\" N=\"b\" M=\"a\" L=\"zy\" K=\"yy\">\n  <C J=\"xy\" I=\"wy\" H=\"vy\" G=\"uy\" F=\"ty\" E=\"sy\">\n   cafe\n  </C>\n  <D D=\"ry\" C=\"qy\" B=\"py\" A=\"oy\" ZY=\"ny\" YY=\"my\" XY=\"ly\" WY=\"ky\" VY=\"jy\" UY=\"iy\">\n   dentist\n  </D>\n  banana\n </B>\n <E TY=\"hy\" SY=\"gy\" RY=\"fy\" QY=\"ey\" PY=\"dy\" OY=\"cy\" NY=\"by\" MY=\"ay\" LY=\"zx\">\n  <F KY=\"yx\" JY=\"xx\" IY=\"wx\" HY=\"vx\" GY=\"ux\" FY=\"tx\" EY=\"sx\" DY=\"rx\">\n   far\n  </F>\n  <G CY=\"qx\" BY=\"px\" AY=\"ox\" ZX=\"nx\" YX=\"mx\" XX=\"lx\" WX=\"kx\" VX=\"jx\" UX=\"ix\" TX=\"hx\">\n   groot\n  </G>\n  essence\n </E>\n apple\n</A>",
+    "timestamp": "06_30_2024_17_42_26.818431",
+    "input_hash": -6677075247159186883,
+    "RuleHint": "To find the tag name of particular attribute value, just search the file for that value and find the surrounding left and right angles, i.e., boundary of tag. The word next to left angle is tag name."
+}

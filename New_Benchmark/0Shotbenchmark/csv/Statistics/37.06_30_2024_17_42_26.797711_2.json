@@ -1,0 +1,19 @@
+{
+    "Question": "How many people are female?",
+    "Answer": "2",
+    "Label": {
+        "typename": "csv",
+        "node_number": 4,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Statistics"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,female,28,u,145,147,black\nb,male,58,v,161,107,brown\nc,female,17,w,163,146,mulatto\nd,male,69,x,141,125,swarthy\n\nprimeKey,status,salary,company,location\na,unemployed,230709,Apple,HI\nb,employed,669199,Apple,GA\nc,retired,776670,NVIDIA,HI\nd,unemployed,893352,NVIDIA,HI",
+    "timestamp": "06_30_2024_17_42_26.797711",
+    "input_hash": -3766382838976942722,
+    "RuleHint": "To get the number of female, first find the table with column name ''. Then check each line for field gender, and count these lines with value 'female' towards your final sum. The process applies to finding number of male too."
+}

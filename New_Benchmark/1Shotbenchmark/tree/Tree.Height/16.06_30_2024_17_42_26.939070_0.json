@@ -1,0 +1,26 @@
+{
+    "Question": "What is the height of the root node, i.e., the number of edges in the longest path from root node to any leaf nodes? Answer an integer, leaf is of height 0.",
+    "Answer": "3",
+    "Label": {
+        "typename": "tree",
+        "node_number": 3,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Tree.Height"
+        ]
+    },
+    "Reference": "f->g\ng->h\nh->i\nh->j\nh->k\ng->l\nl->m\nl->n\nl->o\ng->p\np->q\np->r\np->s\nf->t\nt->u\nu->v\nu->w\nu->x\nt->y\ny->z\ny->ab\ny->bb\nt->cb\ncb->db\ncb->eb\ncb->fb\nf->gb\ngb->hb\nhb->ib\nhb->jb\nhb->kb\ngb->lb\nlb->mb\nlb->nb\nlb->ob\ngb->pb\npb->qb\npb->rb\npb->sb",
+    "timestamp": "06_30_2024_17_42_26.939070",
+    "input_hash": -5456561037741656091,
+    "examples": [
+        {
+            "Question": "What is the height of the root node, i.e., the number of edges in the longest path from root node to any leaf nodes? Answer an integer, leaf is of height 0. ",
+            "Answer": "3",
+            "Reference": "z->ab\nab->bb\nbb->cb\nbb->db\nbb->eb\nab->fb\nfb->gb\nfb->hb\nfb->ib\nab->jb\njb->kb\njb->lb\njb->mb\nz->nb\nnb->ob\nob->pb\nob->qb\nob->rb\nnb->sb\nsb->tb\nsb->ub\nsb->vb\nnb->wb\nwb->xb\nwb->yb\nwb->zb\nz->ac\nac->bc\nbc->cc\nbc->dc\nbc->ec\nac->fc\nfc->gc\nfc->hc\nfc->ic\nac->jc\njc->kc\njc->lc\njc->mc"
+        }
+    ],
+    "RuleHint": "To answer the height of tree, you need to take a recursive strategy. For each node, you will find its height by first finding its children's heights. Then, the height of node is the maximum subtree heights plus 1. The base case occurs when a node has no children, i.e., it's a leaf node. Leaf's height is defined to be 0, without the need of further queries. Then the height the tree is the height of its root node."
+}

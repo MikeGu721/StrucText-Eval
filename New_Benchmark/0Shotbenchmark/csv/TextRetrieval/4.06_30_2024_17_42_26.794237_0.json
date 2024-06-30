@@ -1,0 +1,19 @@
+{
+    "Question": "What is the name of record with primeKey a",
+    "Answer": "h",
+    "Label": {
+        "typename": "csv",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,female,50,h,146,179,olive\n\nprimeKey,status,salary,company,location\na,employed,591919,Apple,WA",
+    "timestamp": "06_30_2024_17_42_26.794237",
+    "input_hash": -8121331058448946530,
+    "RuleHint": "To find the value of specific field of record with specified primeKey. You have to first, locate the line with the specific primeKey. Then find the required value under the desired column in that line."
+}

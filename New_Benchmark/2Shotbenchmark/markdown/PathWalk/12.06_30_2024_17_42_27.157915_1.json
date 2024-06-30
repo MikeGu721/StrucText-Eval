@@ -1,0 +1,31 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section.",
+    "Answer": "# d\nnob apple wake![alt](dg.jpg \"hover text\") salvage kangaroo banana",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "c\nmonkey apple wake salvage kangaroo banana\n# d\nnob apple wake![alt](dg.jpg \"hover text\") salvage kangaroo banana",
+    "timestamp": "06_30_2024_17_42_27.157915",
+    "input_hash": 6335900149821752109,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# y\nsalvag![alt](jh.jpeg \"hover text\")e jargon far unique kangaroo essence",
+            "Reference": "x\nravish jargon far unique kangaroo e![alt](ih.jpeg \"hover text\")ssence\n# y\nsalvag![alt](jh.jpeg \"hover text\")e jargon far unique kangaroo essence"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# t\nperish oops qualify salvage ravish monkey",
+            "Reference": "s\noops oops qualify**idiot** salvage ravish monkey\n# t\nperish oops qualify salvage ravish monkey"
+        }
+    ],
+    "RuleHint": "To find the content of certain section, starting from the headings start with one hashtag, and go to the ith heading as specified in number of sections. Then start from that line, look for j-th heading with 2 hashtags as specified in subsection number. For kth subsubsection, look for kth heading with 3 hashtags starting from the located subsubsection. Stop searching early if the subsection or subsubsection is not queried."
+}

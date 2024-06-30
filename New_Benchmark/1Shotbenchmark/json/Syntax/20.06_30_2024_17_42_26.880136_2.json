@@ -1,0 +1,26 @@
+{
+    "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+    "Answer": "True",
+    "Label": {
+        "typename": "json",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Syntax"
+        ]
+    },
+    "Reference": "{\n\"id\":\"i\",\n\"Z\":\"j\",\n\"Y\":\"i\",\n\"X\":\"h\",\n\"W\":\"g\",\n\"V\":\"f\",\n\"U\":\"e\",\n\"T\":\"d\",\n\"S\":\"c\",\n\"R\":\"b\",\n\"Q\":\"a\",\n\"P\":\"zy\",\n\"subs\":[\n {\n \"id\":\"j\",\n \"O\":\"yy\",\n \"N\":\"xy\",\n \"M\":\"wy\",\n \"L\":\"vy\",\n \"K\":\"uy\",\n \"J\":\"ty\",\n \"I\":\"sy\",\n \"subs\":[\n  {\n  \"id\":\"k\",\n  \"H\":\"ry\",\n  \"G\":\"qy\",\n  \"F\":\"py\",\n  \"E\":\"oy\",\n  \"D\":\"ny\",\n  \"C\":\"my\",\n  \"B\":\"ly\",\n  \"A\":\"ky\",\n  \"ZY\":\"jy\",\n  \"YY\":\"iy\",\n  \"XY\":\"hy\",\n  \"WY\":\"gy\",\n  \"subs\":[],\n  {\n  \"id\":\"l\",\n  \"VY\":\"fy\",\n  \"UY\":\"ey\",\n  \"TY\":\"dy\",\n  \"SY\":\"cy\",\n  \"RY\":\"by\",\n  \"QY\":\"ay\",\n  \"PY\":\"zx\",\n  \"OY\":\"yx\",\n  \"subs\":[]\n ]\n },\n {\n \"id\":\"m\",\n \"NY\":\"xx\",\n \"MY\":\"wx\",\n \"LY\":\"vx\",\n \"KY\":\"ux\",\n \"subs\":[\n  {\n  \"id\":\"n\",\n  \"JY\":\"tx\",\n  \"IY\":\"sx\",\n  \"HY\":\"rx\",\n  \"GY\":\"qx\",\n  \"FY\":\"px\",\n  \"EY\":\"ox\",\n  \"DY\":\"nx\",\n  \"CY\":\"mx\",\n  \"BY\":\"lx\",\n  \"subs\":[],\n  {\n  \"id\":\"o\",\n  \"AY\":\"kx\",\n  \"ZX\":\"jx\",\n  \"YX\":\"ix\",\n  \"XX\":\"hx\",\n  \"WX\":\"gx\",\n  \"VX\":\"fx\",\n  \"UX\":\"ex\",\n  \"subs\":[]\n ]\n }\n]",
+    "timestamp": "06_30_2024_17_42_26.880136",
+    "input_hash": 7489136574569125970,
+    "examples": [
+        {
+            "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "{\n\"id\":\"m\",\n\"Z\":\"b\",\n\"Y\":\"a\",\n\"X\":\"zy\",\n\"subs\":[\n {\n \"id\":\"n\",\n \"W\":\"yy\",\n \"V\":\"xy\",\n \"U\":\"wy\",\n \"T\":\"vy\",\n \"S\":\"uy\",\n \"R\":\"ty\",\n \"subs\":[\n  {\n  \"id\":\"o\",\n  \"Q\":\"sy\",\n  \"P\":\"ry\",\n  \"O\":\"qy\",\n  \"N\":\"py\",\n  \"M\":\"oy\",\n  \"L\":\"ny\",\n  \"K\":\"my\",\n  \"J\":\"ly\",\n  \"I\":\"ky\",\n  \"H\":\"jy\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"p\",\n  \"G\":\"iy\",\n  \"F\":\"hy\",\n  \"subs\":[]\n ]\n },\n {\n \"id\":\"q\",\n \"E\":\"gy\",\n \"D\":\"fy\",\n \"C\":\"ey\",\n \"B\":\"dy\",\n \"A\":\"cy\",\n \"ZY\":\"by\",\n \"YY\":\"ay\",\n \"XY\":\"zx\",\n \"subs\":[\n  {\n  \"id\":\"r\",\n  \"WY\":\"yx\",\n  \"VY\":\"xx\",\n  \"UY\":\"wx\",\n  \"TY\":\"vx\",\n  \"SY\":\"ux\",\n  \"RY\":\"tx\",\n  \"QY\":\"sx\",\n  \"PY\":\"rx\",\n  \"OY\":\"qx\",\n  \"NY\":\"px\",\n  \"MY\":\"ox\",\n  \"LY\":\"nx\",\n  \"subs\":[],\n  {\n  \"id\":\"s\",\n  \"KY\":\"mx\",\n  \"JY\":\"lx\",\n  \"IY\":\"kx\",\n  \"HY\":\"jx\",\n  \"GY\":\"ix\",\n  \"FY\":\"hx\",\n  \"subs\":[]\n ]\n }\n]"
+        }
+    ],
+    "RuleHint": "To find the error in the json file, you need to parse the json file and report any syntax error if encountered any. Potential errors include missing ending curly braces."
+}

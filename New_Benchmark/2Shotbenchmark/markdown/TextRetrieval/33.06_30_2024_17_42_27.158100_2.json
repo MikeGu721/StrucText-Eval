@@ -1,0 +1,31 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "dg.jpg",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "c\nmonkey apple wake salvage kangaroo banana\n# d\nnob apple wake![alt](dg.jpg \"hover text\") salvage kangaroo banana",
+    "timestamp": "06_30_2024_17_42_27.158100",
+    "input_hash": 6335900149821752109,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "jh.jpeg\nih.jpeg",
+            "Reference": "x\nravish jargon far unique kangaroo e![alt](ih.jpeg \"hover text\")ssence\n# y\nsalvag![alt](jh.jpeg \"hover text\")e jargon far unique kangaroo essence"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "No image file is included in the file.",
+            "Reference": "s\noops oops qualify**idiot** salvage ravish monkey\n# t\nperish oops qualify salvage ravish monkey"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching ![*](TARGET \"*\"), the TARGET part is filename. Star means any text is possible."
+}

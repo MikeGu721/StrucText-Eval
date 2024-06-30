@@ -1,0 +1,19 @@
+{
+    "Question": "What is the first object's id of subs?",
+    "Answer": "p",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "id: \"o\"\nZ: a,\nY: zy,\nX: yy,\nW: xy,\nV: wy,\nU: vy,\nsubs: \n- id: \"p\"\n  T: uy,\n  S: ty,\n  R: sy,\n  Q: ry,\n  P: qy,\n  subs: []",
+    "timestamp": "06_30_2024_17_42_26.833890",
+    "input_hash": -9010528385999581182,
+    "RuleHint": "To find the first object's id of subs, first parse the yaml file and get the outermost object, in the outermost object's subs list, get the first element. That element is another object, and its id is the answer."
+}

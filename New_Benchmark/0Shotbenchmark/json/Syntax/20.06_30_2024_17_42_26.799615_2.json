@@ -1,0 +1,19 @@
+{
+    "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+    "Answer": "True",
+    "Label": {
+        "typename": "json",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Syntax"
+        ]
+    },
+    "Reference": "{\n\"id\":\"w\",\n\"Z\":\"l\",\n\"Y\":\"k\",\n\"X\":\"j\",\n\"W\":\"i\",\n\"V\":\"h\",\n\"U\":\"g\",\n\"T\":\"f\",\n\"S\":\"e\",\n\"R\":\"d\",\n\"subs\":[\n {\n \"id\":\"x\",\n \"Q\":\"c\",\n \"P\":\"b\",\n \"O\":\"a\",\n \"N\":\"zy\",\n \"M\":\"yy\",\n \"L\":\"xy\",\n \"K\":\"wy\",\n \"J\":\"vy\",\n \"subs\":[\n  {\n  \"id\":\"y\",\n  \"I\":\"uy\",\n  \"H\":\"ty\",\n  \"G\":\"sy\",\n  \"F\":\"ry\",\n  \"E\":\"qy\",\n  \"D\":\"py\",\n  \"C\":\"oy\",\n  \"B\":\"ny\",\n  \"subs\":[],\n  {\n  \"id\":\"z\",\n  \"A\":\"my\",\n  \"ZY\":\"ly\",\n  \"YY\":\"ky\",\n  \"XY\":\"jy\",\n  \"WY\":\"iy\",\n  \"VY\":\"hy\",\n  \"UY\":\"gy\",\n  \"TY\":\"fy\",\n  \"SY\":\"ey\",\n  \"RY\":\"dy\",\n  \"subs\":[]\n  }\n ],\n {\n \"id\":\"ab\",\n \"QY\":\"cy\",\n \"PY\":\"by\",\n \"OY\":\"ay\",\n \"NY\":\"zx\",\n \"MY\":\"yx\",\n \"LY\":\"xx\",\n \"subs\":[\n  {\n  \"id\":\"bb\",\n  \"KY\":\"wx\",\n  \"JY\":\"vx\",\n  \"IY\":\"ux\",\n  \"HY\":\"tx\",\n  \"GY\":\"sx\",\n  \"FY\":\"rx\",\n  \"EY\":\"qx\",\n  \"DY\":\"px\",\n  \"CY\":\"ox\",\n  \"BY\":\"nx\",\n  \"subs\":[],\n  {\n  \"id\":\"cb\",\n  \"AY\":\"mx\",\n  \"ZX\":\"lx\",\n  \"YX\":\"kx\",\n  \"XX\":\"jx\",\n  \"WX\":\"ix\",\n  \"VX\":\"hx\",\n  \"subs\":[]\n ]\n]",
+    "timestamp": "06_30_2024_17_42_26.799615",
+    "input_hash": 3308932893452047121,
+    "RuleHint": "To find the error in the json file, you need to parse the json file and report any syntax error if encountered any. Potential errors include missing ending curly braces."
+}

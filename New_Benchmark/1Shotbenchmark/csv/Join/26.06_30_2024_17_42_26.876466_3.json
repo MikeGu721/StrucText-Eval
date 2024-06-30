@@ -1,0 +1,26 @@
+{
+    "Question": "How many people who work in TX are taller than 150?",
+    "Answer": "0",
+    "Label": {
+        "typename": "csv",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Join"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,female,63,b,141,71,black\nb,male,31,c,155,81,white\n\nprimeKey,status,salary,company,location\na,employed,355122,NVIDIA,WA\nb,unemployed,589172,NVIDIA,GA",
+    "timestamp": "06_30_2024_17_42_26.876466",
+    "input_hash": -3318831220008400477,
+    "examples": [
+        {
+            "Question": "\nHow many people who work in GA are taller than 172?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,39,h,168,133,olive\nb,female,28,i,157,120,olive\n\nprimeKey,status,salary,company,location\na,retired,934307,Google,TX\nb,retired,120371,Twitter,TX"
+        }
+    ],
+    "RuleHint": "To get the number of people living in specified city who are also taller than threshold, you need to first join the two table on primeKey, and check each row of joined table for lines that satisfies both condition, i.e., lines with city specified in query and height strictly greater than threshold. The total number of such rows is the right answer."
+}

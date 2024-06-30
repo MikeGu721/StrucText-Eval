@@ -1,0 +1,19 @@
+{
+    "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the JSON file, separated by \\n\\n.",
+    "Answer": "{\n\"id\":\"o\",\n\"X\":\"t\",\n\"subs\":[]\n}",
+    "Label": {
+        "typename": "json",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "{\n\"id\":\"n\",\n\"Z\":\"v\",\n\"Y\":\"u\",\n\"subs\":[\n {\n \"id\":\"o\",\n \"X\":\"t\",\n \"subs\":[]\n }\n]\n}",
+    "timestamp": "06_30_2024_17_42_26.798906",
+    "input_hash": -5055996901003706274,
+    "RuleHint": "To get the most deeply nested objects, start from the outermost object, recursively search along the subs fields. For each object, check its subs field, any object with an empty subs is one most deeply nested object."
+}

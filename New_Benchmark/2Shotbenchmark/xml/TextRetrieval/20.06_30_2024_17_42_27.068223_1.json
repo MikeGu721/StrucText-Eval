@@ -1,0 +1,31 @@
+{
+    "Question": "What is the tag with attribute of value t?",
+    "Answer": "A",
+    "Label": {
+        "typename": "xml",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"w\" Y=\"v\" X=\"u\" W=\"t\" V=\"s\" U=\"r\" T=\"q\" S=\"p\" R=\"o\">\n <B Q=\"n\" P=\"m\" O=\"l\" N=\"k\" M=\"j\" L=\"i\" K=\"h\">\n  <C J=\"g\" I=\"f\" H=\"e\" G=\"d\" F=\"c\" E=\"b\" D=\"a\" C=\"zy\" B=\"yy\" A=\"xy\">\n   cafe\n  </C>\n  <D ZY=\"wy\" YY=\"vy\" XY=\"uy\">\n   dentist\n  </D>\n  banana\n </B>\n <E WY=\"ty\" VY=\"sy\" UY=\"ry\" TY=\"qy\" SY=\"py\" RY=\"oy\" QY=\"ny\" PY=\"my\" OY=\"ly\" NY=\"ky\" MY=\"jy\" LY=\"iy\">\n  <F KY=\"hy\" JY=\"gy\" IY=\"fy\" HY=\"ey\" GY=\"dy\" FY=\"cy\" EY=\"by\" DY=\"ay\">\n   far\n  </F>\n  <G CY=\"zx\" BY=\"yx\" AY=\"xx\" ZX=\"wx\" YX=\"vx\" XX=\"ux\" WX=\"tx\">\n   groot\n  </G>\n  essence\n </E>\n apple\n</A>",
+    "timestamp": "06_30_2024_17_42_27.068223",
+    "input_hash": -127023160074134459,
+    "examples": [
+        {
+            "Question": "What is the tag with attribute of value wy?",
+            "Answer": "F",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"x\" Y=\"w\" X=\"v\" W=\"u\">\n <B V=\"t\">\n  <C U=\"s\" T=\"r\" S=\"q\" R=\"p\">\n   cafe\n  </C>\n  <D Q=\"o\" P=\"n\" O=\"m\" N=\"l\" M=\"k\" L=\"j\" K=\"i\" J=\"h\">\n   dentist\n  </D>\n  banana\n </B>\n <E I=\"g\" H=\"f\" G=\"e\" F=\"d\" E=\"c\">\n  <F D=\"b\" C=\"a\" B=\"zy\" A=\"yy\" ZY=\"xy\" YY=\"wy\" XY=\"vy\" WY=\"uy\" VY=\"ty\">\n   far\n  </F>\n  <G>\n   groot\n  </G>\n  essence\n </E>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the tag with attribute of value jy?",
+            "Answer": "E",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"x\" Y=\"w\" X=\"v\" W=\"u\" V=\"t\" U=\"s\" T=\"r\">\n <B S=\"q\" R=\"p\" Q=\"o\" P=\"n\" O=\"m\" N=\"l\" M=\"k\" L=\"j\" K=\"i\" J=\"h\" I=\"g\" H=\"f\">\n  <C G=\"e\" F=\"d\" E=\"c\" D=\"b\">\n   cafe\n  </C>\n  <D C=\"a\" B=\"zy\" A=\"yy\" ZY=\"xy\" YY=\"wy\" XY=\"vy\" WY=\"uy\" VY=\"ty\">\n   dentist\n  </D>\n  banana\n </B>\n <E UY=\"sy\" TY=\"ry\" SY=\"qy\" RY=\"py\" QY=\"oy\" PY=\"ny\" OY=\"my\" NY=\"ly\" MY=\"ky\" LY=\"jy\" KY=\"iy\">\n  <F JY=\"hy\" IY=\"gy\" HY=\"fy\" GY=\"ey\" FY=\"dy\" EY=\"cy\" DY=\"by\" CY=\"ay\" BY=\"zx\" AY=\"yx\">\n   far\n  </F>\n  <G ZX=\"xx\" YX=\"wx\" XX=\"vx\" WX=\"ux\" VX=\"tx\" UX=\"sx\" TX=\"rx\" SX=\"qx\">\n   groot\n  </G>\n  essence\n </E>\n apple\n</A>"
+        }
+    ],
+    "RuleHint": "To find the tag name of particular attribute value, just search the file for that value and find the surrounding left and right angles, i.e., boundary of tag. The word next to left angle is tag name."
+}

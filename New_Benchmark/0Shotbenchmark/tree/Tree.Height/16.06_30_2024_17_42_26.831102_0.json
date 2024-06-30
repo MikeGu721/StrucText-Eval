@@ -1,0 +1,19 @@
+{
+    "Question": "What is the height of the root node, i.e., the number of edges in the longest path from root node to any leaf nodes? Answer an integer, leaf is of height 0.",
+    "Answer": "2",
+    "Label": {
+        "typename": "tree",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Tree.Height"
+        ]
+    },
+    "Reference": "z->ab\nab->bb\nab->cb\nz->db\ndb->eb\ndb->fb",
+    "timestamp": "06_30_2024_17_42_26.831102",
+    "input_hash": -5316087404534886855,
+    "RuleHint": "To answer the height of tree, you need to take a recursive strategy. For each node, you will find its height by first finding its children's heights. Then, the height of node is the maximum subtree heights plus 1. The base case occurs when a node has no children, i.e., it's a leaf node. Leaf's height is defined to be 0, without the need of further queries. Then the height the tree is the height of its root node."
+}

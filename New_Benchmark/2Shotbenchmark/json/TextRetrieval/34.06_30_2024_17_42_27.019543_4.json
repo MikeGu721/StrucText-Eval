@@ -1,0 +1,31 @@
+{
+    "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the JSON file, separated by \\n\\n.",
+    "Answer": "{\n\"id\":\"s\",\n\"V\":\"zy\",\n\"U\":\"yy\",\n\"T\":\"xy\",\n\"S\":\"wy\",\n\"R\":\"vy\",\n\"Q\":\"uy\",\n\"subs\":[]\n}",
+    "Label": {
+        "typename": "json",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "{\n\"id\":\"r\",\n\"Z\":\"d\",\n\"Y\":\"c\",\n\"X\":\"b\",\n\"W\":\"a\",\n\"subs\":[\n {\n \"id\":\"s\",\n \"V\":\"zy\",\n \"U\":\"yy\",\n \"T\":\"xy\",\n \"S\":\"wy\",\n \"R\":\"vy\",\n \"Q\":\"uy\",\n \"subs\":[]\n }\n]\n}",
+    "timestamp": "06_30_2024_17_42_27.019543",
+    "input_hash": 6079447273616321176,
+    "examples": [
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the JSON file, separated by \\n\\n. ",
+            "Answer": "{\n\"id\":\"e\",\n\"Y\":\"h\",\n\"subs\":[]\n}",
+            "Reference": "{\n\"id\":\"d\",\n\"Z\":\"i\",\n\"subs\":[\n {\n \"id\":\"e\",\n \"Y\":\"h\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the JSON file, separated by \\n\\n. ",
+            "Answer": "{\n\"id\":\"r\",\n\"U\":\"r\",\n\"T\":\"q\",\n\"S\":\"p\",\n\"R\":\"o\",\n\"Q\":\"n\",\n\"subs\":[]\n}",
+            "Reference": "{\n\"id\":\"q\",\n\"Z\":\"w\",\n\"Y\":\"v\",\n\"X\":\"u\",\n\"W\":\"t\",\n\"V\":\"s\",\n\"subs\":[\n {\n \"id\":\"r\",\n \"U\":\"r\",\n \"T\":\"q\",\n \"S\":\"p\",\n \"R\":\"o\",\n \"Q\":\"n\",\n \"subs\":[]\n }\n]\n}"
+        }
+    ],
+    "RuleHint": "To get the most deeply nested objects, start from the outermost object, recursively search along the subs fields. For each object, check its subs field, any object with an empty subs is one most deeply nested object."
+}

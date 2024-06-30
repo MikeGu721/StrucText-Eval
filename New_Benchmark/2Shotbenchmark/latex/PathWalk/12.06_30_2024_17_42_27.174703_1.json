@@ -1,0 +1,31 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section.",
+    "Answer": "\\section{g}\ngroot perish idiot far apple vigor",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "f\nfar perish idiot far apple\\textbf{nob} vigor\n\\section{g}\ngroot perish idiot far apple vigor",
+    "timestamp": "06_30_2024_17_42_27.174703",
+    "input_hash": -8130600735502693383,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{j}\ncafe qualify \\textbf{jargon}idiot oops ravis\\includegraphics[width=0.5\\textwidth]{mj.jpg}h",
+            "Reference": "i\nbanana qualify idiot oops ra\\textbf{idiot}vi\\includegraphics[width=0.5\\textwidth]{lj.gif}sh\n\\section{j}\ncafe qualify \\textbf{jargon}idiot oops ravis\\includegraphics[width=0.5\\textwidth]{mj.jpg}h"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{d}\nlamb kangaroo salvage apple lam\\includegraphics[width=0.5\\textwidth]{og.png}b cafe",
+            "Reference": "c\nkangaroo kangaroo salvage apple lam\\includegraphics[width=0.5\\textwidth]{ng.jpeg}b cafe\n\\section{d}\nlamb kangaroo salvage apple lam\\includegraphics[width=0.5\\textwidth]{og.png}b cafe"
+        }
+    ],
+    "RuleHint": "Note that section title is enclosed by \\\\section{}, and \\\\subsection for subsection, \\\\subsubsection for subsubsection. To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

@@ -1,0 +1,26 @@
+{
+    "Question": "How many people work with salary more than 740074?",
+    "Answer": "0",
+    "Label": {
+        "typename": "csv",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Statistics"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,female,63,b,141,71,black\nb,male,31,c,155,81,white\n\nprimeKey,status,salary,company,location\na,employed,355122,NVIDIA,WA\nb,unemployed,589172,NVIDIA,GA",
+    "timestamp": "06_30_2024_17_42_26.876152",
+    "input_hash": -3318831220008400477,
+    "examples": [
+        {
+            "Question": "\nHow many people work with salary more than 896167?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,39,h,168,133,olive\nb,female,28,i,157,120,olive\n\nprimeKey,status,salary,company,location\na,retired,934307,Google,TX\nb,retired,120371,Twitter,TX"
+        }
+    ],
+    "RuleHint": "To get the number of people with salary above a threshold, you need to find the table with salary information. Then you go over each line and check the salary field. During the process count only those lines with value of salary strictly greater than the specified threshold towards your final sum. The sum after checking each line is the right answer."
+}

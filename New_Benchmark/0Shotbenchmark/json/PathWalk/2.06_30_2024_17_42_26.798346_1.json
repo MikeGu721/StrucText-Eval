@@ -1,0 +1,19 @@
+{
+    "Question": "What is the first object's id of subs?",
+    "Answer": "o",
+    "Label": {
+        "typename": "json",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "{\n\"id\":\"n\",\n\"Z\":\"v\",\n\"Y\":\"u\",\n\"subs\":[\n {\n \"id\":\"o\",\n \"X\":\"t\",\n \"subs\":[]\n }\n]\n}",
+    "timestamp": "06_30_2024_17_42_26.798346",
+    "input_hash": -5055996901003706274,
+    "RuleHint": "To find the first object's id of subs, first parse the json file and get the outermost object, in the outermost object's subs list, get the first element. That element is another object, and its id is the answer."
+}

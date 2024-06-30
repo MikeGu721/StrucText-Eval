@@ -1,0 +1,31 @@
+{
+    "Question": "What is the path from the root node to the node ib. Answer should look like A->D->H.",
+    "Answer": "q->eb->fb->ib",
+    "Label": {
+        "typename": "tree",
+        "node_number": 3,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathCompose"
+        ]
+    },
+    "Reference": "q->r\nr->s\ns->t\ns->u\ns->v\nr->w\nw->x\nw->y\nw->z\nr->ab\nab->bb\nab->cb\nab->db\nq->eb\neb->fb\nfb->gb\nfb->hb\nfb->ib\neb->jb\njb->kb\njb->lb\njb->mb\neb->nb\nnb->ob\nnb->pb\nnb->qb\nq->rb\nrb->sb\nsb->tb\nsb->ub\nsb->vb\nrb->wb\nwb->xb\nwb->yb\nwb->zb\nrb->ac\nac->bc\nac->cc\nac->dc",
+    "timestamp": "06_30_2024_17_42_27.105762",
+    "input_hash": -2130450393358447307,
+    "examples": [
+        {
+            "Question": "What is the path from the root node to the node u. Answer should look like A->D->H. ",
+            "Answer": "j->k->t->u",
+            "Reference": "j->k\nk->l\nl->m\nl->n\nl->o\nk->p\np->q\np->r\np->s\nk->t\nt->u\nt->v\nt->w\nj->x\nx->y\ny->z\ny->ab\ny->bb\nx->cb\ncb->db\ncb->eb\ncb->fb\nx->gb\ngb->hb\ngb->ib\ngb->jb\nj->kb\nkb->lb\nlb->mb\nlb->nb\nlb->ob\nkb->pb\npb->qb\npb->rb\npb->sb\nkb->tb\ntb->ub\ntb->vb\ntb->wb"
+        },
+        {
+            "Question": "What is the path from the root node to the node nb. Answer should look like A->D->H. ",
+            "Answer": "q->eb->nb",
+            "Reference": "q->r\nr->s\ns->t\ns->u\ns->v\nr->w\nw->x\nw->y\nw->z\nr->ab\nab->bb\nab->cb\nab->db\nq->eb\neb->fb\nfb->gb\nfb->hb\nfb->ib\neb->jb\njb->kb\njb->lb\njb->mb\neb->nb\nnb->ob\nnb->pb\nnb->qb\nq->rb\nrb->sb\nsb->tb\nsb->ub\nsb->vb\nrb->wb\nwb->xb\nwb->yb\nwb->zb\nrb->ac\nac->bc\nac->cc\nac->dc"
+        }
+    ],
+    "RuleHint": "To get the path from root to a node, you need to find recursively. For any node, you can find the path to the target node by find path from its children to target. Then check each child's output, if any child returns with valid path instead of an empty path indicating target-not-found, the path from node to target is that path from its child to target prepended with itself. The answer can be found by searching with root as starting point."
+}
