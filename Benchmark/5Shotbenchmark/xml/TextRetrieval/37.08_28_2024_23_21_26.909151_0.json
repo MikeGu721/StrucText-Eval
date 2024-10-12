@@ -1,0 +1,46 @@
+{
+    "Question": "What is the content of tag E? The content should be an excerpt as it appears in the XML file.",
+    "Answer": "<F D=\"py\" C=\"oy\" B=\"ny\" A=\"my\" ZY=\"ly\" YY=\"ky\" XY=\"jy\">\n  far\n </F>\n <G WY=\"iy\" VY=\"hy\" UY=\"gy\" TY=\"fy\" SY=\"ey\" RY=\"dy\" QY=\"cy\" PY=\"by\" OY=\"ay\" NY=\"zx\">\n  groot\n </G>\n essence",
+    "Label": {
+        "typename": "xml",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"l\" Y=\"k\" X=\"j\" W=\"i\" V=\"h\" U=\"g\" T=\"f\" S=\"e\" R=\"d\" Q=\"c\">\n <B P=\"b\" O=\"a\">\n  <C N=\"zy\" M=\"yy\" L=\"xy\">\n   cafe\n  </C>\n  <D K=\"wy\" J=\"vy\" I=\"uy\" H=\"ty\" G=\"sy\">\n   dentist\n  </D>\n  banana\n </B>\n <E F=\"ry\" E=\"qy\">\n  <F D=\"py\" C=\"oy\" B=\"ny\" A=\"my\" ZY=\"ly\" YY=\"ky\" XY=\"jy\">\n   far\n  </F>\n  <G WY=\"iy\" VY=\"hy\" UY=\"gy\" TY=\"fy\" SY=\"ey\" RY=\"dy\" QY=\"cy\" PY=\"by\" OY=\"ay\" NY=\"zx\">\n   groot\n  </G>\n  essence\n </E>\n apple\n</A>",
+    "timestamp": "08_28_2024_23_21_26.909151",
+    "input_hash": -5941708592930680022,
+    "examples": [
+        {
+            "Question": "What is the content of tag E? The content should be an excerpt as it appears in the XML file. ",
+            "Answer": " <F IY=\"px\" HY=\"ox\" GY=\"nx\" FY=\"mx\" EY=\"lx\" DY=\"kx\" CY=\"jx\" BY=\"ix\">\n  far\n </F>\n <G AY=\"hx\" ZX=\"gx\" YX=\"fx\" XX=\"ex\" WX=\"dx\">\n  groot\n </G>\n essence",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"g\" Y=\"f\" X=\"e\" W=\"d\" V=\"c\" U=\"b\" T=\"a\" S=\"zy\" R=\"yy\" Q=\"xy\" P=\"wy\">\n <B O=\"vy\" N=\"uy\" M=\"ty\" L=\"sy\" K=\"ry\" J=\"qy\" I=\"py\" H=\"oy\" G=\"ny\" F=\"my\">\n  <C E=\"ly\" D=\"ky\" C=\"jy\" B=\"iy\" A=\"hy\">\n   cafe\n  </C>\n  <D ZY=\"gy\" YY=\"fy\" XY=\"ey\" WY=\"dy\" VY=\"cy\" UY=\"by\" TY=\"ay\" SY=\"zx\" RY=\"yx\">\n   dentist\n  </D>\n  banana\n </B>\n <E QY=\"xx\" PY=\"wx\" OY=\"vx\" NY=\"ux\" MY=\"tx\" LY=\"sx\" KY=\"rx\" JY=\"qx\">\n  <F IY=\"px\" HY=\"ox\" GY=\"nx\" FY=\"mx\" EY=\"lx\" DY=\"kx\" CY=\"jx\" BY=\"ix\">\n   far\n  </F>\n  <G AY=\"hx\" ZX=\"gx\" YX=\"fx\" XX=\"ex\" WX=\"dx\">\n   groot\n  </G>\n  essence\n </E>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the content of tag C? The content should be an excerpt as it appears in the XML file. ",
+            "Answer": " cafe",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"p\">\n <B Y=\"o\" X=\"n\" W=\"m\" V=\"l\" U=\"k\" T=\"j\" S=\"i\" R=\"h\">\n  <C Q=\"g\">\n   cafe\n  </C>\n  <D P=\"f\" O=\"e\" N=\"d\" M=\"c\" L=\"b\" K=\"a\">\n   dentist\n  </D>\n  banana\n </B>\n <E J=\"zy\" I=\"yy\" H=\"xy\" G=\"wy\" F=\"vy\" E=\"uy\" D=\"ty\" C=\"sy\" B=\"ry\" A=\"qy\" ZY=\"py\" YY=\"oy\">\n  <F XY=\"ny\" WY=\"my\" VY=\"ly\" UY=\"ky\" TY=\"jy\" SY=\"iy\" RY=\"hy\" QY=\"gy\" PY=\"fy\">\n   far\n  </F>\n  <G OY=\"ey\" NY=\"dy\" MY=\"cy\" LY=\"by\" KY=\"ay\" JY=\"zx\" IY=\"yx\" HY=\"xx\" GY=\"wx\">\n   groot\n  </G>\n  essence\n </E>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the content of tag A? The content should be an excerpt as it appears in the XML file. ",
+            "Answer": " <B T=\"a\">\n  <C S=\"zy\" R=\"yy\" Q=\"xy\" P=\"wy\" O=\"vy\" N=\"uy\" M=\"ty\" L=\"sy\" K=\"ry\" J=\"qy\" I=\"py\">\n   cafe\n  </C>\n  <D H=\"oy\" G=\"ny\" F=\"my\" E=\"ly\" D=\"ky\" C=\"jy\" B=\"iy\" A=\"hy\">\n   dentist\n  </D>\n  banana\n </B>\n <E ZY=\"gy\" YY=\"fy\" XY=\"ey\" WY=\"dy\" VY=\"cy\" UY=\"by\">\n  <F TY=\"ay\" SY=\"zx\" RY=\"yx\">\n   far\n  </F>\n  <G QY=\"xx\" PY=\"wx\" OY=\"vx\" NY=\"ux\" MY=\"tx\" LY=\"sx\" KY=\"rx\">\n   groot\n  </G>\n  essence\n </E>\n apple",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"g\" Y=\"f\" X=\"e\" W=\"d\" V=\"c\" U=\"b\">\n <B T=\"a\">\n  <C S=\"zy\" R=\"yy\" Q=\"xy\" P=\"wy\" O=\"vy\" N=\"uy\" M=\"ty\" L=\"sy\" K=\"ry\" J=\"qy\" I=\"py\">\n   cafe\n  </C>\n  <D H=\"oy\" G=\"ny\" F=\"my\" E=\"ly\" D=\"ky\" C=\"jy\" B=\"iy\" A=\"hy\">\n   dentist\n  </D>\n  banana\n </B>\n <E ZY=\"gy\" YY=\"fy\" XY=\"ey\" WY=\"dy\" VY=\"cy\" UY=\"by\">\n  <F TY=\"ay\" SY=\"zx\" RY=\"yx\">\n   far\n  </F>\n  <G QY=\"xx\" PY=\"wx\" OY=\"vx\" NY=\"ux\" MY=\"tx\" LY=\"sx\" KY=\"rx\">\n   groot\n  </G>\n  essence\n </E>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the content of tag C? The content should be an excerpt as it appears in the XML file. ",
+            "Answer": " cafe",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"c\" Y=\"b\" X=\"a\" W=\"zy\" V=\"yy\" U=\"xy\">\n <B T=\"wy\" S=\"vy\" R=\"uy\" Q=\"ty\" P=\"sy\" O=\"ry\" N=\"qy\" M=\"py\" L=\"oy\" K=\"ny\">\n  <C J=\"my\" I=\"ly\" H=\"ky\" G=\"jy\" F=\"iy\" E=\"hy\" D=\"gy\" C=\"fy\" B=\"ey\" A=\"dy\" ZY=\"cy\" YY=\"by\">\n   cafe\n  </C>\n  <D XY=\"ay\" WY=\"zx\" VY=\"yx\" UY=\"xx\">\n   dentist\n  </D>\n  banana\n </B>\n <E TY=\"wx\" SY=\"vx\" RY=\"ux\" QY=\"tx\" PY=\"sx\" OY=\"rx\" NY=\"qx\" MY=\"px\">\n  <F LY=\"ox\" KY=\"nx\" JY=\"mx\" IY=\"lx\" HY=\"kx\" GY=\"jx\" FY=\"ix\" EY=\"hx\" DY=\"gx\">\n   far\n  </F>\n  <G CY=\"fx\" BY=\"ex\" AY=\"dx\" ZX=\"cx\" YX=\"bx\" XX=\"ax\" WX=\"zw\" VX=\"yw\" UX=\"xw\" TX=\"ww\">\n   groot\n  </G>\n  essence\n </E>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the content of tag B? The content should be an excerpt as it appears in the XML file. ",
+            "Answer": " <C R=\"vy\" Q=\"uy\" P=\"ty\" O=\"sy\">\n  cafe\n </C>\n <D N=\"ry\" M=\"qy\" L=\"py\" K=\"oy\" J=\"ny\" I=\"my\" H=\"ly\" G=\"ky\" F=\"jy\" E=\"iy\" D=\"hy\">\n  dentist\n </D>\n banana",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"d\" Y=\"c\">\n <B X=\"b\" W=\"a\" V=\"zy\" U=\"yy\" T=\"xy\" S=\"wy\">\n  <C R=\"vy\" Q=\"uy\" P=\"ty\" O=\"sy\">\n   cafe\n  </C>\n  <D N=\"ry\" M=\"qy\" L=\"py\" K=\"oy\" J=\"ny\" I=\"my\" H=\"ly\" G=\"ky\" F=\"jy\" E=\"iy\" D=\"hy\">\n   dentist\n  </D>\n  banana\n </B>\n <E C=\"gy\" B=\"fy\" A=\"ey\" ZY=\"dy\" YY=\"cy\" XY=\"by\" WY=\"ay\">\n  <F VY=\"zx\" UY=\"yx\" TY=\"xx\" SY=\"wx\" RY=\"vx\" QY=\"ux\" PY=\"tx\">\n   far\n  </F>\n  <G OY=\"sx\" NY=\"rx\" MY=\"qx\" LY=\"px\" KY=\"ox\" JY=\"nx\" IY=\"mx\" HY=\"lx\" GY=\"kx\" FY=\"jx\">\n   groot\n  </G>\n  essence\n </E>\n apple\n</A>"
+        }
+    ],
+    "RuleHint": "To find the content of a specific tag, you need to search for desired tag throughout the xml file. Once located, find the surrounding left and right angle, these area is tha starting tag. Then find the ending tag, which is the tag surrounded by angle with exception that right angle is preceded by a slash. The content between starting and ending tags is the answer."
+}

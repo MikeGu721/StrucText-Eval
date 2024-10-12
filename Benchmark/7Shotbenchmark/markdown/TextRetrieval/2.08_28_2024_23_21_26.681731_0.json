@@ -1,0 +1,56 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "wake",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 7,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "a\n![alt](di.jpg \"hover text\")nob groot nob monkey zen salvage\n# b\noops**wake** groot nob monkey zen salvage",
+    "timestamp": "08_28_2024_23_21_26.681731",
+    "input_hash": 5161467386451030710,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "wake\nX-ray",
+            "Reference": "i\nwake **wake**vigor nob lamb nob jargon\n# j\nX-ray vigor nob lamb no**X-ray**b jargon"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "w\nwake essence kangaroo jargon kangaroo ravi![alt](ti.png \"hover text\")sh\n# x\nX-ray essence k![alt](ui.png \"hover text\")angaroo jargon kangaroo ravish"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "qualify",
+            "Reference": "v\noops oops nob unique cafe X-**qualify**ray\n# w\nperish oops nob unique cafe X-ray"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "perish",
+            "Reference": "a\ndentist jargon idiot trans**perish**f![alt](hh.gif \"hover text\")ormer unique\n# b\nessence jargon idiot transformer unique"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "m\nwake essence zen X![alt](xg.jpeg \"hover text\")-ray unique ravish\n# n\nX-ray essence zen X-ray unique ravish"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "i\nsalvage unique nob wake X-ray wake\n# j\ntransformer unique nob wake X-ra![alt](re.png \"hover text\")y wake"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "wake",
+            "Reference": "c\nperish q**wake**ualify cafe![alt](tf.jpeg \"hover text\") jargon kangaroo yogurt\n# d\nqualify qualify cafe![alt](uf.png \"hover text\") jargon kangaroo yogurt"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for double stars, i.e., **, the content between two occurrences of double stars is the bold texts. Note that the bold range should start from the double stars occurring at i-th spot throughout the whole input file, where i is odd, and end with double stars occurring at jth spot where j is even. For example, text between double stars appearing first and second time."
+}

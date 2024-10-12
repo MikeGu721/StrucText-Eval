@@ -1,0 +1,66 @@
+{
+    "Question": "Extract all included figure files. Print those file names separated by \\n.",
+    "Answer": "hg.jpeg",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 9,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "b\ngroot ze\\includegraphics[width=0.5\\textwidth]{hg.jpeg}n yogurt halo essence groot\n\\section{c}\nhalo zen yogurt halo essence groo\\textbf{kangaroo}t",
+    "timestamp": "08_28_2024_23_21_27.024734",
+    "input_hash": 4917323968699050764,
+    "examples": [
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "re.jpeg",
+            "Reference": "s\ngroot salvage oops essence apple jargon\n\\section{t}\nha\\textbf{wake}lo salv\\includegraphics[width=0.5\\textwidth]{re.jpeg}age oops essence apple jargon"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "ch.gif",
+            "Reference": "t\nfar groot unique ravish qualify oops\n\\section{u}\ngroot groot uniq\\textbf{halo}\\includegraphics[width=0.5\\textwidth]{ch.gif}oot unique ravish qualify oops"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "No figure file is included in the file.",
+            "Reference": "t\ngroot salvage essence transformer idiot unique\n\\section{u}\nhalo salvage esse\\textbf{groot}nce transformer idiot unique"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "qf.jpg\npf.png",
+            "Reference": "t\nqualify salvage perish apple\\includegraphics[width=0.5\\textwidth]{pf.png} apple perish\n\\section{u}\nravish salvage perish apple apple \\textbf{vigor}\\includegraphics[width=0.5\\textwidth]{qf.jpg}sh apple apple perish"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "No figure file is included in the file.",
+            "Reference": "m\napple groot zen perish apple jargon\n\\section{n}\nbanana groot\\textbf{perish} zen perish apple jargon"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "ai.png\nzh.gif",
+            "Reference": "e\nravish groot apple yo\\textbf{qualify}\\includegraphics[width=0.5\\textwidth]{zh.gif}groot apple yogurt salvage halo\n\\section{f}\nsalv\\textbf{ravish}age groot apple\\includegraphics[width=0.5\\textwidth]{ai.png} yogurt salvage halo"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "jg.jpg",
+            "Reference": "z\nperish ravish groot transformer yogurt\\textbf{kangaroo} dentist\n\\section{ab}\nqualify ravish groot transformer yog\\includegraphics[width=0.5\\textwidth]{jg.jpg}urt dentist"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "se.jpg",
+            "Reference": "n\nhalo banana nob qua\\includegraphics[width=0.5\\textwidth]{se.jpg}lify qualify kangaroo\n\\section{o}\nidiot banana nob qualify qualify kangaroo"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "ff.gif",
+            "Reference": "k\nbanana denti\\textbf{salvage}st cafe cafe X-ray idiot\n\\section{l}\ncafe dentist cafe\\textbf{transformer}\\includegraphics[width=0.5\\textwidth]{ff.gif}fe cafe X-ray idiot"
+        }
+    ],
+    "RuleHint": "To find the image files imported, search for pattern \\\\includegraphics[*]{TARGET}, the TARGET part is the filename. Star means any text is possible."
+}

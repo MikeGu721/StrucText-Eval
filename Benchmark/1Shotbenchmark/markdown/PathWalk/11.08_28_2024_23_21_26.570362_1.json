@@ -1,0 +1,26 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section.",
+    "Answer": "# q\nbanana kangaroo qualify ja**zen**![alt](pi.jpeg \"hover text\")anana kangaroo qualify jargon far zen",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "p\napple kangaroo qualify ![alt](oi.gif \"hover text\")jargon far zen\n# q\nbanana kangaroo qualify ja**zen**![alt](pi.jpeg \"hover text\")anana kangaroo qualify jargon far zen",
+    "timestamp": "08_28_2024_23_21_26.570362",
+    "input_hash": -7524609037180458251,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# k\nsalvage dentis**yogurt**t qualify qualify salvage jargon",
+            "Reference": "j\nravish dentist qualify qualify salvage ja![alt](yf.jpg \"hover text\")rgon\n# k\nsalvage dentis**yogurt**t qualify qualify salvage jargon"
+        }
+    ],
+    "RuleHint": "To find the content of certain section, starting from the headings start with one hashtag, and go to the ith heading as specified in number of sections. Then start from that line, look for j-th heading with 2 hashtags as specified in subsection number. For kth subsubsection, look for kth heading with 3 hashtags starting from the located subsubsection. Stop searching early if the subsection or subsubsection is not queried."
+}

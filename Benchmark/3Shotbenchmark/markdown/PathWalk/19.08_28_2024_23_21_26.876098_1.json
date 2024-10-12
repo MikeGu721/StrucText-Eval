@@ -1,0 +1,36 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section.",
+    "Answer": "# u\n**yogurt**cafe cafe X-ray apple uniqu![alt](oj.jpg \"hover text\")e nob",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "t\nbanana cafe X-ray appl**X-ray**e unique nob\n# u\n**yogurt**cafe cafe X-ray apple uniqu![alt](oj.jpg \"hover text\")e nob",
+    "timestamp": "08_28_2024_23_21_26.876098",
+    "input_hash": -5861355127608476198,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# s\nnob qualify uniqu**nob**![alt](gf.gif \"hover text\")qualify unique vigor far halo",
+            "Reference": "r\nmonk**monkey**ey qualify unique vigor far halo\n# s\nnob qualify uniqu**nob**![alt](gf.gif \"hover text\")qualify unique vigor far halo"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# u\nmonkey zen **lamb**wake lamb far X-r![alt](fj.gif \"hover text\")ay",
+            "Reference": "t\nlamb ![alt](ej.jpeg \"hover text\")zen wake lamb far X-ray\n# u\nmonkey zen **lamb**wake lamb far X-r![alt](fj.gif \"hover text\")ay"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# n\nsalvage transformer uni**dentist**que essence apple idiot",
+            "Reference": "m\nravish transformer uni**cafe**que essence ap![alt](lh.jpeg \"hover text\")ple idiot\n# n\nsalvage transformer uni**dentist**que essence apple idiot"
+        }
+    ],
+    "RuleHint": "To find the content of certain section, starting from the headings start with one hashtag, and go to the ith heading as specified in number of sections. Then start from that line, look for j-th heading with 2 hashtags as specified in subsection number. For kth subsubsection, look for kth heading with 3 hashtags starting from the located subsubsection. Stop searching early if the subsection or subsubsection is not queried."
+}

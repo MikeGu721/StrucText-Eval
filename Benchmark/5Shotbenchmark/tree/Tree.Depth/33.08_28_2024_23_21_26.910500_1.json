@@ -1,0 +1,46 @@
+{
+    "Question": "What is the depth of node u? Answer an integer, root is of depth 0.",
+    "Answer": "0",
+    "Label": {
+        "typename": "tree",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Tree.Depth"
+        ]
+    },
+    "Reference": "u->v",
+    "timestamp": "08_28_2024_23_21_26.910500",
+    "input_hash": -8784966486696140925,
+    "examples": [
+        {
+            "Question": "What is the depth of node p? Answer an integer, root is of depth 0. ",
+            "Answer": "1",
+            "Reference": "o->p"
+        },
+        {
+            "Question": "What is the depth of node c? Answer an integer, root is of depth 0. ",
+            "Answer": "0",
+            "Reference": "c->d"
+        },
+        {
+            "Question": "What is the depth of node q? Answer an integer, root is of depth 0. ",
+            "Answer": "0",
+            "Reference": "q->r"
+        },
+        {
+            "Question": "What is the depth of node p? Answer an integer, root is of depth 0. ",
+            "Answer": "0",
+            "Reference": "p->q"
+        },
+        {
+            "Question": "What is the depth of node l? Answer an integer, root is of depth 0. ",
+            "Answer": "0",
+            "Reference": "l->m"
+        }
+    ],
+    "RuleHint": "To find the depth of a node, you need to find the number of edges from root to node. You have to start from the root with depth 0 and assign the depth for each node recursively. For any given node, it gets depth of current depth. Increment the depth by 1 before go to its subtree and repeat the process until every node gets a depth."
+}

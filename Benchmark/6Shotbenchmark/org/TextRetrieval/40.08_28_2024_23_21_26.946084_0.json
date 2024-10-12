@@ -1,0 +1,51 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "lamb\nkangaroo",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 6,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "f\ncafe jargon zen cafe i*kangaroo*[[gh.gif]]fe jargon zen cafe idiot kangaroo\n* g\ndentist j*lamb*argon zen cafe idiot kangaroo",
+    "timestamp": "08_28_2024_23_21_26.946084",
+    "input_hash": -7658338444168938749,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "transformer",
+            "Reference": "s\nqualify halo far salvage qualify k*transformer*angaroo\n* t\nravish halo far salvage qualify kangaroo"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "ravish\nqualify",
+            "Reference": "c\nessence jargon X-ray banan*qualify*a banana monkey\n* d\nfar jargon X-ray banana b*ravish*[[ej.jpeg]]ray banana banana monkey"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "b\nqualify jargon yogurt jargon\n* c\nravish jargon yogurt jargon"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "halo",
+            "Reference": "v\nravish [[xe.jpeg]]kangaroo halo jargon wake ravish\n* w\ns*halo*alvage kangaroo halo jargon wake ravish"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "p\napple far perish transforme[[ni.gif]]r X-ray X-ray\n* q\nbanana far perish transformer X-r[[oi.gif]]ay X-ray"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "monkey",
+            "Reference": "p\nyogurt yogurt X-ray unique perish jargo*monkey*n\n* q\nzen yogurt X-ray unique perish jargon"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for single star, i.e., *, the content between two occurrences of single star is the bold texts. Note that the bold range should start from the single star occurring at i-th spot throughout the whole input file, where i is odd, and end with single star occurring at jth spot where j is even. For example, text between single star appearing first and second time."
+}

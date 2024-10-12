@@ -1,0 +1,36 @@
+{
+    "Question": "What is the content of 2th subsection under 2th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section.",
+    "Answer": "## eb\nzen ravish wake apple apple far far vigor ravis**halo**h vigor cafe transformer",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "y\ntransformer ravish wake apple apple far far vigor ravish vigor cafe transformer\n# z\nunique ravish wake apple apple far far vigor ravish vigor cafe tr![alt](ig.png \"hover text\")ansformer\n## ab\nvigor ravish wake apple![alt](jg.jpeg \"hover text\") apple far far vigor ravish vigor cafe transformer\n## bb\nwake ravish wake apple apple far far vigor ravish vigor cafe t**far**![alt](kg.png \"hover text\")ple apple far far vigor ravish vigor cafe transformer\n# cb\nX-ray ravish wake apple apple far far vigor ravish vigor cafe transformer\n## db\nyogurt ravish wake apple apple far far**groot**![alt](lg.jpg \"hover text\")urt ravish wake apple apple far far vigor ravish vigor cafe transformer\n## eb\nzen ravish wake apple apple far far vigor ravis**halo**h vigor cafe transformer",
+    "timestamp": "08_28_2024_23_21_26.602698",
+    "input_hash": 7736155693722557262,
+    "examples": [
+        {
+            "Question": "What is the content of 1th subsection under 2th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "## db\ntransfor**oops**mer perish zen salvage vigor banana essence jargon halo transformer X![alt](ph.jpg \"hover text\")-ray far",
+            "Reference": "y\noops perish zen salvage vigor banana essence jargon halo transfo**monkey**rmer X-ray far\n# z\nperish perish zen salvage vigor banana essence jargon halo transformer X-ray far\n## ab\nqualify perish zen salvage vigor banana essence jargon halo transforme![alt](oh.jpeg \"hover text\")r X-ray far\n## bb\nravish p**nob**erish zen salvage vigor banana essence jargon halo transformer X-ray far\n# cb\nsalvage perish zen salvage vigor banana essence jargon halo transformer X-ray far\n## db\ntransfor**oops**mer perish zen salvage vigor banana essence jargon halo transformer X![alt](ph.jpg \"hover text\")-ray far\n## eb\nunique perish zen salvage vigor banana essence jargon halo transformer X-ray far"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 2th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "## q\nwake ravish jargon qualify banana banana apple transformer apple apple unique salvage",
+            "Reference": "k\nqualify ravish jargon ![alt](ai.jpg \"hover text\")qualify banana banana apple transformer apple apple unique salvage\n# l\nravish ravish jargon qualify banana banana apple transformer apple apple unique salvage\n## m\nsalvage ravish jargon qualify banana banana apple transformer apple apple unique salvage\n## n\ntransformer ravish jargon qualify banana banana app**cafe**le transformer apple apple unique salvage\n# o\nunique ravish jargon qual![alt](bi.gif \"hover text\")ify banana banana apple transformer apple apple unique salvage\n## p\nvigor ravish jargon qualify banana banana apple transformer apple apple unique salvage\n## q\nwake ravish jargon qualify banana banana apple transformer apple apple unique salvage"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 2th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "## fb\nkangaroo far idiot jargon jargon zen halo vigor banana dentist essence zen",
+            "Reference": "z\nessence far idiot jargon jargon zen halo vigor banana dentist essence zen\n# ab\nfar far idiot jargon jargon zen halo vigor banana dentist essence zen\n## bb\ngroot far idiot jargon jargon zen halo vigor banana dentist essence zen\n## cb\nhalo far idiot jargon jargon zen halo vigor banana dentist essence zen\n# db\nidiot far**jargon** idiot jargon jargon zen halo vigor banana dentist essence zen\n## eb\njargon far idiot jargon jargon zen halo vigor banana denti**kangaroo**st essence zen\n## fb\nkangaroo far idiot jargon jargon zen halo vigor banana dentist essence zen"
+        }
+    ],
+    "RuleHint": "To find the content of certain section, starting from the headings start with one hashtag, and go to the ith heading as specified in number of sections. Then start from that line, look for j-th heading with 2 hashtags as specified in subsection number. For kth subsubsection, look for kth heading with 3 hashtags starting from the located subsubsection. Stop searching early if the subsection or subsubsection is not queried."
+}

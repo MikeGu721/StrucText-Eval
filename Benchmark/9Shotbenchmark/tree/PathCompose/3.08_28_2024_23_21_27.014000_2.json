@@ -1,0 +1,66 @@
+{
+    "Question": "What is the path from the root node to the node c. Answer should look like A->D->H.",
+    "Answer": "c",
+    "Label": {
+        "typename": "tree",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 9,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathCompose"
+        ]
+    },
+    "Reference": "c->d",
+    "timestamp": "08_28_2024_23_21_27.014000",
+    "input_hash": 5186313622535810737,
+    "examples": [
+        {
+            "Question": "What is the path from the root node to the node q. Answer should look like A->D->H. ",
+            "Answer": "p->q",
+            "Reference": "p->q"
+        },
+        {
+            "Question": "What is the path from the root node to the node o. Answer should look like A->D->H. ",
+            "Answer": "n->o",
+            "Reference": "n->o"
+        },
+        {
+            "Question": "What is the path from the root node to the node f. Answer should look like A->D->H. ",
+            "Answer": "e->f",
+            "Reference": "e->f"
+        },
+        {
+            "Question": "What is the path from the root node to the node h. Answer should look like A->D->H. ",
+            "Answer": "h",
+            "Reference": "h->i"
+        },
+        {
+            "Question": "What is the path from the root node to the node i. Answer should look like A->D->H. ",
+            "Answer": "i",
+            "Reference": "i->j"
+        },
+        {
+            "Question": "What is the path from the root node to the node i. Answer should look like A->D->H. ",
+            "Answer": "i",
+            "Reference": "i->j"
+        },
+        {
+            "Question": "What is the path from the root node to the node l. Answer should look like A->D->H. ",
+            "Answer": "k->l",
+            "Reference": "k->l"
+        },
+        {
+            "Question": "What is the path from the root node to the node e. Answer should look like A->D->H. ",
+            "Answer": "d->e",
+            "Reference": "d->e"
+        },
+        {
+            "Question": "What is the path from the root node to the node b. Answer should look like A->D->H. ",
+            "Answer": "b",
+            "Reference": "b->c"
+        }
+    ],
+    "RuleHint": "To get the path from root to a node, you need to find recursively. For any node, you can find the path to the target node by find path from its children to target. Then check each child's output, if any child returns with valid path instead of an empty path indicating target-not-found, the path from node to target is that path from its child to target prepended with itself. The answer can be found by searching with root as starting point."
+}

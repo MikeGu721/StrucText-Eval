@@ -1,0 +1,46 @@
+{
+    "Question": "What is the path from the root node to the node q. Answer should look like A->D->H.",
+    "Answer": "o->p->q",
+    "Label": {
+        "typename": "tree",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathCompose"
+        ]
+    },
+    "Reference": "o->p\np->q\np->r\no->s\ns->t\ns->u",
+    "timestamp": "08_28_2024_23_21_26.912016",
+    "input_hash": 4758700606093425122,
+    "examples": [
+        {
+            "Question": "What is the path from the root node to the node r. Answer should look like A->D->H. ",
+            "Answer": "n->r",
+            "Reference": "n->o\no->p\no->q\nn->r\nr->s\nr->t"
+        },
+        {
+            "Question": "What is the path from the root node to the node s. Answer should look like A->D->H. ",
+            "Answer": "q->r->s",
+            "Reference": "q->r\nr->s\nr->t\nq->u\nu->v\nu->w"
+        },
+        {
+            "Question": "What is the path from the root node to the node u. Answer should look like A->D->H. ",
+            "Answer": "r->s->u",
+            "Reference": "r->s\ns->t\ns->u\nr->v\nv->w\nv->x"
+        },
+        {
+            "Question": "What is the path from the root node to the node u. Answer should look like A->D->H. ",
+            "Answer": "u",
+            "Reference": "u->v\nv->w\nv->x\nu->y\ny->z\ny->ab"
+        },
+        {
+            "Question": "What is the path from the root node to the node i. Answer should look like A->D->H. ",
+            "Answer": "g->h->i",
+            "Reference": "g->h\nh->i\nh->j\ng->k\nk->l\nk->m"
+        }
+    ],
+    "RuleHint": "To get the path from root to a node, you need to find recursively. For any node, you can find the path to the target node by find path from its children to target. Then check each child's output, if any child returns with valid path instead of an empty path indicating target-not-found, the path from node to target is that path from its child to target prepended with itself. The answer can be found by searching with root as starting point."
+}

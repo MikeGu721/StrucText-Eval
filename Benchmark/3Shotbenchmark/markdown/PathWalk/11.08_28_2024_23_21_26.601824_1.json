@@ -1,0 +1,36 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section.",
+    "Answer": "# w\nmonkey transformer idiot transformer qualify l**apple**amb",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "v\nlamb transformer idio![alt](rh.gif \"hover text\")t transformer qualify lamb\n# w\nmonkey transformer idiot transformer qualify l**apple**amb",
+    "timestamp": "08_28_2024_23_21_26.601824",
+    "input_hash": -6460490987964090377,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# s\nidiot zen zen halo idiot banana",
+            "Reference": "r\nhalo zen z![alt](wh.gif \"hover text\")en halo idiot banana\n# s\nidiot zen zen halo idiot banana"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# ab\nyogurt perish oo![alt](ie.jpg \"hover text\")ps groot essence",
+            "Reference": "z\nX-ray perish oops gr**X-ray**oot essence\n# ab\nyogurt perish oo![alt](ie.jpg \"hover text\")ps groot essence"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# p\nessence perish transformer monkey ravish essence",
+            "Reference": "o\ndentist perish transformer monkey ravish essence\n# p\nessence perish transformer monkey ravish essence"
+        }
+    ],
+    "RuleHint": "To find the content of certain section, starting from the headings start with one hashtag, and go to the ith heading as specified in number of sections. Then start from that line, look for j-th heading with 2 hashtags as specified in subsection number. For kth subsubsection, look for kth heading with 3 hashtags starting from the located subsubsection. Stop searching early if the subsection or subsubsection is not queried."
+}

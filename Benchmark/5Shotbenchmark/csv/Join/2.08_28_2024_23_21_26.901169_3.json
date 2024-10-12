@@ -1,0 +1,46 @@
+{
+    "Question": "How many people who work in HI are taller than 172?",
+    "Answer": "0",
+    "Label": {
+        "typename": "csv",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Join"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,female,70,b,168,100,brown\n\nprimeKey,status,salary,company,location\na,retired,222010,OPENAI,HI",
+    "timestamp": "08_28_2024_23_21_26.901169",
+    "input_hash": 7058127813215923116,
+    "examples": [
+        {
+            "Question": "\nHow many people who work in TX are taller than 150?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,50,m,203,97,swarthy\n\nprimeKey,status,salary,company,location\na,unemployed,334119,OPENAI,NY"
+        },
+        {
+            "Question": "\nHow many people who work in GA are taller than 169?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,61,y,177,110,brown\n\nprimeKey,status,salary,company,location\na,employed,331485,Google,HI"
+        },
+        {
+            "Question": "\nHow many people who work in HI are taller than 167?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,70,c,120,120,white\n\nprimeKey,status,salary,company,location\na,retired,436857,Google,TX"
+        },
+        {
+            "Question": "\nHow many people who work in TX are taller than 179?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,20,q,138,156,mulatto\n\nprimeKey,status,salary,company,location\na,employed,84982,Apple,HI"
+        },
+        {
+            "Question": "\nHow many people who work in IL are taller than 152?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,32,j,160,88,olive\n\nprimeKey,status,salary,company,location\na,unemployed,438106,Google,WA"
+        }
+    ],
+    "RuleHint": "To get the number of people living in specified city who are also taller than threshold, you need to first join the two table on primeKey, and check each row of joined table for lines that satisfies both condition, i.e., lines with city specified in query and height strictly greater than threshold. The total number of such rows is the right answer."
+}

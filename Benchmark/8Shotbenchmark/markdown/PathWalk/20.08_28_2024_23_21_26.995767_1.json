@@ -1,0 +1,61 @@
+{
+    "Question": "What is the content of 2th subsection under 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section.",
+    "Answer": "## d\ngroot yogurt lamb X-ray X-ra**dentist**![alt](me.gif \"hover text\") X-ray perish banana oops idiot transformer yogurt salvage",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 8,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "a\ndentist yogurt lamb X-ray X-ray perish banana oops idio**banana**![alt](ke.jpg \"hover text\")anana oops idiot transformer yogurt salvage\n# b\nessence**cafe** yogurt lamb X-ray X-ray perish banana oops idiot transformer yogurt s![alt](le.gif \"hover text\")alvage\n## c\nfar yogurt lamb X-ray X-ray perish banana oops idiot transformer yogurt salvage\n## d\ngroot yogurt lamb X-ray X-ra**dentist**![alt](me.gif \"hover text\") X-ray perish banana oops idiot transformer yogurt salvage\n# e\nhalo yogurt lamb X-ray X-ray perish banana oops idiot transformer yogurt salvage\n## f\nidiot yogurt la**essence**mb X-ray X-ray![alt](ne.gif \"hover text\") perish banana oops idiot transformer yogurt salvage\n## g\njargon yogurt lamb X-ray X-ray perish banana oops id**far**![alt](oe.gif \"hover text\")h banana oops idiot transformer yogurt salvage",
+    "timestamp": "08_28_2024_23_21_26.995767",
+    "input_hash": 6526295840787309839,
+    "examples": [
+        {
+            "Question": "What is the content of 2th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# w\nidiot halo ravish jargon X-ray oops e**perish**![alt](ii.jpeg \"hover text\")ay oops essence yogurt halo salvage oops essence\n## x\njargon h![alt](ji.jpeg \"hover text\")alo ravish jargon X-ray oops essence yogurt halo salvage oops essence\n## y\nkangaroo halo ravish jargon X-ray oops essence yogurt halo salvage oops essence",
+            "Reference": "s\nessence halo ravish jarg**monkey**on X-ray oops essence yogurt halo salvage oops essence\n# t\nfar halo ravish jargon X-ray oops essence yogurt halo **nob**salvage oops essence\n## u\ngroot halo ravish jargon X-ray oops essence yogurt halo **oops**salvage oops essence\n## v\nhalo halo ravish ![alt](hi.jpeg \"hover text\")jargon X-ray oops essence yogurt halo salvage oops essence\n# w\nidiot halo ravish jargon X-ray oops e**perish**![alt](ii.jpeg \"hover text\")ay oops essence yogurt halo salvage oops essence\n## x\njargon h![alt](ji.jpeg \"hover text\")alo ravish jargon X-ray oops essence yogurt halo salvage oops essence\n## y\nkangaroo halo ravish jargon X-ray oops essence yogurt halo salvage oops essence"
+        },
+        {
+            "Question": "What is the content of 1th subsection under 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "## d\nvigor idiot cafe cafe cafe transformer far essence oops X-ray idiot cafe",
+            "Reference": "b\ntransf![alt](ii.jpeg \"hover text\")ormer idiot cafe cafe cafe transformer far essence oops X-ray idiot cafe\n# c\nunique idiot cafe cafe cafe transformer far essence oops X-ray idiot cafe\n## d\nvigor idiot cafe cafe cafe transformer far essence oops X-ray idiot cafe\n## e\nwake idi**perish**ot cafe cafe cafe transformer far essence oops X-ray idiot cafe\n# f\nX-ray idiot cafe cafe cafe transfor![alt](ji.jpeg \"hover text\")mer far essence oops X-ray idiot cafe\n## g\nyogurt idiot cafe caf**qualify**e cafe transformer far ess![alt](ki.jpg \"hover text\")ence oops X-ray idiot cafe\n## h\nzen**ravish** idiot cafe cafe cafe transformer far e![alt](li.jpeg \"hover text\")ssence oops X-ray idiot cafe"
+        },
+        {
+            "Question": "What is the content of 1th subsection under 2th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "## i\nunique monkey qualify monkey monkey monkey kangaroo monkey cafe apple dentist oops",
+            "Reference": "d\nperish monkey qualify monkey monkey monkey kanga**transformer**roo monkey cafe apple dentist oops\n# e\nqualify monkey qua**unique**lify monkey monkey monkey kangaroo monkey cafe apple dentist oops\n## f\nravish monkey qualify monkey monkey monkey kangaroo monkey cafe app**vigor**![alt](di.png \"hover text\")h monkey qualify monkey monkey monkey kangaroo monkey cafe apple dentist oops\n## g\nsalvage monkey qualify monkey monkey monkey kangaroo monkey cafe apple dentist oops\n# h\ntra**wake**nsformer monkey qualify monkey monkey monkey kangaroo monkey cafe apple dentist oops\n## i\nunique monkey qualify monkey monkey monkey kangaroo monkey cafe apple dentist oops\n## j\nvigor monkey qualify monkey monkey monkey kangaroo monkey cafe apple dentist oops"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "## cb\nkangaroo groot perish vigor lamb jargon groot**zen** idiot nob perish vigor far",
+            "Reference": "z\nhalo groot perish vigor lamb jargon groot idiot![alt](oh.jpg \"hover text\") nob perish vigor far\n# ab\nidiot groot perish vigor lamb j**yogurt**argon groot idiot nob perish vigor far\n## bb\nja![alt](ph.jpg \"hover text\")rgon groot perish vigor lamb jargon groot idiot nob perish vigor far\n## cb\nkangaroo groot perish vigor lamb jargon groot**zen** idiot nob perish vigor far\n# db\nlamb groot perish vigor lamb jargon **apple banana**![alt](qh.jpg \"hover text\")b jargon groot idiot nob perish vigor far\n## eb\nmonkey groot perish vigor lamb jargon groot idiot nob per**banana banana**![alt](rh.png \"hover text\")root perish vigor lamb jargon groot idiot nob perish vigor far\n## fb\nnob groot perish vigo**cafe banana**r lamb jargon groot idiot nob perish vi![alt](sh.jpg \"hover text\")gor far"
+        },
+        {
+            "Question": "What is the content of 1th subsection under 2th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "## n\ndentist essence apple zen unique salvage essence cafe transformer banana nob halo",
+            "Reference": "i\nyogurt dentist apple zen unique salvage essence cafe transformer banana n![alt](zh.gif \"hover text\")ob halo\n# j\nzen dentist apple zen unique salvage esse**transformer**![alt](ai.png \"hover text\")zen unique salvage essence cafe transformer banana nob halo\n## k\napple essence apple zen unique salvage essence cafe transformer banana nob halo\n## l\nbanana essence apple zen unique salvage essence cafe transformer banana nob halo\n# m\ncafe essence apple zen unique**unique** salvage essence![alt](bi.png \"hover text\") cafe transformer banana nob halo\n## n\ndentist essence apple zen unique salvage essence cafe transformer banana nob halo\n## o\nessence essence apple zen un**vigor**ique salvage essence cafe transformer banana nob halo"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 2th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "## x\nyogurt qualify yogurt qualify wake far dentist perish apple perish vigor lamb",
+            "Reference": "r\nsalvage qualify yogurt qualify wake far dentist perish apple perish vigor lamb\n# s\ntransformer qualify yogurt qualify wake far dentist perish apple perish vigor lamb\n## t\nunique qualify yogurt qualify wake far dentist perish apple perish vigor lamb\n## u\nvigor qualify yogurt qualify wake ![alt](dg.jpeg \"hover text\")far dentist perish apple perish vigor lamb\n# v\nwake qualify yogurt qualify wake far dentist perish apple perish vigor lamb\n## w\nX-ray qualify yogurt![alt](eg.jpg \"hover text\") qualify wake far dentist perish apple perish vigor lamb\n## x\nyogurt qualify yogurt qualify wake far dentist perish apple perish vigor lamb"
+        },
+        {
+            "Question": "What is the content of 1th subsection under 2th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "## t\nsalvage yogurt ravish unique essence transformer groot vigo![alt](dh.jpg \"hover text\")r lamb perish salvage ravish",
+            "Reference": "o\nnob yogurt ravish unique essence trans**jargon**former groot vigor lamb perish salvage ravis![alt](bh.jpg \"hover text\")h\n# p\noops yogurt ravish unique essence transfor**kangaroo**mer groot vigor lamb perish salvage ravish\n## q\nperish yogurt ravish unique essence transformer groot vigor lamb perish salvage ravish\n## r\n**lamb**qualify yogurt ravish unique essence transformer groot vigor lamb perish salvage ravish\n# s\nravish yogurt ravish unique essence transformer groot vigor **monkey**lamb perish salvage![alt](ch.gif \"hover text\") ravish\n## t\nsalvage yogurt ravish unique essence transformer groot vigo![alt](dh.jpg \"hover text\")r lamb perish salvage ravish\n## u\ntransformer yogurt![alt](eh.gif \"hover text\") ravish unique essence transformer groot vigor lamb perish salvage ravish"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# h\nvigor transformer zen groot far essence salvage kangaroo kangaroo far perish banana\n## i\nwake transformer zen groot far essence salvage kangaroo kangaroo far ![alt](pj.gif \"hover text\")perish banana\n## j\nX-ray t![alt](qj.png \"hover text\")ransformer zen groot far essence salvage kangaroo kangaroo far perish banana",
+            "Reference": "g\nunique **transformer**transformer zen groot far essence salvage kangaroo kangaroo far perish banana\n# h\nvigor transformer zen groot far essence salvage kangaroo kangaroo far perish banana\n## i\nwake transformer zen groot far essence salvage kangaroo kangaroo far ![alt](pj.gif \"hover text\")perish banana\n## j\nX-ray t![alt](qj.png \"hover text\")ransformer zen groot far essence salvage kangaroo kangaroo far perish banana\n# k\nyogurt transformer zen groot far essence salvage kangaroo kangaroo far pe**unique**![alt](rj.gif \"hover text\")nce salvage kangaroo kangaroo far perish banana\n## l\nzen transformer zen groot far essence salvage kangaroo kangaroo far pe**vigor**![alt](sj.jpg \"hover text\")essence salvage kangaroo kangaroo far perish banana\n## m\napple unique zen groot far essence salvage kangaroo kangaroo far perish banana"
+        }
+    ],
+    "RuleHint": "To find the content of certain section, starting from the headings start with one hashtag, and go to the ith heading as specified in number of sections. Then start from that line, look for j-th heading with 2 hashtags as specified in subsection number. For kth subsubsection, look for kth heading with 3 hashtags starting from the located subsubsection. Stop searching early if the subsection or subsubsection is not queried."
+}

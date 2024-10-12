@@ -1,0 +1,41 @@
+{
+    "Question": "What is the content of 1th subsection under 2th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section.",
+    "Answer": "\\section{m}\ndentist dentist nob dentist wake zen wake far unique monkey essence nob",
+    "Label": {
+        "typename": "latex",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 4,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "h\nyogurt cafe nob dentist wake zen w\\textbf{transformer}\\includegraphics[width=0.5\\textwidth]{xg.gif}ob dentist wake zen wake far unique monkey essence nob\n\\section{i}\nzen cafe nob dentist wake zen wake far unique monkey essence nob\n\\section{j}\napple dentist nob dentist wake zen wake far unique monk\\includegraphics[width=0.5\\textwidth]{yg.jpg}ey essence nob\n\\section{k}\nbanana dentist nob dentist wake zen wak\\includegraphics[width=0.5\\textwidth]{zg.png}e far unique monkey essence nob\n\\section{l}\ncafe dentist nob dentist wake zen wake far unique monkey essence nob\n\\section{m}\ndentist dentist nob dentist wake zen wake far unique monkey essence nob\n\\section{n}\nessence dentist nob dentist wake zen wake far unique monkey essence nob",
+    "timestamp": "08_28_2024_23_21_26.897481",
+    "input_hash": 7841883145860562323,
+    "examples": [
+        {
+            "Question": "What is the content of 1th subsection under 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{v}\ncafe zen kangaroo salvage yogurt mo\\includegraphics[width=0.5\\textwidth]{sg.png}nkey monkey dentist kangaroo monkey perish idiot",
+            "Reference": "t\napple zen kangaroo salvage yogurt monkey monkey dentist kangaroo monkey perish idiot\n\\section{u}\nbanana zen kangaroo\\textbf{yogurt} salvage yogurt monkey monkey dentist kangaroo monkey perish idiot\n\\section{v}\ncafe zen kangaroo salvage yogurt mo\\includegraphics[width=0.5\\textwidth]{sg.png}nkey monkey dentist kangaroo monkey perish idiot\n\\section{w}\ndentist zen kangaroo salvage yogurt monkey mo\\includegraphics[width=0.5\\textwidth]{tg.png}nkey dentist kangaroo monkey perish idiot\n\\section{x}\nessence zen \\includegraphics[width=0.5\\textwidth]{ug.png}kangaroo salvage yogurt monkey monkey dentist kangaroo monkey perish idiot\n\\section{y}\nfar zen kangaroo salvage yogurt monkey monkey dentist kangaro\\includegraphics[width=0.5\\textwidth]{vg.png}o monkey perish idiot\n\\section{z}\ngroot zen kangaroo salvage yogurt monkey monkey dentist kangaroo monkey perish idiot"
+        },
+        {
+            "Question": "What is the content of 2th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{y}\nravish zen per\\textbf{vigor}ish apple X-ray halo zen banana zen far lamb cafe\n\\section{z}\nsalvage zen perish apple X-ra\\textbf{wake}y halo zen\\includegraphics[width=0.5\\textwidth]{de.gif} banana zen far lamb cafe\n\\section{ab}\ntransformer zen perish apple X-ray halo zen banana zen far lamb \\textbf{X-ray}cafe",
+            "Reference": "u\nnob zen perish apple X-ray halo zen banana zen far lamb cafe\n\\section{v}\noops zen perish apple X-ray halo zen banana zen far lamb cafe\n\\section{w}\nperish zen perish apple X\\textbf{transformer}-ray halo zen banana zen far lamb cafe\n\\section{x}\nqualify zen perish apple X-ray halo zen banana zen \\textbf{unique}far lamb cafe\n\\section{y}\nravish zen per\\textbf{vigor}ish apple X-ray halo zen banana zen far lamb cafe\n\\section{z}\nsalvage zen perish apple X-ra\\textbf{wake}y halo zen\\includegraphics[width=0.5\\textwidth]{de.gif} banana zen far lamb cafe\n\\section{ab}\ntransformer zen perish apple X-ray halo zen banana zen far lamb \\textbf{X-ray}cafe"
+        },
+        {
+            "Question": "What is the content of 1th subsection under 2th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{ab}\napple es\\includegraphics[width=0.5\\textwidth]{ee.jpeg}sence lamb yogurt zen zen wake banana oops dentist lamb unique",
+            "Reference": "v\nvigor dentist lamb yogurt zen zen wake banana oops dentist lamb unique\n\\section{w}\nwake dentist lamb yogurt zen zen wake banana oops dentist lamb unique\n\\section{x}\nX-ray dentist lamb yogurt zen zen wake bana\\textbf{salvage}na oops dentist lamb unique\n\\section{y}\nyogurt dentist lamb yogurt zen zen wake banana oops dentist lamb unique\n\\section{z}\nzen den\\textbf{transformer}tist lamb yogurt zen zen \\includegraphics[width=0.5\\textwidth]{de.gif}wake banana oops dentist lamb unique\n\\section{ab}\napple es\\includegraphics[width=0.5\\textwidth]{ee.jpeg}sence lamb yogurt zen zen wake banana oops dentist lamb unique\n\\section{bb}\nbanana essence lamb yogurt zen zen wake banana oops dentist lamb uni\\textbf{unique}que"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 2th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{cb}\nessence unique nob caf\\textbf{dentist banana}e yogurt monkey jargon apple far transfor\\includegraphics[width=0.5\\textwidth]{je.gif}mer salvage cafe",
+            "Reference": "w\nyogurt transformer nob cafe yogurt monkey jargon apple far transformer sa\\includegraphics[width=0.5\\textwidth]{fe.jpg}lvage cafe\n\\section{x}\nzen transf\\textbf{zen}ormer nob cafe yogurt monkey jargon apple\\includegraphics[width=0.5\\textwidth]{ge.jpeg} far transformer salvage cafe\n\\section{y}\napple unique nob caf\\textbf{apple banana}e yogurt monkey jargon apple far transformer salvage cafe\n\\section{z}\nbanana unique nob cafe yogurt monkey jargon apple far tran\\includegraphics[width=0.5\\textwidth]{he.jpg}sformer salvage cafe\n\\section{ab}\ncafe unique nob caf\\textbf{banana banana}e yogurt monkey jargon apple far transformer salvage cafe\n\\section{bb}\nd\\textbf{cafe banana}entist unique nob cafe yogurt monkey jargon apple far transform\\includegraphics[width=0.5\\textwidth]{ie.gif}er salvage cafe\n\\section{cb}\nessence unique nob caf\\textbf{dentist banana}e yogurt monkey jargon apple far transfor\\includegraphics[width=0.5\\textwidth]{je.gif}mer salvage cafe"
+        }
+    ],
+    "RuleHint": "Note that section title is enclosed by \\\\section{}, and \\\\subsection for subsection, \\\\subsubsection for subsubsection. To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

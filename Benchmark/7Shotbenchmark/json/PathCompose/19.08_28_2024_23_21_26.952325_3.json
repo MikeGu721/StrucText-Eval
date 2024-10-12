@@ -1,0 +1,56 @@
+{
+    "Question": "How to access value \"g\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+    "Answer": "obj[\"V\"]",
+    "Label": {
+        "typename": "json",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 7,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathCompose"
+        ]
+    },
+    "Reference": "{\n\"id\":\"y\",\n\"Z\":\"k\",\n\"Y\":\"j\",\n\"X\":\"i\",\n\"W\":\"h\",\n\"V\":\"g\",\n\"U\":\"f\",\n\"subs\":[\n {\n \"id\":\"z\",\n \"T\":\"e\",\n \"S\":\"d\",\n \"subs\":[]\n }\n]\n}",
+    "timestamp": "08_28_2024_23_21_26.952325",
+    "input_hash": 1241431986013362786,
+    "examples": [
+        {
+            "Question": "How to access value \"x\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"X\"]",
+            "Reference": "{\n\"id\":\"b\",\n\"Z\":\"z\",\n\"Y\":\"y\",\n\"X\":\"x\",\n\"subs\":[\n {\n \"id\":\"c\",\n \"W\":\"w\",\n \"V\":\"v\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"d\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"Z\"]",
+            "Reference": "{\n\"id\":\"g\",\n\"Z\":\"d\",\n\"Y\":\"c\",\n\"X\":\"b\",\n\"subs\":[\n {\n \"id\":\"h\",\n \"W\":\"a\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"f\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"S\"]",
+            "Reference": "{\n\"id\":\"i\",\n\"Z\":\"m\",\n\"Y\":\"l\",\n\"X\":\"k\",\n\"W\":\"j\",\n\"V\":\"i\",\n\"subs\":[\n {\n \"id\":\"j\",\n \"U\":\"h\",\n \"T\":\"g\",\n \"S\":\"f\",\n \"R\":\"e\",\n \"Q\":\"d\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"b\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"S\"]",
+            "Reference": "{\n\"id\":\"w\",\n\"Z\":\"i\",\n\"Y\":\"h\",\n\"subs\":[\n {\n \"id\":\"x\",\n \"X\":\"g\",\n \"W\":\"f\",\n \"V\":\"e\",\n \"U\":\"d\",\n \"T\":\"c\",\n \"S\":\"b\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"s\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"Y\"]",
+            "Reference": "{\n\"id\":\"k\",\n\"Z\":\"t\",\n\"Y\":\"s\",\n\"X\":\"r\",\n\"subs\":[\n {\n \"id\":\"l\",\n \"W\":\"q\",\n \"V\":\"p\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"x\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"Y\"]",
+            "Reference": "{\n\"id\":\"p\",\n\"Z\":\"y\",\n\"Y\":\"x\",\n\"subs\":[\n {\n \"id\":\"q\",\n \"X\":\"w\",\n \"W\":\"v\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"o\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"Y\"]",
+            "Reference": "{\n\"id\":\"l\",\n\"Z\":\"p\",\n\"Y\":\"o\",\n\"subs\":[\n {\n \"id\":\"m\",\n \"X\":\"n\",\n \"W\":\"m\",\n \"V\":\"l\",\n \"subs\":[]\n }\n]\n}"
+        }
+    ],
+    "RuleHint": "To get the path to access specified value. You have to do a recursive search along the subs fields, starting from the outermost parsed object. For each visited object, check each fields except for subs, and record the path along the way, i.e., subs inside brackets and index into subs inside brackets, and at which field you find the value."
+}

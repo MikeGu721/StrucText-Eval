@@ -1,0 +1,19 @@
+{
+    "Question": "What is the depth of node e? Answer an integer, root is of depth 0.",
+    "Answer": "1",
+    "Label": {
+        "typename": "tree",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Tree.Depth"
+        ]
+    },
+    "Reference": "a->b\nb->c\nb->d\na->e\ne->f\ne->g",
+    "timestamp": "08_28_2024_23_21_26.554443",
+    "input_hash": 394598720501842827,
+    "RuleHint": "To find the depth of a node, you need to find the number of edges from root to node. You have to start from the root with depth 0 and assign the depth for each node recursively. For any given node, it gets depth of current depth. Increment the depth by 1 before go to its subtree and repeat the process until every node gets a depth."
+}

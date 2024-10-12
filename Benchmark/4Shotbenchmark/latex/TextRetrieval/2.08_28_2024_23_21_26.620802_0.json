@@ -1,0 +1,41 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "No bold texts presented in file.",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 4,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "c\nlamb vigor yogurt wake i\\includegraphics[width=0.5\\textwidth]{oj.png}diot ravish\n\\section{d}\nmonkey vigor yogu\\includegraphics[width=0.5\\textwidth]{pj.png}rt wake idiot ravish",
+    "timestamp": "08_28_2024_23_21_26.620802",
+    "input_hash": -8098500446593507352,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "essence\ndentist",
+            "Reference": "x\nfar nob jargon app\\textbf{dentist}le cafe\\includegraphics[width=0.5\\textwidth]{ai.jpg} perish\n\\section{y}\ngroot nob jargon apple cafe peri\\textbf{essence}\\includegraphics[width=0.5\\textwidth]{bi.gif}nob jargon apple cafe perish"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "nob",
+            "Reference": "c\nnob jargon monkey wa\\textbf{nob}ke zen lamb\n\\section{d}\noops jargon monkey wake zen lamb"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "z\noops vigor salvage essence yogurt oops\n\\section{ab}\nperish vigor salvage essence yogu\\includegraphics[width=0.5\\textwidth]{mi.gif}rt oops"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "groot",
+            "Reference": "q\nvigor jargon unique kangaroo \\textbf{groot}\\includegraphics[width=0.5\\textwidth]{ag.gif}ngaroo qualify halo\n\\section{r}\nwake jargon unique kangaroo qualify halo"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for macro textbf, and everything after \\\\textbf{ and before the first } encountered is bold text."
+}

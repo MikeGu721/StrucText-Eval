@@ -1,0 +1,41 @@
+{
+    "Question": "How many people work with salary more than 207466?",
+    "Answer": "2",
+    "Label": {
+        "typename": "csv",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 4,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Statistics"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,female,50,l,158,87,brown\nb,female,45,m,219,132,white\n\nprimeKey,status,salary,company,location\na,unemployed,765369,Twitter,GA\nb,retired,897669,Meta,CA",
+    "timestamp": "08_28_2024_23_21_26.882740",
+    "input_hash": 810996134455597576,
+    "examples": [
+        {
+            "Question": "\nHow many people work with salary more than 102929?\n",
+            "Answer": " 2 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,22,c,183,142,swarthy\nb,male,57,d,166,104,white\n\nprimeKey,status,salary,company,location\na,employed,843104,Apple,NY\nb,employed,457519,Microsoft,IL"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 478341?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,23,p,170,128,swarthy\nb,female,58,q,151,150,brown\n\nprimeKey,status,salary,company,location\na,retired,499762,Twitter,TX\nb,retired,439712,Microsoft,WA"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 748238?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,58,a,156,116,white\nb,male,17,b,146,160,black\n\nprimeKey,status,salary,company,location\na,unemployed,533970,Apple,WA\nb,retired,799818,Microsoft,CA"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 409170?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,12,q,148,115,swarthy\nb,female,29,r,148,155,mulatto\n\nprimeKey,status,salary,company,location\na,retired,359310,Meta,CA\nb,unemployed,911479,OPENAI,TX"
+        }
+    ],
+    "RuleHint": "To get the number of people with salary above a threshold, you need to find the table with salary information. Then you go over each line and check the salary field. During the process count only those lines with value of salary strictly greater than the specified threshold towards your final sum. The sum after checking each line is the right answer."
+}

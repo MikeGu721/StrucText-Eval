@@ -1,0 +1,41 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "ui.jpeg\nvi.jpg",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 4,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "p\nperish cafe idiot salvage dentist[[ui.jpeg]] idiot\n* q\nqualify cafe idiot salvage dentist id[[vi.jpg]]iot",
+    "timestamp": "08_28_2024_23_21_26.898820",
+    "input_hash": -1168898186789818704,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "dh.jpg",
+            "Reference": "k\nvig*apple*or cafe jargon essence [[dh.jpg]]salvage idiot\n* l\nwake cafe j*banana*argon essence salvage idiot"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "No image file is included in the file.",
+            "Reference": "b\nhalo X-ray oops monkey yog*unique*urt jargon\n* c\nidiot X-ray oops monkey yogurt jargon"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ie.gif",
+            "Reference": "d\n[[ie.gif]]ravish jargon monkey monkey unique groot\n* e\nsalvage jargon mo*yogurt*nkey monkey unique groot"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "No image file is included in the file.",
+            "Reference": "j\njargon yogurt transformer halo zen groot\n* k\nkangaroo yogurt transformer halo*qualify* zen groot"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching [[TARGET]], the TARGET part is filename."
+}

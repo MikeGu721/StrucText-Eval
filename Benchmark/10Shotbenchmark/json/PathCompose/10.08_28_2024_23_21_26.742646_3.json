@@ -1,0 +1,71 @@
+{
+    "Question": "How to access value \"v\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+    "Answer": "obj[\"Y\"]",
+    "Label": {
+        "typename": "json",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 10,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathCompose"
+        ]
+    },
+    "Reference": "{\n\"id\":\"v\",\n\"Z\":\"w\",\n\"Y\":\"v\",\n\"X\":\"u\",\n\"subs\":[\n {\n \"id\":\"w\",\n \"W\":\"t\",\n \"subs\":[]\n }\n]\n}",
+    "timestamp": "08_28_2024_23_21_26.742646",
+    "input_hash": -5312525284955020234,
+    "examples": [
+        {
+            "Question": "How to access value \"q\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"T\"]",
+            "Reference": "{\n\"id\":\"v\",\n\"Z\":\"w\",\n\"Y\":\"v\",\n\"X\":\"u\",\n\"subs\":[\n {\n \"id\":\"w\",\n \"W\":\"t\",\n \"V\":\"s\",\n \"U\":\"r\",\n \"T\":\"q\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"uy\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"S\"]",
+            "Reference": "{\n\"id\":\"s\",\n\"Z\":\"b\",\n\"Y\":\"a\",\n\"X\":\"zy\",\n\"W\":\"yy\",\n\"V\":\"xy\",\n\"U\":\"wy\",\n\"subs\":[\n {\n \"id\":\"t\",\n \"T\":\"vy\",\n \"S\":\"uy\",\n \"R\":\"ty\",\n \"Q\":\"sy\",\n \"P\":\"ry\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"d\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"T\"]",
+            "Reference": "{\n\"id\":\"y\",\n\"Z\":\"j\",\n\"Y\":\"i\",\n\"X\":\"h\",\n\"W\":\"g\",\n\"V\":\"f\",\n\"U\":\"e\",\n\"subs\":[\n {\n \"id\":\"z\",\n \"T\":\"d\",\n \"S\":\"c\",\n \"R\":\"b\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"yy\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"X\"]",
+            "Reference": "{\n\"id\":\"o\",\n\"Z\":\"a\",\n\"Y\":\"zy\",\n\"X\":\"yy\",\n\"W\":\"xy\",\n\"V\":\"wy\",\n\"U\":\"vy\",\n\"subs\":[\n {\n \"id\":\"p\",\n \"T\":\"uy\",\n \"S\":\"ty\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"m\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"Z\"]",
+            "Reference": "{\n\"id\":\"m\",\n\"Z\":\"m\",\n\"Y\":\"l\",\n\"subs\":[\n {\n \"id\":\"n\",\n \"X\":\"k\",\n \"W\":\"j\",\n \"V\":\"i\",\n \"U\":\"h\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"u\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"V\"]",
+            "Reference": "{\n\"id\":\"c\",\n\"Z\":\"y\",\n\"Y\":\"x\",\n\"X\":\"w\",\n\"subs\":[\n {\n \"id\":\"d\",\n \"W\":\"v\",\n \"V\":\"u\",\n \"U\":\"t\",\n \"T\":\"s\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"a\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"Y\"]",
+            "Reference": "{\n\"id\":\"c\",\n\"Z\":\"b\",\n\"Y\":\"a\",\n\"subs\":[\n {\n \"id\":\"d\",\n \"X\":\"zy\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"f\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"Z\"]",
+            "Reference": "{\n\"id\":\"z\",\n\"Z\":\"f\",\n\"subs\":[\n {\n \"id\":\"ab\",\n \"Y\":\"e\",\n \"X\":\"d\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"d\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"X\"]",
+            "Reference": "{\n\"id\":\"d\",\n\"Z\":\"f\",\n\"Y\":\"e\",\n\"subs\":[\n {\n \"id\":\"e\",\n \"X\":\"d\",\n \"W\":\"c\",\n \"V\":\"b\",\n \"U\":\"a\",\n \"T\":\"zy\",\n \"S\":\"yy\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"c\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"Y\"]",
+            "Reference": "{\n\"id\":\"z\",\n\"Z\":\"d\",\n\"Y\":\"c\",\n\"subs\":[\n {\n \"id\":\"ab\",\n \"X\":\"b\",\n \"W\":\"a\",\n \"V\":\"zy\",\n \"U\":\"yy\",\n \"T\":\"xy\",\n \"subs\":[]\n }\n]\n}"
+        }
+    ],
+    "RuleHint": "To get the path to access specified value. You have to do a recursive search along the subs fields, starting from the outermost parsed object. For each visited object, check each fields except for subs, and record the path along the way, i.e., subs inside brackets and index into subs inside brackets, and at which field you find the value."
+}

@@ -1,0 +1,36 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section.",
+    "Answer": "* q\nsalvage qualif[[kj.png]]y banana banana far idiot",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "p\nravish *monkey*qualify banan[[jj.jpg]]a banana far idiot\n* q\nsalvage qualif[[kj.png]]y banana banana far idiot",
+    "timestamp": "08_28_2024_23_21_26.605297",
+    "input_hash": -815140174880225871,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* d\nravish vigor groot banana monkey idi[[yh.jpg]]ot",
+            "Reference": "c\nqualify vigor gro*cafe*ot banana monkey idiot\n* d\nravish vigor groot banana monkey idi[[yh.jpg]]ot"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* d\ncafe apple transformer perish essence X-r*qualify*[[oh.jpeg]]former perish essence X-ray",
+            "Reference": "c\nbanana apple transformer perish ess*perish*[[nh.gif]]e transformer perish essence X-ray\n* d\ncafe apple transformer perish essence X-r*qualify*[[oh.jpeg]]former perish essence X-ray"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* b\nlamb ravish wake l*transformer*amb transformer t[[ng.gif]]ransformer",
+            "Reference": "a\nkangaroo ravish wake lamb transformer transformer\n* b\nlamb ravish wake l*transformer*amb transformer t[[ng.gif]]ransformer"
+        }
+    ],
+    "RuleHint": "Note that section, subsection, subsubsection titles are preceded by *, **, *** respectively, with one or more whitespaces in between.  To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

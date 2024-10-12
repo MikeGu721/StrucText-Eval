@@ -1,0 +1,19 @@
+{
+    "Question": "How many people work with salary more than 23878?",
+    "Answer": "2",
+    "Label": {
+        "typename": "csv",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Statistics"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,male,48,j,121,110,mulatto\nb,male,25,k,195,98,brown\n\nprimeKey,status,salary,company,location\na,employed,866909,NVIDIA,NY\nb,unemployed,298669,Google,IL",
+    "timestamp": "08_28_2024_23_21_26.549709",
+    "input_hash": -4004974905410663173,
+    "RuleHint": "To get the number of people with salary above a threshold, you need to find the table with salary information. Then you go over each line and check the salary field. During the process count only those lines with value of salary strictly greater than the specified threshold towards your final sum. The sum after checking each line is the right answer."
+}

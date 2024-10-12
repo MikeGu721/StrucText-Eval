@@ -1,0 +1,41 @@
+{
+    "Question": "What is the content of tag B? The content should be an excerpt as it appears in the XML file.",
+    "Answer": "banana",
+    "Label": {
+        "typename": "xml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 4,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"r\" Y=\"q\" X=\"p\" W=\"o\">\n <B V=\"n\" U=\"m\" T=\"l\" S=\"k\" R=\"j\" Q=\"i\">\n  banana\n </B>\n apple\n</A>",
+    "timestamp": "08_28_2024_23_21_26.886674",
+    "input_hash": -5460259836434440320,
+    "examples": [
+        {
+            "Question": "What is the content of tag A? The content should be an excerpt as it appears in the XML file. ",
+            "Answer": " <B Y=\"i\" X=\"h\">\n  banana\n </B>\n apple",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"j\">\n <B Y=\"i\" X=\"h\">\n  banana\n </B>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the content of tag A? The content should be an excerpt as it appears in the XML file. ",
+            "Answer": " <B T=\"yy\">\n  banana\n </B>\n apple",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"e\" Y=\"d\" X=\"c\" W=\"b\" V=\"a\" U=\"zy\">\n <B T=\"yy\">\n  banana\n </B>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the content of tag A? The content should be an excerpt as it appears in the XML file. ",
+            "Answer": " <B U=\"p\" T=\"o\" S=\"n\" R=\"m\" Q=\"l\">\n  banana\n </B>\n apple",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"u\" Y=\"t\" X=\"s\" W=\"r\" V=\"q\">\n <B U=\"p\" T=\"o\" S=\"n\" R=\"m\" Q=\"l\">\n  banana\n </B>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the content of tag B? The content should be an excerpt as it appears in the XML file. ",
+            "Answer": " banana",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"x\" Y=\"w\" X=\"v\" W=\"u\" V=\"t\" U=\"s\">\n <B T=\"r\">\n  banana\n </B>\n apple\n</A>"
+        }
+    ],
+    "RuleHint": "To find the content of a specific tag, you need to search for desired tag throughout the xml file. Once located, find the surrounding left and right angle, these area is tha starting tag. Then find the ending tag, which is the tag surrounded by angle with exception that right angle is preceded by a slash. The content between starting and ending tags is the answer."
+}

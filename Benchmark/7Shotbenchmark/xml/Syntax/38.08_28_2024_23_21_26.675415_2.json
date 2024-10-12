@@ -1,0 +1,56 @@
+{
+    "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+    "Answer": "True",
+    "Label": {
+        "typename": "xml",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 7,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Syntax"
+        ]
+    },
+    "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"x\">\n <B Y=\"w\" X=\"v\" W=\"u\" V=\"t\" U=\"s\" T=\"r\" S=\"q\">\n  <C R=\"p\">\n   cafe\n  <D Q=\"o\" P=\"n\" O=\"m\" N=\"l\" M=\"k\" L=\"j\" K=\"i\" J=\"h\" I=\"g\" H=\"f\">\n   dentist\n  banana\n </B>\n <E G=\"e\" F=\"d\" E=\"c\" D=\"b\" C=\"a\" B=\"zy\" A=\"yy\" ZY=\"xy\" YY=\"wy\" XY=\"vy\">\n  <F WY=\"uy\" VY=\"ty\" UY=\"sy\" TY=\"ry\">\n   far\n  <G SY=\"qy\" RY=\"py\" QY=\"oy\" PY=\"ny\" OY=\"my\" NY=\"ly\" MY=\"ky\">\n   groot\n  essence\n apple\n</A>",
+    "timestamp": "08_28_2024_23_21_26.675415",
+    "input_hash": 1708646810166914061,
+    "examples": [
+        {
+            "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"p\" Y=\"o\" X=\"n\" W=\"m\" V=\"l\" U=\"k\">\n <B T=\"j\" S=\"i\" R=\"h\" Q=\"g\" P=\"f\" O=\"e\" N=\"d\" M=\"c\" L=\"b\" K=\"a\" J=\"zy\">\n  <C I=\"yy\" H=\"xy\" G=\"wy\" F=\"vy\" E=\"uy\" D=\"ty\" C=\"sy\" B=\"ry\" A=\"qy\" ZY=\"py\">\n   cafe\n  <D YY=\"oy\" XY=\"ny\" WY=\"my\" VY=\"ly\">\n   dentist\n  banana\n </B>\n <E UY=\"ky\" TY=\"jy\" SY=\"iy\" RY=\"hy\" QY=\"gy\" PY=\"fy\" OY=\"ey\">\n  <F NY=\"dy\" MY=\"cy\" LY=\"by\">\n   far\n  <G KY=\"ay\">\n   groot\n  essence\n apple"
+        },
+        {
+            "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"x\" Y=\"w\" X=\"v\" W=\"u\" V=\"t\" U=\"s\" T=\"r\">\n <B S=\"q\" R=\"p\" Q=\"o\" P=\"n\" O=\"m\" N=\"l\">\n  <C M=\"k\" L=\"j\" K=\"i\" J=\"h\" I=\"g\" H=\"f\" G=\"e\" F=\"d\" E=\"c\" D=\"b\" C=\"a\" B=\"zy\">\n   cafe\n  <D A=\"yy\" ZY=\"xy\" YY=\"wy\" XY=\"vy\" WY=\"uy\" VY=\"ty\">\n   dentist\n  banana\n <E UY=\"sy\" TY=\"ry\" SY=\"qy\" RY=\"py\" QY=\"oy\" PY=\"ny\" OY=\"my\" NY=\"ly\" MY=\"ky\" LY=\"jy\" KY=\"iy\" JY=\"hy\">\n  <F IY=\"gy\" HY=\"fy\" GY=\"ey\" FY=\"dy\" EY=\"cy\" DY=\"by\" CY=\"ay\" BY=\"zx\" AY=\"yx\" ZX=\"xx\" YX=\"wx\">\n   far\n  <G XX=\"vx\">\n   groot\n  essence\n apple"
+        },
+        {
+            "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"t\" Y=\"s\" X=\"r\" W=\"q\">\n <B V=\"p\" U=\"o\" T=\"n\" S=\"m\" R=\"l\" Q=\"k\" P=\"j\" O=\"i\" N=\"h\" M=\"g\" L=\"f\" K=\"e\">\n  <C J=\"d\" I=\"c\" H=\"b\" G=\"a\" F=\"zy\" E=\"yy\">\n   cafe\n  <D D=\"xy\" C=\"wy\" B=\"vy\" A=\"uy\" ZY=\"ty\" YY=\"sy\" XY=\"ry\" WY=\"qy\" VY=\"py\" UY=\"oy\" TY=\"ny\" SY=\"my\">\n   dentist\n  banana\n <E RY=\"ly\" QY=\"ky\" PY=\"jy\" OY=\"iy\" NY=\"hy\">\n  <F MY=\"gy\" LY=\"fy\">\n   far\n  <G KY=\"ey\" JY=\"dy\" IY=\"cy\" HY=\"by\" GY=\"ay\">\n   groot\n  essence\n apple"
+        },
+        {
+            "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"f\" Y=\"e\" X=\"d\" W=\"c\" V=\"b\" U=\"a\" T=\"zy\" S=\"yy\">\n <B R=\"xy\" Q=\"wy\" P=\"vy\" O=\"uy\" N=\"ty\" M=\"sy\" L=\"ry\">\n  <C K=\"qy\" J=\"py\" I=\"oy\" H=\"ny\" G=\"my\" F=\"ly\" E=\"ky\" D=\"jy\" C=\"iy\" B=\"hy\">\n   cafe\n  </C>\n  <D A=\"gy\" ZY=\"fy\" YY=\"ey\" XY=\"dy\" WY=\"cy\" VY=\"by\" UY=\"ay\" TY=\"zx\" SY=\"yx\" RY=\"xx\" QY=\"wx\" PY=\"vx\">\n   dentist\n  banana\n <E OY=\"ux\" NY=\"tx\" MY=\"sx\" LY=\"rx\" KY=\"qx\" JY=\"px\" IY=\"ox\" HY=\"nx\" GY=\"mx\" FY=\"lx\" EY=\"kx\" DY=\"jx\">\n  <F CY=\"ix\" BY=\"hx\" AY=\"gx\" ZX=\"fx\" YX=\"ex\" XX=\"dx\" WX=\"cx\" VX=\"bx\" UX=\"ax\">\n   far\n  <G TX=\"zw\" SX=\"yw\">\n   groot\n  essence\n apple"
+        },
+        {
+            "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"u\" Y=\"t\" X=\"s\" W=\"r\" V=\"q\" U=\"p\" T=\"o\" S=\"n\" R=\"m\">\n <B Q=\"l\" P=\"k\" O=\"j\" N=\"i\" M=\"h\" L=\"g\" K=\"f\" J=\"e\" I=\"d\">\n  <C H=\"c\" G=\"b\" F=\"a\" E=\"zy\" D=\"yy\" C=\"xy\">\n   cafe\n  </C>\n  <D B=\"wy\" A=\"vy\">\n   dentist\n  </D>\n  banana\n </B>\n <E ZY=\"uy\" YY=\"ty\">\n  <F XY=\"sy\" WY=\"ry\" VY=\"qy\" UY=\"py\" TY=\"oy\" SY=\"ny\" RY=\"my\" QY=\"ly\" PY=\"ky\" OY=\"jy\">\n   far\n  </F>\n  <G NY=\"iy\" MY=\"hy\" LY=\"gy\" KY=\"fy\">\n   groot\n  essence\n apple"
+        },
+        {
+            "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"a\" Y=\"zy\" X=\"yy\" W=\"xy\">\n <B V=\"wy\" U=\"vy\" T=\"uy\" S=\"ty\" R=\"sy\" Q=\"ry\" P=\"qy\" O=\"py\" N=\"oy\" M=\"ny\" L=\"my\" K=\"ly\">\n  <C J=\"ky\" I=\"jy\" H=\"iy\" G=\"hy\" F=\"gy\" E=\"fy\" D=\"ey\" C=\"dy\" B=\"cy\">\n   cafe\n  <D A=\"by\" ZY=\"ay\" YY=\"zx\" XY=\"yx\" WY=\"xx\" VY=\"wx\">\n   dentist\n  banana\n <E UY=\"vx\" TY=\"ux\" SY=\"tx\" RY=\"sx\" QY=\"rx\" PY=\"qx\" OY=\"px\" NY=\"ox\" MY=\"nx\" LY=\"mx\">\n  <F KY=\"lx\" JY=\"kx\" IY=\"jx\">\n   far\n  <G HY=\"ix\" GY=\"hx\">\n   groot\n  </G>\n  essence\n apple"
+        },
+        {
+            "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"t\" Y=\"s\" X=\"r\" W=\"q\" V=\"p\" U=\"o\" T=\"n\" S=\"m\" R=\"l\">\n <B Q=\"k\" P=\"j\">\n  <C O=\"i\" N=\"h\" M=\"g\">\n   cafe\n  </C>\n  <D L=\"f\" K=\"e\" J=\"d\" I=\"c\" H=\"b\" G=\"a\">\n   dentist\n  </D>\n  banana\n <E F=\"zy\" E=\"yy\" D=\"xy\" C=\"wy\" B=\"vy\" A=\"uy\" ZY=\"ty\" YY=\"sy\" XY=\"ry\" WY=\"qy\" VY=\"py\" UY=\"oy\">\n  <F TY=\"ny\">\n   far\n  <G SY=\"my\" RY=\"ly\" QY=\"ky\" PY=\"jy\" OY=\"iy\" NY=\"hy\" MY=\"gy\" LY=\"fy\" KY=\"ey\" JY=\"dy\">\n   groot\n  </G>\n  essence\n apple\n</A>"
+        }
+    ],
+    "RuleHint": "To find the error in the xml file, you need to parse the xml file and report any syntax error if encountered any. Potential errors include missing ending tags."
+}

@@ -1,0 +1,41 @@
+{
+    "Question": "What is the content of 2th subsection under 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section.",
+    "Answer": "** g\ncafe groot essence essence ha*unique*lo salv[[dg.jpeg]]age jargon dentist far essence yogurt X-ray",
+    "Label": {
+        "typename": "org",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 4,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "d\nzen far essence essence halo salvage jargon dentist far essence yogurt X-ray\n* e\napple groot essence essence halo salvage jargon dentist far essence yogur*salvage*[[bg.jpeg]]groot essence essence halo salvage jargon dentist far essence yogurt X-ray\n** f\nbanana groot essence essence halo salvage jargon dentist *transformer*far [[cg.png]]essence yogurt X-ray\n** g\ncafe groot essence essence ha*unique*lo salv[[dg.jpeg]]age jargon dentist far essence yogurt X-ray\n* h\ndentist groot essence essence *vigor*halo salvage jargon dentist far essence yogurt X-ray\n** i\nessence groot essence essence halo salvage jargon d*wake*entist far essence yogurt X-ray\n** j\nfar groot essence essence halo salvage jargon dentist far essence yogurt *X-ray*[[eg.jpg]]alo salvage jargon dentist far essence yogurt X-ray",
+    "timestamp": "08_28_2024_23_21_26.899865",
+    "input_hash": 1809097552379527099,
+    "examples": [
+        {
+            "Question": "What is the content of 2th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* v\nunique lamb wake yogurt halo essence kangaroo dentist idiot d*transformer*entist unique transformer\n** w\nvigor la*unique*mb wake yogurt halo essence kangaroo dentist idiot dentist unique transformer\n** x\nwake lamb wake yogurt halo essence kangaroo dentist idiot dentist unique transformer",
+            "Reference": "r\nqualify lamb wake yogurt halo essence kangaroo de*qualify*ntist idiot dentist [[qf.jpg]]unique transformer\n* s\nravish lamb wake *ravish*yogurt halo essen[[rf.png]]ce kangaroo dentist idiot dentist unique transformer\n** t\nsalvage lamb wake yogurt halo essence kangaroo dentist idiot dentist unique transformer\n** u\ntransformer lamb wake yogurt halo essence*salvage* kangaroo dentist idiot dentist unique transformer\n* v\nunique lamb wake yogurt halo essence kangaroo dentist idiot d*transformer*entist unique transformer\n** w\nvigor la*unique*mb wake yogurt halo essence kangaroo dentist idiot dentist unique transformer\n** x\nwake lamb wake yogurt halo essence kangaroo dentist idiot dentist unique transformer"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "** r\nX-ray oops perish groot essence yogurt jargon ravish wake far zen yogurt",
+            "Reference": "o\nunique oops perish groot essence yogurt jargon ravish wake far zen yogurt\n* p\nvigor oops perish groot essence yogurt j*groot*argon ravish wake far ze[[cj.jpeg]]n yogurt\n** q\nwake oops perish groot essence yogurt *halo*jargon[[dj.jpg]] ravish wake far zen yogurt\n** r\nX-ray oops perish groot essence yogurt jargon ravish wake far zen yogurt\n* s\nyogurt oops perish groot essence yogurt jargon ravish wake far zen yogurt\n** t\nzen oops perish groot essence yogurt jargon ravish wake far zen*idiot*[[ej.jpeg]]nce yogurt jargon ravish wake far zen yogurt\n** u\napple perish perish groot essence yogurt jargon ravish*jargon* wake far zen yogurt"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "** z\nhalo groot kangaroo ravish wake cafe apple nob jargon unique monkey *dentist*essence",
+            "Reference": "w\nessenc[[hi.jpeg]]e groot kangaroo ravish wake cafe apple nob jargon unique monkey essence\n* x\nfar groot kangaroo ravish wake cafe apple nob jargon unique monkey es*banana*sence\n** y\ngroot groot kangaroo r*cafe*avish[[ii.jpeg]] wake cafe apple nob jargon unique monkey essence\n** z\nhalo groot kangaroo ravish wake cafe apple nob jargon unique monkey *dentist*essence\n* ab\nidiot groot kangaroo ravish wak*essence*e cafe apple nob jar[[ji.jpeg]]gon unique monkey essence\n** bb\njargon groot kangaroo [[ki.jpg]]ravish wake cafe apple nob jargon unique monkey essence\n** cb\nkangaroo groot kangaroo ravish wa*far*ke cafe apple nob jargon unique monkey essence"
+        },
+        {
+            "Question": "What is the content of 1th subsection under 2th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "** g\nqualify far kangaroo groot salvage jargon banana qualify zen jargon vigor idiot",
+            "Reference": "b\nlamb far kangaroo groot salvage jargon banana qualify zen jargon vigor idiot\n* c\nmonkey far kangaroo groot salva*yogurt*ge jargon banana qualify zen jargon vigor idio[[pe.png]]t\n** d\nnob far kangaroo groot salvage jargon bana*zen*[[qe.gif]] salvage jargon banana qualify zen jargon vigor idiot\n** e\noops far kangaroo groot salvage j*apple banana*argon banana qualify zen jargon vigor idiot\n* f\nperish far kangaroo groot salvage[[re.jpeg]] jargon banana qualify zen jargon vigor idiot\n** g\nqualify far kangaroo groot salvage jargon banana qualify zen jargon vigor idiot\n** h\nravish far kangaroo groot s*banana banana*[[se.jpg]]vish far kangaroo groot salvage jargon banana qualify zen jargon vigor idiot"
+        }
+    ],
+    "RuleHint": "Note that section, subsection, subsubsection titles are preceded by *, **, *** respectively, with one or more whitespaces in between.  To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

@@ -1,0 +1,46 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "No bold texts presented in file.",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "t\nkangaroo monkey lamb per\\includegraphics[width=0.5\\textwidth]{fh.png}ish yogurt idiot\n\\section{u}\nlamb monkey lamb perish yogur\\includegraphics[width=0.5\\textwidth]{gh.gif}t idiot",
+    "timestamp": "08_28_2024_23_21_26.919236",
+    "input_hash": -1184662019292658807,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "q\nunique banana kangaroo wake nob zen\n\\section{r}\nvigor banana kangaroo wake nob zen"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "qualify",
+            "Reference": "h\nperish unique g\\textbf{qualify}root unique apple vi\\includegraphics[width=0.5\\textwidth]{vi.jpg}gor\n\\section{i}\nqualify unique groot unique apple vigor"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "dentist",
+            "Reference": "v\nidiot bana\\includegraphics[width=0.5\\textwidth]{ij.jpg}na salvage cafe apple salvage\n\\section{w}\njargon banana salvage cafe apple s\\textbf{dentist}alvage"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "k\nidiot unique kangaroo dentist essence\\includegraphics[width=0.5\\textwidth]{ae.jpeg} oops\n\\section{l}\njargon unique kangaroo dentist essence oop\\includegraphics[width=0.5\\textwidth]{be.jpg}s"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "t\nbanana oops jargon salv\\includegraphics[width=0.5\\textwidth]{pg.jpeg}age idiot lamb\n\\section{u}\ncafe\\includegraphics[width=0.5\\textwidth]{qg.jpg} oops jargon salvage idiot lamb"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for macro textbf, and everything after \\\\textbf{ and before the first } encountered is bold text."
+}

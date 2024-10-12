@@ -1,0 +1,51 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section.",
+    "Answer": "* g\ndentist j*lamb*argon zen cafe idiot kangaroo",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 6,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "f\ncafe jargon zen cafe i*kangaroo*[[gh.gif]]fe jargon zen cafe idiot kangaroo\n* g\ndentist j*lamb*argon zen cafe idiot kangaroo",
+    "timestamp": "08_28_2024_23_21_26.946311",
+    "input_hash": -7658338444168938749,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* t\nravish halo far salvage qualify kangaroo",
+            "Reference": "s\nqualify halo far salvage qualify k*transformer*angaroo\n* t\nravish halo far salvage qualify kangaroo"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* d\nfar jargon X-ray banana b*ravish*[[ej.jpeg]]ray banana banana monkey",
+            "Reference": "c\nessence jargon X-ray banan*qualify*a banana monkey\n* d\nfar jargon X-ray banana b*ravish*[[ej.jpeg]]ray banana banana monkey"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* c\nravish jargon yogurt jargon",
+            "Reference": "b\nqualify jargon yogurt jargon\n* c\nravish jargon yogurt jargon"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* w\ns*halo*alvage kangaroo halo jargon wake ravish",
+            "Reference": "v\nravish [[xe.jpeg]]kangaroo halo jargon wake ravish\n* w\ns*halo*alvage kangaroo halo jargon wake ravish"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* q\nbanana far perish transformer X-r[[oi.gif]]ay X-ray",
+            "Reference": "p\napple far perish transforme[[ni.gif]]r X-ray X-ray\n* q\nbanana far perish transformer X-r[[oi.gif]]ay X-ray"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* q\nzen yogurt X-ray unique perish jargon",
+            "Reference": "p\nyogurt yogurt X-ray unique perish jargo*monkey*n\n* q\nzen yogurt X-ray unique perish jargon"
+        }
+    ],
+    "RuleHint": "Note that section, subsection, subsubsection titles are preceded by *, **, *** respectively, with one or more whitespaces in between.  To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

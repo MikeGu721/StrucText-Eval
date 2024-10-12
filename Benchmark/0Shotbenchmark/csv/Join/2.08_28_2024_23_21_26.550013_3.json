@@ -1,0 +1,19 @@
+{
+    "Question": "How many people who work in IL are taller than 164?",
+    "Answer": "1",
+    "Label": {
+        "typename": "csv",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Join"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,male,48,j,121,110,mulatto\nb,male,25,k,195,98,brown\n\nprimeKey,status,salary,company,location\na,employed,866909,NVIDIA,NY\nb,unemployed,298669,Google,IL",
+    "timestamp": "08_28_2024_23_21_26.550013",
+    "input_hash": -4004974905410663173,
+    "RuleHint": "To get the number of people living in specified city who are also taller than threshold, you need to first join the two table on primeKey, and check each row of joined table for lines that satisfies both condition, i.e., lines with city specified in query and height strictly greater than threshold. The total number of such rows is the right answer."
+}

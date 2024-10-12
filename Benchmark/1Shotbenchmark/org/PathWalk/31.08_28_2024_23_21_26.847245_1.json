@@ -1,0 +1,26 @@
+{
+    "Question": "What is the content of 1th subsection under 2th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section.",
+    "Answer": "** h\nqualify dentist dentist X-ray*ravish*[[we.jpeg]]ualify dentist dentist X-ray idiot unique oops dentist apple ravish zen jargon",
+    "Label": {
+        "typename": "org",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "c\nlamb dentist [[ve.png]]dentist X-ray idiot unique oops dentist apple ravish zen jargon\n* d\nmonkey dentist dentist X-ray idiot unique oops dentist apple ravish*oops* zen jargon\n** e\nnob dentist dentist X-ray idiot unique oops dentist apple ravish zen jargon\n** f\noops dentist dentist X-ray*perish* idiot unique oops dentist apple ravish zen jargon\n* g\nperish dentist dentist X-ray id*qualify*iot unique oops dentist apple ravish zen jargon\n** h\nqualify dentist dentist X-ray*ravish*[[we.jpeg]]ualify dentist dentist X-ray idiot unique oops dentist apple ravish zen jargon\n** i\nravish dentist dentist X-ray idiot unique oops dentist a*salvage*pple ravish zen jargon",
+    "timestamp": "08_28_2024_23_21_26.847245",
+    "input_hash": 8348881684679140515,
+    "examples": [
+        {
+            "Question": "What is the content of 1th subsection under 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "** u\ndentist qualify apple ravish apple qualify zen X-ray X-ray far jargon unique",
+            "Reference": "s\nbanana qualify apple ravish apple qualify zen X-ray X-ray far jargon unique\n* t\ncafe qualify apple ravish apple qualify zen X-ray X-ray far jargon unique\n** u\ndentist qualify apple ravish apple qualify zen X-ray X-ray far jargon unique\n** v\nessence qual*yogurt*ify apple ravish apple qualify zen X-ray X-ray far jargon unique\n* w\nfar qualify apple ravish apple qualify [[wi.jpeg]]zen X-ray X-ray far jargon unique\n** x\ngroot qualify apple r*zen*avish apple qualify zen X-ray X-ray far ja[[xi.gif]]rgon unique\n** y\nhalo qualify apple ravish apple qualify zen X-ray X-ray far jargon[[yi.gif]] unique"
+        }
+    ],
+    "RuleHint": "Note that section, subsection, subsubsection titles are preceded by *, **, *** respectively, with one or more whitespaces in between.  To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

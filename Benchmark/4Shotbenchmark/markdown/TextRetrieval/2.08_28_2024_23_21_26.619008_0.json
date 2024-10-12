@@ -1,0 +1,41 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "No bold texts presented in file.",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 4,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "o\nravish lamb yogurt essence salvage unique\n# p\nsalvage lamb yogurt essence salvage unique",
+    "timestamp": "08_28_2024_23_21_26.619008",
+    "input_hash": 2362166061245319124,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "wake",
+            "Reference": "m\nwake apple lamb vigor halo monkey\n# n\nX-**wake**![alt](ig.png \"hover text\")X-ray apple lamb vigor halo monkey"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "oops",
+            "Reference": "r\ntransformer salvage groot unique far monkey\n# s\nuniqu**oops**![alt](qf.png \"hover text\")que salvage groot unique far monkey"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "essence",
+            "Reference": "p\nperish qualify zen**essence**![alt](xf.jpeg \"hover text\")ualify zen unique cafe idiot\n# q\nqualify qualify zen unique cafe idi![alt](yf.jpg \"hover text\")ot"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "s\nzen idiot banana kangaroo kangaroo essen![alt](ei.jpeg \"hover text\")ce\n# t\napple jargon banana kangaroo kangaroo essence"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for double stars, i.e., **, the content between two occurrences of double stars is the bold texts. Note that the bold range should start from the double stars occurring at i-th spot throughout the whole input file, where i is odd, and end with double stars occurring at jth spot where j is even. For example, text between double stars appearing first and second time."
+}

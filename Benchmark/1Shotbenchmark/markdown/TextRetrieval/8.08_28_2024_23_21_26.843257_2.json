@@ -1,0 +1,26 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "hi.jpeg",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "i\ngroot oops essence oops far groo**yogurt**t\n# j\nhalo oops essence **zen**![alt](hi.jpeg \"hover text\")oops essence oops far groot",
+    "timestamp": "08_28_2024_23_21_26.843257",
+    "input_hash": 6198490686814939662,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ag.jpeg\nbg.jpeg",
+            "Reference": "a\nwake halo s**monkey**alvage nob far X-ra![alt](ag.jpeg \"hover text\")y\n# b\nX-ray halo salvage n**nob**ob f![alt](bg.jpeg \"hover text\")ar X-ray"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching ![*](TARGET \"*\"), the TARGET part is filename. Star means any text is possible."
+}

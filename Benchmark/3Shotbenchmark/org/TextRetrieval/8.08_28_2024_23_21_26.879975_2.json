@@ -1,0 +1,36 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "aj.gif\nzi.jpeg",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "r\nmonkey lamb wake groo[[zi.jpeg]]t jargon\n* s\nnob lamb wake g*yogurt*root ja[[aj.gif]]rgon",
+    "timestamp": "08_28_2024_23_21_26.879975",
+    "input_hash": 117321235187286945,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "eg.jpg\ndg.jpeg",
+            "Reference": "b\nnob banana far idiot vigor per[[dg.jpeg]]ish\n* c\noops banana far idiot vig[[eg.jpg]]or perish"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "dg.jpeg",
+            "Reference": "w\nravis*transformer*h ravish essence essence banana unique\n* x\nsalvage ravish essen*unique*[[dg.jpeg]]lvage ravish essence essence banana unique"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "me.gif",
+            "Reference": "v\nnob perish perish*jargon* kangaroo vigor perish\n* w\noops perish perish k*kangaroo*a[[me.gif]]ngaroo vigor perish"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching [[TARGET]], the TARGET part is filename."
+}

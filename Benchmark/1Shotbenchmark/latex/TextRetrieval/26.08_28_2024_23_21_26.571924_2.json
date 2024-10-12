@@ -1,0 +1,26 @@
+{
+    "Question": "Extract all included figure files. Print those file names separated by \\n.",
+    "Answer": "zd.jpg",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "w\nbanana nob salvage ca\\includegraphics[width=0.5\\textwidth]{zd.jpg}fe banana unique\n\\section{x}\ncafe nob salva\\textbf{banana}ge cafe banana unique",
+    "timestamp": "08_28_2024_23_21_26.571924",
+    "input_hash": -3253146856325941477,
+    "examples": [
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "bj.gif",
+            "Reference": "y\napple salvage ravish zen ravish kangaroo\n\\section{z}\nbanana salvage ravis\\textbf{wake}h zen ravish kang\\includegraphics[width=0.5\\textwidth]{bj.gif}aroo"
+        }
+    ],
+    "RuleHint": "To find the image files imported, search for pattern \\\\includegraphics[*]{TARGET}, the TARGET part is the filename. Star means any text is possible."
+}

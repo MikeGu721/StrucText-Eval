@@ -1,0 +1,36 @@
+{
+    "Question": "How many people who work in CA are taller than 177?",
+    "Answer": "0",
+    "Label": {
+        "typename": "csv",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Join"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,female,40,p,213,151,brown\nb,female,50,q,127,142,white\n\nprimeKey,status,salary,company,location\na,retired,407764,Microsoft,WA\nb,employed,184854,Microsoft,WA",
+    "timestamp": "08_28_2024_23_21_26.865059",
+    "input_hash": -5635830400887849425,
+    "examples": [
+        {
+            "Question": "\nHow many people who work in HI are taller than 178?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,65,i,135,97,olive\nb,female,29,j,144,81,white\n\nprimeKey,status,salary,company,location\na,employed,902012,Twitter,HI\nb,employed,293617,NVIDIA,IL"
+        },
+        {
+            "Question": "\nHow many people who work in GA are taller than 180?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,61,i,183,129,brown\nb,female,26,j,194,79,black\n\nprimeKey,status,salary,company,location\na,employed,76790,Microsoft,WA\nb,retired,986643,Microsoft,IL"
+        },
+        {
+            "Question": "\nHow many people who work in NY are taller than 171?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,29,h,171,180,mulatto\nb,male,51,i,197,88,swarthy\n\nprimeKey,status,salary,company,location\na,employed,461851,OPENAI,CA\nb,employed,335895,Twitter,NY"
+        }
+    ],
+    "RuleHint": "To get the number of people living in specified city who are also taller than threshold, you need to first join the two table on primeKey, and check each row of joined table for lines that satisfies both condition, i.e., lines with city specified in query and height strictly greater than threshold. The total number of such rows is the right answer."
+}

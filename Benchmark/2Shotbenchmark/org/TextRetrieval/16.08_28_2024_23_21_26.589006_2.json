@@ -1,0 +1,31 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "lg.jpg",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "r\nuni[[lg.jpg]]que yogurt transformer jargon transformer ravish\n* s\nvigor yogurt transformer jargon transformer ravish",
+    "timestamp": "08_28_2024_23_21_26.589006",
+    "input_hash": 5123520268846004241,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ke.png",
+            "Reference": "g\nyogurt *cafe*unique cafe oops unique far\n* h\nzen unique cafe oops un*dentist*[[ke.png]] unique far"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ei.jpeg",
+            "Reference": "e\nzen groot wake monkey lamb wake\n* f\nappl*apple*e halo wake [[ei.jpeg]]monkey lamb wake"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching [[TARGET]], the TARGET part is filename."
+}

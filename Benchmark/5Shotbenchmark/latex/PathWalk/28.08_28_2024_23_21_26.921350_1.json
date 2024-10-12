@@ -1,0 +1,46 @@
+{
+    "Question": "What is the content of 2th subsection under 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section.",
+    "Answer": "\\section{h}\ngroot d\\includegraphics[width=0.5\\textwidth]{dj.jpg}entist monkey salvage wake lamb vigor salvage zen lamb X-ray lamb",
+    "Label": {
+        "typename": "latex",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "e\ndentist de\\textbf{ravish}ntist monkey salvage\\includegraphics[width=0.5\\textwidth]{cj.jpeg} wake lamb vigor salvage zen lamb X-ray lamb\n\\section{f}\nessence dentist monkey salvage wake lamb vigor salvage zen lamb X-ray lamb\n\\section{g}\nfar dentist monkey salvage wake lamb vigor sal\\textbf{salvage}vage zen lamb X-ray lamb\n\\section{h}\ngroot d\\includegraphics[width=0.5\\textwidth]{dj.jpg}entist monkey salvage wake lamb vigor salvage zen lamb X-ray lamb\n\\section{i}\nhalo dentist monkey salvage wake lamb vigor salvage zen lamb X-ray lamb\n\\section{j}\n\\textbf{transformer}idiot dentist monkey salvage wake lamb\\includegraphics[width=0.5\\textwidth]{ej.jpeg} vigor salvage zen lamb X-ray lamb\n\\section{k}\njargon dentist monkey salvage wak\\includegraphics[width=0.5\\textwidth]{fj.gif}e lamb vigor salvage zen lamb X-ray lamb",
+    "timestamp": "08_28_2024_23_21_26.921350",
+    "input_hash": 8968906873104928557,
+    "examples": [
+        {
+            "Question": "What is the content of 1th subsection under 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{f}\ngroot dentist oops vigor nob far kangaroo idiot yogurt vigor banana dentist",
+            "Reference": "d\nessence dentist oops vigor nob far kangaroo idiot yogurt vigor banana dentist\n\\section{e}\nfar dentist oops vigor nob far kangaroo idiot yogurt vigor banana \\includegraphics[width=0.5\\textwidth]{ej.jpeg}dentist\n\\section{f}\ngroot dentist oops vigor nob far kangaroo idiot yogurt vigor banana dentist\n\\section{g}\nhalo dentist oops vigor nob far kanga\\textbf{ravish}roo idiot yogurt vigor banana dentist\n\\section{h}\nidiot dentist oops vigor nob far kangaroo idiot yogurt vigor banana den\\textbf{salvage}tist\n\\section{i}\njargon dentist oops vigor nob far kangaroo idiot yogurt vigor banana dentist\n\\section{j}\nkangaroo dentist oops\\textbf{transformer} vigor nob far ka\\includegraphics[width=0.5\\textwidth]{fj.gif}ngaroo idiot yogurt vigor banana dentist"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{w}\nyogurt groot \\textbf{monkey}wake zen banana vigor idiot cafe perish oops perish idiot\n\\section{x}\nzen groot wake zen banana vigor idiot caf\\textbf{nob}\\includegraphics[width=0.5\\textwidth]{ae.jpeg}en groot wake zen banana vigor idiot cafe perish oops perish idiot\n\\section{y}\napple halo wake zen banana vigor idiot cafe perish oops perish idio\\includegraphics[width=0.5\\textwidth]{be.jpg}t",
+            "Reference": "v\nX-ray groot wake zen b\\textbf{lamb}anana vigor idiot cafe perish oo\\includegraphics[width=0.5\\textwidth]{zd.jpg}ps perish idiot\n\\section{w}\nyogurt groot \\textbf{monkey}wake zen banana vigor idiot cafe perish oops perish idiot\n\\section{x}\nzen groot wake zen banana vigor idiot caf\\textbf{nob}\\includegraphics[width=0.5\\textwidth]{ae.jpeg}en groot wake zen banana vigor idiot cafe perish oops perish idiot\n\\section{y}\napple halo wake zen banana vigor idiot cafe perish oops perish idio\\includegraphics[width=0.5\\textwidth]{be.jpg}t\n\\section{z}\nbanana halo wake zen banana vigor i\\textbf{oops}diot cafe perish oops perish idiot\n\\section{ab}\ncafe halo wake zen banana vigor idiot caf\\textbf{perish}\\includegraphics[width=0.5\\textwidth]{ce.gif}ake zen banana vigor idiot cafe perish oops perish idiot\n\\section{bb}\ndent\\textbf{qualify}ist halo wake zen banana vigor idiot cafe perish oops perish idiot"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 2th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{q}\nwake groot unique far X-ray lamb cafe oops dentist jargon yogurt d\\includegraphics[width=0.5\\textwidth]{qe.gif}entist",
+            "Reference": "k\nqualify groot unique far X-ray lamb cafe oops dentist jargon yo\\includegraphics[width=0.5\\textwidth]{le.gif}gurt dentist\n\\section{l}\nravish groot unique far X-ray lamb cafe oops dentist jargon yogurt dentis\\includegraphics[width=0.5\\textwidth]{me.gif}t\n\\section{m}\nsalv\\includegraphics[width=0.5\\textwidth]{ne.gif}age groot unique far X-ray lamb cafe oops dentist jargon yogurt dentist\n\\section{n}\ntransformer groot uni\\includegraphics[width=0.5\\textwidth]{oe.gif}que far X-ray lamb cafe oops dentist jargon yogurt dentist\n\\section{o}\nunique groot unique f\\textbf{far}ar X-ray lamb c\\includegraphics[width=0.5\\textwidth]{pe.png}afe oops dentist jargon yogurt dentist\n\\section{p}\nvigor groot unique far X-ray lamb cafe oops dentist jargon yogurt dentist\n\\section{q}\nwake groot unique far X-ray lamb cafe oops dentist jargon yogurt d\\includegraphics[width=0.5\\textwidth]{qe.gif}entist"
+        },
+        {
+            "Question": "What is the content of 1th subsection under 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{j}\nunique apple unique far h\\includegraphics[width=0.5\\textwidth]{je.gif}alo vigor kangaroo oops lamb apple salvage vigor",
+            "Reference": "h\nsalvage apple unique far halo vigor kangar\\textbf{wake}\\includegraphics[width=0.5\\textwidth]{ie.gif}angaroo oops lamb apple salvage vigor\n\\section{i}\ntransformer apple unique far halo vigor kangaroo oops lamb apple salvage vigor\n\\section{j}\nunique apple unique far h\\includegraphics[width=0.5\\textwidth]{je.gif}alo vigor kangaroo oops lamb apple salvage vigor\n\\section{k}\nvigor apple unique far halo vigor kangaroo oops lamb apple sal\\textbf{X-ray}vage vigor\n\\section{l}\nwake apple unique \\textbf{yogurt}far halo vigor kangar\\includegraphics[width=0.5\\textwidth]{ke.jpg}oo oops lamb apple salvage vigor\n\\section{m}\nX-ray apple unique far\\textbf{zen}\\includegraphics[width=0.5\\textwidth]{le.gif}y apple unique far halo vigor kangaroo oops lamb apple salvage vigor\n\\section{n}\nyogurt apple unique far halo vigor kangaroo oops lamb apple salva\\includegraphics[width=0.5\\textwidth]{me.gif}ge vigor"
+        },
+        {
+            "Question": "What is the content of 2th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{bb}\nravish halo unique groot essence vigor dentist monkey dentist salvage salvage no\\textbf{qualify}\\includegraphics[width=0.5\\textwidth]{ce.gif}age salvage nob\n\\section{cb}\nsalvage halo unique groot essence vigor dentist monkey dentist salvage salvage nob\n\\section{db}\ntransformer halo unique groo\\textbf{ravish}t essence vigor dentist monkey d\\includegraphics[width=0.5\\textwidth]{de.gif}entist salvage salvage nob",
+            "Reference": "x\nnob halo unique groot essenc\\textbf{perish}e vigor dentist monkey dentist salvage salvage nob\n\\section{y}\noops halo unique groot essence vigor dentist monkey dentist salvage salvage nob\n\\section{z}\nperish halo unique groot essence vigor dentist monkey dentist salvag\\includegraphics[width=0.5\\textwidth]{be.jpg}e salvage nob\n\\section{ab}\nqualify halo unique groot essence vigor dentist monkey dentist salvage salvage nob\n\\section{bb}\nravish halo unique groot essence vigor dentist monkey dentist salvage salvage no\\textbf{qualify}\\includegraphics[width=0.5\\textwidth]{ce.gif}age salvage nob\n\\section{cb}\nsalvage halo unique groot essence vigor dentist monkey dentist salvage salvage nob\n\\section{db}\ntransformer halo unique groo\\textbf{ravish}t essence vigor dentist monkey d\\includegraphics[width=0.5\\textwidth]{de.gif}entist salvage salvage nob"
+        }
+    ],
+    "RuleHint": "Note that section title is enclosed by \\\\section{}, and \\\\subsection for subsection, \\\\subsubsection for subsubsection. To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

@@ -1,0 +1,51 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section.",
+    "Answer": "# z\nperish idiot u**banana**nique jargon![alt](lj.jpeg \"hover text\") qualify wake",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 6,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "y\noops idiot unique jargon qualify wake\n# z\nperish idiot u**banana**nique jargon![alt](lj.jpeg \"hover text\") qualify wake",
+    "timestamp": "08_28_2024_23_21_26.659987",
+    "input_hash": 4784589463770992088,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# u\nwake zen yogurt jargon apple monkey",
+            "Reference": "t\nvi**perish**gor zen yogurt jargon apple monkey\n# u\nwake zen yogurt jargon apple monkey"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# r\nzen dentist idiot kangaroo X-ray monkey",
+            "Reference": "q\ny**yogurt**ogurt dentist idiot kan![alt](bh.jpeg \"hover text\")garoo X-ray monkey\n# r\nzen dentist idiot kangaroo X-ray monkey"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# i\nidiot salvage yogurt apple ja![alt](oe.jpg \"hover text\")rgon",
+            "Reference": "h\nhalo salvage yogurt a![alt](ne.jpeg \"hover text\")pple jargon\n# i\nidiot salvage yogurt apple ja![alt](oe.jpg \"hover text\")rgon"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# m\ngroot nob nob **zen**dentis![alt](ni.png \"hover text\")t monkey jargon",
+            "Reference": "l\nfar nob nob dentist monkey jargon\n# m\ngroot nob nob **zen**dentis![alt](ni.png \"hover text\")t monkey jargon"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# x\nvi**dentist**gor salvage far ravish halo oops",
+            "Reference": "w\nunique salvage far ravish halo o**cafe**ops\n# x\nvi**dentist**gor salvage far ravish halo oops"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# f\nsalvage dentist jargon X-ray dentist zen",
+            "Reference": "e\nravish dentist jargon X-ray dentist zen\n# f\nsalvage dentist jargon X-ray dentist zen"
+        }
+    ],
+    "RuleHint": "To find the content of certain section, starting from the headings start with one hashtag, and go to the ith heading as specified in number of sections. Then start from that line, look for j-th heading with 2 hashtags as specified in subsection number. For kth subsubsection, look for kth heading with 3 hashtags starting from the located subsubsection. Stop searching early if the subsection or subsubsection is not queried."
+}

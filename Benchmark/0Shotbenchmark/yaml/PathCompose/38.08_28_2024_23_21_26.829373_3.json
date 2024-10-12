@@ -1,0 +1,19 @@
+{
+    "Question": "How to access value \"ry\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+    "Answer": "obj[\"subs\"][0][\"K\"]",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathCompose"
+        ]
+    },
+    "Reference": "id: \"s\"\nZ: g,\nY: f,\nX: e,\nW: d,\nV: c,\nU: b,\nT: a,\nS: zy,\nR: yy,\nQ: xy,\nsubs: \n- id: \"t\"\n  P: wy,\n  O: vy,\n  N: uy,\n  M: ty,\n  L: sy,\n  K: ry,\n  J: qy,\n  I: py,\n  subs: \n  - id: \"u\"\n    H: oy,\n    G: ny,\n    F: my,\n    E: ly,\n    D: ky,\n    C: jy,\n    B: iy,\n    A: hy,\n    ZY: gy,\n    YY: fy,\n    XY: ey,\n    subs: []\n  - id: \"v\"\n    WY: dy,\n    VY: cy,\n    UY: by,\n    TY: ay,\n    subs: []\n- id: \"w\"\n  SY: zx,\n  subs: \n  - id: \"x\"\n    RY: yx,\n    QY: xx,\n    PY: wx,\n    OY: vx,\n    NY: ux,\n    subs: []\n  - id: \"y\"\n    MY: tx,\n    LY: sx,\n    KY: rx,\n    JY: qx,\n    IY: px,\n    HY: ox,\n    subs: []",
+    "timestamp": "08_28_2024_23_21_26.829373",
+    "input_hash": 294848046438930452,
+    "RuleHint": "To get the path to access specified value. You have to do a recursive search along the subs fields, starting from the outermost parsed object. For each visited object, check each fields except for subs, and record the path along the way, i.e., subs inside brackets and index into subs inside brackets, and at which field you find the value."
+}

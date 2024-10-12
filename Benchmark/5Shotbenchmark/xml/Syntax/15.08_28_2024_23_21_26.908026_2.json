@@ -1,0 +1,46 @@
+{
+    "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+    "Answer": "True",
+    "Label": {
+        "typename": "xml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Syntax"
+        ]
+    },
+    "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"w\" Y=\"v\" X=\"u\">\n <B W=\"t\" V=\"s\">\n  banana\n apple",
+    "timestamp": "08_28_2024_23_21_26.908026",
+    "input_hash": 6829649951844880377,
+    "examples": [
+        {
+            "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"g\" Y=\"f\" X=\"e\">\n <B W=\"d\">\n  banana\n apple\n</A>"
+        },
+        {
+            "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"p\" Y=\"o\" X=\"n\">\n <B W=\"m\" V=\"l\" U=\"k\">\n  banana\n </B>\n apple"
+        },
+        {
+            "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"o\" Y=\"n\" X=\"m\" W=\"l\" V=\"k\" U=\"j\">\n <B T=\"i\" S=\"h\" R=\"g\">\n  banana\n apple"
+        },
+        {
+            "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"d\">\n <B Y=\"c\" X=\"b\" W=\"a\" V=\"zy\" U=\"yy\">\n  banana\n apple"
+        },
+        {
+            "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"s\" Y=\"r\" X=\"q\">\n <B W=\"p\" V=\"o\" U=\"n\" T=\"m\">\n  banana\n apple"
+        }
+    ],
+    "RuleHint": "To find the error in the xml file, you need to parse the xml file and report any syntax error if encountered any. Potential errors include missing ending tags."
+}

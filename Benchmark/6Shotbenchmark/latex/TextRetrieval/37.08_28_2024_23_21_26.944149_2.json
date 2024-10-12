@@ -1,0 +1,51 @@
+{
+    "Question": "Extract all included figure files. Print those file names separated by \\n.",
+    "Answer": "qf.jpg",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 6,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "c\nmonkey t\\textbf{dentist}ransformer dentist oops essence z\\includegraphics[width=0.5\\textwidth]{qf.jpg}en\n\\section{d}\nnob transformer dentist\\textbf{essence} oops essence zen",
+    "timestamp": "08_28_2024_23_21_26.944149",
+    "input_hash": -7576607613553238329,
+    "examples": [
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "mh.jpeg",
+            "Reference": "p\ngroo\\textbf{lamb}t wake idiot yogurt sa\\includegraphics[width=0.5\\textwidth]{mh.jpeg}lvage nob\n\\section{q}\nhalo wake idiot yogurt salvage nob"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "xd.png",
+            "Reference": "f\ndentis\\textbf{monkey}\\includegraphics[width=0.5\\textwidth]{xd.png}t monkey yogurt apple zen zen\n\\section{g}\nessence monkey yogurt apple zen zen"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "No figure file is included in the file.",
+            "Reference": "o\nhalo nob unique groot nob kang\\textbf{lamb}aroo\n\\section{p}\nidiot nob unique groot nob kangaroo"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "cj.jpeg\ndj.jpg",
+            "Reference": "p\noops ravish groot w\\includegraphics[width=0.5\\textwidth]{cj.jpeg}ake transformer idiot\n\\section{q}\nperish ravish groot w\\includegraphics[width=0.5\\textwidth]{dj.jpg}ake transformer idiot"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "No figure file is included in the file.",
+            "Reference": "q\nkangaro\\textbf{apple}o jargon essence monkey yogurt X-ray\n\\section{r}\nlamb jargon essence monkey yogu\\textbf{banana}rt X-ray"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "uf.gif",
+            "Reference": "l\nbanana perish ravish oops banana yogurt\n\\section{m}\ncafe perish ravish\\textbf{monkey}\\includegraphics[width=0.5\\textwidth]{uf.gif}afe perish ravish oops banana yogurt"
+        }
+    ],
+    "RuleHint": "To find the image files imported, search for pattern \\\\includegraphics[*]{TARGET}, the TARGET part is the filename. Star means any text is possible."
+}

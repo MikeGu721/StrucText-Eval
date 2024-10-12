@@ -1,0 +1,36 @@
+{
+    "Question": "Extract all included figure files. Print those file names separated by \\n.",
+    "Answer": "sf.gif\ntf.png",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "g\ndentist pe\\includegraphics[width=0.5\\textwidth]{sf.gif}rish ravish halo kangaroo groot\n\\section{h}\ness\\textbf{groot}enc\\includegraphics[width=0.5\\textwidth]{tf.png}e perish ravish halo kangaroo groot",
+    "timestamp": "08_28_2024_23_21_26.878186",
+    "input_hash": -6596943438408787690,
+    "examples": [
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "be.jpg",
+            "Reference": "w\nfar X-ray\\textbf{essence} banana \\includegraphics[width=0.5\\textwidth]{be.jpg}unique jargon yogurt\n\\section{x}\ngroot X-ray b\\textbf{far}anana unique jargon yogurt"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "No figure file is included in the file.",
+            "Reference": "y\ndentist transformer unique transformer lamb halo\n\\section{z}\nessence transformer unique transformer lamb halo"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "No figure file is included in the file.",
+            "Reference": "r\nqualify jargon idiot X-ray groot salvage\n\\section{s}\nravish jargon idiot X-ray groot\\textbf{yogurt} salvage"
+        }
+    ],
+    "RuleHint": "To find the image files imported, search for pattern \\\\includegraphics[*]{TARGET}, the TARGET part is the filename. Star means any text is possible."
+}

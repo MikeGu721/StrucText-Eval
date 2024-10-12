@@ -1,0 +1,36 @@
+{
+    "Question": "How many people work with salary more than 550977?",
+    "Answer": "0",
+    "Label": {
+        "typename": "csv",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Statistics"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,female,37,b,190,152,mulatto\nb,male,39,c,200,125,swarthy\n\nprimeKey,status,salary,company,location\na,unemployed,88767,Apple,CA\nb,unemployed,112614,Google,GA",
+    "timestamp": "08_28_2024_23_21_26.591415",
+    "input_hash": -3007896576723434850,
+    "examples": [
+        {
+            "Question": "\nHow many people work with salary more than 379628?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,56,y,186,171,mulatto\nb,female,48,z,131,79,brown\n\nprimeKey,status,salary,company,location\na,retired,356210,NVIDIA,CA\nb,employed,500829,OPENAI,IL"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 970541?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,49,o,163,78,white\nb,female,48,p,192,164,mulatto\n\nprimeKey,status,salary,company,location\na,retired,960281,Apple,TX\nb,employed,836704,Microsoft,GA"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 655528?\n",
+            "Answer": " 2 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,12,w,196,132,mulatto\nb,female,53,x,218,152,mulatto\n\nprimeKey,status,salary,company,location\na,retired,950792,Apple,WA\nb,unemployed,868068,Google,NY"
+        }
+    ],
+    "RuleHint": "To get the number of people with salary above a threshold, you need to find the table with salary information. Then you go over each line and check the salary field. During the process count only those lines with value of salary strictly greater than the specified threshold towards your final sum. The sum after checking each line is the right answer."
+}

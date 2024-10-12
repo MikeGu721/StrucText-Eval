@@ -1,0 +1,56 @@
+{
+    "Question": "Extract all included figure files. Print those file names separated by \\n.",
+    "Answer": "li.jpeg",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 7,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "d\nlamb \\textbf{unique}apple ravish cafe groot transformer\n\\section{e}\nmonkey apple\\includegraphics[width=0.5\\textwidth]{li.jpeg} ravish cafe groot transformer",
+    "timestamp": "08_28_2024_23_21_26.969238",
+    "input_hash": -8662634063981853245,
+    "examples": [
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "xf.gif",
+            "Reference": "f\nessenc\\includegraphics[width=0.5\\textwidth]{xf.gif}e idiot monkey lamb qualify banana\n\\section{g}\nfar idiot monkey lamb\\textbf{X-ray} qualify banana"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "No figure file is included in the file.",
+            "Reference": "n\njargon far vigo\\textbf{vigor}r cafe nob lamb\n\\section{o}\nkangaroo far v\\textbf{wake}igor cafe nob lamb"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "eg.jpg",
+            "Reference": "g\nidiot jargon apple apple vigor essence\n\\section{h}\njargon jargon apple apple vigor esse\\textbf{ravish}\\includegraphics[width=0.5\\textwidth]{eg.jpg}ence"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "yi.gif",
+            "Reference": "q\nqualify perish halo lamb salvage X\\textbf{groot}-ray\n\\section{r}\nra\\includegraphics[width=0.5\\textwidth]{yi.gif}vish perish halo lamb salvage X-ray"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "ch.gif",
+            "Reference": "m\nwake n\\textbf{dentist}ob y\\includegraphics[width=0.5\\textwidth]{ch.gif}ogurt yogurt nob wake\n\\section{n}\nX-ray nob yogurt yogurt nob wake"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "gg.jpg",
+            "Reference": "f\nwake\\includegraphics[width=0.5\\textwidth]{gg.jpg} apple vigor transformer halo oops\n\\section{g}\nX-ray apple vigor transformer halo oops"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "vh.jpg\nwh.png",
+            "Reference": "x\nlamb\\includegraphics[width=0.5\\textwidth]{vh.jpg} oops cafe banana halo halo\n\\section{y}\nmonkey\\textbf{X-ray} \\includegraphics[width=0.5\\textwidth]{wh.png}oops cafe banana halo halo"
+        }
+    ],
+    "RuleHint": "To find the image files imported, search for pattern \\\\includegraphics[*]{TARGET}, the TARGET part is the filename. Star means any text is possible."
+}

@@ -1,0 +1,46 @@
+{
+    "Question": "How many people are male?",
+    "Answer": "0",
+    "Label": {
+        "typename": "csv",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Statistics"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,female,70,b,168,100,brown\n\nprimeKey,status,salary,company,location\na,retired,222010,OPENAI,HI",
+    "timestamp": "08_28_2024_23_21_26.900962",
+    "input_hash": 7058127813215923116,
+    "examples": [
+        {
+            "Question": "\nHow many people are male?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,50,m,203,97,swarthy\n\nprimeKey,status,salary,company,location\na,unemployed,334119,OPENAI,NY"
+        },
+        {
+            "Question": "\nHow many people are female?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,61,y,177,110,brown\n\nprimeKey,status,salary,company,location\na,employed,331485,Google,HI"
+        },
+        {
+            "Question": "\nHow many people are male?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,70,c,120,120,white\n\nprimeKey,status,salary,company,location\na,retired,436857,Google,TX"
+        },
+        {
+            "Question": "\nHow many people are female?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,20,q,138,156,mulatto\n\nprimeKey,status,salary,company,location\na,employed,84982,Apple,HI"
+        },
+        {
+            "Question": "\nHow many people are female?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,32,j,160,88,olive\n\nprimeKey,status,salary,company,location\na,unemployed,438106,Google,WA"
+        }
+    ],
+    "RuleHint": "To get the number of female, first find the table with column name ''. Then check each line for field gender, and count these lines with value 'female' towards your final sum. The process applies to finding number of male too."
+}

@@ -1,0 +1,36 @@
+{
+    "Question": "How to access value \"e\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+    "Answer": "obj[\"W\"]",
+    "Label": {
+        "typename": "json",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathCompose"
+        ]
+    },
+    "Reference": "{\n\"id\":\"n\",\n\"Z\":\"h\",\n\"Y\":\"g\",\n\"X\":\"f\",\n\"W\":\"e\",\n\"subs\":[\n {\n \"id\":\"o\",\n \"V\":\"d\",\n \"U\":\"c\",\n \"subs\":[]\n }\n]\n}",
+    "timestamp": "08_28_2024_23_21_26.866126",
+    "input_hash": 4078120071563619289,
+    "examples": [
+        {
+            "Question": "How to access value \"zy\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"U\"]",
+            "Reference": "{\n\"id\":\"g\",\n\"Z\":\"e\",\n\"Y\":\"d\",\n\"X\":\"c\",\n\"W\":\"b\",\n\"V\":\"a\",\n\"subs\":[\n {\n \"id\":\"h\",\n \"U\":\"zy\",\n \"T\":\"yy\",\n \"S\":\"xy\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"e\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"V\"]",
+            "Reference": "{\n\"id\":\"q\",\n\"Z\":\"i\",\n\"Y\":\"h\",\n\"X\":\"g\",\n\"subs\":[\n {\n \"id\":\"r\",\n \"W\":\"f\",\n \"V\":\"e\",\n \"U\":\"d\",\n \"T\":\"c\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"i\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"V\"]",
+            "Reference": "{\n\"id\":\"e\",\n\"Z\":\"m\",\n\"Y\":\"l\",\n\"X\":\"k\",\n\"W\":\"j\",\n\"subs\":[\n {\n \"id\":\"f\",\n \"V\":\"i\",\n \"U\":\"h\",\n \"T\":\"g\",\n \"S\":\"f\",\n \"R\":\"e\",\n \"subs\":[]\n }\n]\n}"
+        }
+    ],
+    "RuleHint": "To get the path to access specified value. You have to do a recursive search along the subs fields, starting from the outermost parsed object. For each visited object, check each fields except for subs, and record the path along the way, i.e., subs inside brackets and index into subs inside brackets, and at which field you find the value."
+}

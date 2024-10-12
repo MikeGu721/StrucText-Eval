@@ -1,0 +1,26 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "qj.gif\noj.png\npj.png\nnj.jpeg",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "x\nunique banana lamb unique idiot jargon apple vigor kangaroo salvage monkey perish\n# y\nvigor banana lamb unique i![alt](nj.jpeg \"hover text\")diot jargon apple vigor kangaroo salvage monkey perish\n## z\nwake banana lamb unique idiot ja**banana**rgon apple vigor kangaroo salvage monkey perish\n## ab\nX-ray banana lamb unique idiot jargon apple vigor kangaroo sal**cafe**![alt](oj.png \"hover text\")diot jargon apple vigor kangaroo salvage monkey perish\n# bb\nyo**dentist**gurt banana lamb unique idiot jargon apple vigor kangaroo salvage monkey perish\n## cb\nzen banana lamb unique idiot jargon a**essence**pple vigor kanga![alt](pj.png \"hover text\")roo salvage monkey perish\n## db\napple cafe lamb unique idiot jargon apple vigor kangaroo sal**far**![alt](qj.gif \"hover text\")n apple vigor kangaroo salvage monkey perish",
+    "timestamp": "08_28_2024_23_21_26.571252",
+    "input_hash": 9129700639696027803,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "lg.jpg\nmg.gif\nkg.png",
+            "Reference": "n\nbanana kangaroo banana halo jargon vigor banana banana wake yogurt far idiot\n# o\ncafe kangaroo banana halo jargon vigor banana banana wake yogur![alt](kg.png \"hover text\")t far idiot\n## p\ndentist kangaroo banan**vigor**![alt](lg.jpg \"hover text\")garoo banana halo jargon vigor banana banana wake yogurt far idiot\n## q\nessence kangaroo banana halo jargon vigor banana banana wake yogurt far idiot\n# r\nfar kangaroo banana halo jargon vigor banana banana wake yogurt far idiot\n## s\ngroot kangaroo**wake** banana halo jargon vigor banana banana wake yogurt far idiot\n## t\nhalo![alt](mg.gif \"hover text\") kangaroo banana halo jargon vigor banana banana wake yogurt far idiot"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching ![*](TARGET \"*\"), the TARGET part is filename. Star means any text is possible."
+}

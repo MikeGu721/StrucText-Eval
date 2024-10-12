@@ -1,0 +1,71 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "yogurt",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 10,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "c\nidiot denti*yogurt*st X-ray apple jargon qualify\n* d\njargon de[[me.png]]ntist X-ray apple jargon qualify",
+    "timestamp": "08_28_2024_23_21_26.763207",
+    "input_hash": -7221984661766387023,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "unique",
+            "Reference": "a\nX-ray halo salvage denti[[ph.jpg]]st halo yogurt\n* b\n*unique*yogurt halo salvage dentist halo yogurt"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "transformer\nsalvage",
+            "Reference": "q\nca*salvage*fe X-ray oops essence nob idiot\n* r\ndent*transformer*ist X-ray oops essence nob i[[pi.jpeg]]diot"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "banana",
+            "Reference": "j\nidiot yogu[[dg.jpg]]rt qualify nob monkey lamb\n* k\njar*banana*gon yogurt qualif[[eg.png]]y nob monkey lamb"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "lamb\nmonkey",
+            "Reference": "t\nbana*lamb*na essence idiot b[[je.png]]anana jargon essence\n* u\ncafe essence idiot banana jargon esse*monkey*[[ke.png]]essence"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "ravish\nqualify",
+            "Reference": "y\noops halo X-ray*qualify* qualify wake wake\n* z\nperish hal*ravish*o X-ray qualify wake wake"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "unique\ntransformer",
+            "Reference": "r\nfar salvage vigor dentis*transformer*t kangaroo kangaroo\n* s\ngroot salv*unique*age vigor dentist kangaroo kangaroo"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "apple",
+            "Reference": "r\nX-ray qualify perish jargon essence wake\n* s\nyogurt qualify perish ja*apple*[[yf.jpg]]urt qualify perish jargon essence wake"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "kangaroo\njargon",
+            "Reference": "w\nzen qualify perish tran*jargon*sformer oops wake\n* x\napple ravish perish transformer oops wa*kangaroo*ke"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "wake\nX-ray",
+            "Reference": "g\nperish nob kangaroo nob un*wake*ique\n* h\nqualify nob kan*X-ray*[[eg.png]]fy nob kangaroo nob unique"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "ravish\nsalvage",
+            "Reference": "a\nessence kangaroo salvage apple nob *ravish*[[ig.png]]b halo\n* b\nfar kangaroo s*salvage*[[jg.jpeg]]roo salvage apple nob halo"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for single star, i.e., *, the content between two occurrences of single star is the bold texts. Note that the bold range should start from the single star occurring at i-th spot throughout the whole input file, where i is odd, and end with single star occurring at jth spot where j is even. For example, text between single star appearing first and second time."
+}

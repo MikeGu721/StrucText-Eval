@@ -1,0 +1,51 @@
+{
+    "Question": "How many people work with salary more than 696282?",
+    "Answer": "0",
+    "Label": {
+        "typename": "csv",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 6,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Statistics"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,male,29,c,176,77,black\n\nprimeKey,status,salary,company,location\na,employed,507028,Google,GA",
+    "timestamp": "08_28_2024_23_21_26.644883",
+    "input_hash": 2709694052062765384,
+    "examples": [
+        {
+            "Question": "\nHow many people work with salary more than 656598?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,15,y,140,164,white\n\nprimeKey,status,salary,company,location\na,retired,120348,Apple,CA"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 248754?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,33,z,126,142,white\n\nprimeKey,status,salary,company,location\na,unemployed,739948,Meta,NY"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 668532?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,54,c,138,124,black\n\nprimeKey,status,salary,company,location\na,unemployed,535361,Twitter,HI"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 941816?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,45,m,205,84,white\n\nprimeKey,status,salary,company,location\na,unemployed,350070,NVIDIA,WA"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 268089?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,48,a,197,159,mulatto\n\nprimeKey,status,salary,company,location\na,retired,902626,Apple,IL"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 652768?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,15,b,188,96,swarthy\n\nprimeKey,status,salary,company,location\na,employed,732355,Microsoft,CA"
+        }
+    ],
+    "RuleHint": "To get the number of people with salary above a threshold, you need to find the table with salary information. Then you go over each line and check the salary field. During the process count only those lines with value of salary strictly greater than the specified threshold towards your final sum. The sum after checking each line is the right answer."
+}

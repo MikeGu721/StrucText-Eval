@@ -1,0 +1,41 @@
+{
+    "Question": "What is the salary of record with primeKey a",
+    "Answer": "636515",
+    "Label": {
+        "typename": "csv",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 4,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,male,35,j,209,170,white\n\nprimeKey,status,salary,company,location\na,employed,636515,Apple,GA",
+    "timestamp": "08_28_2024_23_21_26.881289",
+    "input_hash": 239972685725375556,
+    "examples": [
+        {
+            "Question": "\nWhat is the name of record with primeKey a\n",
+            "Answer": "l",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,10,l,158,145,white\n\nprimeKey,status,salary,company,location\na,employed,101075,Meta,HI"
+        },
+        {
+            "Question": "\nWhat is the status of record with primeKey a\n",
+            "Answer": "unemployed",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,22,b,187,90,mulatto\n\nprimeKey,status,salary,company,location\na,unemployed,513049,Apple,GA"
+        },
+        {
+            "Question": "\nWhat is the location of record with primeKey a\n",
+            "Answer": "HI",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,70,r,122,113,black\n\nprimeKey,status,salary,company,location\na,unemployed,506862,Meta,HI"
+        },
+        {
+            "Question": "\nWhat is the height of record with primeKey a\n",
+            "Answer": "183",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,48,w,183,117,swarthy\n\nprimeKey,status,salary,company,location\na,unemployed,868883,Twitter,TX"
+        }
+    ],
+    "RuleHint": "To find the value of specific field of record with specified primeKey. You have to first, locate the line with the specific primeKey. Then find the required value under the desired column in that line."
+}

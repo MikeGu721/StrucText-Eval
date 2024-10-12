@@ -1,0 +1,71 @@
+{
+    "Question": "How many people are female?",
+    "Answer": "2",
+    "Label": {
+        "typename": "csv",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 10,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Statistics"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,female,32,z,175,70,swarthy\nb,female,45,ab,136,70,swarthy\n\nprimeKey,status,salary,company,location\na,employed,726233,Twitter,TX\nb,unemployed,156243,Meta,HI",
+    "timestamp": "08_28_2024_23_21_27.031847",
+    "input_hash": 8150877355949474640,
+    "examples": [
+        {
+            "Question": "\nHow many people are female?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,40,d,162,167,white\nb,male,17,e,197,106,olive\n\nprimeKey,status,salary,company,location\na,employed,450481,Microsoft,NY\nb,unemployed,759602,Google,CA"
+        },
+        {
+            "Question": "\nHow many people are female?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,33,y,200,136,black\nb,female,45,z,123,84,swarthy\n\nprimeKey,status,salary,company,location\na,employed,408181,OPENAI,HI\nb,retired,235783,Microsoft,CA"
+        },
+        {
+            "Question": "\nHow many people are male?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,33,w,145,116,olive\nb,male,46,x,212,92,white\n\nprimeKey,status,salary,company,location\na,retired,372526,Twitter,GA\nb,unemployed,766437,OPENAI,NY"
+        },
+        {
+            "Question": "\nHow many people are male?\n",
+            "Answer": " 2 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,11,f,205,148,black\nb,male,30,g,142,141,black\n\nprimeKey,status,salary,company,location\na,retired,405634,Google,NY\nb,unemployed,621612,Google,CA"
+        },
+        {
+            "Question": "\nHow many people are male?\n",
+            "Answer": " 2 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,32,a,197,149,mulatto\nb,male,20,b,202,155,white\n\nprimeKey,status,salary,company,location\na,unemployed,345352,Google,HI\nb,unemployed,539643,Apple,TX"
+        },
+        {
+            "Question": "\nHow many people are male?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,14,y,211,139,brown\nb,male,70,z,189,71,olive\n\nprimeKey,status,salary,company,location\na,unemployed,423062,Apple,CA\nb,retired,762192,Microsoft,WA"
+        },
+        {
+            "Question": "\nHow many people are male?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,50,e,122,172,black\nb,male,50,f,139,131,white\n\nprimeKey,status,salary,company,location\na,unemployed,73561,Meta,GA\nb,unemployed,529060,Google,CA"
+        },
+        {
+            "Question": "\nHow many people are female?\n",
+            "Answer": " 2 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,59,t,198,115,mulatto\nb,female,62,u,203,165,brown\n\nprimeKey,status,salary,company,location\na,unemployed,197833,Google,WA\nb,employed,830231,Meta,WA"
+        },
+        {
+            "Question": "\nHow many people are male?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,62,z,142,122,white\nb,male,56,ab,130,179,swarthy\n\nprimeKey,status,salary,company,location\na,employed,232437,Google,CA\nb,unemployed,867216,Apple,WA"
+        },
+        {
+            "Question": "\nHow many people are male?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,32,h,166,144,black\nb,female,17,i,217,110,mulatto\n\nprimeKey,status,salary,company,location\na,retired,947172,Apple,GA\nb,retired,549428,Twitter,WA"
+        }
+    ],
+    "RuleHint": "To get the number of female, first find the table with column name ''. Then check each line for field gender, and count these lines with value 'female' towards your final sum. The process applies to finding number of male too."
+}

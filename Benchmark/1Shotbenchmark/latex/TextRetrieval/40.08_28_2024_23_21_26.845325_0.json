@@ -1,0 +1,26 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "yogurt\nX-ray",
+    "Label": {
+        "typename": "latex",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "x\nyogurt salvage qua\\textbf{X-ray}lify apple jargon h\\includegraphics[width=0.5\\textwidth]{dh.jpg}alo jargon vigor cafe dentist oops nob\n\\section{y}\nzen salvage qualify apple jargon halo \\includegraphics[width=0.5\\textwidth]{eh.gif}jargon vigor cafe dentist oops nob\n\\section{z}\napple\\includegraphics[width=0.5\\textwidth]{fh.png} transformer qualify apple jargon halo jargon vigor cafe dentist oops nob\n\\section{ab}\nbanana transformer qualify apple jar\\textbf{yogurt}gon halo jargon vigor cafe dentist oops nob\n\\section{bb}\ncafe transformer qualify apple jargon halo jargon vi\\includegraphics[width=0.5\\textwidth]{gh.gif}gor cafe dentist oops nob\n\\section{cb}\ndentist transformer qualify \\includegraphics[width=0.5\\textwidth]{hh.jpeg}apple jargon halo jargon vigor cafe dentist oops nob\n\\section{db}\nessence transformer qualify apple jargon halo jargon vigor cafe dentist oops nob",
+    "timestamp": "08_28_2024_23_21_26.845325",
+    "input_hash": 6186685879199342772,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "perish\nravish\nsalvage\nqualify",
+            "Reference": "t\ngroot X-ray lamb salvage jargon halo dentist \\includegraphics[width=0.5\\textwidth]{xd.png}banana idiot lamb oops yogurt\n\\section{u}\nhalo X-ray lamb salvage jargon halo dentist banana idiot lamb oop\\textbf{perish}s yogurt\n\\section{v}\nidiot X-ray lamb salvage jargon halo dentist banana idiot lamb oop\\includegraphics[width=0.5\\textwidth]{yd.jpg}s yogurt\n\\section{w}\nja\\textbf{qualify}rgon X-ray lamb salvage jargon\\includegraphics[width=0.5\\textwidth]{zd.jpg} halo dentist banana idiot lamb oops yogurt\n\\section{x}\nkangaroo X-ray lamb salvage jargon halo dentist banana i\\textbf{ravish}\\includegraphics[width=0.5\\textwidth]{ae.jpeg}kangaroo X-ray lamb salvage jargon halo dentist banana idiot lamb oops yogurt\n\\section{y}\nlamb X-ray lamb salvage jargon halo dentist banana idiot lamb oops yogurt\n\\section{z}\nmonkey X-ray lamb salvage jargon halo dentis\\textbf{salvage}\\includegraphics[width=0.5\\textwidth]{be.jpg}jargon halo dentist banana idiot lamb oops yogurt"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for macro textbf, and everything after \\\\textbf{ and before the first } encountered is bold text."
+}

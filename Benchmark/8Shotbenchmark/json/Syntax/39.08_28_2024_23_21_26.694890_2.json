@@ -1,0 +1,61 @@
+{
+    "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+    "Answer": "True",
+    "Label": {
+        "typename": "json",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 8,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Syntax"
+        ]
+    },
+    "Reference": "{\n\"id\":\"n\",\n\"Z\":\"d\",\n\"Y\":\"c\",\n\"X\":\"b\",\n\"W\":\"a\",\n\"V\":\"zy\",\n\"U\":\"yy\",\n\"T\":\"xy\",\n\"subs\":[\n {\n \"id\":\"o\",\n \"S\":\"wy\",\n \"R\":\"vy\",\n \"Q\":\"uy\",\n \"P\":\"ty\",\n \"O\":\"sy\",\n \"N\":\"ry\",\n \"M\":\"qy\",\n \"L\":\"py\",\n \"K\":\"oy\",\n \"subs\":[\n  {\n  \"id\":\"p\",\n  \"J\":\"ny\",\n  \"subs\":[],\n  {\n  \"id\":\"q\",\n  \"I\":\"my\",\n  \"subs\":[]\n ],\n {\n \"id\":\"r\",\n \"H\":\"ly\",\n \"G\":\"ky\",\n \"F\":\"jy\",\n \"E\":\"iy\",\n \"D\":\"hy\",\n \"C\":\"gy\",\n \"B\":\"fy\",\n \"A\":\"ey\",\n \"ZY\":\"dy\",\n \"YY\":\"cy\",\n \"XY\":\"by\",\n \"subs\":[\n  {\n  \"id\":\"s\",\n  \"WY\":\"ay\",\n  \"VY\":\"zx\",\n  \"UY\":\"yx\",\n  \"TY\":\"xx\",\n  \"SY\":\"wx\",\n  \"subs\":[],\n  {\n  \"id\":\"t\",\n  \"RY\":\"vx\",\n  \"QY\":\"ux\",\n  \"PY\":\"tx\",\n  \"OY\":\"sx\",\n  \"NY\":\"rx\",\n  \"MY\":\"qx\",\n  \"LY\":\"px\",\n  \"KY\":\"ox\",\n  \"subs\":[]\n ]\n]\n}",
+    "timestamp": "08_28_2024_23_21_26.694890",
+    "input_hash": 5140080295064138294,
+    "examples": [
+        {
+            "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "{\n\"id\":\"d\",\n\"Z\":\"b\",\n\"Y\":\"a\",\n\"X\":\"zy\",\n\"W\":\"yy\",\n\"V\":\"xy\",\n\"U\":\"wy\",\n\"T\":\"vy\",\n\"S\":\"uy\",\n\"subs\":[\n {\n \"id\":\"e\",\n \"R\":\"ty\",\n \"Q\":\"sy\",\n \"P\":\"ry\",\n \"O\":\"qy\",\n \"N\":\"py\",\n \"M\":\"oy\",\n \"L\":\"ny\",\n \"K\":\"my\",\n \"J\":\"ly\",\n \"subs\":[\n  {\n  \"id\":\"f\",\n  \"I\":\"ky\",\n  \"H\":\"jy\",\n  \"G\":\"iy\",\n  \"F\":\"hy\",\n  \"E\":\"gy\",\n  \"D\":\"fy\",\n  \"C\":\"ey\",\n  \"B\":\"dy\",\n  \"A\":\"cy\",\n  \"ZY\":\"by\",\n  \"YY\":\"ay\",\n  \"subs\":[],\n  {\n  \"id\":\"g\",\n  \"XY\":\"zx\",\n  \"WY\":\"yx\",\n  \"VY\":\"xx\",\n  \"UY\":\"wx\",\n  \"TY\":\"vx\",\n  \"subs\":[]\n ]\n },\n {\n \"id\":\"h\",\n \"SY\":\"ux\",\n \"RY\":\"tx\",\n \"QY\":\"sx\",\n \"PY\":\"rx\",\n \"OY\":\"qx\",\n \"NY\":\"px\",\n \"MY\":\"ox\",\n \"LY\":\"nx\",\n \"KY\":\"mx\",\n \"JY\":\"lx\",\n \"IY\":\"kx\",\n \"HY\":\"jx\",\n \"subs\":[\n  {\n  \"id\":\"i\",\n  \"GY\":\"ix\",\n  \"FY\":\"hx\",\n  \"EY\":\"gx\",\n  \"DY\":\"fx\",\n  \"CY\":\"ex\",\n  \"BY\":\"dx\",\n  \"AY\":\"cx\",\n  \"subs\":[],\n  {\n  \"id\":\"j\",\n  \"ZX\":\"bx\",\n  \"YX\":\"ax\",\n  \"XX\":\"zw\",\n  \"WX\":\"yw\",\n  \"VX\":\"xw\",\n  \"UX\":\"ww\",\n  \"TX\":\"vw\",\n  \"SX\":\"uw\",\n  \"RX\":\"tw\",\n  \"QX\":\"sw\",\n  \"subs\":[]\n ]\n]"
+        },
+        {
+            "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "{\n\"id\":\"l\",\n\"Z\":\"a\",\n\"Y\":\"zy\",\n\"X\":\"yy\",\n\"W\":\"xy\",\n\"subs\":[\n {\n \"id\":\"m\",\n \"V\":\"wy\",\n \"U\":\"vy\",\n \"T\":\"uy\",\n \"S\":\"ty\",\n \"R\":\"sy\",\n \"Q\":\"ry\",\n \"P\":\"qy\",\n \"O\":\"py\",\n \"subs\":[\n  {\n  \"id\":\"n\",\n  \"N\":\"oy\",\n  \"M\":\"ny\",\n  \"L\":\"my\",\n  \"K\":\"ly\",\n  \"J\":\"ky\",\n  \"I\":\"jy\",\n  \"H\":\"iy\",\n  \"G\":\"hy\",\n  \"F\":\"gy\",\n  \"subs\":[],\n  {\n  \"id\":\"o\",\n  \"E\":\"fy\",\n  \"D\":\"ey\",\n  \"subs\":[]\n ]\n },\n {\n \"id\":\"p\",\n \"C\":\"dy\",\n \"B\":\"cy\",\n \"A\":\"by\",\n \"ZY\":\"ay\",\n \"YY\":\"zx\",\n \"XY\":\"yx\",\n \"WY\":\"xx\",\n \"VY\":\"wx\",\n \"UY\":\"vx\",\n \"TY\":\"ux\",\n \"SY\":\"tx\",\n \"subs\":[\n  {\n  \"id\":\"q\",\n  \"RY\":\"sx\",\n  \"QY\":\"rx\",\n  \"subs\":[],\n  {\n  \"id\":\"r\",\n  \"PY\":\"qx\",\n  \"OY\":\"px\",\n  \"NY\":\"ox\",\n  \"MY\":\"nx\",\n  \"LY\":\"mx\",\n  \"KY\":\"lx\",\n  \"JY\":\"kx\",\n  \"IY\":\"jx\",\n  \"HY\":\"ix\",\n  \"GY\":\"hx\",\n  \"FY\":\"gx\",\n  \"subs\":[]\n ]\n]"
+        },
+        {
+            "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "{\n\"id\":\"a\",\n\"Z\":\"e\",\n\"Y\":\"d\",\n\"X\":\"c\",\n\"W\":\"b\",\n\"V\":\"a\",\n\"U\":\"zy\",\n\"T\":\"yy\",\n\"subs\":[\n {\n \"id\":\"b\",\n \"S\":\"xy\",\n \"R\":\"wy\",\n \"Q\":\"vy\",\n \"P\":\"uy\",\n \"subs\":[\n  {\n  \"id\":\"c\",\n  \"O\":\"ty\",\n  \"N\":\"sy\",\n  \"M\":\"ry\",\n  \"L\":\"qy\",\n  \"K\":\"py\",\n  \"J\":\"oy\",\n  \"I\":\"ny\",\n  \"H\":\"my\",\n  \"G\":\"ly\",\n  \"F\":\"ky\",\n  \"E\":\"jy\",\n  \"subs\":[],\n  {\n  \"id\":\"d\",\n  \"D\":\"iy\",\n  \"C\":\"hy\",\n  \"B\":\"gy\",\n  \"A\":\"fy\",\n  \"ZY\":\"ey\",\n  \"YY\":\"dy\",\n  \"XY\":\"cy\",\n  \"WY\":\"by\",\n  \"VY\":\"ay\",\n  \"UY\":\"zx\",\n  \"subs\":[]\n  }\n ],\n {\n \"id\":\"e\",\n \"TY\":\"yx\",\n \"SY\":\"xx\",\n \"RY\":\"wx\",\n \"QY\":\"vx\",\n \"PY\":\"ux\",\n \"OY\":\"tx\",\n \"NY\":\"sx\",\n \"subs\":[\n  {\n  \"id\":\"f\",\n  \"MY\":\"rx\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"g\",\n  \"LY\":\"qx\",\n  \"KY\":\"px\",\n  \"subs\":[]\n ]\n]\n}"
+        },
+        {
+            "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "{\n\"id\":\"j\",\n\"Z\":\"z\",\n\"Y\":\"y\",\n\"X\":\"x\",\n\"W\":\"w\",\n\"V\":\"v\",\n\"U\":\"u\",\n\"T\":\"t\",\n\"subs\":[\n {\n \"id\":\"k\",\n \"S\":\"s\",\n \"R\":\"r\",\n \"Q\":\"q\",\n \"P\":\"p\",\n \"O\":\"o\",\n \"N\":\"n\",\n \"M\":\"m\",\n \"L\":\"l\",\n \"subs\":[\n  {\n  \"id\":\"l\",\n  \"K\":\"k\",\n  \"J\":\"j\",\n  \"I\":\"i\",\n  \"H\":\"h\",\n  \"G\":\"g\",\n  \"F\":\"f\",\n  \"E\":\"e\",\n  \"subs\":[],\n  {\n  \"id\":\"m\",\n  \"D\":\"d\",\n  \"C\":\"c\",\n  \"B\":\"b\",\n  \"A\":\"a\",\n  \"ZY\":\"zy\",\n  \"subs\":[]\n ]\n },\n {\n \"id\":\"n\",\n \"YY\":\"yy\",\n \"XY\":\"xy\",\n \"WY\":\"wy\",\n \"VY\":\"vy\",\n \"UY\":\"uy\",\n \"TY\":\"ty\",\n \"SY\":\"sy\",\n \"RY\":\"ry\",\n \"subs\":[\n  {\n  \"id\":\"o\",\n  \"QY\":\"qy\",\n  \"PY\":\"py\",\n  \"OY\":\"oy\",\n  \"NY\":\"ny\",\n  \"MY\":\"my\",\n  \"LY\":\"ly\",\n  \"KY\":\"ky\",\n  \"JY\":\"jy\",\n  \"IY\":\"iy\",\n  \"HY\":\"hy\",\n  \"GY\":\"gy\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"p\",\n  \"FY\":\"fy\",\n  \"EY\":\"ey\",\n  \"DY\":\"dy\",\n  \"CY\":\"cy\",\n  \"BY\":\"by\",\n  \"AY\":\"ay\",\n  \"ZX\":\"zx\",\n  \"YX\":\"yx\",\n  \"XX\":\"xx\",\n  \"WX\":\"wx\",\n  \"VX\":\"vx\",\n  \"UX\":\"ux\",\n  \"subs\":[]\n ]\n]"
+        },
+        {
+            "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "{\n\"id\":\"i\",\n\"Z\":\"t\",\n\"Y\":\"s\",\n\"X\":\"r\",\n\"W\":\"q\",\n\"subs\":[\n {\n \"id\":\"j\",\n \"V\":\"p\",\n \"U\":\"o\",\n \"T\":\"n\",\n \"S\":\"m\",\n \"R\":\"l\",\n \"Q\":\"k\",\n \"P\":\"j\",\n \"O\":\"i\",\n \"N\":\"h\",\n \"subs\":[\n  {\n  \"id\":\"k\",\n  \"M\":\"g\",\n  \"subs\":[],\n  {\n  \"id\":\"l\",\n  \"L\":\"f\",\n  \"K\":\"e\",\n  \"J\":\"d\",\n  \"I\":\"c\",\n  \"H\":\"b\",\n  \"G\":\"a\",\n  \"subs\":[]\n  }\n ],\n {\n \"id\":\"m\",\n \"F\":\"zy\",\n \"E\":\"yy\",\n \"D\":\"xy\",\n \"C\":\"wy\",\n \"B\":\"vy\",\n \"A\":\"uy\",\n \"ZY\":\"ty\",\n \"subs\":[\n  {\n  \"id\":\"n\",\n  \"YY\":\"sy\",\n  \"XY\":\"ry\",\n  \"WY\":\"qy\",\n  \"VY\":\"py\",\n  \"subs\":[],\n  {\n  \"id\":\"o\",\n  \"UY\":\"oy\",\n  \"TY\":\"ny\",\n  \"SY\":\"my\",\n  \"RY\":\"ly\",\n  \"QY\":\"ky\",\n  \"PY\":\"jy\",\n  \"OY\":\"iy\",\n  \"NY\":\"hy\",\n  \"MY\":\"gy\",\n  \"subs\":[]\n ]\n]"
+        },
+        {
+            "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "{\n\"id\":\"m\",\n\"Z\":\"e\",\n\"Y\":\"d\",\n\"X\":\"c\",\n\"W\":\"b\",\n\"V\":\"a\",\n\"U\":\"zy\",\n\"T\":\"yy\",\n\"subs\":[\n {\n \"id\":\"n\",\n \"S\":\"xy\",\n \"R\":\"wy\",\n \"Q\":\"vy\",\n \"P\":\"uy\",\n \"O\":\"ty\",\n \"N\":\"sy\",\n \"M\":\"ry\",\n \"L\":\"qy\",\n \"subs\":[\n  {\n  \"id\":\"o\",\n  \"K\":\"py\",\n  \"J\":\"oy\",\n  \"I\":\"ny\",\n  \"H\":\"my\",\n  \"G\":\"ly\",\n  \"F\":\"ky\",\n  \"E\":\"jy\",\n  \"D\":\"iy\",\n  \"C\":\"hy\",\n  \"B\":\"gy\",\n  \"A\":\"fy\",\n  \"ZY\":\"ey\",\n  \"subs\":[],\n  {\n  \"id\":\"p\",\n  \"YY\":\"dy\",\n  \"XY\":\"cy\",\n  \"WY\":\"by\",\n  \"VY\":\"ay\",\n  \"UY\":\"zx\",\n  \"TY\":\"yx\",\n  \"SY\":\"xx\",\n  \"RY\":\"wx\",\n  \"QY\":\"vx\",\n  \"PY\":\"ux\",\n  \"OY\":\"tx\",\n  \"NY\":\"sx\",\n  \"subs\":[]\n  }\n ],\n {\n \"id\":\"q\",\n \"MY\":\"rx\",\n \"LY\":\"qx\",\n \"KY\":\"px\",\n \"JY\":\"ox\",\n \"IY\":\"nx\",\n \"subs\":[\n  {\n  \"id\":\"r\",\n  \"HY\":\"mx\",\n  \"GY\":\"lx\",\n  \"subs\":[],\n  {\n  \"id\":\"s\",\n  \"FY\":\"kx\",\n  \"EY\":\"jx\",\n  \"DY\":\"ix\",\n  \"CY\":\"hx\",\n  \"BY\":\"gx\",\n  \"AY\":\"fx\",\n  \"ZX\":\"ex\",\n  \"YX\":\"dx\",\n  \"XX\":\"cx\",\n  \"subs\":[]\n ]\n]"
+        },
+        {
+            "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "{\n\"id\":\"a\",\n\"Z\":\"i\",\n\"Y\":\"h\",\n\"X\":\"g\",\n\"subs\":[\n {\n \"id\":\"b\",\n \"W\":\"f\",\n \"V\":\"e\",\n \"subs\":[\n  {\n  \"id\":\"c\",\n  \"U\":\"d\",\n  \"T\":\"c\",\n  \"S\":\"b\",\n  \"R\":\"a\",\n  \"Q\":\"zy\",\n  \"P\":\"yy\",\n  \"O\":\"xy\",\n  \"N\":\"wy\",\n  \"M\":\"vy\",\n  \"subs\":[],\n  {\n  \"id\":\"d\",\n  \"L\":\"uy\",\n  \"K\":\"ty\",\n  \"J\":\"sy\",\n  \"I\":\"ry\",\n  \"H\":\"qy\",\n  \"G\":\"py\",\n  \"F\":\"oy\",\n  \"subs\":[]\n ],\n {\n \"id\":\"e\",\n \"E\":\"ny\",\n \"D\":\"my\",\n \"subs\":[\n  {\n  \"id\":\"f\",\n  \"C\":\"ly\",\n  \"B\":\"ky\",\n  \"A\":\"jy\",\n  \"ZY\":\"iy\",\n  \"YY\":\"hy\",\n  \"XY\":\"gy\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"g\",\n  \"WY\":\"fy\",\n  \"VY\":\"ey\",\n  \"UY\":\"dy\",\n  \"TY\":\"cy\",\n  \"SY\":\"by\",\n  \"RY\":\"ay\",\n  \"QY\":\"zx\",\n  \"PY\":\"yx\",\n  \"subs\":[]\n ]\n]"
+        },
+        {
+            "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "{\n\"id\":\"h\",\n\"Z\":\"t\",\n\"Y\":\"s\",\n\"X\":\"r\",\n\"W\":\"q\",\n\"V\":\"p\",\n\"subs\":[\n {\n \"id\":\"i\",\n \"U\":\"o\",\n \"T\":\"n\",\n \"S\":\"m\",\n \"R\":\"l\",\n \"subs\":[\n  {\n  \"id\":\"j\",\n  \"Q\":\"k\",\n  \"P\":\"j\",\n  \"O\":\"i\",\n  \"N\":\"h\",\n  \"M\":\"g\",\n  \"L\":\"f\",\n  \"subs\":[],\n  {\n  \"id\":\"k\",\n  \"K\":\"e\",\n  \"J\":\"d\",\n  \"subs\":[]\n ],\n {\n \"id\":\"l\",\n \"I\":\"c\",\n \"H\":\"b\",\n \"G\":\"a\",\n \"F\":\"zy\",\n \"E\":\"yy\",\n \"D\":\"xy\",\n \"subs\":[\n  {\n  \"id\":\"m\",\n  \"C\":\"wy\",\n  \"B\":\"vy\",\n  \"A\":\"uy\",\n  \"ZY\":\"ty\",\n  \"subs\":[],\n  {\n  \"id\":\"n\",\n  \"YY\":\"sy\",\n  \"XY\":\"ry\",\n  \"subs\":[]\n ]\n]\n}"
+        }
+    ],
+    "RuleHint": "To find the error in the json file, you need to parse the json file and report any syntax error if encountered any. Potential errors include missing ending curly braces."
+}

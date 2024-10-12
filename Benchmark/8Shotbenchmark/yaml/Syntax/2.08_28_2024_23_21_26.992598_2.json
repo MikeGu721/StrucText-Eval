@@ -1,0 +1,61 @@
+{
+    "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+    "Answer": "True",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 8,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Syntax"
+        ]
+    },
+    "Reference": "id: \"f\"\nZ: u,\nY: t,\nX: s,\nW: r,\nV: q,\nU: p,\nT: o,\nS: n,\nsubs: \n- id: \"g\"\n  R: m,\n  Q: l,\n  P: k,\n  O: j,\n  N: i,\n  M: h,\n  L: g,\n  K: f,\n  J: e,\n  I: d,\n  H: c,\n  G: b,\n  subs: \n  - id: \"h\"\n    F: a,\n    E: zy,\n    D: yy,\n    C: xy,\n    B: wy,\n    A: vy,\n    ZY: uy,\n    YY: ty,\n    subs: []\n    :x\n  - id: \"i\"\n    XY: sy,\n    subs: []\n  :y\n- id: \"j\"\n  WY: ry,\n  subs: \n  - id: \"k\"\n    VY: qy,\n    UY: py,\n    TY: oy,\n    SY: ny,\n    RY: my,\n    QY: ly,\n    PY: ky,\n    OY: jy,\n    NY: iy,\n    MY: hy,\n    LY: gy,\n    KY: fy,\n    subs: []\n  - id: \"l\"\n    JY: ey,\n    subs: []\n    :z\n  :ab\n:bb",
+    "timestamp": "08_28_2024_23_21_26.992598",
+    "input_hash": 4664184952705472483,
+    "examples": [
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"w\"\nZ: t,\nY: s,\nsubs: \n- id: \"x\"\n  X: r,\n  W: q,\n  V: p,\n  U: o,\n  T: n,\n  subs: \n  - id: \"y\"\n    S: m,\n    R: l,\n    Q: k,\n    P: j,\n    O: i,\n    N: h,\n    M: g,\n    L: f,\n    subs: []\n    :q\n  - id: \"z\"\n    K: e,\n    J: d,\n    I: c,\n    subs: []\n    :r\n  :s\n- id: \"ab\"\n  H: b,\n  G: a,\n  F: zy,\n  E: yy,\n  D: xy,\n  C: wy,\n  B: vy,\n  A: uy,\n  ZY: ty,\n  subs: \n  - id: \"bb\"\n    YY: sy,\n    XY: ry,\n    WY: qy,\n    VY: py,\n    UY: oy,\n    TY: ny,\n    SY: my,\n    subs: []\n    :t\n  - id: \"cb\"\n    RY: ly,\n    QY: ky,\n    PY: jy,\n    OY: iy,\n    NY: hy,\n    MY: gy,\n    LY: fy,\n    KY: ey,\n    subs: []\n    :u\n  :v\n:w"
+        },
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"f\"\nZ: h,\nY: g,\nX: f,\nsubs: \n- id: \"g\"\n  W: e,\n  V: d,\n  U: c,\n  T: b,\n  S: a,\n  R: zy,\n  Q: yy,\n  P: xy,\n  O: wy,\n  N: vy,\n  M: uy,\n  subs: \n  - id: \"h\"\n    L: ty,\n    K: sy,\n    subs: []\n    :q\n  - id: \"i\"\n    J: ry,\n    I: qy,\n    H: py,\n    G: oy,\n    subs: []\n  :r\n- id: \"j\"\n  F: ny,\n  E: my,\n  subs: \n  - id: \"k\"\n    D: ly,\n    C: ky,\n    B: jy,\n    A: iy,\n    ZY: hy,\n    YY: gy,\n    XY: fy,\n    subs: []\n    :s\n  - id: \"l\"\n    WY: ey,\n    VY: dy,\n    UY: cy,\n    TY: by,\n    SY: ay,\n    RY: zx,\n    QY: yx,\n    PY: xx,\n    subs: []"
+        },
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"x\"\nZ: i,\nsubs: \n- id: \"y\"\n  Y: h,\n  subs: \n  - id: \"z\"\n    X: g,\n    W: f,\n    V: e,\n    U: d,\n    T: c,\n    S: b,\n    R: a,\n    Q: zy,\n    subs: []\n    :o\n  - id: \"ab\"\n    P: yy,\n    O: xy,\n    N: wy,\n    M: vy,\n    L: uy,\n    K: ty,\n    J: sy,\n    I: ry,\n    H: qy,\n    G: py,\n    F: oy,\n    E: ny,\n    subs: []\n    :p\n  :q\n- id: \"bb\"\n  D: my,\n  C: ly,\n  B: ky,\n  A: jy,\n  ZY: iy,\n  subs: \n  - id: \"cb\"\n    YY: hy,\n    XY: gy,\n    WY: fy,\n    VY: ey,\n    UY: dy,\n    TY: cy,\n    subs: []\n    :r\n  - id: \"db\"\n    SY: by,\n    RY: ay,\n    QY: zx,\n    PY: yx,\n    OY: xx,\n    NY: wx,\n    MY: vx,\n    LY: ux,\n    KY: tx,\n    JY: sx,\n    IY: rx,\n    HY: qx,\n    subs: []\n    :s\n  :t\n:u"
+        },
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"z\"\nZ: a,\nY: zy,\nX: yy,\nW: xy,\nV: wy,\nU: vy,\nT: uy,\nS: ty,\nR: sy,\nQ: ry,\nP: qy,\nO: py,\nsubs: \n- id: \"ab\"\n  N: oy,\n  M: ny,\n  L: my,\n  K: ly,\n  J: ky,\n  I: jy,\n  H: iy,\n  subs: \n  - id: \"bb\"\n    G: hy,\n    F: gy,\n    E: fy,\n    D: ey,\n    C: dy,\n    B: cy,\n    A: by,\n    ZY: ay,\n    YY: zx,\n    XY: yx,\n    WY: xx,\n    VY: wx,\n    subs: []\n    :p\n  - id: \"cb\"\n    UY: vx,\n    TY: ux,\n    SY: tx,\n    RY: sx,\n    QY: rx,\n    PY: qx,\n    OY: px,\n    NY: ox,\n    subs: []\n    :q\n  :r\n- id: \"db\"\n  MY: nx,\n  LY: mx,\n  KY: lx,\n  JY: kx,\n  IY: jx,\n  HY: ix,\n  subs: \n  - id: \"eb\"\n    GY: hx,\n    FY: gx,\n    EY: fx,\n    DY: ex,\n    CY: dx,\n    BY: cx,\n    AY: bx,\n    ZX: ax,\n    YX: zw,\n    XX: yw,\n    WX: xw,\n    VX: ww,\n    subs: []\n    :s\n  - id: \"fb\"\n    UX: vw,\n    TX: uw,\n    SX: tw,\n    RX: sw,\n    QX: rw,\n    PX: qw,\n    OX: pw,\n    NX: ow,\n    subs: []\n    :t\n  :u\n:v"
+        },
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"j\"\nZ: i,\nY: h,\nX: g,\nW: f,\nV: e,\nU: d,\nT: c,\nS: b,\nR: a,\nQ: zy,\nsubs: \n- id: \"k\"\n  P: yy,\n  O: xy,\n  N: wy,\n  M: vy,\n  L: uy,\n  K: ty,\n  J: sy,\n  I: ry,\n  H: qy,\n  subs: \n  - id: \"l\"\n    G: py,\n    F: oy,\n    E: ny,\n    D: my,\n    C: ly,\n    B: ky,\n    A: jy,\n    ZY: iy,\n    YY: hy,\n    XY: gy,\n    subs: []\n    :u\n  - id: \"m\"\n    WY: fy,\n    VY: ey,\n    UY: dy,\n    TY: cy,\n    subs: []\n  :v\n- id: \"n\"\n  SY: by,\n  RY: ay,\n  QY: zx,\n  PY: yx,\n  subs: \n  - id: \"o\"\n    OY: xx,\n    NY: wx,\n    MY: vx,\n    LY: ux,\n    KY: tx,\n    JY: sx,\n    IY: rx,\n    HY: qx,\n    GY: px,\n    FY: ox,\n    subs: []\n  - id: \"p\"\n    EY: nx,\n    DY: mx,\n    CY: lx,\n    BY: kx,\n    subs: []\n  :w\n:x"
+        },
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"t\"\nZ: b,\nY: a,\nX: zy,\nsubs: \n- id: \"u\"\n  W: yy,\n  V: xy,\n  subs: \n  - id: \"v\"\n    U: wy,\n    T: vy,\n    S: uy,\n    R: ty,\n    Q: sy,\n    P: ry,\n    O: qy,\n    N: py,\n    M: oy,\n    L: ny,\n    K: my,\n    subs: []\n    :r\n  - id: \"w\"\n    J: ly,\n    I: ky,\n    H: jy,\n    G: iy,\n    F: hy,\n    E: gy,\n    D: fy,\n    subs: []\n    :s\n- id: \"x\"\n  C: ey,\n  B: dy,\n  A: cy,\n  ZY: by,\n  YY: ay,\n  XY: zx,\n  WY: yx,\n  subs: \n  - id: \"y\"\n    VY: xx,\n    UY: wx,\n    TY: vx,\n    SY: ux,\n    RY: tx,\n    QY: sx,\n    PY: rx,\n    OY: qx,\n    NY: px,\n    MY: ox,\n    subs: []\n    :t\n  - id: \"z\"\n    LY: nx,\n    KY: mx,\n    subs: []\n    :u\n:v"
+        },
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"u\"\nZ: c,\nsubs: \n- id: \"v\"\n  Y: b,\n  X: a,\n  W: zy,\n  V: yy,\n  U: xy,\n  T: wy,\n  S: vy,\n  R: uy,\n  Q: ty,\n  P: sy,\n  O: ry,\n  subs: \n  - id: \"w\"\n    N: qy,\n    M: py,\n    L: oy,\n    subs: []\n    :q\n  - id: \"x\"\n    K: ny,\n    J: my,\n    I: ly,\n    H: ky,\n    G: jy,\n    F: iy,\n    E: hy,\n    D: gy,\n    C: fy,\n    subs: []\n    :r\n  :s\n- id: \"y\"\n  B: ey,\n  A: dy,\n  ZY: cy,\n  YY: by,\n  XY: ay,\n  WY: zx,\n  VY: yx,\n  UY: xx,\n  subs: \n  - id: \"z\"\n    TY: wx,\n    SY: vx,\n    RY: ux,\n    QY: tx,\n    subs: []\n    :t\n  - id: \"ab\"\n    PY: sx,\n    OY: rx,\n    NY: qx,\n    MY: px,\n    LY: ox,\n    subs: []\n    :u\n  :v\n:w"
+        },
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"d\"\nZ: h,\nY: g,\nX: f,\nW: e,\nV: d,\nU: c,\nT: b,\nS: a,\nR: zy,\nQ: yy,\nP: xy,\nO: wy,\nsubs: \n- id: \"e\"\n  N: vy,\n  M: uy,\n  subs: \n  - id: \"f\"\n    L: ty,\n    K: sy,\n    J: ry,\n    I: qy,\n    H: py,\n    G: oy,\n    subs: []\n    :y\n  - id: \"g\"\n    F: ny,\n    subs: []\n    :z\n  :ab\n- id: \"h\"\n  E: my,\n  D: ly,\n  C: ky,\n  B: jy,\n  A: iy,\n  ZY: hy,\n  YY: gy,\n  XY: fy,\n  WY: ey,\n  VY: dy,\n  subs: \n  - id: \"i\"\n    UY: cy,\n    subs: []\n    :bb\n  - id: \"j\"\n    TY: by,\n    SY: ay,\n    RY: zx,\n    QY: yx,\n    PY: xx,\n    OY: wx,\n    NY: vx,\n    MY: ux,\n    subs: []\n  :cb"
+        }
+    ],
+    "RuleHint": "To find the error in the yaml file, you need to parse the yaml file and report any syntax error if encountered any. Potential errors include missing key before colon."
+}

@@ -1,0 +1,31 @@
+{
+    "Question": "What is the first object's id of subs?",
+    "Answer": "d",
+    "Label": {
+        "typename": "json",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "{\n\"id\":\"c\",\n\"Z\":\"i\",\n\"Y\":\"h\",\n\"X\":\"g\",\n\"W\":\"f\",\n\"V\":\"e\",\n\"U\":\"d\",\n\"subs\":[\n {\n \"id\":\"d\",\n \"T\":\"c\",\n \"S\":\"b\",\n \"R\":\"a\",\n \"Q\":\"zy\",\n \"P\":\"yy\",\n \"O\":\"xy\",\n \"N\":\"wy\",\n \"M\":\"vy\",\n \"L\":\"uy\",\n \"K\":\"ty\",\n \"subs\":[\n  {\n  \"id\":\"e\",\n  \"J\":\"sy\",\n  \"I\":\"ry\",\n  \"H\":\"qy\",\n  \"G\":\"py\",\n  \"F\":\"oy\",\n  \"E\":\"ny\",\n  \"D\":\"my\",\n  \"C\":\"ly\",\n  \"B\":\"ky\",\n  \"A\":\"jy\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"f\",\n  \"ZY\":\"iy\",\n  \"YY\":\"hy\",\n  \"XY\":\"gy\",\n  \"WY\":\"fy\",\n  \"VY\":\"ey\",\n  \"UY\":\"dy\",\n  \"TY\":\"cy\",\n  \"subs\":[]\n  }\n ]\n },\n {\n \"id\":\"g\",\n \"SY\":\"by\",\n \"RY\":\"ay\",\n \"QY\":\"zx\",\n \"PY\":\"yx\",\n \"OY\":\"xx\",\n \"NY\":\"wx\",\n \"MY\":\"vx\",\n \"subs\":[\n  {\n  \"id\":\"h\",\n  \"LY\":\"ux\",\n  \"KY\":\"tx\",\n  \"JY\":\"sx\",\n  \"IY\":\"rx\",\n  \"HY\":\"qx\",\n  \"GY\":\"px\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"i\",\n  \"FY\":\"ox\",\n  \"EY\":\"nx\",\n  \"DY\":\"mx\",\n  \"CY\":\"lx\",\n  \"BY\":\"kx\",\n  \"AY\":\"jx\",\n  \"ZX\":\"ix\",\n  \"YX\":\"hx\",\n  \"XX\":\"gx\",\n  \"subs\":[]\n  }\n ]\n }\n]\n}",
+    "timestamp": "08_28_2024_23_21_26.578006",
+    "input_hash": -938944523318809045,
+    "examples": [
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "p",
+            "Reference": "{\n\"id\":\"o\",\n\"Z\":\"m\",\n\"Y\":\"l\",\n\"X\":\"k\",\n\"subs\":[\n {\n \"id\":\"p\",\n \"W\":\"j\",\n \"subs\":[\n  {\n  \"id\":\"q\",\n  \"V\":\"i\",\n  \"U\":\"h\",\n  \"T\":\"g\",\n  \"S\":\"f\",\n  \"R\":\"e\",\n  \"Q\":\"d\",\n  \"P\":\"c\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"r\",\n  \"O\":\"b\",\n  \"N\":\"a\",\n  \"M\":\"zy\",\n  \"L\":\"yy\",\n  \"subs\":[]\n  }\n ]\n },\n {\n \"id\":\"s\",\n \"K\":\"xy\",\n \"J\":\"wy\",\n \"I\":\"vy\",\n \"subs\":[\n  {\n  \"id\":\"t\",\n  \"H\":\"uy\",\n  \"G\":\"ty\",\n  \"F\":\"sy\",\n  \"E\":\"ry\",\n  \"D\":\"qy\",\n  \"C\":\"py\",\n  \"B\":\"oy\",\n  \"A\":\"ny\",\n  \"ZY\":\"my\",\n  \"YY\":\"ly\",\n  \"XY\":\"ky\",\n  \"WY\":\"jy\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"u\",\n  \"VY\":\"iy\",\n  \"UY\":\"hy\",\n  \"TY\":\"gy\",\n  \"SY\":\"fy\",\n  \"RY\":\"ey\",\n  \"QY\":\"dy\",\n  \"PY\":\"cy\",\n  \"OY\":\"by\",\n  \"NY\":\"ay\",\n  \"subs\":[]\n  }\n ]\n }\n]\n}"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "i",
+            "Reference": "{\n\"id\":\"h\",\n\"Z\":\"v\",\n\"Y\":\"u\",\n\"X\":\"t\",\n\"W\":\"s\",\n\"V\":\"r\",\n\"U\":\"q\",\n\"T\":\"p\",\n\"S\":\"o\",\n\"subs\":[\n {\n \"id\":\"i\",\n \"R\":\"n\",\n \"Q\":\"m\",\n \"P\":\"l\",\n \"subs\":[\n  {\n  \"id\":\"j\",\n  \"O\":\"k\",\n  \"N\":\"j\",\n  \"M\":\"i\",\n  \"L\":\"h\",\n  \"K\":\"g\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"k\",\n  \"J\":\"f\",\n  \"I\":\"e\",\n  \"H\":\"d\",\n  \"G\":\"c\",\n  \"subs\":[]\n  }\n ]\n },\n {\n \"id\":\"l\",\n \"F\":\"b\",\n \"E\":\"a\",\n \"D\":\"zy\",\n \"C\":\"yy\",\n \"B\":\"xy\",\n \"A\":\"wy\",\n \"subs\":[\n  {\n  \"id\":\"m\",\n  \"ZY\":\"vy\",\n  \"YY\":\"uy\",\n  \"XY\":\"ty\",\n  \"WY\":\"sy\",\n  \"VY\":\"ry\",\n  \"UY\":\"qy\",\n  \"TY\":\"py\",\n  \"SY\":\"oy\",\n  \"RY\":\"ny\",\n  \"QY\":\"my\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"n\",\n  \"PY\":\"ly\",\n  \"OY\":\"ky\",\n  \"NY\":\"jy\",\n  \"MY\":\"iy\",\n  \"LY\":\"hy\",\n  \"KY\":\"gy\",\n  \"JY\":\"fy\",\n  \"subs\":[]\n  }\n ]\n }\n]\n}"
+        }
+    ],
+    "RuleHint": "To find the first object's id of subs, first parse the json file and get the outermost object, in the outermost object's subs list, get the first element. That element is another object, and its id is the answer."
+}

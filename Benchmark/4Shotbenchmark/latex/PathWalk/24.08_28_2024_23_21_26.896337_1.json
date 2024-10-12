@@ -1,0 +1,41 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section.",
+    "Answer": "\\section{p}\nfar cafe qualify salvage banana \\includegraphics[width=0.5\\textwidth]{aj.gif}salvage",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 4,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "o\nessence cafe qualify salvage banana salv\\includegraphics[width=0.5\\textwidth]{zi.jpeg}age\n\\section{p}\nfar cafe qualify salvage banana \\includegraphics[width=0.5\\textwidth]{aj.gif}salvage",
+    "timestamp": "08_28_2024_23_21_26.896337",
+    "input_hash": 9185946520360266236,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{g}\napple kangaroo banana dentist lamb zen",
+            "Reference": "f\nzen jargon banana dent\\includegraphics[width=0.5\\textwidth]{pi.gif}ist lamb zen\n\\section{g}\napple kangaroo banana dentist lamb zen"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{x}\nX-ray oops ravish dentist kangaroo halo",
+            "Reference": "w\nwake oops ravish dentist kangaroo halo\n\\section{x}\nX-ray oops ravish dentist kangaroo halo"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{d}\ncafe halo zen yogurt perish jargon",
+            "Reference": "c\nbanana ha\\textbf{zen}lo zen yogurt p\\includegraphics[width=0.5\\textwidth]{aj.gif}erish jargon\n\\section{d}\ncafe halo zen yogurt perish jargon"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{q}\noops transformer perish qualify b\\textbf{monkey}anana jargon",
+            "Reference": "p\nnob transformer perish qualify banana jargon\n\\section{q}\noops transformer perish qualify b\\textbf{monkey}anana jargon"
+        }
+    ],
+    "RuleHint": "Note that section title is enclosed by \\\\section{}, and \\\\subsection for subsection, \\\\subsubsection for subsubsection. To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

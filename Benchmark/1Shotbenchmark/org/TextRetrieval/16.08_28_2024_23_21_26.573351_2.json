@@ -1,0 +1,26 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "No image file is included in the file.",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "e\njargon ravish idiot far yogurt unique\n* f\nkangaroo ravish idiot far yogurt unique",
+    "timestamp": "08_28_2024_23_21_26.573351",
+    "input_hash": 4432533850729963335,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "lh.jpg\nmh.jpg",
+            "Reference": "n\ndentist far qualify sa*cafe*lvage un[[lh.jpg]]ique perish\n* o\nessence far q[[mh.jpg]]ualify salvage unique perish"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching [[TARGET]], the TARGET part is filename."
+}

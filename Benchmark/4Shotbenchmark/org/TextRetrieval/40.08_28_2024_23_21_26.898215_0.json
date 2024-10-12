@@ -1,0 +1,41 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "No bold texts presented in file.",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 4,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "p\nperish cafe idiot salvage dentist[[ui.jpeg]] idiot\n* q\nqualify cafe idiot salvage dentist id[[vi.jpg]]iot",
+    "timestamp": "08_28_2024_23_21_26.898215",
+    "input_hash": -1168898186789818704,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "apple\nbanana",
+            "Reference": "k\nvig*apple*or cafe jargon essence [[dh.jpg]]salvage idiot\n* l\nwake cafe j*banana*argon essence salvage idiot"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "unique",
+            "Reference": "b\nhalo X-ray oops monkey yog*unique*urt jargon\n* c\nidiot X-ray oops monkey yogurt jargon"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "yogurt",
+            "Reference": "d\n[[ie.gif]]ravish jargon monkey monkey unique groot\n* e\nsalvage jargon mo*yogurt*nkey monkey unique groot"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "qualify",
+            "Reference": "j\njargon yogurt transformer halo zen groot\n* k\nkangaroo yogurt transformer halo*qualify* zen groot"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for single star, i.e., *, the content between two occurrences of single star is the bold texts. Note that the bold range should start from the single star occurring at i-th spot throughout the whole input file, where i is odd, and end with single star occurring at jth spot where j is even. For example, text between single star appearing first and second time."
+}

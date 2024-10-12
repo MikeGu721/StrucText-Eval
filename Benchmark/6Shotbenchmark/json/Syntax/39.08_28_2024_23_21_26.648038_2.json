@@ -1,0 +1,51 @@
+{
+    "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+    "Answer": "True",
+    "Label": {
+        "typename": "json",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 6,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Syntax"
+        ]
+    },
+    "Reference": "{\n\"id\":\"s\",\n\"Z\":\"f\",\n\"subs\":[\n {\n \"id\":\"t\",\n \"Y\":\"e\",\n \"X\":\"d\",\n \"W\":\"c\",\n \"V\":\"b\",\n \"U\":\"a\",\n \"subs\":[]\n]",
+    "timestamp": "08_28_2024_23_21_26.648038",
+    "input_hash": 6713072048839272839,
+    "examples": [
+        {
+            "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "{\n\"id\":\"p\",\n\"Z\":\"w\",\n\"Y\":\"v\",\n\"subs\":[\n {\n \"id\":\"q\",\n \"X\":\"u\",\n \"W\":\"t\",\n \"V\":\"s\",\n \"U\":\"r\",\n \"T\":\"q\",\n \"S\":\"p\",\n \"subs\":[]\n]"
+        },
+        {
+            "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "{\n\"id\":\"a\",\n\"Z\":\"j\",\n\"subs\":[\n {\n \"id\":\"b\",\n \"Y\":\"i\",\n \"X\":\"h\",\n \"subs\":[]\n]"
+        },
+        {
+            "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "{\n\"id\":\"a\",\n\"Z\":\"f\",\n\"Y\":\"e\",\n\"X\":\"d\",\n\"W\":\"c\",\n\"subs\":[\n {\n \"id\":\"b\",\n \"V\":\"b\",\n \"U\":\"a\",\n \"T\":\"zy\",\n \"S\":\"yy\",\n \"R\":\"xy\",\n \"subs\":[]\n]"
+        },
+        {
+            "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "{\n\"id\":\"p\",\n\"Z\":\"w\",\n\"Y\":\"v\",\n\"X\":\"u\",\n\"subs\":[\n {\n \"id\":\"q\",\n \"W\":\"t\",\n \"V\":\"s\",\n \"subs\":[]\n]"
+        },
+        {
+            "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "{\n\"id\":\"f\",\n\"Z\":\"e\",\n\"Y\":\"d\",\n\"X\":\"c\",\n\"W\":\"b\",\n\"V\":\"a\",\n\"U\":\"zy\",\n\"subs\":[\n {\n \"id\":\"g\",\n \"T\":\"yy\",\n \"S\":\"xy\",\n \"subs\":[]\n }\n]"
+        },
+        {
+            "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "{\n\"id\":\"r\",\n\"Z\":\"t\",\n\"Y\":\"s\",\n\"X\":\"r\",\n\"subs\":[\n {\n \"id\":\"s\",\n \"W\":\"q\",\n \"V\":\"p\",\n \"subs\":[]\n]\n}"
+        }
+    ],
+    "RuleHint": "To find the error in the json file, you need to parse the json file and report any syntax error if encountered any. Potential errors include missing ending curly braces."
+}

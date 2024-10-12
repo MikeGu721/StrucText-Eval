@@ -1,0 +1,66 @@
+{
+    "Question": "What is the tag with attribute of value j?",
+    "Answer": "B",
+    "Label": {
+        "typename": "xml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 9,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"n\" Y=\"m\">\n <B X=\"l\" W=\"k\" V=\"j\" U=\"i\" T=\"h\">\n  banana\n </B>\n apple\n</A>",
+    "timestamp": "08_28_2024_23_21_26.720647",
+    "input_hash": 1196769977854227931,
+    "examples": [
+        {
+            "Question": "What is the tag with attribute of value b?",
+            "Answer": "A",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"b\">\n <B Y=\"a\" X=\"zy\">\n  banana\n </B>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the tag with attribute of value v?",
+            "Answer": "B",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"y\" Y=\"x\">\n <B X=\"w\" W=\"v\" V=\"u\">\n  banana\n </B>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the tag with attribute of value vy?",
+            "Answer": "B",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"d\" Y=\"c\" X=\"b\" W=\"a\">\n <B V=\"zy\" U=\"yy\" T=\"xy\" S=\"wy\" R=\"vy\">\n  banana\n </B>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the tag with attribute of value r?",
+            "Answer": "A",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"s\" Y=\"r\">\n <B X=\"q\">\n  banana\n </B>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the tag with attribute of value g?",
+            "Answer": "A",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"h\" Y=\"g\" X=\"f\" W=\"e\" V=\"d\">\n <B U=\"c\" T=\"b\" S=\"a\" R=\"zy\">\n  banana\n </B>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the tag with attribute of value s?",
+            "Answer": "A",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"t\" Y=\"s\" X=\"r\">\n <B W=\"q\">\n  banana\n </B>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the tag with attribute of value x?",
+            "Answer": "A",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"z\" Y=\"y\" X=\"x\" W=\"w\" V=\"v\">\n <B U=\"u\" T=\"t\" S=\"s\">\n  banana\n </B>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the tag with attribute of value s?",
+            "Answer": "A",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"t\" Y=\"s\" X=\"r\" W=\"q\" V=\"p\">\n <B U=\"o\" T=\"n\" S=\"m\">\n  banana\n </B>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the tag with attribute of value t?",
+            "Answer": "A",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"v\" Y=\"u\" X=\"t\" W=\"s\">\n <B V=\"r\" U=\"q\">\n  banana\n </B>\n apple\n</A>"
+        }
+    ],
+    "RuleHint": "To find the tag name of particular attribute value, just search the file for that value and find the surrounding left and right angles, i.e., boundary of tag. The word next to left angle is tag name."
+}

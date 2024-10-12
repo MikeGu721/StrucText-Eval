@@ -1,0 +1,36 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "monkey",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "p\nravish *monkey*qualify banan[[jj.jpg]]a banana far idiot\n* q\nsalvage qualif[[kj.png]]y banana banana far idiot",
+    "timestamp": "08_28_2024_23_21_26.605059",
+    "input_hash": -815140174880225871,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "cafe",
+            "Reference": "c\nqualify vigor gro*cafe*ot banana monkey idiot\n* d\nravish vigor groot banana monkey idi[[yh.jpg]]ot"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "perish\nqualify",
+            "Reference": "c\nbanana apple transformer perish ess*perish*[[nh.gif]]e transformer perish essence X-ray\n* d\ncafe apple transformer perish essence X-r*qualify*[[oh.jpeg]]former perish essence X-ray"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "transformer",
+            "Reference": "a\nkangaroo ravish wake lamb transformer transformer\n* b\nlamb ravish wake l*transformer*amb transformer t[[ng.gif]]ransformer"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for single star, i.e., *, the content between two occurrences of single star is the bold texts. Note that the bold range should start from the single star occurring at i-th spot throughout the whole input file, where i is odd, and end with single star occurring at jth spot where j is even. For example, text between single star appearing first and second time."
+}

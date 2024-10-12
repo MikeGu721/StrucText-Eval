@@ -1,0 +1,19 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "yh.jpg\nvh.jpg\nxh.jpg\nwh.gif",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "z\ncafe X-ray jargon yogurt nob cafe ravish lamb X-ra**idiot**y dentist groot ban![alt](vh.jpg \"hover text\")ana\n# ab\ndentist X-ray jargon yogurt nob cafe ravish![alt](wh.gif \"hover text\") lamb X-ray dentist groot banana\n## bb\nessence X-ray jargon yogurt nob cafe ravish lamb X-ray dentist groot banana\n## cb\nfar X-ray jargon yogurt nob cafe ravish lamb X-ray dent**jargon**ist groot banana\n# db\ngroot X-ray jargon yogurt nob c![alt](xh.jpg \"hover text\")afe ravish lamb X-ray dentist groot banana\n## eb\nhalo X-ray jargon yogurt nob cafe ravish lamb X-ray ![alt](yh.jpg \"hover text\")dentist groot banana\n## fb\nidiot X-ray jargon yogurt nob cafe ravish lamb X-ray dentist groot banana",
+    "timestamp": "08_28_2024_23_21_26.557736",
+    "input_hash": 7839176777476273987,
+    "RuleHint": "To find the image files, look for texts matching ![*](TARGET \"*\"), the TARGET part is filename. Star means any text is possible."
+}

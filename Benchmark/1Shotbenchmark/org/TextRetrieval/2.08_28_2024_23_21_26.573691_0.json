@@ -1,0 +1,26 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "zen\nyogurt\nX-ray",
+    "Label": {
+        "typename": "org",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "l\ncafe banana nob kangaroo salvage halo u*X-ray*nique monkey essence vigor X-ray unique\n* m\ndentist banana nob kangaroo salvage halo unique monkey essence vi[[fe.jpg]]gor X-ray unique\n** n\nessence banana nob kangaroo salvage halo un*yogurt*ique monkey essence vigor [[ge.gif]]X-ray unique\n** o\nfar banana nob kangaroo salvage halo unique monkey essence v[[he.jpeg]]igor X-ray unique\n* p\ngroot banana nob kangaroo salvage halo unique monkey essence vigor X-ray unique\n** q\nhal*zen*o banana nob kangaroo salvage halo unique mon[[ie.jpg]]key essence vigor X-ray unique\n** r\nidiot ban[[je.png]]ana nob kangaroo salvage halo unique monkey essence vigor X-ray unique",
+    "timestamp": "08_28_2024_23_21_26.573691",
+    "input_hash": 2239854377222346124,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "wake\nyogurt\nX-ray",
+            "Reference": "m\ntransformer vigor banana zen salvage salvage far apple banana vigor oops ban[[jj.jpg]]ana\n* n\nunique vigor banana zen salvage s[[kj.png]]alvage far apple banana vigor oops banana\n** o\nvigor vigor banana zen salvage salvage far*wake* apple banana vigor oops banana\n** p\nwake vigor banana zen salvage salvage far ap*X-ray*[[lj.jpeg]]ar apple banana vigor oops banana\n* q\nX-ray vigor banana zen salvage salvage f[[mj.jpg]]ar apple banana vigor oops banana\n** r\nyogurt vigor banana zen salvage salvage far apple banana vigor oops banana\n** s\nzen vigor banana zen salvage sal*yogurt*vage far apple banana vigor oops banana"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for single star, i.e., *, the content between two occurrences of single star is the bold texts. Note that the bold range should start from the single star occurring at i-th spot throughout the whole input file, where i is odd, and end with single star occurring at jth spot where j is even. For example, text between single star appearing first and second time."
+}

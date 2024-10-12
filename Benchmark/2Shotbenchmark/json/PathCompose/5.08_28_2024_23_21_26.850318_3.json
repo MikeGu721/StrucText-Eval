@@ -1,0 +1,31 @@
+{
+    "Question": "How to access value \"c\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+    "Answer": "obj[\"V\"]",
+    "Label": {
+        "typename": "json",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathCompose"
+        ]
+    },
+    "Reference": "{\n\"id\":\"h\",\n\"Z\":\"g\",\n\"Y\":\"f\",\n\"X\":\"e\",\n\"W\":\"d\",\n\"V\":\"c\",\n\"U\":\"b\",\n\"subs\":[\n {\n \"id\":\"i\",\n \"T\":\"a\",\n \"subs\":[]\n }\n]\n}",
+    "timestamp": "08_28_2024_23_21_26.850318",
+    "input_hash": 7297090777193743320,
+    "examples": [
+        {
+            "Question": "How to access value \"yy\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"V\"]",
+            "Reference": "{\n\"id\":\"l\",\n\"Z\":\"c\",\n\"Y\":\"b\",\n\"subs\":[\n {\n \"id\":\"m\",\n \"X\":\"a\",\n \"W\":\"zy\",\n \"V\":\"yy\",\n \"U\":\"xy\",\n \"T\":\"wy\",\n \"S\":\"vy\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"g\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"W\"]",
+            "Reference": "{\n\"id\":\"j\",\n\"Z\":\"j\",\n\"Y\":\"i\",\n\"X\":\"h\",\n\"W\":\"g\",\n\"subs\":[\n {\n \"id\":\"k\",\n \"V\":\"f\",\n \"U\":\"e\",\n \"T\":\"d\",\n \"S\":\"c\",\n \"subs\":[]\n }\n]\n}"
+        }
+    ],
+    "RuleHint": "To get the path to access specified value. You have to do a recursive search along the subs fields, starting from the outermost parsed object. For each visited object, check each fields except for subs, and record the path along the way, i.e., subs inside brackets and index into subs inside brackets, and at which field you find the value."
+}

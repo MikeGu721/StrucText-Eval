@@ -1,0 +1,31 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "nf.png\nof.png\npf.jpg",
+    "Label": {
+        "typename": "org",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "o\nbanana unique cafe essence salvage ravish uniq*halo*[[nf.png]]nique dentist salvage zen dentist idiot\n* p\n*idiot*cafe unique cafe essence sa[[of.png]]lvage ravish unique dentist salvage zen dentist idiot\n** q\ndentist unique cafe essence salvage ravish unique dentist salvage z*jargon*en dentist idiot\n** r\nessence unique cafe essence salvage ravish unique dentist salvage zen dentist idiot\n* s\nfar unique cafe es*kangaroo*[[pf.jpg]]cafe essence salvage ravish unique dentist salvage zen dentist idiot\n** t\ngroot unique cafe essence salvage ravish unique dentist salvage zen dentist idiot\n** u\nhalo unique cafe essence salvage ravish unique *lamb*dentist salvage zen dentist idiot",
+    "timestamp": "08_28_2024_23_21_26.589824",
+    "input_hash": 4772168661968498979,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "lh.jpg\nkh.png\nmh.jpg",
+            "Reference": "g\nX-ray wake oops esse[[kh.png]]nce zen salvage far ravish halo monkey vigor salvage\n* h\nyogurt wake oops essence zen salvage far ravish halo monke*banana*y vigor salvage\n** i\nzen wake *cafe*oops essence zen salvage far ravish halo monkey vigor salvage\n** j\n[[lh.jpg]]apple X-ray oops essence zen salvage far ravish halo monkey vigor salvage\n* k\nbanana X-ray oops essence zen salvage far ravish halo monkey vigor salvage\n** l\ncafe X-ray oops essence zen salvage far ravish halo monkey vigor salvage\n** m\ndent[[mh.jpg]]ist X-ray oops essence zen salvage far ravish halo monkey vigor salvage"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ui.png",
+            "Reference": "s\nmonkey vigor qualify monkey apple peris*X-ray*h qualify yogurt essence idiot nob monkey\n* t\nnob vigor qualify monkey apple perish qualify yogurt essence idiot nob monkey\n** u\noops vigor qualify monkey apple perish *yogurt*qualify yogurt essence idiot nob monkey\n** v\nperish[[ui.png]] vigor qualify monkey apple perish qualify yogurt essence idiot nob monkey\n* w\nqualify vigor qualify monkey apple perish qualify yogurt essence idiot nob monkey\n** x\nravish vigor qualify monkey ap*zen*ple perish qualify yogurt essence idiot nob monkey\n** y\nsalvage vigor qualify monkey apple perish qualify yogurt ess*apple banana*ence idiot nob monkey"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching [[TARGET]], the TARGET part is filename."
+}

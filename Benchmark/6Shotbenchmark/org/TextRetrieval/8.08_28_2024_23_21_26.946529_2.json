@@ -1,0 +1,51 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "gh.gif",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 6,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "f\ncafe jargon zen cafe i*kangaroo*[[gh.gif]]fe jargon zen cafe idiot kangaroo\n* g\ndentist j*lamb*argon zen cafe idiot kangaroo",
+    "timestamp": "08_28_2024_23_21_26.946529",
+    "input_hash": -7658338444168938749,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "No image file is included in the file.",
+            "Reference": "s\nqualify halo far salvage qualify k*transformer*angaroo\n* t\nravish halo far salvage qualify kangaroo"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ej.jpeg",
+            "Reference": "c\nessence jargon X-ray banan*qualify*a banana monkey\n* d\nfar jargon X-ray banana b*ravish*[[ej.jpeg]]ray banana banana monkey"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "No image file is included in the file.",
+            "Reference": "b\nqualify jargon yogurt jargon\n* c\nravish jargon yogurt jargon"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "xe.jpeg",
+            "Reference": "v\nravish [[xe.jpeg]]kangaroo halo jargon wake ravish\n* w\ns*halo*alvage kangaroo halo jargon wake ravish"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "oi.gif\nni.gif",
+            "Reference": "p\napple far perish transforme[[ni.gif]]r X-ray X-ray\n* q\nbanana far perish transformer X-r[[oi.gif]]ay X-ray"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "No image file is included in the file.",
+            "Reference": "p\nyogurt yogurt X-ray unique perish jargo*monkey*n\n* q\nzen yogurt X-ray unique perish jargon"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching [[TARGET]], the TARGET part is filename."
+}

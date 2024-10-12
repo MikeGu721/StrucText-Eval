@@ -1,0 +1,19 @@
+{
+    "Question": "What is the object with id e? The content should be an excerpt as it appears in the YAML file.",
+    "Answer": "id: \"e\"\nV: g,\nU: f,\nsubs: []",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "id: \"d\"\nZ: k,\nY: j,\nX: i,\nW: h,\nsubs: \n- id: \"e\"\n  V: g,\n  U: f,\n  subs: []",
+    "timestamp": "08_28_2024_23_21_26.554818",
+    "input_hash": -2185803419243371705,
+    "RuleHint": "To find the object with specified id, you need to first parse the yaml file and get the outermost object, starting from which search the subs field recursively and looking for the desired value in id field for each visited object. Retrieve the content of that object once found."
+}

@@ -1,0 +1,36 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "kj.png\njj.jpg",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "p\nravish *monkey*qualify banan[[jj.jpg]]a banana far idiot\n* q\nsalvage qualif[[kj.png]]y banana banana far idiot",
+    "timestamp": "08_28_2024_23_21_26.605511",
+    "input_hash": -815140174880225871,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "yh.jpg",
+            "Reference": "c\nqualify vigor gro*cafe*ot banana monkey idiot\n* d\nravish vigor groot banana monkey idi[[yh.jpg]]ot"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "nh.gif\noh.jpeg",
+            "Reference": "c\nbanana apple transformer perish ess*perish*[[nh.gif]]e transformer perish essence X-ray\n* d\ncafe apple transformer perish essence X-r*qualify*[[oh.jpeg]]former perish essence X-ray"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ng.gif",
+            "Reference": "a\nkangaroo ravish wake lamb transformer transformer\n* b\nlamb ravish wake l*transformer*amb transformer t[[ng.gif]]ransformer"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching [[TARGET]], the TARGET part is filename."
+}

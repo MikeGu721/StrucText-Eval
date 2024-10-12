@@ -1,0 +1,31 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section.",
+    "Answer": "# r\nnob vigor vig**monkey**or lamb kangaroo zen",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "q\nmonkey vigor vigor lamb kangar**lamb**![alt](og.jpeg \"hover text\") kangaroo zen\n# r\nnob vigor vig**monkey**or lamb kangaroo zen",
+    "timestamp": "08_28_2024_23_21_26.858276",
+    "input_hash": -6909550758633775494,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# g\nessence monkey halo ![alt](gi.png \"hover text\")X-ray apple transformer",
+            "Reference": "f\ndentist monkey halo X-ray apple transformer\n# g\nessence monkey halo ![alt](gi.png \"hover text\")X-ray apple transformer"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# l\nqualify salvage![alt](lj.jpeg \"hover text\") idiot banana cafe wake",
+            "Reference": "k\nperish salvage idiot banana cafe **jargon**![alt](kj.gif \"hover text\")h salvage idiot banana cafe wake\n# l\nqualify salvage![alt](lj.jpeg \"hover text\") idiot banana cafe wake"
+        }
+    ],
+    "RuleHint": "To find the content of certain section, starting from the headings start with one hashtag, and go to the ith heading as specified in number of sections. Then start from that line, look for j-th heading with 2 hashtags as specified in subsection number. For kth subsubsection, look for kth heading with 3 hashtags starting from the located subsubsection. Stop searching early if the subsection or subsubsection is not queried."
+}

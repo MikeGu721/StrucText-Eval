@@ -1,0 +1,31 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "No bold texts presented in file.",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "u\nidiot vigor unique apple salvage zen\n\\section{v}\njargon vigor unique appl\\includegraphics[width=0.5\\textwidth]{qe.png}e salvage zen",
+    "timestamp": "08_28_2024_23_21_26.586826",
+    "input_hash": -3803453560918482049,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "jargon",
+            "Reference": "z\nz\\textbf{jargon}en ravish groot unique unique jargon\n\\section{ab}\nap\\includegraphics[width=0.5\\textwidth]{ag.gif}ple salvage groot unique unique jargon"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "kangaroo",
+            "Reference": "f\nessence zen essen\\textbf{kangaroo}ce yogurt lamb X-ray\n\\section{g}\nfar zen essence yogurt lamb X-ray"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for macro textbf, and everything after \\\\textbf{ and before the first } encountered is bold text."
+}

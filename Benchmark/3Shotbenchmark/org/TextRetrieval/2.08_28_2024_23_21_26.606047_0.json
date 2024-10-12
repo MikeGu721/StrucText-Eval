@@ -1,0 +1,36 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "ravish\nsalvage\nqualify",
+    "Label": {
+        "typename": "org",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "t\nyogurt banana ravish salvage groot y*qualify*ogurt halo dentist yogurt oops apple yogurt\n* u\nzen banana ravish salvage groot *ravish*yogurt halo dentist yogurt oops a[[di.jpg]]pple yogurt\n** v\napple cafe ravish salvage groot yogurt halo dentist yogurt oops apple yogurt\n** w\nbanana cafe ravish salvage groot yogurt halo dentist yogurt oops apple yo[[ei.jpeg]]gurt\n* x\ncafe caf[[fi.jpeg]]e ravish salvage groot yogurt halo dentist yogurt oops apple yogurt\n** y\ndentist cafe ravish salvage groot yogur*salvage*t halo dentist yogurt oops ap[[gi.jpeg]]ple yogurt\n** z\nessence cafe ravish salvage groot yogurt halo d[[hi.jpg]]entist yogurt oops apple yogurt",
+    "timestamp": "08_28_2024_23_21_26.606047",
+    "input_hash": -2371453246700065253,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "wake\nX-ray\nvigor",
+            "Reference": "x\njargon essence yogurt dentist cafe nob essence zen monkey zen l[[bi.gif]]amb nob\n* y\nkangaroo essence y*vigor*ogurt dentist cafe nob essence zen [[ci.jpeg]]monkey zen lamb nob\n** z\nlamb essence yogurt dentist cafe nob essence zen monkey zen lamb nob\n** ab\nmonkey es[[di.jpg]]sence yogurt dentist cafe nob essence zen monkey zen lamb nob\n* bb\nnob essence yogurt dentist cafe nob essence zen monkey zen lamb nob\n** cb\noops e*wake*ssence yogurt dentist cafe nob essence zen monkey zen lamb[[ei.jpeg]] nob\n** db\nperi*X-ray*sh essence yogurt dentist cafe nob essence zen monkey zen lamb nob"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "idiot\ngroot\nhalo",
+            "Reference": "q\nkangaroo dentist wake zen perish zen kangaroo wake yogurt cafe yogurt wake\n* r\nlamb dentist wake zen perish zen kangaroo wake yogurt cafe yogurt wake\n** s\nmonkey dentist wake zen perish zen kangar*groot*oo wake yogurt cafe yogurt w[[lg.jpg]]ake\n** t\nnob dentist wake zen perish zen kangaro*halo*o wake yogurt cafe yogurt wake\n* u\noops [[mg.gif]]dentist wake zen perish zen kangaroo wake yogurt cafe yogurt wake\n** v\nperish dentist wak*idiot*[[ng.gif]]entist wake zen perish zen kangaroo wake yogurt cafe yogurt wake\n** w\nqualify dentist wake zen perish zen kangaroo wake yogurt cafe yogurt wake"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "wake\nzen\nvigor\nyogurt\nX-ray",
+            "Reference": "j\nzen salvage oops lamb idiot essence nob monkey kangaroo vigor halo ze*vigor*n\n* k\napple transformer oops lamb idiot essence nob monkey kangaroo vigor *wake*[[uf.png]] idiot essence nob monkey kangaroo vigor halo zen\n** l\nbanana transformer oops lamb idiot essence nob monkey kangaroo*X-ray* vigor halo zen\n** m\ncafe transformer oops lamb idiot*yogurt* essence nob monkey kangaroo vigor halo zen\n* n\ndentist transformer oops lamb idiot essence nob monkey kangaroo vigor halo zen\n** o\nessence transformer oops lamb idiot essence nob monkey kangaroo vigor halo zen\n** p\nfar transformer oops lamb idiot essen*zen*ce nob mo[[vf.png]]nkey kangaroo vigor halo zen"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for single star, i.e., *, the content between two occurrences of single star is the bold texts. Note that the bold range should start from the single star occurring at i-th spot throughout the whole input file, where i is odd, and end with single star occurring at jth spot where j is even. For example, text between single star appearing first and second time."
+}

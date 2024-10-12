@@ -1,0 +1,31 @@
+{
+    "Question": "What is the color of record with primeKey a",
+    "Answer": "black",
+    "Label": {
+        "typename": "csv",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,male,31,y,210,129,black\n\nprimeKey,status,salary,company,location\na,unemployed,413030,Microsoft,HI",
+    "timestamp": "08_28_2024_23_21_26.574384",
+    "input_hash": -948147680753203881,
+    "examples": [
+        {
+            "Question": "\nWhat is the gender of record with primeKey a\n",
+            "Answer": "female",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,64,a,137,89,brown\n\nprimeKey,status,salary,company,location\na,employed,178195,NVIDIA,NY"
+        },
+        {
+            "Question": "\nWhat is the weight of record with primeKey a\n",
+            "Answer": "116",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,63,c,150,116,brown\n\nprimeKey,status,salary,company,location\na,unemployed,964395,Twitter,IL"
+        }
+    ],
+    "RuleHint": "To find the value of specific field of record with specified primeKey. You have to first, locate the line with the specific primeKey. Then find the required value under the desired column in that line."
+}

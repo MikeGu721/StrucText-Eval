@@ -1,0 +1,41 @@
+{
+    "Question": "What is the object with id f? The content should be an excerpt as it appears in the YAML file.",
+    "Answer": "id: \"f\"\nX: u,\nsubs: []",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 4,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "id: \"e\"\nZ: w,\nY: v,\nsubs: \n- id: \"f\"\n  X: u,\n  subs: []",
+    "timestamp": "08_28_2024_23_21_26.890542",
+    "input_hash": 1166246385017629229,
+    "examples": [
+        {
+            "Question": "What is the object with id t? The content should be an excerpt as it appears in the YAML file. ",
+            "Answer": "id: \"t\"\nT: o,\nsubs: []",
+            "Reference": "id: \"s\"\nZ: u,\nY: t,\nX: s,\nW: r,\nV: q,\nU: p,\nsubs: \n- id: \"t\"\n  T: o,\n  subs: []"
+        },
+        {
+            "Question": "What is the object with id h? The content should be an excerpt as it appears in the YAML file. ",
+            "Answer": "id: \"h\"\nW: q,\nsubs: []",
+            "Reference": "id: \"g\"\nZ: t,\nY: s,\nX: r,\nsubs: \n- id: \"h\"\n  W: q,\n  subs: []"
+        },
+        {
+            "Question": "What is the object with id g? The content should be an excerpt as it appears in the YAML file. ",
+            "Answer": "id: \"g\"\nZ: o,\nY: n,\nX: m,\nW: l,\nV: k,\nsubs: \n- id: \"h\"\n  U: j,\n  T: i,\n  S: h,\n  subs: []",
+            "Reference": "id: \"g\"\nZ: o,\nY: n,\nX: m,\nW: l,\nV: k,\nsubs: \n- id: \"h\"\n  U: j,\n  T: i,\n  S: h,\n  subs: []"
+        },
+        {
+            "Question": "What is the object with id x? The content should be an excerpt as it appears in the YAML file. ",
+            "Answer": "id: \"x\"\nZ: d,\nsubs: \n- id: \"y\"\n  Y: c,\n  subs: []",
+            "Reference": "id: \"x\"\nZ: d,\nsubs: \n- id: \"y\"\n  Y: c,\n  subs: []"
+        }
+    ],
+    "RuleHint": "To find the object with specified id, you need to first parse the yaml file and get the outermost object, starting from which search the subs field recursively and looking for the desired value in id field for each visited object. Retrieve the content of that object once found."
+}

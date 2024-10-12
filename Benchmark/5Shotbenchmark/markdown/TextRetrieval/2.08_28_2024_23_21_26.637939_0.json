@@ -1,0 +1,46 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "ravish",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "j\nqualify**ravish** unique oops vigor cafe far\n# k\nravish unique oops vigor cafe ![alt](lf.jpeg \"hover text\")far",
+    "timestamp": "08_28_2024_23_21_26.637939",
+    "input_hash": -6936831341129335967,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "apple\nbanana",
+            "Reference": "g\nidiot h**apple**![alt](fg.jpeg \"hover text\") halo banana salvage cafe essence\n# h\njargon halo banana salvage **banana**![alt](gg.jpg \"hover text\")nana salvage cafe essence"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "qualify",
+            "Reference": "t\nbanana yogurt**qualify** groot salvage qualify kangaroo\n# u\ncafe yogurt groot salvage qualify kangaroo"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "nob",
+            "Reference": "o\nX**nob**-ray banana apple essence ravish banana\n# p\nyogurt banana appl![alt](oe.jpg \"hover text\")e essence ravish banana"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "vigor",
+            "Reference": "e\nwake X-ray kangaroo unique idiot\n# f\nX-ray X-**vigor**ray kangaroo unique idiot"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "groot",
+            "Reference": "k\nessence![alt](le.jpg \"hover text\") lamb salvage zen unique vigor\n# l\nfar lamb sa**groot**lvage zen unique vigor"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for double stars, i.e., **, the content between two occurrences of double stars is the bold texts. Note that the bold range should start from the double stars occurring at i-th spot throughout the whole input file, where i is odd, and end with double stars occurring at jth spot where j is even. For example, text between double stars appearing first and second time."
+}

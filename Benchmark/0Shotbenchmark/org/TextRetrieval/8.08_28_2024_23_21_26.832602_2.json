@@ -1,0 +1,19 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "ue.png",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "y\ndentist kangaro*qualify*o vigor wak[[ue.png]]e jargon essence\n* z\nessence kangaroo vigor wake jargon essence",
+    "timestamp": "08_28_2024_23_21_26.832602",
+    "input_hash": -7275031527023087725,
+    "RuleHint": "To find the image files, look for texts matching [[TARGET]], the TARGET part is filename."
+}

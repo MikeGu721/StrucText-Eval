@@ -1,0 +1,61 @@
+{
+    "Question": "Extract all included figure files. Print those file names separated by \\n.",
+    "Answer": "fj.gif",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 8,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "n\nmonk\\includegraphics[width=0.5\\textwidth]{fj.gif}ey oops X-ray vigor vigor oops\n\\section{o}\nnob oops X-ray vigor vigor oops",
+    "timestamp": "08_28_2024_23_21_26.708387",
+    "input_hash": 2786181459613548371,
+    "examples": [
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "No figure file is included in the file.",
+            "Reference": "x\nravish zen unique salvage yogurt cafe\n\\section{y}\nsalvage zen un\\textbf{jargon}ique salvage yogurt cafe"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "ri.png",
+            "Reference": "v\n\\textbf{halo}apple qualify groot idiot groot jargon\n\\section{w}\nbanana quali\\textbf{idiot}fy groot idiot gr\\includegraphics[width=0.5\\textwidth]{ri.png}oot jargon"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "we.png",
+            "Reference": "v\nyogurt fa\\textbf{unique}\\includegraphics[width=0.5\\textwidth]{we.png}ar dentist idiot monkey dentist\n\\section{w}\nzen far den\\textbf{vigor}tist idiot monkey dentist"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "lg.jpg",
+            "Reference": "n\nbanana jargon halo unique monkey\\includegraphics[width=0.5\\textwidth]{lg.jpg} lamb\n\\section{o}\ncafe jargon halo unique monkey \\textbf{vigor}lamb"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "bi.gif\nci.jpeg",
+            "Reference": "r\ndentist zen banana essence groot\\textbf{lamb}\\includegraphics[width=0.5\\textwidth]{bi.gif} groot nob\n\\section{s}\ne\\textbf{monkey}ssence zen banana essence groot \\includegraphics[width=0.5\\textwidth]{ci.jpeg}nob"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "No figure file is included in the file.",
+            "Reference": "w\nravish X-ray ravish\\textbf{banana} idiot dentist vigor\n\\section{x}\nsalvage X-ray ravish idiot dentist vigor"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "No figure file is included in the file.",
+            "Reference": "r\nqualify lamb essence banana apple qualify\n\\section{s}\nravish lamb essence banana apple qualify"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "pi.jpeg\nqi.jpg",
+            "Reference": "f\nperish far unique wake yogu\\includegraphics[width=0.5\\textwidth]{pi.jpeg}rt salvage\n\\section{g}\nqualify far uniq\\includegraphics[width=0.5\\textwidth]{qi.jpg}ue wake yogurt salvage"
+        }
+    ],
+    "RuleHint": "To find the image files imported, search for pattern \\\\includegraphics[*]{TARGET}, the TARGET part is the filename. Star means any text is possible."
+}

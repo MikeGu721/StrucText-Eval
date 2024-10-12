@@ -1,0 +1,46 @@
+{
+    "Question": "What is the first object's id of subs?",
+    "Answer": "u",
+    "Label": {
+        "typename": "json",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "{\n\"id\":\"t\",\n\"Z\":\"r\",\n\"Y\":\"q\",\n\"subs\":[\n {\n \"id\":\"u\",\n \"X\":\"p\",\n \"W\":\"o\",\n \"V\":\"n\",\n \"U\":\"m\",\n \"T\":\"l\",\n \"subs\":[]\n }\n]\n}",
+    "timestamp": "08_28_2024_23_21_26.627077",
+    "input_hash": -4120311388507535365,
+    "examples": [
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "k",
+            "Reference": "{\n\"id\":\"j\",\n\"Z\":\"a\",\n\"Y\":\"zy\",\n\"subs\":[\n {\n \"id\":\"k\",\n \"X\":\"yy\",\n \"W\":\"xy\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "w",
+            "Reference": "{\n\"id\":\"v\",\n\"Z\":\"n\",\n\"Y\":\"m\",\n\"X\":\"l\",\n\"subs\":[\n {\n \"id\":\"w\",\n \"W\":\"k\",\n \"V\":\"j\",\n \"U\":\"i\",\n \"T\":\"h\",\n \"S\":\"g\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "z",
+            "Reference": "{\n\"id\":\"y\",\n\"Z\":\"c\",\n\"Y\":\"b\",\n\"X\":\"a\",\n\"W\":\"zy\",\n\"V\":\"yy\",\n\"subs\":[\n {\n \"id\":\"z\",\n \"U\":\"xy\",\n \"T\":\"wy\",\n \"S\":\"vy\",\n \"R\":\"uy\",\n \"Q\":\"ty\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "u",
+            "Reference": "{\n\"id\":\"t\",\n\"Z\":\"m\",\n\"Y\":\"l\",\n\"X\":\"k\",\n\"W\":\"j\",\n\"V\":\"i\",\n\"U\":\"h\",\n\"subs\":[\n {\n \"id\":\"u\",\n \"T\":\"g\",\n \"S\":\"f\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "ab",
+            "Reference": "{\n\"id\":\"z\",\n\"Z\":\"l\",\n\"Y\":\"k\",\n\"X\":\"j\",\n\"subs\":[\n {\n \"id\":\"ab\",\n \"W\":\"i\",\n \"V\":\"h\",\n \"U\":\"g\",\n \"T\":\"f\",\n \"S\":\"e\",\n \"R\":\"d\",\n \"subs\":[]\n }\n]\n}"
+        }
+    ],
+    "RuleHint": "To find the first object's id of subs, first parse the json file and get the outermost object, in the outermost object's subs list, get the first element. That element is another object, and its id is the answer."
+}

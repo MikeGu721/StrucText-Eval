@@ -1,0 +1,41 @@
+{
+    "Question": "What is the tag with attribute of value n?",
+    "Answer": "B",
+    "Label": {
+        "typename": "xml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 4,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"r\" Y=\"q\" X=\"p\" W=\"o\">\n <B V=\"n\" U=\"m\" T=\"l\" S=\"k\" R=\"j\" Q=\"i\">\n  banana\n </B>\n apple\n</A>",
+    "timestamp": "08_28_2024_23_21_26.886880",
+    "input_hash": -5460259836434440320,
+    "examples": [
+        {
+            "Question": "What is the tag with attribute of value j?",
+            "Answer": "A",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"j\">\n <B Y=\"i\" X=\"h\">\n  banana\n </B>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the tag with attribute of value zy?",
+            "Answer": "A",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"e\" Y=\"d\" X=\"c\" W=\"b\" V=\"a\" U=\"zy\">\n <B T=\"yy\">\n  banana\n </B>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the tag with attribute of value o?",
+            "Answer": "B",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"u\" Y=\"t\" X=\"s\" W=\"r\" V=\"q\">\n <B U=\"p\" T=\"o\" S=\"n\" R=\"m\" Q=\"l\">\n  banana\n </B>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the tag with attribute of value r?",
+            "Answer": "B",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"x\" Y=\"w\" X=\"v\" W=\"u\" V=\"t\" U=\"s\">\n <B T=\"r\">\n  banana\n </B>\n apple\n</A>"
+        }
+    ],
+    "RuleHint": "To find the tag name of particular attribute value, just search the file for that value and find the surrounding left and right angles, i.e., boundary of tag. The word next to left angle is tag name."
+}

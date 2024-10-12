@@ -1,0 +1,61 @@
+{
+    "Question": "What is the object with id o? The content should be an excerpt as it appears in the YAML file.",
+    "Answer": "id: \"o\"\nW: h,\nV: g,\nU: f,\nT: e,\nS: d,\nsubs: []",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 8,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "id: \"n\"\nZ: k,\nY: j,\nX: i,\nsubs: \n- id: \"o\"\n  W: h,\n  V: g,\n  U: f,\n  T: e,\n  S: d,\n  subs: []",
+    "timestamp": "08_28_2024_23_21_26.988815",
+    "input_hash": 7533915753666807081,
+    "examples": [
+        {
+            "Question": "What is the object with id l? The content should be an excerpt as it appears in the YAML file. ",
+            "Answer": "id: \"l\"\nZ: t,\nY: s,\nX: r,\nW: q,\nsubs: \n- id: \"m\"\n  V: p,\n  U: o,\n  T: n,\n  subs: []",
+            "Reference": "id: \"l\"\nZ: t,\nY: s,\nX: r,\nW: q,\nsubs: \n- id: \"m\"\n  V: p,\n  U: o,\n  T: n,\n  subs: []"
+        },
+        {
+            "Question": "What is the object with id y? The content should be an excerpt as it appears in the YAML file. ",
+            "Answer": "id: \"y\"\nW: f,\nV: e,\nU: d,\nT: c,\nS: b,\nR: a,\nsubs: []",
+            "Reference": "id: \"x\"\nZ: i,\nY: h,\nX: g,\nsubs: \n- id: \"y\"\n  W: f,\n  V: e,\n  U: d,\n  T: c,\n  S: b,\n  R: a,\n  subs: []"
+        },
+        {
+            "Question": "What is the object with id z? The content should be an excerpt as it appears in the YAML file. ",
+            "Answer": "id: \"z\"\nZ: v,\nY: u,\nX: t,\nsubs: \n- id: \"ab\"\n  W: s,\n  subs: []",
+            "Reference": "id: \"z\"\nZ: v,\nY: u,\nX: t,\nsubs: \n- id: \"ab\"\n  W: s,\n  subs: []"
+        },
+        {
+            "Question": "What is the object with id t? The content should be an excerpt as it appears in the YAML file. ",
+            "Answer": "id: \"t\"\nT: h,\nS: g,\nR: f,\nQ: e,\nsubs: []",
+            "Reference": "id: \"s\"\nZ: n,\nY: m,\nX: l,\nW: k,\nV: j,\nU: i,\nsubs: \n- id: \"t\"\n  T: h,\n  S: g,\n  R: f,\n  Q: e,\n  subs: []"
+        },
+        {
+            "Question": "What is the object with id z? The content should be an excerpt as it appears in the YAML file. ",
+            "Answer": "id: \"z\"\nX: c,\nW: b,\nV: a,\nsubs: []",
+            "Reference": "id: \"y\"\nZ: e,\nY: d,\nsubs: \n- id: \"z\"\n  X: c,\n  W: b,\n  V: a,\n  subs: []"
+        },
+        {
+            "Question": "What is the object with id u? The content should be an excerpt as it appears in the YAML file. ",
+            "Answer": "id: \"u\"\nZ: t,\nY: s,\nX: r,\nW: q,\nsubs: \n- id: \"v\"\n  V: p,\n  U: o,\n  T: n,\n  S: m,\n  R: l,\n  Q: k,\n  subs: []",
+            "Reference": "id: \"u\"\nZ: t,\nY: s,\nX: r,\nW: q,\nsubs: \n- id: \"v\"\n  V: p,\n  U: o,\n  T: n,\n  S: m,\n  R: l,\n  Q: k,\n  subs: []"
+        },
+        {
+            "Question": "What is the object with id f? The content should be an excerpt as it appears in the YAML file. ",
+            "Answer": "id: \"f\"\nZ: u,\nsubs: \n- id: \"g\"\n  Y: t,\n  X: s,\n  W: r,\n  V: q,\n  U: p,\n  T: o,\n  subs: []",
+            "Reference": "id: \"f\"\nZ: u,\nsubs: \n- id: \"g\"\n  Y: t,\n  X: s,\n  W: r,\n  V: q,\n  U: p,\n  T: o,\n  subs: []"
+        },
+        {
+            "Question": "What is the object with id q? The content should be an excerpt as it appears in the YAML file. ",
+            "Answer": "id: \"q\"\nY: j,\nX: i,\nW: h,\nV: g,\nU: f,\nsubs: []",
+            "Reference": "id: \"p\"\nZ: k,\nsubs: \n- id: \"q\"\n  Y: j,\n  X: i,\n  W: h,\n  V: g,\n  U: f,\n  subs: []"
+        }
+    ],
+    "RuleHint": "To find the object with specified id, you need to first parse the yaml file and get the outermost object, starting from which search the subs field recursively and looking for the desired value in id field for each visited object. Retrieve the content of that object once found."
+}

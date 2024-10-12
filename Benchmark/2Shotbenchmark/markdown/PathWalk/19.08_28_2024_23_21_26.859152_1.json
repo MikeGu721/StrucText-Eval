@@ -1,0 +1,31 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section.",
+    "Answer": "# f\nidiot oops **groot**transformer idiot dentist nob salvage idiot essence transformer banana qualify\n## g\njargon oops transformer idiot dentist nob salvage idiot essence transforme![alt](oe.gif \"hover text\")r banana qualify\n## h\nkangaroo oops transformer idiot dentist nob salvage idiot essence transformer banana qualify",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "e\nhalo oops transformer idiot dentist nob salvage idiot essence tra![alt](ne.gif \"hover text\")nsformer banana qualify\n# f\nidiot oops **groot**transformer idiot dentist nob salvage idiot essence transformer banana qualify\n## g\njargon oops transformer idiot dentist nob salvage idiot essence transforme![alt](oe.gif \"hover text\")r banana qualify\n## h\nkangaroo oops transformer idiot dentist nob salvage idiot essence transformer banana qualify\n# i\nlamb oops transformer idiot dentist nob sa**halo**lvage idiot essence transformer banana qualify\n## j\nmonkey oops transformer idiot dentist nob salvage **idiot**idiot essence transformer banana qualify\n## k\nnob oops**jargon** transformer idiot dentist nob salvage idiot essence transforme![alt](pe.png \"hover text\")r banana qualify",
+    "timestamp": "08_28_2024_23_21_26.859152",
+    "input_hash": -7301092351352907996,
+    "examples": [
+        {
+            "Question": "What is the content of 2th subsection under 2th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "## g\nkangaroo cafe halo sal**oops**vage oops ravi![alt](wi.jpeg \"hover text\")sh oops essence banana idiot yogurt unique",
+            "Reference": "a\nessence cafe halo salvage oops ravish oops essence banana idiot yogurt unique\n# b\nfar cafe halo salvage oop**lamb**![alt](ui.jpeg \"hover text\")lo salvage oops ravish oops essence banana idiot yogurt unique\n## c\ngroot cafe halo salvage oops ravish oops essence banana idiot**monkey** yogurt unique\n## d\nhalo cafe halo salvage oops ravish oops essence banana idiot yogurt uniq![alt](vi.jpg \"hover text\")ue\n# e\nidiot cafe halo salvage oop**nob**s ravish oops essence banana idiot yogurt unique\n## f\njargon cafe halo salvage oops ravish oops essence banana idiot yogurt unique\n## g\nkangaroo cafe halo sal**oops**vage oops ravi![alt](wi.jpeg \"hover text\")sh oops essence banana idiot yogurt unique"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 2th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "## r\nsalvage far nob jargon apple X-ray perish dentist cafe yogurt kan**ravish**garoo unique",
+            "Reference": "l\nmonkey far nob jargon apple X-ray perish dentist cafe yogur![alt](lf.png \"hover text\")t kangaroo unique\n# m\nnob far nob jargon apple X-ray perish dentist cafe yog![alt](mf.jpeg \"hover text\")urt kangaroo unique\n## n\noops far nob jargon apple X-ray peris**oops**h dentist cafe yogurt kangaroo unique\n## o\nperish far nob**perish** jargon apple X-ra![alt](nf.jpeg \"hover text\")y perish dentist cafe yogurt kangaroo unique\n# p\nqualify far nob jargon apple X-ray perish dentist cafe yogurt kangaroo uni**qualify**![alt](of.jpeg \"hover text\")sh dentist cafe yogurt kangaroo unique\n## q\nravish far nob jargon apple X-ray perish dentist cafe yogurt kangaroo unique\n## r\nsalvage far nob jargon apple X-ray perish dentist cafe yogurt kan**ravish**garoo unique"
+        }
+    ],
+    "RuleHint": "To find the content of certain section, starting from the headings start with one hashtag, and go to the ith heading as specified in number of sections. Then start from that line, look for j-th heading with 2 hashtags as specified in subsection number. For kth subsubsection, look for kth heading with 3 hashtags starting from the located subsubsection. Stop searching early if the subsection or subsubsection is not queried."
+}

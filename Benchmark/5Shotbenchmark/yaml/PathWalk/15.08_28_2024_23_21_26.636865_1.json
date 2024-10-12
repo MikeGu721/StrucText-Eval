@@ -1,0 +1,46 @@
+{
+    "Question": "What is the first object's id of subs?",
+    "Answer": "ab",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "id: \"z\"\nZ: t,\nsubs: \n- id: \"ab\"\n  Y: s,\n  X: r,\n  W: q,\n  V: p,\n  U: o,\n  T: n,\n  S: m,\n  R: l,\n  Q: k,\n  subs: \n  - id: \"bb\"\n    P: j,\n    O: i,\n    N: h,\n    subs: []\n  - id: \"cb\"\n    M: g,\n    L: f,\n    K: e,\n    J: d,\n    I: c,\n    H: b,\n    subs: []\n- id: \"db\"\n  G: a,\n  F: zy,\n  subs: \n  - id: \"eb\"\n    E: yy,\n    D: xy,\n    C: wy,\n    B: vy,\n    A: uy,\n    ZY: ty,\n    YY: sy,\n    XY: ry,\n    WY: qy,\n    subs: []\n  - id: \"fb\"\n    VY: py,\n    UY: oy,\n    subs: []",
+    "timestamp": "08_28_2024_23_21_26.636865",
+    "input_hash": -8886709599015791345,
+    "examples": [
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "n",
+            "Reference": "id: \"m\"\nZ: u,\nY: t,\nsubs: \n- id: \"n\"\n  X: s,\n  W: r,\n  V: q,\n  U: p,\n  T: o,\n  S: n,\n  R: m,\n  Q: l,\n  P: k,\n  O: j,\n  N: i,\n  M: h,\n  subs: \n  - id: \"o\"\n    L: g,\n    K: f,\n    J: e,\n    I: d,\n    H: c,\n    G: b,\n    F: a,\n    subs: []\n  - id: \"p\"\n    E: zy,\n    D: yy,\n    C: xy,\n    B: wy,\n    subs: []\n- id: \"q\"\n  A: vy,\n  subs: \n  - id: \"r\"\n    ZY: uy,\n    YY: ty,\n    XY: sy,\n    WY: ry,\n    VY: qy,\n    UY: py,\n    TY: oy,\n    SY: ny,\n    RY: my,\n    subs: []\n  - id: \"s\"\n    QY: ly,\n    PY: ky,\n    OY: jy,\n    NY: iy,\n    MY: hy,\n    LY: gy,\n    subs: []"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "s",
+            "Reference": "id: \"r\"\nZ: m,\nsubs: \n- id: \"s\"\n  Y: l,\n  X: k,\n  W: j,\n  V: i,\n  U: h,\n  T: g,\n  S: f,\n  subs: \n  - id: \"t\"\n    R: e,\n    Q: d,\n    P: c,\n    O: b,\n    subs: []\n  - id: \"u\"\n    N: a,\n    M: zy,\n    L: yy,\n    subs: []\n- id: \"v\"\n  K: xy,\n  J: wy,\n  I: vy,\n  H: uy,\n  G: ty,\n  F: sy,\n  E: ry,\n  subs: \n  - id: \"w\"\n    D: qy,\n    C: py,\n    B: oy,\n    A: ny,\n    ZY: my,\n    YY: ly,\n    XY: ky,\n    WY: jy,\n    VY: iy,\n    UY: hy,\n    subs: []\n  - id: \"x\"\n    TY: gy,\n    SY: fy,\n    RY: ey,\n    QY: dy,\n    PY: cy,\n    OY: by,\n    NY: ay,\n    MY: zx,\n    LY: yx,\n    KY: xx,\n    subs: []"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "y",
+            "Reference": "id: \"x\"\nZ: w,\nY: v,\nX: u,\nW: t,\nV: s,\nU: r,\nT: q,\nsubs: \n- id: \"y\"\n  S: p,\n  R: o,\n  Q: n,\n  P: m,\n  O: l,\n  N: k,\n  M: j,\n  L: i,\n  subs: \n  - id: \"z\"\n    K: h,\n    J: g,\n    I: f,\n    H: e,\n    subs: []\n  - id: \"ab\"\n    G: d,\n    F: c,\n    E: b,\n    D: a,\n    C: zy,\n    B: yy,\n    A: xy,\n    ZY: wy,\n    YY: vy,\n    XY: uy,\n    subs: []\n- id: \"bb\"\n  WY: ty,\n  VY: sy,\n  UY: ry,\n  subs: \n  - id: \"cb\"\n    TY: qy,\n    SY: py,\n    RY: oy,\n    QY: ny,\n    PY: my,\n    OY: ly,\n    NY: ky,\n    MY: jy,\n    LY: iy,\n    KY: hy,\n    subs: []\n  - id: \"db\"\n    JY: gy,\n    IY: fy,\n    HY: ey,\n    GY: dy,\n    FY: cy,\n    EY: by,\n    DY: ay,\n    CY: zx,\n    subs: []"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "n",
+            "Reference": "id: \"m\"\nZ: k,\nY: j,\nX: i,\nW: h,\nV: g,\nU: f,\nT: e,\nS: d,\nR: c,\nsubs: \n- id: \"n\"\n  Q: b,\n  P: a,\n  O: zy,\n  N: yy,\n  M: xy,\n  L: wy,\n  subs: \n  - id: \"o\"\n    K: vy,\n    J: uy,\n    I: ty,\n    H: sy,\n    G: ry,\n    F: qy,\n    E: py,\n    D: oy,\n    C: ny,\n    subs: []\n  - id: \"p\"\n    B: my,\n    A: ly,\n    ZY: ky,\n    subs: []\n- id: \"q\"\n  YY: jy,\n  XY: iy,\n  WY: hy,\n  VY: gy,\n  UY: fy,\n  TY: ey,\n  SY: dy,\n  RY: cy,\n  subs: \n  - id: \"r\"\n    QY: by,\n    PY: ay,\n    OY: zx,\n    NY: yx,\n    MY: xx,\n    LY: wx,\n    subs: []\n  - id: \"s\"\n    KY: vx,\n    JY: ux,\n    IY: tx,\n    subs: []"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "x",
+            "Reference": "id: \"w\"\nZ: x,\nsubs: \n- id: \"x\"\n  Y: w,\n  X: v,\n  W: u,\n  V: t,\n  U: s,\n  T: r,\n  S: q,\n  R: p,\n  Q: o,\n  P: n,\n  O: m,\n  subs: \n  - id: \"y\"\n    N: l,\n    M: k,\n    subs: []\n  - id: \"z\"\n    L: j,\n    K: i,\n    J: h,\n    I: g,\n    H: f,\n    subs: []\n- id: \"ab\"\n  G: e,\n  F: d,\n  E: c,\n  subs: \n  - id: \"bb\"\n    D: b,\n    C: a,\n    B: zy,\n    A: yy,\n    ZY: xy,\n    subs: []\n  - id: \"cb\"\n    YY: wy,\n    XY: vy,\n    subs: []"
+        }
+    ],
+    "RuleHint": "To find the first object's id of subs, first parse the yaml file and get the outermost object, in the outermost object's subs list, get the first element. That element is another object, and its id is the answer."
+}

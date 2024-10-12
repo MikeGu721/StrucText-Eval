@@ -1,0 +1,41 @@
+{
+    "Question": "What is the object with id p? The content should be an excerpt as it appears in the YAML file.",
+    "Answer": "id: \"p\"\nD: jy,\nC: iy,\nB: hy,\nA: gy,\nZY: fy,\nYY: ey,\nXY: dy,\nWY: cy,\nVY: by,\nsubs: []",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 4,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "id: \"m\"\nZ: f,\nY: e,\nX: d,\nW: c,\nV: b,\nU: a,\nT: zy,\nS: yy,\nR: xy,\nsubs: \n- id: \"n\"\n  Q: wy,\n  P: vy,\n  subs: \n  - id: \"o\"\n    O: uy,\n    N: ty,\n    M: sy,\n    L: ry,\n    K: qy,\n    J: py,\n    I: oy,\n    H: ny,\n    G: my,\n    F: ly,\n    E: ky,\n    subs: []\n  - id: \"p\"\n    D: jy,\n    C: iy,\n    B: hy,\n    A: gy,\n    ZY: fy,\n    YY: ey,\n    XY: dy,\n    WY: cy,\n    VY: by,\n    subs: []\n- id: \"q\"\n  UY: ay,\n  TY: zx,\n  SY: yx,\n  RY: xx,\n  QY: wx,\n  subs: \n  - id: \"r\"\n    PY: vx,\n    OY: ux,\n    NY: tx,\n    MY: sx,\n    LY: rx,\n    KY: qx,\n    JY: px,\n    IY: ox,\n    HY: nx,\n    GY: mx,\n    FY: lx,\n    EY: kx,\n    subs: []\n  - id: \"s\"\n    DY: jx,\n    CY: ix,\n    BY: hx,\n    AY: gx,\n    ZX: fx,\n    YX: ex,\n    subs: []",
+    "timestamp": "08_28_2024_23_21_26.617807",
+    "input_hash": 3001546486325097326,
+    "examples": [
+        {
+            "Question": "What is the object with id bb? The content should be an excerpt as it appears in the YAML file. ",
+            "Answer": "id: \"bb\"\nB: cy,\nA: by,\nZY: ay,\nsubs: []",
+            "Reference": "id: \"z\"\nZ: a,\nY: zy,\nX: yy,\nW: xy,\nV: wy,\nU: vy,\nT: uy,\nS: ty,\nR: sy,\nQ: ry,\nP: qy,\nO: py,\nsubs: \n- id: \"ab\"\n  N: oy,\n  M: ny,\n  L: my,\n  K: ly,\n  J: ky,\n  I: jy,\n  H: iy,\n  G: hy,\n  F: gy,\n  E: fy,\n  D: ey,\n  C: dy,\n  subs: \n  - id: \"bb\"\n    B: cy,\n    A: by,\n    ZY: ay,\n    subs: []\n  - id: \"cb\"\n    YY: zx,\n    subs: []\n- id: \"db\"\n  XY: yx,\n  WY: xx,\n  VY: wx,\n  UY: vx,\n  TY: ux,\n  SY: tx,\n  RY: sx,\n  QY: rx,\n  PY: qx,\n  OY: px,\n  NY: ox,\n  subs: \n  - id: \"eb\"\n    MY: nx,\n    LY: mx,\n    KY: lx,\n    JY: kx,\n    IY: jx,\n    subs: []\n  - id: \"fb\"\n    HY: ix,\n    GY: hx,\n    FY: gx,\n    subs: []"
+        },
+        {
+            "Question": "What is the object with id g? The content should be an excerpt as it appears in the YAML file. ",
+            "Answer": "id: \"g\"\nA: ly,\nZY: ky,\nYY: jy,\nXY: iy,\nWY: hy,\nVY: gy,\nUY: fy,\nTY: ey,\nsubs: \n- id: \"h\"\n  SY: dy,\n  subs: []\n- id: \"i\"\n  RY: cy,\n  QY: by,\n  PY: ay,\n  OY: zx,\n  NY: yx,\n  MY: xx,\n  subs: []",
+            "Reference": "id: \"c\"\nZ: k,\nY: j,\nX: i,\nW: h,\nV: g,\nU: f,\nsubs: \n- id: \"d\"\n  T: e,\n  S: d,\n  subs: \n  - id: \"e\"\n    R: c,\n    Q: b,\n    P: a,\n    O: zy,\n    N: yy,\n    M: xy,\n    subs: []\n  - id: \"f\"\n    L: wy,\n    K: vy,\n    J: uy,\n    I: ty,\n    H: sy,\n    G: ry,\n    F: qy,\n    E: py,\n    D: oy,\n    C: ny,\n    B: my,\n    subs: []\n- id: \"g\"\n  A: ly,\n  ZY: ky,\n  YY: jy,\n  XY: iy,\n  WY: hy,\n  VY: gy,\n  UY: fy,\n  TY: ey,\n  subs: \n  - id: \"h\"\n    SY: dy,\n    subs: []\n  - id: \"i\"\n    RY: cy,\n    QY: by,\n    PY: ay,\n    OY: zx,\n    NY: yx,\n    MY: xx,\n    subs: []"
+        },
+        {
+            "Question": "What is the object with id d? The content should be an excerpt as it appears in the YAML file. ",
+            "Answer": "id: \"d\"\nZ: w,\nY: v,\nX: u,\nW: t,\nV: s,\nU: r,\nT: q,\nS: p,\nR: o,\nQ: n,\nsubs: \n- id: \"e\"\n  P: m,\n  O: l,\n  N: k,\n  M: j,\n  L: i,\n  K: h,\n  J: g,\n  I: f,\n  subs: \n  - id: \"f\"\n    H: e,\n    G: d,\n    F: c,\n    E: b,\n    D: a,\n    C: zy,\n    subs: []\n  - id: \"g\"\n    B: yy,\n    A: xy,\n    ZY: wy,\n    YY: vy,\n    subs: []\n- id: \"h\"\n  XY: uy,\n  WY: ty,\n  VY: sy,\n  subs: \n  - id: \"i\"\n    UY: ry,\n    TY: qy,\n    SY: py,\n    RY: oy,\n    QY: ny,\n    PY: my,\n    subs: []\n  - id: \"j\"\n    OY: ly,\n    subs: []",
+            "Reference": "id: \"d\"\nZ: w,\nY: v,\nX: u,\nW: t,\nV: s,\nU: r,\nT: q,\nS: p,\nR: o,\nQ: n,\nsubs: \n- id: \"e\"\n  P: m,\n  O: l,\n  N: k,\n  M: j,\n  L: i,\n  K: h,\n  J: g,\n  I: f,\n  subs: \n  - id: \"f\"\n    H: e,\n    G: d,\n    F: c,\n    E: b,\n    D: a,\n    C: zy,\n    subs: []\n  - id: \"g\"\n    B: yy,\n    A: xy,\n    ZY: wy,\n    YY: vy,\n    subs: []\n- id: \"h\"\n  XY: uy,\n  WY: ty,\n  VY: sy,\n  subs: \n  - id: \"i\"\n    UY: ry,\n    TY: qy,\n    SY: py,\n    RY: oy,\n    QY: ny,\n    PY: my,\n    subs: []\n  - id: \"j\"\n    OY: ly,\n    subs: []"
+        },
+        {
+            "Question": "What is the object with id v? The content should be an excerpt as it appears in the YAML file. ",
+            "Answer": "id: \"v\"\nTY: iy,\nSY: hy,\nRY: gy,\nQY: fy,\nPY: ey,\nOY: dy,\nNY: cy,\nMY: by,\nLY: ay,\nKY: zx,\nJY: yx,\nIY: xx,\nsubs: []",
+            "Reference": "id: \"p\"\nZ: o,\nY: n,\nX: m,\nW: l,\nV: k,\nsubs: \n- id: \"q\"\n  U: j,\n  T: i,\n  S: h,\n  R: g,\n  subs: \n  - id: \"r\"\n    Q: f,\n    P: e,\n    O: d,\n    N: c,\n    M: b,\n    L: a,\n    K: zy,\n    J: yy,\n    I: xy,\n    H: wy,\n    G: vy,\n    subs: []\n  - id: \"s\"\n    F: uy,\n    subs: []\n- id: \"t\"\n  E: ty,\n  D: sy,\n  C: ry,\n  B: qy,\n  subs: \n  - id: \"u\"\n    A: py,\n    ZY: oy,\n    YY: ny,\n    XY: my,\n    WY: ly,\n    VY: ky,\n    UY: jy,\n    subs: []\n  - id: \"v\"\n    TY: iy,\n    SY: hy,\n    RY: gy,\n    QY: fy,\n    PY: ey,\n    OY: dy,\n    NY: cy,\n    MY: by,\n    LY: ay,\n    KY: zx,\n    JY: yx,\n    IY: xx,\n    subs: []"
+        }
+    ],
+    "RuleHint": "To find the object with specified id, you need to first parse the yaml file and get the outermost object, starting from which search the subs field recursively and looking for the desired value in id field for each visited object. Retrieve the content of that object once found."
+}

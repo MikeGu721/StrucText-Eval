@@ -1,0 +1,56 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "tf.jpeg\nuf.png",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 7,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "e\nwake essence salvage wake vigor esse*apple*[[tf.jpeg]]ake vigor essence\n* f\nX-ray essence salvage wake vigor esse[[uf.png]]nce",
+    "timestamp": "08_28_2024_23_21_26.687243",
+    "input_hash": -9218905997791172721,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "No image file is included in the file.",
+            "Reference": "t\ntransformer banana dentist idiot idiot jargon\n* u\nunique banana dentist idiot idiot jargon"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "th.gif\nuh.gif",
+            "Reference": "e\nvigor per*essence*ish salvage idiot salvage [[th.gif]]far\n* f\n[[uh.gif]]wake perish salvage idiot salvage far"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ii.jpeg\nji.jpg",
+            "Reference": "o\nhalo oops zen ra[[ii.jpeg]]vish monkey yogurt\n* p\nidiot oops z[[ji.jpg]]en ravish monkey yogurt"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "No image file is included in the file.",
+            "Reference": "z\nvigor unique wake unique vigor nob\n* ab\nwake unique wake unique vigor nob"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "xe.gif",
+            "Reference": "l\ngroot far salvag[[xe.gif]]e essence vigor monkey\n* m\nhalo far salvage e*monkey*ssence vigor monkey"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ae.png",
+            "Reference": "w\nessence[[ae.png]] idiot oops qualify ravish dentist\n* x\nfar idiot oops qualify ravish dentist"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "oh.jpeg\nph.jpg",
+            "Reference": "e\nbanana essence far yogurt halo [[oh.jpeg]]halo\n* f\ncafe essence far yogu[[ph.jpg]]rt halo halo"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching [[TARGET]], the TARGET part is filename."
+}

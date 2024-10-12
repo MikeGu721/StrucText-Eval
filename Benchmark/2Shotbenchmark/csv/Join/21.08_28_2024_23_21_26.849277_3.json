@@ -1,0 +1,31 @@
+{
+    "Question": "How many people who work in HI are taller than 163?",
+    "Answer": "0",
+    "Label": {
+        "typename": "csv",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Join"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,male,50,z,120,177,mulatto\nb,male,63,ab,153,117,white\n\nprimeKey,status,salary,company,location\na,employed,801475,Microsoft,TX\nb,employed,55563,Apple,TX",
+    "timestamp": "08_28_2024_23_21_26.849277",
+    "input_hash": 9052104089171390138,
+    "examples": [
+        {
+            "Question": "\nHow many people who work in HI are taller than 160?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,19,d,135,82,white\nb,female,61,e,182,143,olive\n\nprimeKey,status,salary,company,location\na,retired,267565,Twitter,CA\nb,retired,146906,Twitter,GA"
+        },
+        {
+            "Question": "\nHow many people who work in WA are taller than 151?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,19,q,174,138,black\nb,female,67,r,199,179,swarthy\n\nprimeKey,status,salary,company,location\na,employed,837637,Apple,GA\nb,employed,365952,NVIDIA,WA"
+        }
+    ],
+    "RuleHint": "To get the number of people living in specified city who are also taller than threshold, you need to first join the two table on primeKey, and check each row of joined table for lines that satisfies both condition, i.e., lines with city specified in query and height strictly greater than threshold. The total number of such rows is the right answer."
+}

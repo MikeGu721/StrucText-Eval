@@ -1,0 +1,31 @@
+{
+    "Question": "What is the name of record with primeKey a",
+    "Answer": "w",
+    "Label": {
+        "typename": "csv",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,female,22,w,123,156,olive\nb,male,60,x,209,113,mulatto\n\nprimeKey,status,salary,company,location\na,employed,199191,Meta,HI\nb,employed,25354,Meta,IL",
+    "timestamp": "08_28_2024_23_21_26.575285",
+    "input_hash": -6207126082377297682,
+    "examples": [
+        {
+            "Question": "\nWhat is the status of record with primeKey b\n",
+            "Answer": "employed",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,64,n,163,100,black\nb,female,57,o,126,167,swarthy\n\nprimeKey,status,salary,company,location\na,employed,632767,Twitter,TX\nb,employed,423072,NVIDIA,NY"
+        },
+        {
+            "Question": "\nWhat is the color of record with primeKey b\n",
+            "Answer": "swarthy",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,61,l,123,77,white\nb,male,47,m,130,173,swarthy\n\nprimeKey,status,salary,company,location\na,employed,369474,OPENAI,TX\nb,employed,740924,Google,NY"
+        }
+    ],
+    "RuleHint": "To find the value of specific field of record with specified primeKey. You have to first, locate the line with the specific primeKey. Then find the required value under the desired column in that line."
+}

@@ -1,0 +1,66 @@
+{
+    "Question": "What is the height of the root node, i.e., the number of edges in the longest path from root node to any leaf nodes? Answer an integer, leaf is of height 0.",
+    "Answer": "1",
+    "Label": {
+        "typename": "tree",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 9,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Tree.Height"
+        ]
+    },
+    "Reference": "c->d",
+    "timestamp": "08_28_2024_23_21_27.013508",
+    "input_hash": 5186313622535810737,
+    "examples": [
+        {
+            "Question": "What is the height of the root node, i.e., the number of edges in the longest path from root node to any leaf nodes? Answer an integer, leaf is of height 0. ",
+            "Answer": "1",
+            "Reference": "p->q"
+        },
+        {
+            "Question": "What is the height of the root node, i.e., the number of edges in the longest path from root node to any leaf nodes? Answer an integer, leaf is of height 0. ",
+            "Answer": "1",
+            "Reference": "n->o"
+        },
+        {
+            "Question": "What is the height of the root node, i.e., the number of edges in the longest path from root node to any leaf nodes? Answer an integer, leaf is of height 0. ",
+            "Answer": "1",
+            "Reference": "e->f"
+        },
+        {
+            "Question": "What is the height of the root node, i.e., the number of edges in the longest path from root node to any leaf nodes? Answer an integer, leaf is of height 0. ",
+            "Answer": "1",
+            "Reference": "h->i"
+        },
+        {
+            "Question": "What is the height of the root node, i.e., the number of edges in the longest path from root node to any leaf nodes? Answer an integer, leaf is of height 0. ",
+            "Answer": "1",
+            "Reference": "i->j"
+        },
+        {
+            "Question": "What is the height of the root node, i.e., the number of edges in the longest path from root node to any leaf nodes? Answer an integer, leaf is of height 0. ",
+            "Answer": "1",
+            "Reference": "i->j"
+        },
+        {
+            "Question": "What is the height of the root node, i.e., the number of edges in the longest path from root node to any leaf nodes? Answer an integer, leaf is of height 0. ",
+            "Answer": "1",
+            "Reference": "k->l"
+        },
+        {
+            "Question": "What is the height of the root node, i.e., the number of edges in the longest path from root node to any leaf nodes? Answer an integer, leaf is of height 0. ",
+            "Answer": "1",
+            "Reference": "d->e"
+        },
+        {
+            "Question": "What is the height of the root node, i.e., the number of edges in the longest path from root node to any leaf nodes? Answer an integer, leaf is of height 0. ",
+            "Answer": "1",
+            "Reference": "b->c"
+        }
+    ],
+    "RuleHint": "To answer the height of tree, you need to take a recursive strategy. For each node, you will find its height by first finding its children's heights. Then, the height of node is the maximum subtree heights plus 1. The base case occurs when a node has no children, i.e., it's a leaf node. Leaf's height is defined to be 0, without the need of further queries. Then the height the tree is the height of its root node."
+}

@@ -1,0 +1,51 @@
+{
+    "Question": "What is the object with id c? The content should be an excerpt as it appears in the JSON file.",
+    "Answer": "{\n\"id\":\"c\",\n\"Z\":\"v\",\n\"Y\":\"u\",\n\"X\":\"t\",\n\"W\":\"s\",\n\"subs\":[\n {\n \"id\":\"d\",\n \"V\":\"r\",\n \"U\":\"q\",\n \"T\":\"p\",\n \"subs\":[]\n }\n]\n}",
+    "Label": {
+        "typename": "json",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 6,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "{\n\"id\":\"c\",\n\"Z\":\"v\",\n\"Y\":\"u\",\n\"X\":\"t\",\n\"W\":\"s\",\n\"subs\":[\n {\n \"id\":\"d\",\n \"V\":\"r\",\n \"U\":\"q\",\n \"T\":\"p\",\n \"subs\":[]\n }\n]\n}",
+    "timestamp": "08_28_2024_23_21_26.927941",
+    "input_hash": 2363232910524495064,
+    "examples": [
+        {
+            "Question": "What is the object with id g? The content should be an excerpt as it appears in the JSON file. ",
+            "Answer": "{\n\"id\":\"g\",\n\"Z\":\"o\",\n\"subs\":[\n {\n \"id\":\"h\",\n \"Y\":\"n\",\n \"X\":\"m\",\n \"W\":\"l\",\n \"V\":\"k\",\n \"U\":\"j\",\n \"subs\":[]\n }\n]\n}",
+            "Reference": "{\n\"id\":\"g\",\n\"Z\":\"o\",\n\"subs\":[\n {\n \"id\":\"h\",\n \"Y\":\"n\",\n \"X\":\"m\",\n \"W\":\"l\",\n \"V\":\"k\",\n \"U\":\"j\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "What is the object with id o? The content should be an excerpt as it appears in the JSON file. ",
+            "Answer": "{\n\"id\":\"o\",\n\"V\":\"t\",\n\"subs\":[]\n}",
+            "Reference": "{\n\"id\":\"n\",\n\"Z\":\"x\",\n\"Y\":\"w\",\n\"X\":\"v\",\n\"W\":\"u\",\n\"subs\":[\n {\n \"id\":\"o\",\n \"V\":\"t\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "What is the object with id p? The content should be an excerpt as it appears in the JSON file. ",
+            "Answer": "{\n\"id\":\"p\",\n\"X\":\"s\",\n\"W\":\"r\",\n\"subs\":[]\n}",
+            "Reference": "{\n\"id\":\"o\",\n\"Z\":\"u\",\n\"Y\":\"t\",\n\"subs\":[\n {\n \"id\":\"p\",\n \"X\":\"s\",\n \"W\":\"r\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "What is the object with id p? The content should be an excerpt as it appears in the JSON file. ",
+            "Answer": "{\n\"id\":\"p\",\n\"Z\":\"n\",\n\"subs\":[\n {\n \"id\":\"q\",\n \"Y\":\"m\",\n \"X\":\"l\",\n \"subs\":[]\n }\n]\n}",
+            "Reference": "{\n\"id\":\"p\",\n\"Z\":\"n\",\n\"subs\":[\n {\n \"id\":\"q\",\n \"Y\":\"m\",\n \"X\":\"l\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "What is the object with id n? The content should be an excerpt as it appears in the JSON file. ",
+            "Answer": "{\n\"id\":\"n\",\n\"X\":\"i\",\n\"W\":\"h\",\n\"V\":\"g\",\n\"U\":\"f\",\n\"T\":\"e\",\n\"subs\":[]\n}",
+            "Reference": "{\n\"id\":\"m\",\n\"Z\":\"k\",\n\"Y\":\"j\",\n\"subs\":[\n {\n \"id\":\"n\",\n \"X\":\"i\",\n \"W\":\"h\",\n \"V\":\"g\",\n \"U\":\"f\",\n \"T\":\"e\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "What is the object with id p? The content should be an excerpt as it appears in the JSON file. ",
+            "Answer": "{\n\"id\":\"p\",\n\"X\":\"k\",\n\"W\":\"j\",\n\"V\":\"i\",\n\"U\":\"h\",\n\"T\":\"g\",\n\"subs\":[]\n}",
+            "Reference": "{\n\"id\":\"o\",\n\"Z\":\"m\",\n\"Y\":\"l\",\n\"subs\":[\n {\n \"id\":\"p\",\n \"X\":\"k\",\n \"W\":\"j\",\n \"V\":\"i\",\n \"U\":\"h\",\n \"T\":\"g\",\n \"subs\":[]\n }\n]\n}"
+        }
+    ],
+    "RuleHint": "To find the object with specified id, you need to first parse the json file and get the outermost object, starting from which search the subs field recursively and looking for the desired value in id field for each visited object. Retrieve the content of that object once found."
+}

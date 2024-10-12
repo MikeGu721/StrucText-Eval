@@ -1,0 +1,26 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section.",
+    "Answer": "* f\nkangaroo ravish idiot far yogurt unique",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "e\njargon ravish idiot far yogurt unique\n* f\nkangaroo ravish idiot far yogurt unique",
+    "timestamp": "08_28_2024_23_21_26.573157",
+    "input_hash": 4432533850729963335,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* o\nessence far q[[mh.jpg]]ualify salvage unique perish",
+            "Reference": "n\ndentist far qualify sa*cafe*lvage un[[lh.jpg]]ique perish\n* o\nessence far q[[mh.jpg]]ualify salvage unique perish"
+        }
+    ],
+    "RuleHint": "Note that section, subsection, subsubsection titles are preceded by *, **, *** respectively, with one or more whitespaces in between.  To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

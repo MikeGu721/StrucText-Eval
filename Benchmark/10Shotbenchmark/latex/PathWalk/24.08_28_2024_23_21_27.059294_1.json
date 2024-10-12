@@ -1,0 +1,71 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section.",
+    "Answer": "\\section{s}\nqualify vigor halo kangaroo g\\includegraphics[width=0.5\\textwidth]{bh.jpg}root zen",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 10,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "r\nperish v\\textbf{wake}igor halo kangaroo groot zen\n\\section{s}\nqualify vigor halo kangaroo g\\includegraphics[width=0.5\\textwidth]{bh.jpg}root zen",
+    "timestamp": "08_28_2024_23_21_27.059294",
+    "input_hash": -3809827162539659586,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{p}\nkangaroo vigor X-ray banana esse\\includegraphics[width=0.5\\textwidth]{ti.gif}nce idiot",
+            "Reference": "o\njargon vigor X-ray banana esse\\textbf{idiot}nce idiot\n\\section{p}\nkangaroo vigor X-ray banana esse\\includegraphics[width=0.5\\textwidth]{ti.gif}nce idiot"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{y}\nravish qualify ban\\textbf{far}ana ravish lamb salvage",
+            "Reference": "x\nqualify qualify banana ravish lamb sa\\textbf{essence}\\includegraphics[width=0.5\\textwidth]{lf.png} banana ravish lamb salvage\n\\section{y}\nravish qualify ban\\textbf{far}ana ravish lamb salvage"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{q}\ngroot apple dentist vigor yo\\includegraphics[width=0.5\\textwidth]{oh.jpg}gurt qualify",
+            "Reference": "p\nfar apple dentist vigor yog\\textbf{groot}urt qualify\n\\section{q}\ngroot apple dentist vigor yo\\includegraphics[width=0.5\\textwidth]{oh.jpg}gurt qualify"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{c}\nmonkey jargon apple pe\\includegraphics[width=0.5\\textwidth]{mi.jpg}rish zen halo",
+            "Reference": "b\n\\textbf{monkey}lamb jargon apple perish zen halo\n\\section{c}\nmonkey jargon apple pe\\includegraphics[width=0.5\\textwidth]{mi.jpg}rish zen halo"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{l}\nkanga\\textbf{salvage}roo vigor yogurt lamb unique transformer",
+            "Reference": "k\njargon vigor yogurt lamb unique transformer\n\\section{l}\nkanga\\textbf{salvage}roo vigor yogurt lamb unique transformer"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{l}\nwake far qualify halo idiot far",
+            "Reference": "k\nvigor far qualify halo idiot \\includegraphics[width=0.5\\textwidth]{oj.jpg}far\n\\section{l}\nwake far qualify halo idiot far"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{w}\ndentist\\includegraphics[width=0.5\\textwidth]{nf.jpeg} yogurt kangaroo halo salvage ravish",
+            "Reference": "v\n\\textbf{wake}cafe yogurt kangaroo halo salvage ravish\n\\section{w}\ndentist\\includegraphics[width=0.5\\textwidth]{nf.jpeg} yogurt kangaroo halo salvage ravish"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{g}\ncafe \\textbf{far}wake perish X-ray oops ravish",
+            "Reference": "f\nbanana wake perish X-ray oops\\includegraphics[width=0.5\\textwidth]{wi.jpeg} ravish\n\\section{g}\ncafe \\textbf{far}wake perish X-ray oops ravish"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{g}\nzen salvage qualify monkey g\\includegraphics[width=0.5\\textwidth]{th.gif}root perish",
+            "Reference": "f\nyogurt salvage qualify monkey groot perish\n\\section{g}\nzen salvage qualify monkey g\\includegraphics[width=0.5\\textwidth]{th.gif}root perish"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{j}\nX-ray apple salv\\textbf{jargon}age X-ray ravish zen",
+            "Reference": "i\nwa\\includegraphics[width=0.5\\textwidth]{wd.jpeg}ke apple salvage X-ray ravish zen\n\\section{j}\nX-ray apple salv\\textbf{jargon}age X-ray ravish zen"
+        }
+    ],
+    "RuleHint": "Note that section title is enclosed by \\\\section{}, and \\\\subsection for subsection, \\\\subsubsection for subsubsection. To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

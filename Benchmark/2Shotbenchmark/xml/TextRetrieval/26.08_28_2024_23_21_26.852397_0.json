@@ -1,0 +1,31 @@
+{
+    "Question": "What is the content of tag A? The content should be an excerpt as it appears in the XML file.",
+    "Answer": "<B T=\"uy\" S=\"ty\" R=\"sy\" Q=\"ry\" P=\"qy\" O=\"py\">\n  banana\n </B>\n apple",
+    "Label": {
+        "typename": "xml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"a\" Y=\"zy\" X=\"yy\" W=\"xy\" V=\"wy\" U=\"vy\">\n <B T=\"uy\" S=\"ty\" R=\"sy\" Q=\"ry\" P=\"qy\" O=\"py\">\n  banana\n </B>\n apple\n</A>",
+    "timestamp": "08_28_2024_23_21_26.852397",
+    "input_hash": -2527771549322953921,
+    "examples": [
+        {
+            "Question": "What is the content of tag A? The content should be an excerpt as it appears in the XML file. ",
+            "Answer": " <B X=\"yy\" W=\"xy\" V=\"wy\" U=\"vy\" T=\"uy\">\n  banana\n </B>\n apple",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"a\" Y=\"zy\">\n <B X=\"yy\" W=\"xy\" V=\"wy\" U=\"vy\" T=\"uy\">\n  banana\n </B>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the content of tag A? The content should be an excerpt as it appears in the XML file. ",
+            "Answer": " <B Y=\"d\" X=\"c\" W=\"b\" V=\"a\" U=\"zy\" T=\"yy\">\n  banana\n </B>\n apple",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"e\">\n <B Y=\"d\" X=\"c\" W=\"b\" V=\"a\" U=\"zy\" T=\"yy\">\n  banana\n </B>\n apple\n</A>"
+        }
+    ],
+    "RuleHint": "To find the content of a specific tag, you need to search for desired tag throughout the xml file. Once located, find the surrounding left and right angle, these area is tha starting tag. Then find the ending tag, which is the tag surrounded by angle with exception that right angle is preceded by a slash. The content between starting and ending tags is the answer."
+}

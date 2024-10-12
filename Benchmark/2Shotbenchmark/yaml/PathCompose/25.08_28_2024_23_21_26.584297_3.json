@@ -1,0 +1,31 @@
+{
+    "Question": "How to access value \"hy\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+    "Answer": "obj[\"subs\"][1][\"E\"]",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathCompose"
+        ]
+    },
+    "Reference": "id: \"q\"\nZ: c,\nY: b,\nsubs: \n- id: \"r\"\n  X: a,\n  W: zy,\n  V: yy,\n  subs: \n  - id: \"s\"\n    U: xy,\n    T: wy,\n    S: vy,\n    R: uy,\n    Q: ty,\n    P: sy,\n    O: ry,\n    subs: []\n  - id: \"t\"\n    N: qy,\n    M: py,\n    L: oy,\n    K: ny,\n    subs: []\n- id: \"u\"\n  J: my,\n  I: ly,\n  H: ky,\n  G: jy,\n  F: iy,\n  E: hy,\n  D: gy,\n  C: fy,\n  subs: \n  - id: \"v\"\n    B: ey,\n    A: dy,\n    ZY: cy,\n    YY: by,\n    XY: ay,\n    WY: zx,\n    subs: []\n  - id: \"w\"\n    VY: yx,\n    UY: xx,\n    TY: wx,\n    SY: vx,\n    RY: ux,\n    QY: tx,\n    PY: sx,\n    OY: rx,\n    NY: qx,\n    MY: px,\n    LY: ox,\n    KY: nx,\n    subs: []",
+    "timestamp": "08_28_2024_23_21_26.584297",
+    "input_hash": -2900371052064451007,
+    "examples": [
+        {
+            "Question": "How to access value \"c\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"O\"]",
+            "Reference": "id: \"v\"\nZ: n,\nY: m,\nX: l,\nW: k,\nV: j,\nU: i,\nT: h,\nS: g,\nR: f,\nQ: e,\nP: d,\nsubs: \n- id: \"w\"\n  O: c,\n  N: b,\n  M: a,\n  L: zy,\n  K: yy,\n  J: xy,\n  subs: \n  - id: \"x\"\n    I: wy,\n    H: vy,\n    G: uy,\n    F: ty,\n    E: sy,\n    subs: []\n  - id: \"y\"\n    D: ry,\n    subs: []\n- id: \"z\"\n  C: qy,\n  subs: \n  - id: \"ab\"\n    B: py,\n    subs: []\n  - id: \"bb\"\n    A: oy,\n    ZY: ny,\n    subs: []"
+        },
+        {
+            "Question": "How to access value \"fy\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][1][\"UY\"]",
+            "Reference": "id: \"b\"\nZ: k,\nY: j,\nX: i,\nW: h,\nV: g,\nU: f,\nT: e,\nS: d,\nsubs: \n- id: \"c\"\n  R: c,\n  Q: b,\n  P: a,\n  subs: \n  - id: \"d\"\n    O: zy,\n    N: yy,\n    M: xy,\n    L: wy,\n    K: vy,\n    J: uy,\n    I: ty,\n    H: sy,\n    G: ry,\n    F: qy,\n    E: py,\n    D: oy,\n    subs: []\n  - id: \"e\"\n    C: ny,\n    B: my,\n    A: ly,\n    ZY: ky,\n    subs: []\n- id: \"f\"\n  YY: jy,\n  XY: iy,\n  WY: hy,\n  VY: gy,\n  UY: fy,\n  TY: ey,\n  SY: dy,\n  RY: cy,\n  QY: by,\n  subs: \n  - id: \"g\"\n    PY: ay,\n    OY: zx,\n    NY: yx,\n    MY: xx,\n    subs: []\n  - id: \"h\"\n    LY: wx,\n    KY: vx,\n    JY: ux,\n    IY: tx,\n    HY: sx,\n    subs: []"
+        }
+    ],
+    "RuleHint": "To get the path to access specified value. You have to do a recursive search along the subs fields, starting from the outermost parsed object. For each visited object, check each fields except for subs, and record the path along the way, i.e., subs inside brackets and index into subs inside brackets, and at which field you find the value."
+}

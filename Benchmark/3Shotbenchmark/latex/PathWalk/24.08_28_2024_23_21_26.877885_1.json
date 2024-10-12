@@ -1,0 +1,36 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section.",
+    "Answer": "\\section{h}\ness\\textbf{groot}enc\\includegraphics[width=0.5\\textwidth]{tf.png}e perish ravish halo kangaroo groot",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "g\ndentist pe\\includegraphics[width=0.5\\textwidth]{sf.gif}rish ravish halo kangaroo groot\n\\section{h}\ness\\textbf{groot}enc\\includegraphics[width=0.5\\textwidth]{tf.png}e perish ravish halo kangaroo groot",
+    "timestamp": "08_28_2024_23_21_26.877885",
+    "input_hash": -6596943438408787690,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{x}\ngroot X-ray b\\textbf{far}anana unique jargon yogurt",
+            "Reference": "w\nfar X-ray\\textbf{essence} banana \\includegraphics[width=0.5\\textwidth]{be.jpg}unique jargon yogurt\n\\section{x}\ngroot X-ray b\\textbf{far}anana unique jargon yogurt"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{z}\nessence transformer unique transformer lamb halo",
+            "Reference": "y\ndentist transformer unique transformer lamb halo\n\\section{z}\nessence transformer unique transformer lamb halo"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{s}\nravish jargon idiot X-ray groot\\textbf{yogurt} salvage",
+            "Reference": "r\nqualify jargon idiot X-ray groot salvage\n\\section{s}\nravish jargon idiot X-ray groot\\textbf{yogurt} salvage"
+        }
+    ],
+    "RuleHint": "Note that section title is enclosed by \\\\section{}, and \\\\subsection for subsection, \\\\subsubsection for subsubsection. To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

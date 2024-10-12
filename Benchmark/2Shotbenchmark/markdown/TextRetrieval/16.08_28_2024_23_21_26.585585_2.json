@@ -1,0 +1,31 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "lf.jpeg\nkf.jpeg",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "e\nka![alt](kf.jpeg \"hover text\")ngaroo salvage zen salvage zen\n# f\nlamb salvage zen salva**cafe**![alt](lf.jpeg \"hover text\")lamb salvage zen salvage zen",
+    "timestamp": "08_28_2024_23_21_26.585585",
+    "input_hash": -984483474096661518,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "je.png\nke.png",
+            "Reference": "e\nmonkey far kang![alt](je.png \"hover text\")aroo monkey X-ray transformer\n# f\nnob far kangaroo monkey X-ray transform**idiot**![alt](ke.png \"hover text\")aroo monkey X-ray transformer"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "oh.jpeg\nph.jpg",
+            "Reference": "p\nmonkey salvage **nob**monkey app![alt](oh.jpeg \"hover text\")le dentist wake\n# q\nn**oops**ob salvage monkey apple dentist w![alt](ph.jpg \"hover text\")ake"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching ![*](TARGET \"*\"), the TARGET part is filename. Star means any text is possible."
+}

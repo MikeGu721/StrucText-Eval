@@ -1,0 +1,56 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "yogurt\nX-ray",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 7,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "c\ncafe banana dentist app*X-ray*[[si.png]]ple kangaroo yogurt\n* d\ndentist*yogurt* banana dentist apple kangaroo [[ti.gif]]yogurt",
+    "timestamp": "08_28_2024_23_21_26.972154",
+    "input_hash": 2460865159800496157,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "cafe",
+            "Reference": "c\ntransformer zen jargon vigor groot *cafe*[[vh.jpg]]gor groot oops\n* d\nunique zen jargon v[[wh.png]]igor groot oops"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "s\n[[yf.jpg]]jargon X-ray oops perish cafe wake\n* t\nkangaroo X-ray oops perish cafe wake"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "qualify",
+            "Reference": "a\nperish tran[[zi.jpeg]]sformer halo wake oops essence\n* b\nqualify tra*qualify*nsformer hal[[aj.gif]]o wake oops essence"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "g\nsalvage [[ei.jpg]]banana jargon apple salvage\n* h\ntransformer banana jargon apple sa[[fi.jpg]]lvage"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "dentist",
+            "Reference": "o\noops perish unique monke*dentist*y banana cafe\n* p\nperish perish unique monkey banana cafe"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "yogurt\nzen",
+            "Reference": "d\ntransfo*yogurt*rmer halo apple perish unique groot\n* e\nunique halo apple perish unique*zen*[[yg.jpg]]halo apple perish unique groot"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "oops\nnob",
+            "Reference": "q\nzen banana banana zen f*nob*ar oops\n* r\napple ca*oops*fe banana zen f[[qg.jpg]]ar oops"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for single star, i.e., *, the content between two occurrences of single star is the bold texts. Note that the bold range should start from the single star occurring at i-th spot throughout the whole input file, where i is odd, and end with single star occurring at jth spot where j is even. For example, text between single star appearing first and second time."
+}

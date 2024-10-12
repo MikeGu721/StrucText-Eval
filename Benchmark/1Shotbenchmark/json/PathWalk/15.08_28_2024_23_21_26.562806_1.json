@@ -1,0 +1,26 @@
+{
+    "Question": "What is the first object's id of subs?",
+    "Answer": "p",
+    "Label": {
+        "typename": "json",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "{\n\"id\":\"o\",\n\"Z\":\"q\",\n\"Y\":\"p\",\n\"subs\":[\n {\n \"id\":\"p\",\n \"X\":\"o\",\n \"W\":\"n\",\n \"V\":\"m\",\n \"U\":\"l\",\n \"T\":\"k\",\n \"subs\":[]\n }\n]\n}",
+    "timestamp": "08_28_2024_23_21_26.562806",
+    "input_hash": -5454410195870821827,
+    "examples": [
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "l",
+            "Reference": "{\n\"id\":\"k\",\n\"Z\":\"e\",\n\"Y\":\"d\",\n\"subs\":[\n {\n \"id\":\"l\",\n \"X\":\"c\",\n \"W\":\"b\",\n \"subs\":[]\n }\n]\n}"
+        }
+    ],
+    "RuleHint": "To find the first object's id of subs, first parse the json file and get the outermost object, in the outermost object's subs list, get the first element. That element is another object, and its id is the answer."
+}

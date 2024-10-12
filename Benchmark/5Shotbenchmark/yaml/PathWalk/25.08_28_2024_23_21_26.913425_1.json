@@ -1,0 +1,46 @@
+{
+    "Question": "What is the first object's id of subs?",
+    "Answer": "c",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "id: \"b\"\nZ: f,\nY: e,\nX: d,\nW: c,\nV: b,\nU: a,\nsubs: \n- id: \"c\"\n  T: zy,\n  S: yy,\n  subs: []",
+    "timestamp": "08_28_2024_23_21_26.913425",
+    "input_hash": 8532843021179258352,
+    "examples": [
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "j",
+            "Reference": "id: \"i\"\nZ: o,\nY: n,\nX: m,\nW: l,\nsubs: \n- id: \"j\"\n  V: k,\n  U: j,\n  subs: []"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "v",
+            "Reference": "id: \"u\"\nZ: s,\nY: r,\nX: q,\nW: p,\nV: o,\nU: n,\nsubs: \n- id: \"v\"\n  T: m,\n  S: l,\n  subs: []"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "i",
+            "Reference": "id: \"h\"\nZ: d,\nY: c,\nX: b,\nsubs: \n- id: \"i\"\n  W: a,\n  V: zy,\n  subs: []"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "m",
+            "Reference": "id: \"l\"\nZ: c,\nY: b,\nX: a,\nW: zy,\nV: yy,\nsubs: \n- id: \"m\"\n  U: xy,\n  T: wy,\n  subs: []"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "t",
+            "Reference": "id: \"s\"\nZ: w,\nY: v,\nX: u,\nW: t,\nV: s,\nU: r,\nsubs: \n- id: \"t\"\n  T: q,\n  S: p,\n  R: o,\n  subs: []"
+        }
+    ],
+    "RuleHint": "To find the first object's id of subs, first parse the yaml file and get the outermost object, in the outermost object's subs list, get the first element. That element is another object, and its id is the answer."
+}

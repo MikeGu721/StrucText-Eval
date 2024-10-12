@@ -1,0 +1,36 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section.",
+    "Answer": "\\section{n}\nzen lamb\\textbf{groot} ravish apple qualify kangaroo",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "m\nyogurt lamb ravish app\\textbf{far}le qualify kangaroo\n\\section{n}\nzen lamb\\textbf{groot} ravish apple qualify kangaroo",
+    "timestamp": "08_28_2024_23_21_26.603469",
+    "input_hash": 4855409808902698905,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{z}\nkangaroo uniqu\\textbf{yogurt}e jargon wake salvage oops",
+            "Reference": "y\njargon unique jargon wake salv\\textbf{X-ray}age oops\n\\section{z}\nkangaroo uniqu\\textbf{yogurt}e jargon wake salvage oops"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{q}\nravish idio\\includegraphics[width=0.5\\textwidth]{he.jpeg}t lamb ravish monkey zen",
+            "Reference": "p\nqualify idiot lamb ravish monkey zen\n\\section{q}\nravish idio\\includegraphics[width=0.5\\textwidth]{he.jpeg}t lamb ravish monkey zen"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{h}\nunique apple yogurt vigor zen wake",
+            "Reference": "g\ntran\\textbf{nob}sformer apple yogurt vigo\\includegraphics[width=0.5\\textwidth]{zi.jpeg}r zen wake\n\\section{h}\nunique apple yogurt vigor zen wake"
+        }
+    ],
+    "RuleHint": "Note that section title is enclosed by \\\\section{}, and \\\\subsection for subsection, \\\\subsubsection for subsubsection. To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

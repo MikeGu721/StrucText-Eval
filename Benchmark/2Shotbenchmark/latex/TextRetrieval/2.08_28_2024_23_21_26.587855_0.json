@@ -1,0 +1,31 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "lamb\noops\nmonkey\nnob",
+    "Label": {
+        "typename": "latex",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "n\ncafe X-ray unique idiot dentist perish transformer banana dentist monke\\textbf{lamb}\\includegraphics[width=0.5\\textwidth]{yh.jpg}entist perish transformer banana dentist monkey dentist vigor\n\\section{o}\ndentist X-ray unique idiot dentist perish transformer banana dentist monkey dentist vigor\n\\section{p}\nessence X-ray unique idiot dentist perish transformer banana dentist monkey den\\textbf{monkey}\\includegraphics[width=0.5\\textwidth]{zh.gif}mer banana dentist monkey dentist vigor\n\\section{q}\nfar X-ray unique idiot dentist perish transformer banana dentist monkey dentist vigor\n\\section{r}\ngroot X-ray unique idiot dentist perish transformer banana dentist\\includegraphics[width=0.5\\textwidth]{ai.jpg} monkey dentist vigor\n\\section{s}\nhalo X-ray unique idiot dentist perish transformer banan\\textbf{nob}a dentist monkey dentist \\includegraphics[width=0.5\\textwidth]{bi.gif}vigor\n\\section{t}\nidiot X-ray unique idiot dentist perish\\textbf{oops}\\includegraphics[width=0.5\\textwidth]{ci.jpeg}nique idiot dentist perish transformer banana dentist monkey dentist vigor",
+    "timestamp": "08_28_2024_23_21_26.587855",
+    "input_hash": -80113833906805359,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "groot\nfar\nhalo",
+            "Reference": "b\ngroot yogurt halo ravish lamb monkey vigor yogurt ravish transformer nob unique\n\\section{c}\n\\includegraphics[width=0.5\\textwidth]{hi.jpg}halo yogurt halo ravish lamb monkey vigor yogurt ravish transformer nob unique\n\\section{d}\nidiot yogurt halo ravish lamb monkey vigor yo\\textbf{far}gurt ravish transformer nob unique\n\\section{e}\njargon yogurt halo ravish lamb monkey vigor yogurt ravi\\textbf{groot}sh transformer nob unique\n\\section{f}\nkangaroo yogurt halo ravi\\textbf{halo}sh lamb monkey vigor yogurt ravish transformer nob unique\n\\section{g}\nlamb yogurt hal\\includegraphics[width=0.5\\textwidth]{ii.jpeg}o ravish lamb monkey vigor yogurt ravish transformer nob unique\n\\section{h}\nmonkey yogurt halo ravish lamb monkey vigor yogurt ravish transformer nob unique"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "ravish\ntransformer\nsalvage\nqualify",
+            "Reference": "d\nessence jargon apple nob apple kangaroo banana groot \\includegraphics[width=0.5\\textwidth]{gj.jpeg}banana vigor jargon halo\n\\section{e}\nfar jargon apple nob apple kangaroo banana groot banana \\textbf{qualify}\\includegraphics[width=0.5\\textwidth]{hj.jpg}ana vigor jargon halo\n\\section{f}\ngroot jargo\\textbf{ravish}n apple n\\includegraphics[width=0.5\\textwidth]{ij.gif}ob apple kangaroo banana groot banana vigor jargon halo\n\\section{g}\nhalo jargon apple nob apple kangaroo\\textbf{salvage} banana groot banana vigor jargon halo\n\\section{h}\nidiot jargon apple nob apple kangaroo\\textbf{transformer}\\includegraphics[width=0.5\\textwidth]{jj.jpg}e nob apple kangaroo banana groot banana vigor jargon halo\n\\section{i}\njargon jargon apple nob apple kangaroo banana groot banana vigor jargon halo\n\\section{j}\nkangaroo jargon apple nob appl\\includegraphics[width=0.5\\textwidth]{kj.png}e kangaroo banana groot banana vigor jargon halo"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for macro textbf, and everything after \\\\textbf{ and before the first } encountered is bold text."
+}

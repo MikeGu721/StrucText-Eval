@@ -1,0 +1,31 @@
+{
+    "Question": "Extract all included figure files. Print those file names separated by \\n.",
+    "Answer": "qe.png",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "u\nidiot vigor unique apple salvage zen\n\\section{v}\njargon vigor unique appl\\includegraphics[width=0.5\\textwidth]{qe.png}e salvage zen",
+    "timestamp": "08_28_2024_23_21_26.587388",
+    "input_hash": -3803453560918482049,
+    "examples": [
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "ag.gif",
+            "Reference": "z\nz\\textbf{jargon}en ravish groot unique unique jargon\n\\section{ab}\nap\\includegraphics[width=0.5\\textwidth]{ag.gif}ple salvage groot unique unique jargon"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "No figure file is included in the file.",
+            "Reference": "f\nessence zen essen\\textbf{kangaroo}ce yogurt lamb X-ray\n\\section{g}\nfar zen essence yogurt lamb X-ray"
+        }
+    ],
+    "RuleHint": "To find the image files imported, search for pattern \\\\includegraphics[*]{TARGET}, the TARGET part is the filename. Star means any text is possible."
+}

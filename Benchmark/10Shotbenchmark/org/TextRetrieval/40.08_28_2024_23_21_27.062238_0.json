@@ -1,0 +1,71 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "cafe\nbanana",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 10,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "g\nfar cafe groot dentist transformer groo*banana*[[pe.png]]dentist transformer groot\n* h\ngroot cafe groot dentist tra*cafe*nsformer g[[qe.gif]]root",
+    "timestamp": "08_28_2024_23_21_27.062238",
+    "input_hash": 3169406819218457291,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "unique",
+            "Reference": "g\nbanana idiot X-ray X-ray groot zen\n* h\ncafe idiot X-*unique*ray X-ray groot zen"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "monkey",
+            "Reference": "g\ndentist yogurt idiot transfo*monkey*rmer cafe cafe\n* h\nessence yogur[[bg.jpeg]]t idiot transformer cafe cafe"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "ravish\nqualify",
+            "Reference": "d\ncafe kangaroo hal*qualify*o [[of.jpeg]]transformer vigor halo\n* e\ndentist kangaroo *ravish*halo transformer[[pf.png]] vigor halo"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "qualify",
+            "Reference": "y\ncafe yogurt kangaroo wake transf*qualify*ormer wake\n* z\ndentist yogurt kangaroo wake transformer wake"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "l\napple groot X-ray s[[jj.png]]alvage X-ray essence\n* m\nbanana groot X-ray salvage X-ray essence"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "nob\nmonkey",
+            "Reference": "m\nhalo*monkey* qualify nob ravis[[gj.jpeg]]h jargon dentist\n* n\nidiot qualif*nob*y nob ravish jargon den[[hj.png]]tist"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "yogurt\nzen",
+            "Reference": "n\nravish dentist kangaroo cafe yogurt*yogurt* perish\n* o\nsalvage dentist kangaroo cafe y*zen*ogurt perish"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "dentist\nessence",
+            "Reference": "v\nwake oops salvage jargon transformer ra*dentist*[[bj.jpeg]]s salvage jargon transformer ravish\n* w\nX-ray oops salvage jargon transformer ravi*essence*sh"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "transformer",
+            "Reference": "u\nidiot nob uniqu*transformer*e monk[[eh.gif]]ey apple cafe\n* v\njargon nob unique monkey apple cafe"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "far\ngroot",
+            "Reference": "c\nidiot unique appl*far*e transformer lamb dentist\n* d\njargon unique apple transform*groot*[[xi.gif]]unique apple transformer lamb dentist"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for single star, i.e., *, the content between two occurrences of single star is the bold texts. Note that the bold range should start from the single star occurring at i-th spot throughout the whole input file, where i is odd, and end with single star occurring at jth spot where j is even. For example, text between single star appearing first and second time."
+}

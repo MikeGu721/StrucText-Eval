@@ -1,0 +1,61 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section.",
+    "Answer": "* w\nmonkey apple cafe halo groot X-ray",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 8,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "v\nlamb apple cafe halo groot X-ray\n* w\nmonkey apple cafe halo groot X-ray",
+    "timestamp": "08_28_2024_23_21_26.710842",
+    "input_hash": 3051240509112429024,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* r\nravish groot salvage jargon nob zen",
+            "Reference": "q\nqualify groot salvage j*zen*argon nob zen\n* r\nravish groot salvage jargon nob zen"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* n\nzen cafe salvage wake essence t*essence*ransformer",
+            "Reference": "m\nyogurt cafe s*dentist*alvage wake essence transformer\n* n\nzen cafe salvage wake essence t*essence*ransformer"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* j\nyogurt transformer ravish banana qualify oops",
+            "Reference": "i\nX-*vigor*ray transformer ravish banana qualify oops\n* j\nyogurt transformer ravish banana qualify oops"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* j\nbanana jargon groot transformer dentist salvage",
+            "Reference": "i\napple jargon *nob*groot tran[[vg.png]]sformer dentist salvage\n* j\nbanana jargon groot transformer dentist salvage"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* r\ncafe unique banana qualify vigor idiot",
+            "Reference": "q\nbanana unique banana *apple*qualify vigor idiot\n* r\ncafe unique banana qualify vigor idiot"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* i\ngr*zen*oot kan[[ef.png]]garoo apple monkey jargon salvage",
+            "Reference": "h\nfar kangaroo apple monkey jargon sa*yogurt*lvage\n* i\ngr*zen*oot kan[[ef.png]]garoo apple monkey jargon salvage"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* v\nidiot oops kan[[rf.png]]garoo salvage idiot groot",
+            "Reference": "u\nh*oops*alo oops kangaroo salv[[qf.png]]age idiot groot\n* v\nidiot oops kan[[rf.png]]garoo salvage idiot groot"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* l\ncafe vigor zen transformer *nob*[[si.jpeg]]vigor zen transformer nob cafe",
+            "Reference": "k\nb*monkey*anana[[ri.png]] vigor zen transformer nob cafe\n* l\ncafe vigor zen transformer *nob*[[si.jpeg]]vigor zen transformer nob cafe"
+        }
+    ],
+    "RuleHint": "Note that section, subsection, subsubsection titles are preceded by *, **, *** respectively, with one or more whitespaces in between.  To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

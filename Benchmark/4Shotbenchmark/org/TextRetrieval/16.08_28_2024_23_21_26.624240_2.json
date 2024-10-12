@@ -1,0 +1,41 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "fh.jpeg\nhh.gif\nkh.png\ngh.gif\nih.png\njh.jpg",
+    "Label": {
+        "typename": "org",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 4,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "m\noops nob den*groot*tis[[fh.jpeg]]t salvage vigor halo X-ray transformer qualify yogurt kangaroo wake\n* n\nperish nob dentist salvage vigor halo X-ray transformer qualify yogurt kangaroo wake\n** o\nqualify nob dentist salvage vigor halo X-ray transformer qu*halo*[[gh.gif]]alvage vigor halo X-ray transformer qualify yogurt kangaroo wake\n** p\nravish nob dentist s*idiot*alvage vigor halo X[[hh.gif]]-ray transformer qualify yogurt kangaroo wake\n* q\nsalvage nob de*jargon*[[ih.png]]vage nob dentist salvage vigor halo X-ray transformer qualify yogurt kangaroo wake\n** r\ntransformer nob dentist salvage vigor halo [[jh.jpg]]X-ray transformer qualify yogurt kangaroo wake\n** s\nunique nob dentist salvage vigor halo X-ray transformer[[kh.png]] qualify yogurt kangaroo wake",
+    "timestamp": "08_28_2024_23_21_26.624240",
+    "input_hash": 1665744178416198221,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "eg.png\nfg.jpeg\ngg.jpg\nhg.jpeg",
+            "Reference": "k\nunique qualify idiot cafe wake idiot apple oops monkey dentist[[eg.png]] dentist idiot\n* l\nvigor qualify idiot cafe wake idiot apple oops monkey dentist den[[fg.jpeg]]tist idiot\n** m\nwake qualify idiot cafe wake idiot apple oops monkey dentist dentist idiot\n** n\nX-ray quali*kangaroo*fy idiot cafe wake idiot apple oops monkey dentist dentist idiot\n* o\nyogurt qualify idiot cafe wake idiot apple oops monkey dentist dentist idiot\n** p\nzen qualify idiot cafe wake idiot*lamb* a[[gg.jpg]]pple oops monkey dentist dentist idiot\n** q\napple ravish idiot cafe wake idiot apple oops monkey dentist dentist idi[[hg.jpeg]]ot"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ee.gif\nfe.jpg\nge.gif",
+            "Reference": "f\napple lamb monkey dentist [[ee.gif]]groot jargon zen perish X-ray far groot zen\n* g\nbanana lamb monkey dentist groot jargon zen p*X-ray*erish X-ray far groot zen\n** h\ncafe lamb monkey *yogurt*dentist groot jargon zen perish X-ray far groot zen\n** i\ndentist lamb monkey dentist groot jargon zen perish X-ray far groot zen\n* j\nessence lamb monkey dentist groot jargon zen perish X-ray far groot zen\n** k\nfa[[fe.jpg]]r lamb monkey dentist groot jargon zen perish X-ray far groot zen\n** l\ngroot lamb monkey dentist groot jargon zen perish X-ray f*zen*[[ge.gif]]nkey dentist groot jargon zen perish X-ray far groot zen"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "qi.jpg\nri.png\npi.jpeg\noi.gif\nni.png",
+            "Reference": "x\napple ravish qualify jargon apple trans[[ni.png]]former idiot oops banana cafe groot monkey\n* y\nbanana ravish qualify jargon apple transformer idiot oops banana *transformer*[[oi.gif]]anana ravish qualify jargon apple transformer idiot oops banana cafe groot monkey\n** z\ncafe ravish qualify jargon apple transformer idiot oops banana cafe groot monkey\n** ab\nd[[pi.jpeg]]entist ravish qualify jargon apple transformer idiot oops banana cafe groot monkey\n* bb\nessence ravish qualify jargon apple transformer idi[[qi.jpg]]ot oops banana cafe groot monkey\n** cb\nfar ravish qualify jargon apple transformer idiot oops banana cafe[[ri.png]] groot monkey\n** db\ngroot ravish qualify jargon apple transformer *unique*idiot oops banana cafe groot monkey"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "yi.jpg\naj.jpg\nzi.jpeg",
+            "Reference": "h\ncafe essence transformer kangaroo zen far apple idiot ravish halo banana lamb\n* i\nden*wake*tist essence transformer kangaroo zen far apple idiot ravish halo banana lamb\n** j\nessence essence transformer kangaroo zen far apple idiot ravish halo banana lamb\n** k\nfar essence transformer kangaroo zen far apple idiot ravish halo banana l[[yi.jpg]]amb\n* l\ngroot essence transformer kangaroo zen far apple idiot *X-ray*[[zi.jpeg]] ravish halo banana lamb\n** m\nhalo essence transformer*yogurt* kangaroo zen far apple idiot ravish halo banana lamb\n** n\nidiot essence transformer kangaroo zen[[aj.jpg]] far apple idiot ravish halo banana lamb"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching [[TARGET]], the TARGET part is filename."
+}

@@ -1,0 +1,71 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "salvage\noops\nqualify\nperish\nravish",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 10,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "x\napple nob jargon perish**oops** cafe wake yogurt kangaroo ravish unique nob far\n# y\nbanana nob jargon p**perish**![alt](ci.jpg \"hover text\")n perish cafe wake yogurt kangaroo ravish unique nob far\n## z\ncafe no**qualify**b jargon perish cafe wake yogurt kangaroo ravish unique nob far\n## ab\ndentist nob jargon perish cafe wake yogu![alt](di.png \"hover text\")rt kangaroo ravish unique nob far\n# bb\nessence nob jargon perish cafe wake yogurt kangaro**ravish**o ravish unique nob far\n## cb\nfar nob jargon perish cafe wake yogurt kangaroo ravish unique nob far\n## db\ngroot nob jargon perish cafe wake yogurt kan**salvage**![alt](ei.jpg \"hover text\")wake yogurt kangaroo ravish unique nob far",
+    "timestamp": "08_28_2024_23_21_27.057661",
+    "input_hash": -3539307416802200596,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "oops\nlamb\nnob\nmonkey",
+            "Reference": "t\nqualify monkey un**lamb**ique monkey apple zen jargon halo idiot salva![alt](wi.jpeg \"hover text\")ge jargon transformer\n# u\nravish monkey unique monkey apple zen jargon halo idiot salvage jargon transformer\n## v\nsalvage monkey unique monkey apple zen jargon halo idiot salvage ![alt](xi.gif \"hover text\")jargon transformer\n## w\ntransformer monkey uni![alt](yi.gif \"hover text\")que monkey apple zen jargon halo idiot salvage jargon transformer\n# x\nuniq**monkey**ue monkey unique monkey apple zen jargon halo idiot salvage jargon transformer\n## y\nvigor monkey unique mo**nob**![alt](zi.jpeg \"hover text\")vigor monkey unique monkey apple zen jargon halo idiot salvage jargon transformer\n## z\nwake monkey unique monkey apple zen jargon halo idiot salvage jargon transfo**oops**rmer"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "jargon\nidiot\nhalo\nkangaroo",
+            "Reference": "l\ndentist cafe perish qualify essence dentist unique oops perish dentist yogurt unique\n# m\nessence cafe perish qualify ess**halo**![alt](of.jpeg \"hover text\")essence cafe perish qualify essence dentist unique oops perish dentist yogurt unique\n## n\nf**idiot**ar cafe perish qualify essence dentist unique oops perish dentist yogurt unique\n## o\ngroot cafe perish qualify essence dentist unique oops peris**jargon**![alt](pf.png \"hover text\")y essence dentist unique oops perish dentist yogurt unique\n# p\nhalo cafe perish qualify essence dentist unique oops perish d**kangaroo**![alt](qf.jpg \"hover text\") perish qualify essence dentist unique oops perish dentist yogurt unique\n## q\nidiot cafe perish qualify essence dentist unique oops perish dentist yogurt unique\n## r\njargon cafe perish![alt](rf.png \"hover text\") qualify essence dentist unique oops perish dentist yogurt unique"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "cafe\napple\nbanana",
+            "Reference": "w\nvigor zen j**apple**argon X-ray zen monkey ravish ![alt](ij.jpg \"hover text\")nob transformer groot transformer yogurt\n# x\nwake zen jargon X-ray zen monkey ravish nob tran![alt](jj.png \"hover text\")sformer groot transformer yogurt\n## y\nX-ray zen jargon X-ray zen monkey ravish nob trans**banana**former groot transformer yogurt\n## z\nyogurt zen jargon X-ray zen monkey ravish nob transformer groot transformer yogurt\n# ab\nzen zen jargon X-ray zen monkey ravish nob transformer gro**cafe**![alt](kj.gif \"hover text\") zen monkey ravish nob transformer groot transformer yogurt\n## bb\napple apple kangar![alt](lj.jpeg \"hover text\")oo X-ray zen monkey ravish nob transformer groot transformer yogurt\n## cb\nbanana apple kangaroo X-ray zen monkey ravish nob transformer groot transformer yogurt"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "jargon\nidiot\nkangaroo",
+            "Reference": "s\ncafe ravish dentist qualify perish oops qualify transformer rav![alt](wf.jpeg \"hover text\")ish far groot zen\n# t\ndentist ravish dentist qualify perish oops qualify transformer ravish far groot zen\n## u\nesse![alt](xf.gif \"hover text\")nce ravish dentist qualify perish oops qualify transformer ravish far groot zen\n## v\nfar ravish dentist qualify perish oops qualify transformer ravish far groot zen\n# w\ngroot ravish dentist qualif**idiot**y perish ![alt](yf.jpg \"hover text\")oops qualify transformer ravish far groot zen\n## x\nhalo ravish dentist qualify perish oops qualify transformer ravish f**jargon**![alt](zf.gif \"hover text\")ist qualify perish oops qualify transformer ravish far groot zen\n## y\nidiot ravish**kangaroo** dentist qualify perish oops qualify transformer ravish far groot zen"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "cafe\ndentist\nfar\nessence",
+            "Reference": "k\noops banana halo qualify wake unique transformer monkey jargon banana kangaroo transformer\n# l\nperish b**cafe**anana halo ![alt](jh.jpg \"hover text\")qualify wake unique transformer monkey jargon banana kangaroo transformer\n## m\nqualify banana halo ![alt](kh.jpg \"hover text\")qualify wake unique transformer monkey jargon banana kangaroo transformer\n## n\nravish banana halo qualify wake unique transformer monkey jargon banana kangaroo transform**dentist**er\n# o\nsalvage ban**essence**ana halo qualify wake unique transformer monkey![alt](lh.jpeg \"hover text\") jargon banana kangaroo transformer\n## p\ntransformer banana halo qualify wake unique transformer monkey jargon banana kangaroo transformer\n## q\nunique banana halo qualify wake unique transformer monkey jargon ba**far**![alt](mh.jpeg \"hover text\")anana kangaroo transformer"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "perish\noops\nravish\nqualify",
+            "Reference": "s\nkangaro**oops**o lamb dentist far dentist jargon![alt](wi.jpeg \"hover text\") idiot banana unique salvage monkey halo\n# t\nlamb lamb dentist far dentist jargon idiot banana unique salvage monkey halo\n## u\nmonkey lamb dentist far dentist jargon idiot banana ![alt](xi.gif \"hover text\")unique salvage monkey halo\n## v\nnob lamb dentist far dentist jargon idiot banana unique salvage m**perish**onkey halo\n# w\noops lamb dentist far dentist jargon idio**qualify**t banana unique salvage mo![alt](yi.gif \"hover text\")nkey halo\n## x\nperish lamb dentist far dentist jargon idiot banana unique salvage monkey h**ravish**alo\n## y\nqualify lamb dentist far dentist jargon idiot banana unique salvage monkey halo"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "cafe\ndentist\nessence",
+            "Reference": "j\nvigor kangaro**cafe**o transformer perish dentist oops oops nob yogurt yogurt perish yogurt\n# k\nwake kangaroo transformer perish dentist oops oops nob yogurt yogurt perish yogurt\n## l\nX-ray kangaroo transformer perish dentist oops oops nob yogurt yogurt perish yogurt\n## m\nyogurt kangaroo transformer perish dentist oops oops nob yogurt yogurt perish yogurt\n# n\nzen kangaroo transformer perish dent![alt](ag.jpeg \"hover text\")ist oops oops nob yogurt yogurt perish yogurt\n## o\napple lamb transformer perish dentist oops o**dentist**ops nob yogurt yogurt perish yogurt\n## p\nbanana lamb transformer perish dentist **essence**oops oops nob yogurt yogurt perish yogurt"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "cafe\ndentist\nbanana",
+            "Reference": "b\nfar cafe wake lamb yogurt far groot cafe apple peris![alt](ng.png \"hover text\")h transformer nob\n# c\ngroot cafe wake lamb yogurt far groot cafe apple perish transformer nob\n## d\nhalo cafe wake la**banana**mb yogurt far groot cafe apple perish transformer nob\n## e\nidiot cafe wake lamb yogurt far groot c**cafe**![alt](og.jpeg \"hover text\")yogurt far groot cafe apple perish transformer nob\n# f\njargon c**dentist**afe wake lamb yogurt far groot cafe apple perish transformer nob\n## g\nkangaroo cafe wake lamb yogurt far groot cafe apple perish transformer nob\n## h\nlamb cafe wake lamb yogurt far groot caf![alt](pg.jpeg \"hover text\")e apple perish transformer nob"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "yogurt\nbanana banana\nzen\napple banana\nX-ray",
+            "Reference": "b\nwake banana cafe groot halo groot**X-ray** ravish apple salvage X-ray lamb cafe\n# c\nX-ray banana cafe groot halo groot ravish apple salvage X-ray lamb cafe\n## d\nyogurt banana cafe groot halo groot ravish apple salvage X-ray lamb cafe\n## e\nzen banana cafe groot halo groot ravish apple salvage X-ray**yogurt**![alt](ai.png \"hover text\")pple salvage X-ray lamb cafe\n# f\napple **zen**cafe cafe groot halo groot ravish apple![alt](bi.png \"hover text\") salvage X-ray lamb cafe\n## g\nbanana cafe cafe groot halo groot ravish **apple banana**apple salvage X-ray lamb c![alt](ci.jpg \"hover text\")afe\n## h\ncafe cafe cafe groot halo groot ravish apple salvage X**banana banana**-ray lamb cafe"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "halo\nessence\ndentist\nfar\ngroot",
+            "Reference": "k\nkangaroo nob unique banana kangaroo zen qualify vigor oops jargon salvag![alt](wg.png \"hover text\")e nob\n# l\nlamb nob unique**dentist** banana kangaroo zen qualify vigor oops jargon salvage n![alt](xg.gif \"hover text\")ob\n## m\nmonkey nob unique **essence**banana kangaroo zen qualify vigor oops jargon salvage nob\n## n\nnob nob unique banana kangaroo zen qualify vigor oops jargon salvage nob\n# o\noops nob unique banana kangaroo zen qualify vigor oops ja**far**![alt](yg.jpg \"hover text\") kangaroo zen qualify vigor oops jargon salvage nob\n## p\nperish nob unique banana kan**groot**garoo zen qualify vigor oops jargon salvage nob\n## q\nqualify nob unique banana kangaroo zen **halo**qualify vigor oop![alt](zg.png \"hover text\")s jargon salvage nob"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for double stars, i.e., **, the content between two occurrences of double stars is the bold texts. Note that the bold range should start from the double stars occurring at i-th spot throughout the whole input file, where i is odd, and end with double stars occurring at jth spot where j is even. For example, text between double stars appearing first and second time."
+}

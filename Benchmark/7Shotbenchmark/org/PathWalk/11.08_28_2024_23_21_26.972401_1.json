@@ -1,0 +1,56 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section.",
+    "Answer": "* d\ndentist*yogurt* banana dentist apple kangaroo [[ti.gif]]yogurt",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 7,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "c\ncafe banana dentist app*X-ray*[[si.png]]ple kangaroo yogurt\n* d\ndentist*yogurt* banana dentist apple kangaroo [[ti.gif]]yogurt",
+    "timestamp": "08_28_2024_23_21_26.972401",
+    "input_hash": 2460865159800496157,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* d\nunique zen jargon v[[wh.png]]igor groot oops",
+            "Reference": "c\ntransformer zen jargon vigor groot *cafe*[[vh.jpg]]gor groot oops\n* d\nunique zen jargon v[[wh.png]]igor groot oops"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* t\nkangaroo X-ray oops perish cafe wake",
+            "Reference": "s\n[[yf.jpg]]jargon X-ray oops perish cafe wake\n* t\nkangaroo X-ray oops perish cafe wake"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* b\nqualify tra*qualify*nsformer hal[[aj.gif]]o wake oops essence",
+            "Reference": "a\nperish tran[[zi.jpeg]]sformer halo wake oops essence\n* b\nqualify tra*qualify*nsformer hal[[aj.gif]]o wake oops essence"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* h\ntransformer banana jargon apple sa[[fi.jpg]]lvage",
+            "Reference": "g\nsalvage [[ei.jpg]]banana jargon apple salvage\n* h\ntransformer banana jargon apple sa[[fi.jpg]]lvage"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* p\nperish perish unique monkey banana cafe",
+            "Reference": "o\noops perish unique monke*dentist*y banana cafe\n* p\nperish perish unique monkey banana cafe"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* e\nunique halo apple perish unique*zen*[[yg.jpg]]halo apple perish unique groot",
+            "Reference": "d\ntransfo*yogurt*rmer halo apple perish unique groot\n* e\nunique halo apple perish unique*zen*[[yg.jpg]]halo apple perish unique groot"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* r\napple ca*oops*fe banana zen f[[qg.jpg]]ar oops",
+            "Reference": "q\nzen banana banana zen f*nob*ar oops\n* r\napple ca*oops*fe banana zen f[[qg.jpg]]ar oops"
+        }
+    ],
+    "RuleHint": "Note that section, subsection, subsubsection titles are preceded by *, **, *** respectively, with one or more whitespaces in between.  To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

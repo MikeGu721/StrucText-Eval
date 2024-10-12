@@ -1,0 +1,56 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section.",
+    "Answer": "\\section{e}\nyogurt qualify jargon oops \\textbf{transformer}yogurt unique",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 7,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "d\nX-ray qualify jargon oops yogurt uniqu\\includegraphics[width=0.5\\textwidth]{pg.jpg}e\n\\section{e}\nyogurt qualify jargon oops \\textbf{transformer}yogurt unique",
+    "timestamp": "08_28_2024_23_21_26.684421",
+    "input_hash": 5304681892889342066,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{w}\nkangaroo halo hal\\includegraphics[width=0.5\\textwidth]{lf.jpeg}o idiot nob idiot",
+            "Reference": "v\njargon h\\textbf{cafe}alo halo idiot nob idiot\n\\section{w}\nkangaroo halo hal\\includegraphics[width=0.5\\textwidth]{lf.jpeg}o idiot nob idiot"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{v}\nravish salvage lamb \\textbf{perish}\\includegraphics[width=0.5\\textwidth]{ng.gif}vish salvage lamb lamb X-ray halo",
+            "Reference": "u\nqualif\\textbf{oops}y salvage lamb lamb X-ray halo\n\\section{v}\nravish salvage lamb \\textbf{perish}\\includegraphics[width=0.5\\textwidth]{ng.gif}vish salvage lamb lamb X-ray halo"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{z}\napple halo lamb essence idiot esse\\textbf{halo}\\includegraphics[width=0.5\\textwidth]{gi.jpeg}ot essence",
+            "Reference": "y\nzen groot lamb essence idiot essen\\includegraphics[width=0.5\\textwidth]{fi.jpeg}ce\n\\section{z}\napple halo lamb essence idiot esse\\textbf{halo}\\includegraphics[width=0.5\\textwidth]{gi.jpeg}ot essence"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{d}\nkangaroo wake apple dentist apple ravish",
+            "Reference": "c\njargon wake apple dentist apple ravish\n\\section{d}\nkangaroo wake apple dentist apple ravish"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{e}\nbanana groot ravis\\textbf{X-ray}h far far idiot",
+            "Reference": "d\napple groot ravish far far idi\\includegraphics[width=0.5\\textwidth]{gf.jpg}ot\n\\section{e}\nbanana groot ravis\\textbf{X-ray}h far far idiot"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{u}\nessence far f\\textbf{zen}ar transformer banana qualify",
+            "Reference": "t\ndentist far far transformer banana qualify\n\\section{u}\nessence far f\\textbf{zen}ar transformer banana qualify"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{t}\nperish halo salvage wake \\textbf{essence}\\includegraphics[width=0.5\\textwidth]{ee.gif}halo salvage wake monkey nob",
+            "Reference": "s\noops halo salvage wake monkey\\textbf{dentist}\\includegraphics[width=0.5\\textwidth]{de.gif}ke monkey nob\n\\section{t}\nperish halo salvage wake \\textbf{essence}\\includegraphics[width=0.5\\textwidth]{ee.gif}halo salvage wake monkey nob"
+        }
+    ],
+    "RuleHint": "Note that section title is enclosed by \\\\section{}, and \\\\subsection for subsection, \\\\subsubsection for subsubsection. To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

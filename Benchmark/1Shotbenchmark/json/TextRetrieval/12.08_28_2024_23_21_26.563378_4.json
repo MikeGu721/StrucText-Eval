@@ -1,0 +1,26 @@
+{
+    "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the JSON file, separated by \\n\\n.",
+    "Answer": "{\n\"id\":\"p\",\n\"X\":\"o\",\n\"W\":\"n\",\n\"V\":\"m\",\n\"U\":\"l\",\n\"T\":\"k\",\n\"subs\":[]\n}",
+    "Label": {
+        "typename": "json",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "{\n\"id\":\"o\",\n\"Z\":\"q\",\n\"Y\":\"p\",\n\"subs\":[\n {\n \"id\":\"p\",\n \"X\":\"o\",\n \"W\":\"n\",\n \"V\":\"m\",\n \"U\":\"l\",\n \"T\":\"k\",\n \"subs\":[]\n }\n]\n}",
+    "timestamp": "08_28_2024_23_21_26.563378",
+    "input_hash": -5454410195870821827,
+    "examples": [
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the JSON file, separated by \\n\\n. ",
+            "Answer": "{\n\"id\":\"l\",\n\"X\":\"c\",\n\"W\":\"b\",\n\"subs\":[]\n}",
+            "Reference": "{\n\"id\":\"k\",\n\"Z\":\"e\",\n\"Y\":\"d\",\n\"subs\":[\n {\n \"id\":\"l\",\n \"X\":\"c\",\n \"W\":\"b\",\n \"subs\":[]\n }\n]\n}"
+        }
+    ],
+    "RuleHint": "To get the most deeply nested objects, start from the outermost object, recursively search along the subs fields. For each object, check its subs field, any object with an empty subs is one most deeply nested object."
+}

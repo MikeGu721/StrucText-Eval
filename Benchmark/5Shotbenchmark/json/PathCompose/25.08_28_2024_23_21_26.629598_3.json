@@ -1,0 +1,46 @@
+{
+    "Question": "How to access value \"iy\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+    "Answer": "obj[\"subs\"][1][\"subs\"][0][\"IY\"]",
+    "Label": {
+        "typename": "json",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathCompose"
+        ]
+    },
+    "Reference": "{\n\"id\":\"f\",\n\"Z\":\"z\",\n\"Y\":\"y\",\n\"X\":\"x\",\n\"W\":\"w\",\n\"V\":\"v\",\n\"U\":\"u\",\n\"T\":\"t\",\n\"S\":\"s\",\n\"R\":\"r\",\n\"Q\":\"q\",\n\"P\":\"p\",\n\"O\":\"o\",\n\"subs\":[\n {\n \"id\":\"g\",\n \"N\":\"n\",\n \"M\":\"m\",\n \"L\":\"l\",\n \"K\":\"k\",\n \"J\":\"j\",\n \"subs\":[\n  {\n  \"id\":\"h\",\n  \"I\":\"i\",\n  \"H\":\"h\",\n  \"G\":\"g\",\n  \"F\":\"f\",\n  \"E\":\"e\",\n  \"D\":\"d\",\n  \"C\":\"c\",\n  \"B\":\"b\",\n  \"A\":\"a\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"i\",\n  \"ZY\":\"zy\",\n  \"YY\":\"yy\",\n  \"XY\":\"xy\",\n  \"WY\":\"wy\",\n  \"VY\":\"vy\",\n  \"UY\":\"uy\",\n  \"TY\":\"ty\",\n  \"SY\":\"sy\",\n  \"subs\":[]\n  }\n ]\n },\n {\n \"id\":\"j\",\n \"RY\":\"ry\",\n \"QY\":\"qy\",\n \"PY\":\"py\",\n \"OY\":\"oy\",\n \"NY\":\"ny\",\n \"MY\":\"my\",\n \"LY\":\"ly\",\n \"KY\":\"ky\",\n \"subs\":[\n  {\n  \"id\":\"k\",\n  \"JY\":\"jy\",\n  \"IY\":\"iy\",\n  \"HY\":\"hy\",\n  \"GY\":\"gy\",\n  \"FY\":\"fy\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"l\",\n  \"EY\":\"ey\",\n  \"DY\":\"dy\",\n  \"CY\":\"cy\",\n  \"BY\":\"by\",\n  \"AY\":\"ay\",\n  \"ZX\":\"zx\",\n  \"YX\":\"yx\",\n  \"XX\":\"xx\",\n  \"subs\":[]\n  }\n ]\n }\n]\n}",
+    "timestamp": "08_28_2024_23_21_26.629598",
+    "input_hash": 3319516065451441477,
+    "examples": [
+        {
+            "Question": "How to access value \"xy\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"R\"]",
+            "Reference": "{\n\"id\":\"v\",\n\"Z\":\"f\",\n\"Y\":\"e\",\n\"X\":\"d\",\n\"W\":\"c\",\n\"V\":\"b\",\n\"subs\":[\n {\n \"id\":\"w\",\n \"U\":\"a\",\n \"T\":\"zy\",\n \"S\":\"yy\",\n \"R\":\"xy\",\n \"Q\":\"wy\",\n \"subs\":[\n  {\n  \"id\":\"x\",\n  \"P\":\"vy\",\n  \"O\":\"uy\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"y\",\n  \"N\":\"ty\",\n  \"M\":\"sy\",\n  \"L\":\"ry\",\n  \"K\":\"qy\",\n  \"J\":\"py\",\n  \"I\":\"oy\",\n  \"subs\":[]\n  }\n ]\n },\n {\n \"id\":\"z\",\n \"H\":\"ny\",\n \"G\":\"my\",\n \"F\":\"ly\",\n \"E\":\"ky\",\n \"subs\":[\n  {\n  \"id\":\"ab\",\n  \"D\":\"jy\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"bb\",\n  \"C\":\"iy\",\n  \"B\":\"hy\",\n  \"A\":\"gy\",\n  \"ZY\":\"fy\",\n  \"YY\":\"ey\",\n  \"XY\":\"dy\",\n  \"WY\":\"cy\",\n  \"VY\":\"by\",\n  \"UY\":\"ay\",\n  \"TY\":\"zx\",\n  \"SY\":\"yx\",\n  \"subs\":[]\n  }\n ]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"sy\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"subs\"][0][\"C\"]",
+            "Reference": "{\n\"id\":\"w\",\n\"Z\":\"p\",\n\"Y\":\"o\",\n\"X\":\"n\",\n\"W\":\"m\",\n\"V\":\"l\",\n\"U\":\"k\",\n\"T\":\"j\",\n\"S\":\"i\",\n\"R\":\"h\",\n\"subs\":[\n {\n \"id\":\"x\",\n \"Q\":\"g\",\n \"P\":\"f\",\n \"O\":\"e\",\n \"N\":\"d\",\n \"M\":\"c\",\n \"L\":\"b\",\n \"K\":\"a\",\n \"subs\":[\n  {\n  \"id\":\"y\",\n  \"J\":\"zy\",\n  \"I\":\"yy\",\n  \"H\":\"xy\",\n  \"G\":\"wy\",\n  \"F\":\"vy\",\n  \"E\":\"uy\",\n  \"D\":\"ty\",\n  \"C\":\"sy\",\n  \"B\":\"ry\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"z\",\n  \"A\":\"qy\",\n  \"ZY\":\"py\",\n  \"YY\":\"oy\",\n  \"XY\":\"ny\",\n  \"WY\":\"my\",\n  \"VY\":\"ly\",\n  \"subs\":[]\n  }\n ]\n },\n {\n \"id\":\"ab\",\n \"UY\":\"ky\",\n \"TY\":\"jy\",\n \"subs\":[\n  {\n  \"id\":\"bb\",\n  \"SY\":\"iy\",\n  \"RY\":\"hy\",\n  \"QY\":\"gy\",\n  \"PY\":\"fy\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"cb\",\n  \"OY\":\"ey\",\n  \"NY\":\"dy\",\n  \"subs\":[]\n  }\n ]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"qy\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][1][\"A\"]",
+            "Reference": "{\n\"id\":\"w\",\n\"Z\":\"p\",\n\"Y\":\"o\",\n\"subs\":[\n {\n \"id\":\"x\",\n \"X\":\"n\",\n \"W\":\"m\",\n \"V\":\"l\",\n \"U\":\"k\",\n \"T\":\"j\",\n \"S\":\"i\",\n \"R\":\"h\",\n \"Q\":\"g\",\n \"P\":\"f\",\n \"O\":\"e\",\n \"subs\":[\n  {\n  \"id\":\"y\",\n  \"N\":\"d\",\n  \"M\":\"c\",\n  \"L\":\"b\",\n  \"K\":\"a\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"z\",\n  \"J\":\"zy\",\n  \"I\":\"yy\",\n  \"H\":\"xy\",\n  \"G\":\"wy\",\n  \"F\":\"vy\",\n  \"subs\":[]\n  }\n ]\n },\n {\n \"id\":\"ab\",\n \"E\":\"uy\",\n \"D\":\"ty\",\n \"C\":\"sy\",\n \"B\":\"ry\",\n \"A\":\"qy\",\n \"ZY\":\"py\",\n \"YY\":\"oy\",\n \"XY\":\"ny\",\n \"WY\":\"my\",\n \"VY\":\"ly\",\n \"UY\":\"ky\",\n \"TY\":\"jy\",\n \"subs\":[\n  {\n  \"id\":\"bb\",\n  \"SY\":\"iy\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"cb\",\n  \"RY\":\"hy\",\n  \"QY\":\"gy\",\n  \"PY\":\"fy\",\n  \"OY\":\"ey\",\n  \"NY\":\"dy\",\n  \"MY\":\"cy\",\n  \"LY\":\"by\",\n  \"subs\":[]\n  }\n ]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"d\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"W\"]",
+            "Reference": "{\n\"id\":\"f\",\n\"Z\":\"g\",\n\"Y\":\"f\",\n\"X\":\"e\",\n\"W\":\"d\",\n\"V\":\"c\",\n\"U\":\"b\",\n\"T\":\"a\",\n\"S\":\"zy\",\n\"R\":\"yy\",\n\"subs\":[\n {\n \"id\":\"g\",\n \"Q\":\"xy\",\n \"P\":\"wy\",\n \"O\":\"vy\",\n \"N\":\"uy\",\n \"M\":\"ty\",\n \"L\":\"sy\",\n \"K\":\"ry\",\n \"J\":\"qy\",\n \"subs\":[\n  {\n  \"id\":\"h\",\n  \"I\":\"py\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"i\",\n  \"H\":\"oy\",\n  \"G\":\"ny\",\n  \"F\":\"my\",\n  \"subs\":[]\n  }\n ]\n },\n {\n \"id\":\"j\",\n \"E\":\"ly\",\n \"D\":\"ky\",\n \"C\":\"jy\",\n \"B\":\"iy\",\n \"subs\":[\n  {\n  \"id\":\"k\",\n  \"A\":\"hy\",\n  \"ZY\":\"gy\",\n  \"YY\":\"fy\",\n  \"XY\":\"ey\",\n  \"WY\":\"dy\",\n  \"VY\":\"cy\",\n  \"UY\":\"by\",\n  \"TY\":\"ay\",\n  \"SY\":\"zx\",\n  \"RY\":\"yx\",\n  \"QY\":\"xx\",\n  \"PY\":\"wx\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"l\",\n  \"OY\":\"vx\",\n  \"NY\":\"ux\",\n  \"MY\":\"tx\",\n  \"LY\":\"sx\",\n  \"KY\":\"rx\",\n  \"JY\":\"qx\",\n  \"IY\":\"px\",\n  \"HY\":\"ox\",\n  \"GY\":\"nx\",\n  \"FY\":\"mx\",\n  \"EY\":\"lx\",\n  \"subs\":[]\n  }\n ]\n }\n]\n}"
+        },
+        {
+            "Question": "How to access value \"w\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"Z\"]",
+            "Reference": "{\n\"id\":\"g\",\n\"Z\":\"w\",\n\"subs\":[\n {\n \"id\":\"h\",\n \"Y\":\"v\",\n \"X\":\"u\",\n \"W\":\"t\",\n \"V\":\"s\",\n \"U\":\"r\",\n \"T\":\"q\",\n \"S\":\"p\",\n \"R\":\"o\",\n \"Q\":\"n\",\n \"P\":\"m\",\n \"subs\":[\n  {\n  \"id\":\"i\",\n  \"O\":\"l\",\n  \"N\":\"k\",\n  \"M\":\"j\",\n  \"L\":\"i\",\n  \"K\":\"h\",\n  \"J\":\"g\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"j\",\n  \"I\":\"f\",\n  \"H\":\"e\",\n  \"G\":\"d\",\n  \"F\":\"c\",\n  \"subs\":[]\n  }\n ]\n },\n {\n \"id\":\"k\",\n \"E\":\"b\",\n \"D\":\"a\",\n \"C\":\"zy\",\n \"B\":\"yy\",\n \"A\":\"xy\",\n \"ZY\":\"wy\",\n \"YY\":\"vy\",\n \"XY\":\"uy\",\n \"WY\":\"ty\",\n \"subs\":[\n  {\n  \"id\":\"l\",\n  \"VY\":\"sy\",\n  \"UY\":\"ry\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"m\",\n  \"TY\":\"qy\",\n  \"SY\":\"py\",\n  \"RY\":\"oy\",\n  \"QY\":\"ny\",\n  \"subs\":[]\n  }\n ]\n }\n]\n}"
+        }
+    ],
+    "RuleHint": "To get the path to access specified value. You have to do a recursive search along the subs fields, starting from the outermost parsed object. For each visited object, check each fields except for subs, and record the path along the way, i.e., subs inside brackets and index into subs inside brackets, and at which field you find the value."
+}

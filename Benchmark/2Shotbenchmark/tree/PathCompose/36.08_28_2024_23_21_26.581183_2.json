@@ -1,0 +1,31 @@
+{
+    "Question": "What is the path from the root node to the node f. Answer should look like A->D->H.",
+    "Answer": "e->f",
+    "Label": {
+        "typename": "tree",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathCompose"
+        ]
+    },
+    "Reference": "e->f",
+    "timestamp": "08_28_2024_23_21_26.581183",
+    "input_hash": 8444901148589304582,
+    "examples": [
+        {
+            "Question": "What is the path from the root node to the node j. Answer should look like A->D->H. ",
+            "Answer": "j",
+            "Reference": "j->k"
+        },
+        {
+            "Question": "What is the path from the root node to the node d. Answer should look like A->D->H. ",
+            "Answer": "c->d",
+            "Reference": "c->d"
+        }
+    ],
+    "RuleHint": "To get the path from root to a node, you need to find recursively. For any node, you can find the path to the target node by find path from its children to target. Then check each child's output, if any child returns with valid path instead of an empty path indicating target-not-found, the path from node to target is that path from its child to target prepended with itself. The answer can be found by searching with root as starting point."
+}

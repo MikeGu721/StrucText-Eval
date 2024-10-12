@@ -1,0 +1,31 @@
+{
+    "Question": "What is the color of record with primeKey a",
+    "Answer": "mulatto",
+    "Label": {
+        "typename": "csv",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,male,50,z,120,177,mulatto\nb,male,63,ab,153,117,white\n\nprimeKey,status,salary,company,location\na,employed,801475,Microsoft,TX\nb,employed,55563,Apple,TX",
+    "timestamp": "08_28_2024_23_21_26.848691",
+    "input_hash": 9052104089171390138,
+    "examples": [
+        {
+            "Question": "\nWhat is the location of record with primeKey b\n",
+            "Answer": "GA",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,19,d,135,82,white\nb,female,61,e,182,143,olive\n\nprimeKey,status,salary,company,location\na,retired,267565,Twitter,CA\nb,retired,146906,Twitter,GA"
+        },
+        {
+            "Question": "\nWhat is the salary of record with primeKey a\n",
+            "Answer": "837637",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,19,q,174,138,black\nb,female,67,r,199,179,swarthy\n\nprimeKey,status,salary,company,location\na,employed,837637,Apple,GA\nb,employed,365952,NVIDIA,WA"
+        }
+    ],
+    "RuleHint": "To find the value of specific field of record with specified primeKey. You have to first, locate the line with the specific primeKey. Then find the required value under the desired column in that line."
+}

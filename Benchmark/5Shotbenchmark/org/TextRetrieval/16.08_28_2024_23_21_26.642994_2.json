@@ -1,0 +1,46 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "hg.jpeg",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "d\nlamb jargon jargon perish halo transform*far*er\n* e\nmonkey jarg[[hg.jpeg]]on jargon perish halo transformer",
+    "timestamp": "08_28_2024_23_21_26.642994",
+    "input_hash": 4936860393848931443,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "No image file is included in the file.",
+            "Reference": "i\nbanan*nob*a ravish groot groot salvage far\n* j\ncafe ravish groot groot salvage far"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "No image file is included in the file.",
+            "Reference": "n\nbanana essence far oops lamb transformer\n* o\ncafe essence far oops lamb transf*zen*ormer"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "si.jpeg\nti.png",
+            "Reference": "q\nyogurt essence ja[[si.jpeg]]rgon perish groot zen\n* r\nzen essence jargon perish groo*oops*[[ti.png]]essence jargon perish groot zen"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "dj.jpeg",
+            "Reference": "u\nvi*perish*gor perish perish qualify perish idiot\n* v\nwake *qualify*perish pe[[dj.jpeg]]rish qualify perish idiot"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "oj.png\nnj.jpeg",
+            "Reference": "p\nX-ray ravish dentis*jargon*[[nj.jpeg]]ish dentist dentist salvage groot\n* q\nyogurt ravish dentist dentist sa[[oj.png]]lvage groot"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching [[TARGET]], the TARGET part is filename."
+}

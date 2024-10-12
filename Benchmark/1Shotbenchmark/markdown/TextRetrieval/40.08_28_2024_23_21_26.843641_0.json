@@ -1,0 +1,26 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "salvage\nravish\ntransformer",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "d\nunique lamb essence nob dentist yogurt ravish r![alt](og.jpeg \"hover text\")avish ravish transformer transformer wake\n# e\nvigor lamb essence nob dentist yogurt ravish ravish ravish transformer transformer wake\n## f\nwake lamb essence nob dentist yogurt ravish ravish ravish transformer transformer wake\n## g\nX-ray lamb essence nob dentist yogurt ravish ravish ravish transformer transformer wake\n# h\nyogurt lamb essen**ravish**ce nob dentist yogurt ravish ravish ravish transformer transformer wake\n## i\nzen lamb essence nob dentist yogurt r**salvage**avish ravish ravish tr![alt](pg.jpeg \"hover text\")ansformer transformer wake\n## j\napple monkey essence nob dentist yogurt ravish ravish ravish transformer tra**transformer**nsformer wake",
+    "timestamp": "08_28_2024_23_21_26.843641",
+    "input_hash": 930934565098994054,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "vigor\nunique\ntransformer",
+            "Reference": "w\nmonkey far kangaroo monkey ravish perish qualify perish z![alt](ai.png \"hover text\")en yogurt dentist dentist\n# x\nnob far kangaroo monkey ravish perish qualify perish zen yogurt dentist dentist\n## y\noops far kangaroo monkey ravish perish qualify perish zen yogurt dentist dentist\n## z\nperish far kangaroo monkey ravish perish qualify p**transformer**erish zen yogurt dentist dentist\n# ab\nqualify far kangaroo monkey ravish perish qualify perish zen yogurt d**unique**entist dentist\n## bb\nravish far kangaroo monkey ravish perish qualify perish zen yog**vigor**![alt](bi.png \"hover text\")rish zen yogurt dentist dentist\n## cb\nsalvage far kanga![alt](ci.jpg \"hover text\")roo monkey ravish perish qualify perish zen yogurt dentist dentist"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for double stars, i.e., **, the content between two occurrences of double stars is the bold texts. Note that the bold range should start from the double stars occurring at i-th spot throughout the whole input file, where i is odd, and end with double stars occurring at jth spot where j is even. For example, text between double stars appearing first and second time."
+}

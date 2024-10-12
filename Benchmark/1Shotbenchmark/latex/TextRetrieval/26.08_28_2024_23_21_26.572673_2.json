@@ -1,0 +1,26 @@
+{
+    "Question": "Extract all included figure files. Print those file names separated by \\n.",
+    "Answer": "yh.jpg\nvh.jpg\nxh.jpg\nwh.gif",
+    "Label": {
+        "typename": "latex",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "h\nqualify nob perish kang\\textbf{groot}aroo wake un\\includegraphics[width=0.5\\textwidth]{vh.jpg}ique monkey idiot vigor lamb groot qualify\n\\section{i}\nravish nob perish kangaroo wake unique monkey idiot vigor lamb groot qua\\includegraphics[width=0.5\\textwidth]{wh.gif}lify\n\\section{j}\nsalvage nob perish kangaroo wake unique monkey idiot vigor lamb groot qualify\n\\section{k}\ntransformer nob perish kangaroo wake unique monkey idiot vigor lamb groot qual\\textbf{halo}ify\n\\section{l}\nunique nob perish kangar\\textbf{idiot}oo wake unique monkey idiot vi\\includegraphics[width=0.5\\textwidth]{xh.jpg}gor lamb groot qualify\n\\section{m}\nvigor nob perish kangaroo wake unique monkey idiot vigor lamb groot qua\\includegraphics[width=0.5\\textwidth]{yh.jpg}lify\n\\section{n}\nwake nob perish kangaroo wake unique monkey idiot vigor lamb groot qualify",
+    "timestamp": "08_28_2024_23_21_26.572673",
+    "input_hash": -4810140394507170270,
+    "examples": [
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "yg.gif\nzg.jpeg",
+            "Reference": "k\nyogurt jargon nob oops banana idiot essence cafe\\textbf{banana}\\includegraphics[width=0.5\\textwidth]{yg.gif}banana idiot essence cafe X-ray ravish cafe dentist\n\\section{l}\nzen jargon nob oops banana idiot essence cafe X-ray ravish cafe dentist\n\\section{m}\napple kangaroo nob oops banana idiot essence ca\\textbf{cafe}fe X-ray ravish cafe dentist\n\\section{n}\nbanana kangaroo nob oops banana idiot essence cafe X-ray ravish cafe dentist\n\\section{o}\ncafe kangaroo no\\includegraphics[width=0.5\\textwidth]{zg.jpeg}b oops banana idiot essence cafe X-ray ravish cafe dentist\n\\section{p}\ndentist kangaroo nob oop\\textbf{dentist}s banana idiot essence cafe X-ray ravish cafe dentist\n\\section{q}\nessence kangaroo nob oops banana idiot e\\textbf{essence}ssence cafe X-ray ravish cafe dentist"
+        }
+    ],
+    "RuleHint": "To find the image files imported, search for pattern \\\\includegraphics[*]{TARGET}, the TARGET part is the filename. Star means any text is possible."
+}

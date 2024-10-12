@@ -1,0 +1,66 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section.",
+    "Answer": "\\section{y}\nzen cafe kangaroo groot kanga\\textbf{salvage}roo essence",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 9,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "x\nyogurt cafe kangaroo groot kang\\textbf{ravish}aroo essence\n\\section{y}\nzen cafe kangaroo groot kanga\\textbf{salvage}roo essence",
+    "timestamp": "08_28_2024_23_21_26.733603",
+    "input_hash": -1219693777722766310,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{z}\nunique\\textbf{yogurt} transfor\\includegraphics[width=0.5\\textwidth]{yd.jpg}mer zen oops wake idiot",
+            "Reference": "y\ntransformer transformer zen oops wake idiot\n\\section{z}\nunique\\textbf{yogurt} transfor\\includegraphics[width=0.5\\textwidth]{yd.jpg}mer zen oops wake idiot"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{e}\n\\textbf{apple}perish ravish ravish monkey yogurt groot",
+            "Reference": "d\noops ravish ravish monkey yogurt groot\n\\section{e}\n\\textbf{apple}perish ravish ravish monkey yogurt groot"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{r}\nsalvage apple oops wake idiot essence",
+            "Reference": "q\nravish apple oops wake idiot essence\n\\section{r}\nsalvage apple oops wake idiot essence"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{x}\nlamb far X-ray banana lamb far",
+            "Reference": "w\nkangaroo far X-ray banana lamb far\n\\section{x}\nlamb far X-ray banana lamb far"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{d}\njargon far perish kangaroo zen banana",
+            "Reference": "c\nidiot far perish k\\textbf{halo}angaroo zen banana\n\\section{d}\njargon far perish kangaroo zen banana"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{m}\nkangaroo unique dentist monkey vigor groot",
+            "Reference": "l\njargon unique dentist monkey vigor groot\n\\section{m}\nkangaroo unique dentist monkey vigor groot"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{t}\nyo\\textbf{idiot}gurt perish zen halo salvage ravish",
+            "Reference": "s\nX-ray perish ze\\includegraphics[width=0.5\\textwidth]{mh.jpg}n halo salvage ravish\n\\section{t}\nyo\\textbf{idiot}gurt perish zen halo salvage ravish"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{x}\nyogurt lamb far qua\\textbf{idiot}lify idiot vigor",
+            "Reference": "w\nX-ray lamb\\textbf{halo}\\includegraphics[width=0.5\\textwidth]{hg.jpeg} lamb far qualify idiot vigor\n\\section{x}\nyogurt lamb far qua\\textbf{idiot}lify idiot vigor"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{k}\nkangaroo transformer vigor idiot kangar\\textbf{unique}\\includegraphics[width=0.5\\textwidth]{ve.gif}o transformer vigor idiot kangaroo dentist",
+            "Reference": "j\nj\\textbf{transformer}argon transformer vigor idiot kangaroo dentist\n\\section{k}\nkangaroo transformer vigor idiot kangar\\textbf{unique}\\includegraphics[width=0.5\\textwidth]{ve.gif}o transformer vigor idiot kangaroo dentist"
+        }
+    ],
+    "RuleHint": "Note that section title is enclosed by \\\\section{}, and \\\\subsection for subsection, \\\\subsubsection for subsubsection. To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

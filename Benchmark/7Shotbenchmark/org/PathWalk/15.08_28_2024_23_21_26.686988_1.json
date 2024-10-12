@@ -1,0 +1,56 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section.",
+    "Answer": "* f\nX-ray essence salvage wake vigor esse[[uf.png]]nce",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 7,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "e\nwake essence salvage wake vigor esse*apple*[[tf.jpeg]]ake vigor essence\n* f\nX-ray essence salvage wake vigor esse[[uf.png]]nce",
+    "timestamp": "08_28_2024_23_21_26.686988",
+    "input_hash": -9218905997791172721,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* u\nunique banana dentist idiot idiot jargon",
+            "Reference": "t\ntransformer banana dentist idiot idiot jargon\n* u\nunique banana dentist idiot idiot jargon"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* f\n[[uh.gif]]wake perish salvage idiot salvage far",
+            "Reference": "e\nvigor per*essence*ish salvage idiot salvage [[th.gif]]far\n* f\n[[uh.gif]]wake perish salvage idiot salvage far"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* p\nidiot oops z[[ji.jpg]]en ravish monkey yogurt",
+            "Reference": "o\nhalo oops zen ra[[ii.jpeg]]vish monkey yogurt\n* p\nidiot oops z[[ji.jpg]]en ravish monkey yogurt"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* ab\nwake unique wake unique vigor nob",
+            "Reference": "z\nvigor unique wake unique vigor nob\n* ab\nwake unique wake unique vigor nob"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* m\nhalo far salvage e*monkey*ssence vigor monkey",
+            "Reference": "l\ngroot far salvag[[xe.gif]]e essence vigor monkey\n* m\nhalo far salvage e*monkey*ssence vigor monkey"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* x\nfar idiot oops qualify ravish dentist",
+            "Reference": "w\nessence[[ae.png]] idiot oops qualify ravish dentist\n* x\nfar idiot oops qualify ravish dentist"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* f\ncafe essence far yogu[[ph.jpg]]rt halo halo",
+            "Reference": "e\nbanana essence far yogurt halo [[oh.jpeg]]halo\n* f\ncafe essence far yogu[[ph.jpg]]rt halo halo"
+        }
+    ],
+    "RuleHint": "Note that section, subsection, subsubsection titles are preceded by *, **, *** respectively, with one or more whitespaces in between.  To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

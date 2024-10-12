@@ -1,0 +1,36 @@
+{
+    "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the YAML file, separated by \\n\\n.",
+    "Answer": "id: \"l\"\nU: u,\nT: t,\nS: s,\nR: r,\nQ: q,\nsubs: []",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "id: \"k\"\nZ: z,\nY: y,\nX: x,\nW: w,\nV: v,\nsubs: \n- id: \"l\"\n  U: u,\n  T: t,\n  S: s,\n  R: r,\n  Q: q,\n  subs: []",
+    "timestamp": "08_28_2024_23_21_26.599515",
+    "input_hash": 6348830390031082023,
+    "examples": [
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the YAML file, separated by \\n\\n. ",
+            "Answer": "id: \"g\"\nX: x,\nsubs: []",
+            "Reference": "id: \"f\"\nZ: z,\nY: y,\nsubs: \n- id: \"g\"\n  X: x,\n  subs: []"
+        },
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the YAML file, separated by \\n\\n. ",
+            "Answer": "id: \"y\"\nV: e,\nU: d,\nT: c,\nsubs: []",
+            "Reference": "id: \"x\"\nZ: i,\nY: h,\nX: g,\nW: f,\nsubs: \n- id: \"y\"\n  V: e,\n  U: d,\n  T: c,\n  subs: []"
+        },
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the YAML file, separated by \\n\\n. ",
+            "Answer": "id: \"ab\"\nU: d,\nT: c,\nS: b,\nR: a,\nsubs: []",
+            "Reference": "id: \"z\"\nZ: i,\nY: h,\nX: g,\nW: f,\nV: e,\nsubs: \n- id: \"ab\"\n  U: d,\n  T: c,\n  S: b,\n  R: a,\n  subs: []"
+        }
+    ],
+    "RuleHint": "To get the most deeply nested objects, start from the outermost object, recursively search along the subs fields. For each object, check its subs field, any object with an empty subs is one most deeply nested object."
+}

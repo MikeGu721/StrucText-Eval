@@ -1,0 +1,66 @@
+{
+    "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+    "Answer": "True",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 9,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Syntax"
+        ]
+    },
+    "Reference": "id: \"w\"\nZ: s,\nY: r,\nX: q,\nW: p,\nV: o,\nU: n,\nsubs: \n- id: \"x\"\n  T: m,\n  S: l,\n  R: k,\n  Q: j,\n  P: i,\n  O: h,\n  subs: []\n  :i",
+    "timestamp": "08_28_2024_23_21_27.016559",
+    "input_hash": 8620663508415902321,
+    "examples": [
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"b\"\nZ: r,\nY: q,\nsubs: \n- id: \"c\"\n  X: p,\n  W: o,\n  subs: []\n  :s"
+        },
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"b\"\nZ: z,\nY: y,\nX: x,\nW: w,\nV: v,\nU: u,\nsubs: \n- id: \"c\"\n  T: t,\n  S: s,\n  R: r,\n  Q: q,\n  P: p,\n  subs: []\n:j"
+        },
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"g\"\nZ: e,\nY: d,\nX: c,\nW: b,\nV: a,\nU: zy,\nsubs: \n- id: \"h\"\n  T: yy,\n  S: xy,\n  R: wy,\n  Q: vy,\n  P: uy,\n  subs: []\n  :d\n:e"
+        },
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"e\"\nZ: c,\nY: b,\nX: a,\nsubs: \n- id: \"f\"\n  W: zy,\n  V: yy,\n  U: xy,\n  T: wy,\n  S: vy,\n  R: uy,\n  subs: []\n  :j"
+        },
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"z\"\nZ: q,\nY: p,\nX: o,\nW: n,\nV: m,\nsubs: \n- id: \"ab\"\n  U: l,\n  T: k,\n  S: j,\n  R: i,\n  subs: []\n  :p\n:q"
+        },
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"s\"\nZ: e,\nY: d,\nsubs: \n- id: \"t\"\n  X: c,\n  subs: []\n  :o\n:p"
+        },
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"e\"\nZ: b,\nsubs: \n- id: \"f\"\n  Y: a,\n  X: zy,\n  W: yy,\n  V: xy,\n  subs: []\n:y"
+        },
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"q\"\nZ: j,\nsubs: \n- id: \"r\"\n  Y: i,\n  X: h,\n  W: g,\n  V: f,\n  U: e,\n  subs: []\n  :r\n:s"
+        },
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"r\"\nZ: u,\nY: t,\nX: s,\nW: r,\nV: q,\nsubs: \n- id: \"s\"\n  U: p,\n  T: o,\n  S: n,\n  subs: []\n:a"
+        }
+    ],
+    "RuleHint": "To find the error in the yaml file, you need to parse the yaml file and report any syntax error if encountered any. Potential errors include missing key before colon."
+}

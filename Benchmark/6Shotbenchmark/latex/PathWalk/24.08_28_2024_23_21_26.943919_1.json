@@ -1,0 +1,51 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section.",
+    "Answer": "\\section{d}\nnob transformer dentist\\textbf{essence} oops essence zen",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 6,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "c\nmonkey t\\textbf{dentist}ransformer dentist oops essence z\\includegraphics[width=0.5\\textwidth]{qf.jpg}en\n\\section{d}\nnob transformer dentist\\textbf{essence} oops essence zen",
+    "timestamp": "08_28_2024_23_21_26.943919",
+    "input_hash": -7576607613553238329,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{q}\nhalo wake idiot yogurt salvage nob",
+            "Reference": "p\ngroo\\textbf{lamb}t wake idiot yogurt sa\\includegraphics[width=0.5\\textwidth]{mh.jpeg}lvage nob\n\\section{q}\nhalo wake idiot yogurt salvage nob"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{g}\nessence monkey yogurt apple zen zen",
+            "Reference": "f\ndentis\\textbf{monkey}\\includegraphics[width=0.5\\textwidth]{xd.png}t monkey yogurt apple zen zen\n\\section{g}\nessence monkey yogurt apple zen zen"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{p}\nidiot nob unique groot nob kangaroo",
+            "Reference": "o\nhalo nob unique groot nob kang\\textbf{lamb}aroo\n\\section{p}\nidiot nob unique groot nob kangaroo"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{q}\nperish ravish groot w\\includegraphics[width=0.5\\textwidth]{dj.jpg}ake transformer idiot",
+            "Reference": "p\noops ravish groot w\\includegraphics[width=0.5\\textwidth]{cj.jpeg}ake transformer idiot\n\\section{q}\nperish ravish groot w\\includegraphics[width=0.5\\textwidth]{dj.jpg}ake transformer idiot"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{r}\nlamb jargon essence monkey yogu\\textbf{banana}rt X-ray",
+            "Reference": "q\nkangaro\\textbf{apple}o jargon essence monkey yogurt X-ray\n\\section{r}\nlamb jargon essence monkey yogu\\textbf{banana}rt X-ray"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{m}\ncafe perish ravish\\textbf{monkey}\\includegraphics[width=0.5\\textwidth]{uf.gif}afe perish ravish oops banana yogurt",
+            "Reference": "l\nbanana perish ravish oops banana yogurt\n\\section{m}\ncafe perish ravish\\textbf{monkey}\\includegraphics[width=0.5\\textwidth]{uf.gif}afe perish ravish oops banana yogurt"
+        }
+    ],
+    "RuleHint": "Note that section title is enclosed by \\\\section{}, and \\\\subsection for subsection, \\\\subsubsection for subsubsection. To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

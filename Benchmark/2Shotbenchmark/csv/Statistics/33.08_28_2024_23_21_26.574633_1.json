@@ -1,0 +1,31 @@
+{
+    "Question": "How many people work with salary more than 318986?",
+    "Answer": "1",
+    "Label": {
+        "typename": "csv",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Statistics"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,male,31,y,210,129,black\n\nprimeKey,status,salary,company,location\na,unemployed,413030,Microsoft,HI",
+    "timestamp": "08_28_2024_23_21_26.574633",
+    "input_hash": -948147680753203881,
+    "examples": [
+        {
+            "Question": "\nHow many people work with salary more than 544904?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,64,a,137,89,brown\n\nprimeKey,status,salary,company,location\na,employed,178195,NVIDIA,NY"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 212233?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,63,c,150,116,brown\n\nprimeKey,status,salary,company,location\na,unemployed,964395,Twitter,IL"
+        }
+    ],
+    "RuleHint": "To get the number of people with salary above a threshold, you need to find the table with salary information. Then you go over each line and check the salary field. During the process count only those lines with value of salary strictly greater than the specified threshold towards your final sum. The sum after checking each line is the right answer."
+}

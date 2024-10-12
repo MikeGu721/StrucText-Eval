@@ -1,0 +1,19 @@
+{
+    "Question": "What is the tag with attribute of value h?",
+    "Answer": "B",
+    "Label": {
+        "typename": "xml",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"n\" Y=\"m\" X=\"l\">\n <B W=\"k\" V=\"j\" U=\"i\" T=\"h\" S=\"g\" R=\"f\">\n  <C Q=\"e\" P=\"d\">\n   cafe\n  </C>\n  <D O=\"c\" N=\"b\" M=\"a\" L=\"zy\" K=\"yy\" J=\"xy\" I=\"wy\" H=\"vy\" G=\"uy\" F=\"ty\" E=\"sy\" D=\"ry\">\n   dentist\n  </D>\n  banana\n </B>\n <E C=\"qy\" B=\"py\" A=\"oy\" ZY=\"ny\" YY=\"my\" XY=\"ly\" WY=\"ky\" VY=\"jy\">\n  <F UY=\"iy\" TY=\"hy\" SY=\"gy\" RY=\"fy\" QY=\"ey\" PY=\"dy\" OY=\"cy\">\n   far\n  </F>\n  <G NY=\"by\" MY=\"ay\" LY=\"zx\" KY=\"yx\" JY=\"xx\">\n   groot\n  </G>\n  essence\n </E>\n apple\n</A>",
+    "timestamp": "08_28_2024_23_21_26.553144",
+    "input_hash": -7742524029734826125,
+    "RuleHint": "To find the tag name of particular attribute value, just search the file for that value and find the surrounding left and right angles, i.e., boundary of tag. The word next to left angle is tag name."
+}

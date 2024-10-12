@@ -1,0 +1,26 @@
+{
+    "Question": "What is the object with id p? The content should be an excerpt as it appears in the YAML file.",
+    "Answer": "id: \"p\"\nZ: m,\nY: l,\nX: k,\nW: j,\nV: i,\nsubs: \n- id: \"q\"\n  U: h,\n  T: g,\n  subs: []",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "id: \"p\"\nZ: m,\nY: l,\nX: k,\nW: j,\nV: i,\nsubs: \n- id: \"q\"\n  U: h,\n  T: g,\n  subs: []",
+    "timestamp": "08_28_2024_23_21_26.840517",
+    "input_hash": -1896172110584097505,
+    "examples": [
+        {
+            "Question": "What is the object with id g? The content should be an excerpt as it appears in the YAML file. ",
+            "Answer": "id: \"g\"\nV: c,\nU: b,\nT: a,\nS: zy,\nsubs: []",
+            "Reference": "id: \"f\"\nZ: g,\nY: f,\nX: e,\nW: d,\nsubs: \n- id: \"g\"\n  V: c,\n  U: b,\n  T: a,\n  S: zy,\n  subs: []"
+        }
+    ],
+    "RuleHint": "To find the object with specified id, you need to first parse the yaml file and get the outermost object, starting from which search the subs field recursively and looking for the desired value in id field for each visited object. Retrieve the content of that object once found."
+}

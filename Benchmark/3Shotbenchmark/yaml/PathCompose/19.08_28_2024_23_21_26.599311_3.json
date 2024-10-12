@@ -1,0 +1,36 @@
+{
+    "Question": "How to access value \"r\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+    "Answer": "obj[\"subs\"][0][\"R\"]",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathCompose"
+        ]
+    },
+    "Reference": "id: \"k\"\nZ: z,\nY: y,\nX: x,\nW: w,\nV: v,\nsubs: \n- id: \"l\"\n  U: u,\n  T: t,\n  S: s,\n  R: r,\n  Q: q,\n  subs: []",
+    "timestamp": "08_28_2024_23_21_26.599311",
+    "input_hash": 6348830390031082023,
+    "examples": [
+        {
+            "Question": "How to access value \"z\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"Z\"]",
+            "Reference": "id: \"f\"\nZ: z,\nY: y,\nsubs: \n- id: \"g\"\n  X: x,\n  subs: []"
+        },
+        {
+            "Question": "How to access value \"e\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"V\"]",
+            "Reference": "id: \"x\"\nZ: i,\nY: h,\nX: g,\nW: f,\nsubs: \n- id: \"y\"\n  V: e,\n  U: d,\n  T: c,\n  subs: []"
+        },
+        {
+            "Question": "How to access value \"f\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"W\"]",
+            "Reference": "id: \"z\"\nZ: i,\nY: h,\nX: g,\nW: f,\nV: e,\nsubs: \n- id: \"ab\"\n  U: d,\n  T: c,\n  S: b,\n  R: a,\n  subs: []"
+        }
+    ],
+    "RuleHint": "To get the path to access specified value. You have to do a recursive search along the subs fields, starting from the outermost parsed object. For each visited object, check each fields except for subs, and record the path along the way, i.e., subs inside brackets and index into subs inside brackets, and at which field you find the value."
+}

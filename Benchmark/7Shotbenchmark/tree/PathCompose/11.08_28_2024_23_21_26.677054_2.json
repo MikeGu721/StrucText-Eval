@@ -1,0 +1,56 @@
+{
+    "Question": "What is the path from the root node to the node z. Answer should look like A->D->H.",
+    "Answer": "x->y->z",
+    "Label": {
+        "typename": "tree",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 7,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathCompose"
+        ]
+    },
+    "Reference": "x->y\ny->z\ny->ab\nx->bb\nbb->cb\nbb->db",
+    "timestamp": "08_28_2024_23_21_26.677054",
+    "input_hash": -490315405556450822,
+    "examples": [
+        {
+            "Question": "What is the path from the root node to the node u. Answer should look like A->D->H. ",
+            "Answer": "p->t->u",
+            "Reference": "p->q\nq->r\nq->s\np->t\nt->u\nt->v"
+        },
+        {
+            "Question": "What is the path from the root node to the node p. Answer should look like A->D->H. ",
+            "Answer": "o->p",
+            "Reference": "o->p\np->q\np->r\no->s\ns->t\ns->u"
+        },
+        {
+            "Question": "What is the path from the root node to the node i. Answer should look like A->D->H. ",
+            "Answer": "g->h->i",
+            "Reference": "g->h\nh->i\nh->j\ng->k\nk->l\nk->m"
+        },
+        {
+            "Question": "What is the path from the root node to the node e. Answer should look like A->D->H. ",
+            "Answer": "c->d->e",
+            "Reference": "c->d\nd->e\nd->f\nc->g\ng->h\ng->i"
+        },
+        {
+            "Question": "What is the path from the root node to the node o. Answer should look like A->D->H. ",
+            "Answer": "o",
+            "Reference": "o->p\np->q\np->r\no->s\ns->t\ns->u"
+        },
+        {
+            "Question": "What is the path from the root node to the node x. Answer should look like A->D->H. ",
+            "Answer": "s->w->x",
+            "Reference": "s->t\nt->u\nt->v\ns->w\nw->x\nw->y"
+        },
+        {
+            "Question": "What is the path from the root node to the node o. Answer should look like A->D->H. ",
+            "Answer": "l->m->o",
+            "Reference": "l->m\nm->n\nm->o\nl->p\np->q\np->r"
+        }
+    ],
+    "RuleHint": "To get the path from root to a node, you need to find recursively. For any node, you can find the path to the target node by find path from its children to target. Then check each child's output, if any child returns with valid path instead of an empty path indicating target-not-found, the path from node to target is that path from its child to target prepended with itself. The answer can be found by searching with root as starting point."
+}

@@ -1,0 +1,26 @@
+{
+    "Question": "What is the height of record with primeKey a",
+    "Answer": "130",
+    "Label": {
+        "typename": "csv",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,female,20,x,130,170,olive\nb,male,47,y,139,85,swarthy\n\nprimeKey,status,salary,company,location\na,unemployed,611794,Twitter,NY\nb,employed,794482,NVIDIA,HI",
+    "timestamp": "08_28_2024_23_21_26.834237",
+    "input_hash": 7917953371674334489,
+    "examples": [
+        {
+            "Question": "\nWhat is the weight of record with primeKey a\n",
+            "Answer": "118",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,51,t,132,118,swarthy\nb,male,24,u,181,86,brown\n\nprimeKey,status,salary,company,location\na,employed,211536,Microsoft,WA\nb,unemployed,42793,NVIDIA,NY"
+        }
+    ],
+    "RuleHint": "To find the value of specific field of record with specified primeKey. You have to first, locate the line with the specific primeKey. Then find the required value under the desired column in that line."
+}

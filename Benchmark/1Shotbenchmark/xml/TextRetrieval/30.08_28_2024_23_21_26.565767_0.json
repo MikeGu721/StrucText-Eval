@@ -1,0 +1,26 @@
+{
+    "Question": "What is the content of tag C? The content should be an excerpt as it appears in the XML file.",
+    "Answer": "cafe",
+    "Label": {
+        "typename": "xml",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"w\" Y=\"v\" X=\"u\" W=\"t\" V=\"s\" U=\"r\" T=\"q\" S=\"p\">\n <B R=\"o\" Q=\"n\" P=\"m\" O=\"l\" N=\"k\" M=\"j\" L=\"i\" K=\"h\" J=\"g\" I=\"f\" H=\"e\">\n  <C G=\"d\" F=\"c\">\n   cafe\n  </C>\n  <D E=\"b\" D=\"a\" C=\"zy\" B=\"yy\" A=\"xy\" ZY=\"wy\" YY=\"vy\" XY=\"uy\" WY=\"ty\" VY=\"sy\" UY=\"ry\" TY=\"qy\">\n   dentist\n  </D>\n  banana\n </B>\n <E SY=\"py\" RY=\"oy\" QY=\"ny\" PY=\"my\" OY=\"ly\" NY=\"ky\" MY=\"jy\">\n  <F LY=\"iy\" KY=\"hy\" JY=\"gy\" IY=\"fy\" HY=\"ey\" GY=\"dy\" FY=\"cy\" EY=\"by\">\n   far\n  </F>\n  <G DY=\"ay\" CY=\"zx\" BY=\"yx\" AY=\"xx\" ZX=\"wx\" YX=\"vx\" XX=\"ux\">\n   groot\n  </G>\n  essence\n </E>\n apple\n</A>",
+    "timestamp": "08_28_2024_23_21_26.565767",
+    "input_hash": 294616347742412205,
+    "examples": [
+        {
+            "Question": "What is the content of tag B? The content should be an excerpt as it appears in the XML file. ",
+            "Answer": " <C T=\"zy\" S=\"yy\" R=\"xy\" Q=\"wy\" P=\"vy\">\n  cafe\n </C>\n <D O=\"uy\" N=\"ty\" M=\"sy\" L=\"ry\" K=\"qy\" J=\"py\" I=\"oy\" H=\"ny\" G=\"my\">\n  dentist\n </D>\n banana",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"f\" Y=\"e\" X=\"d\" W=\"c\" V=\"b\">\n <B U=\"a\">\n  <C T=\"zy\" S=\"yy\" R=\"xy\" Q=\"wy\" P=\"vy\">\n   cafe\n  </C>\n  <D O=\"uy\" N=\"ty\" M=\"sy\" L=\"ry\" K=\"qy\" J=\"py\" I=\"oy\" H=\"ny\" G=\"my\">\n   dentist\n  </D>\n  banana\n </B>\n <E F=\"ly\">\n  <F E=\"ky\" D=\"jy\" C=\"iy\" B=\"hy\" A=\"gy\">\n   far\n  </F>\n  <G ZY=\"fy\" YY=\"ey\" XY=\"dy\" WY=\"cy\" VY=\"by\" UY=\"ay\">\n   groot\n  </G>\n  essence\n </E>\n apple\n</A>"
+        }
+    ],
+    "RuleHint": "To find the content of a specific tag, you need to search for desired tag throughout the xml file. Once located, find the surrounding left and right angle, these area is tha starting tag. Then find the ending tag, which is the tag surrounded by angle with exception that right angle is preceded by a slash. The content between starting and ending tags is the answer."
+}

@@ -1,0 +1,36 @@
+{
+    "Question": "Extract all included figure files. Print those file names separated by \\n.",
+    "Answer": "ue.gif\nre.png\nte.jpg\nqe.png\nse.jpeg",
+    "Label": {
+        "typename": "latex",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "q\nunique apple oops vigor cafe halo groot monkey transformer transformer w\\textbf{halo}\\includegraphics[width=0.5\\textwidth]{qe.png}er transformer wake monkey\n\\section{r}\nvigor\\textbf{idiot} ap\\includegraphics[width=0.5\\textwidth]{re.png}ple oops vigor cafe halo groot monkey transformer transformer wake monkey\n\\section{s}\nwake apple oops vigor cafe halo groot monkey transformer\\includegraphics[width=0.5\\textwidth]{se.jpeg} transformer wake monkey\n\\section{t}\nX-\\includegraphics[width=0.5\\textwidth]{te.jpg}ray apple oops vigor cafe halo groot monkey transformer transformer wake monkey\n\\section{u}\nyogurt apple oops \\textbf{jargon}vigor cafe halo groot monkey transformer transformer wake monkey\n\\section{v}\nzen apple o\\textbf{kangaroo}\\includegraphics[width=0.5\\textwidth]{ue.gif}ple oops vigor cafe halo groot monkey transformer transformer wake monkey\n\\section{w}\napple banana oops vigor cafe halo groot monkey trans\\textbf{lamb}former transformer wake monkey",
+    "timestamp": "08_28_2024_23_21_26.604699",
+    "input_hash": -8811789516086896835,
+    "examples": [
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "oi.gif\nqi.jpg\npi.jpeg",
+            "Reference": "h\nzen halo apple oops oops salvage jargon j\\textbf{zen}argon wake oops unique dentist\n\\section{i}\napple \\textbf{apple banana}idiot apple oops oops salvage jargon jargon wake oops unique dentist\n\\section{j}\nbanana idiot apple oops oops salvage ja\\textbf{banana banana}rgon jargon wake oops unique dentist\n\\section{k}\ncafe idiot apple oops o\\includegraphics[width=0.5\\textwidth]{oi.gif}ops salvage jargon jargon wake oops unique dentist\n\\section{l}\ndentist idiot apple oops oops salvage jargon jargon wake\\textbf{cafe banana} oops unique dentis\\includegraphics[width=0.5\\textwidth]{pi.jpeg}t\n\\section{m}\nessence idiot apple oops oops salvage \\textbf{dentist banana}jargon jargon wake oops unique dentist\n\\section{n}\nfar idiot apple oops oops salvage ja\\includegraphics[width=0.5\\textwidth]{qi.jpg}rgon jargon wake oops unique dentist"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "sh.gif\nvh.jpg\nth.gif\nuh.gif",
+            "Reference": "m\ndentist lamb monkey unique groot banana halo kangaroo sal\\textbf{dentist}vage X-ray zen s\\includegraphics[width=0.5\\textwidth]{sh.gif}alvage\n\\section{n}\nessence lamb monkey unique groot banana halo kangaroo salvage X-ray zen sa\\textbf{essence}lvage\n\\section{o}\nfar lamb monkey unique groot banana halo kangaroo salvage X-ray zen salvage\n\\section{p}\ngroot lamb monkey unique groot banana hal\\includegraphics[width=0.5\\textwidth]{th.gif}o kangaroo salvage X-ray zen salvage\n\\section{q}\nhalo lamb monkey unique groot banana halo kang\\textbf{far}aroo salvage X-ray \\includegraphics[width=0.5\\textwidth]{uh.gif}zen salvage\n\\section{r}\nidiot lamb monkey uniq\\textbf{groot}ue groot banana hal\\includegraphics[width=0.5\\textwidth]{vh.jpg}o kangaroo salvage X-ray zen salvage\n\\section{s}\njargon lamb monkey unique groot banana halo kangaroo salvage X-ray zen salvage"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "ui.png\nti.png\nvi.png",
+            "Reference": "y\nravish yogurt perish qualify far salvage essence groot essence cafe kangaroo banana\n\\section{z}\nsalvage yog\\textbf{transformer}urt perish qualify far salvage essence groot essence cafe kangaroo banana\n\\section{ab}\ntransfor\\textbf{unique}mer yogurt perish qualify far salvage essence groot essence cafe kangaroo banana\n\\section{bb}\nunique yogurt perish qualif\\includegraphics[width=0.5\\textwidth]{ti.png}y far salvage essence groot essence cafe kangaroo banana\n\\section{cb}\nvigor yog\\textbf{vigor}urt perish qual\\includegraphics[width=0.5\\textwidth]{ui.png}ify far salvage essence groot essence cafe kangaroo banana\n\\section{db}\nwake yogurt per\\textbf{wake}\\includegraphics[width=0.5\\textwidth]{vi.png} yogurt perish qualify far salvage essence groot essence cafe kangaroo banana\n\\section{eb}\nX-ray yogurt perish qualify far salvage essence groot essence cafe kangaroo banana"
+        }
+    ],
+    "RuleHint": "To find the image files imported, search for pattern \\\\includegraphics[*]{TARGET}, the TARGET part is the filename. Star means any text is possible."
+}

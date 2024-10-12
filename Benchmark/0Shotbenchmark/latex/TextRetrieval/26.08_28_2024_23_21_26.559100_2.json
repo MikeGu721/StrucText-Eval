@@ -1,0 +1,19 @@
+{
+    "Question": "Extract all included figure files. Print those file names separated by \\n.",
+    "Answer": "lh.jpg\nkh.png\nmh.jpg",
+    "Label": {
+        "typename": "latex",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "y\nnob essence lamb groot ravish banana oops unique far perish monkey lamb\n\\section{z}\noops essence lamb groot ravish banana oops unique far perish monkey lamb\n\\section{ab}\nperish essence lamb groot ravish banana oops u\\textbf{oops}\\includegraphics[width=0.5\\textwidth]{kh.png}oot ravish banana oops unique far perish monkey lamb\n\\section{bb}\nqualify essence lamb groot ravish banana oops \\textbf{perish}unique far perish monkey lamb\n\\section{cb}\n\\includegraphics[width=0.5\\textwidth]{lh.jpg}ravish essence lamb groot ravish banana oops unique far perish monkey lamb\n\\section{db}\nsalvage essence lamb\\includegraphics[width=0.5\\textwidth]{mh.jpg} groot ravish banana oops unique far perish monkey lamb\n\\section{eb}\ntransformer essence lamb groot ravish banana oops unique far perish monkey lamb",
+    "timestamp": "08_28_2024_23_21_26.559100",
+    "input_hash": 4243293841681037947,
+    "RuleHint": "To find the image files imported, search for pattern \\\\includegraphics[*]{TARGET}, the TARGET part is the filename. Star means any text is possible."
+}

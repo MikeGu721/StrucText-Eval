@@ -1,0 +1,19 @@
+{
+    "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+    "Answer": "True",
+    "Label": {
+        "typename": "xml",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Syntax"
+        ]
+    },
+    "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"n\" Y=\"m\" X=\"l\">\n <B W=\"k\" V=\"j\" U=\"i\" T=\"h\" S=\"g\" R=\"f\">\n  <C Q=\"e\" P=\"d\">\n   cafe\n  </C>\n  <D O=\"c\" N=\"b\" M=\"a\" L=\"zy\" K=\"yy\" J=\"xy\" I=\"wy\" H=\"vy\" G=\"uy\" F=\"ty\" E=\"sy\" D=\"ry\">\n   dentist\n  banana\n <E C=\"qy\" B=\"py\" A=\"oy\" ZY=\"ny\" YY=\"my\" XY=\"ly\" WY=\"ky\" VY=\"jy\">\n  <F UY=\"iy\" TY=\"hy\" SY=\"gy\" RY=\"fy\" QY=\"ey\" PY=\"dy\" OY=\"cy\">\n   far\n  <G NY=\"by\" MY=\"ay\" LY=\"zx\" KY=\"yx\" JY=\"xx\">\n   groot\n  essence\n apple\n</A>",
+    "timestamp": "08_28_2024_23_21_26.553295",
+    "input_hash": 1236861167719213381,
+    "RuleHint": "To find the error in the xml file, you need to parse the xml file and report any syntax error if encountered any. Potential errors include missing ending tags."
+}

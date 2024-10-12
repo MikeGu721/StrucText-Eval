@@ -1,0 +1,61 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section.",
+    "Answer": "# ab\ncafe vigor zen idiot yogurt nob",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 8,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "z\nbanana vigor zen idiot yogurt nob\n# ab\ncafe vigor zen idiot yogurt nob",
+    "timestamp": "08_28_2024_23_21_26.705533",
+    "input_hash": -2815602245527772082,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# c\ngroot halo vigor unique salvage banana",
+            "Reference": "b\nfar halo vigor unique salvage banan![alt](ye.jpeg \"hover text\")a\n# c\ngroot halo vigor unique salvage banana"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# v\nX-ray monkey jargon fa**ravish**r halo transforme![alt](bh.jpeg \"hover text\")r",
+            "Reference": "u\nwake monkey jargon far halo transfor![alt](ah.jpg \"hover text\")mer\n# v\nX-ray monkey jargon fa**ravish**r halo transforme![alt](bh.jpeg \"hover text\")r"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# o\nzen nob peri![alt](ig.png \"hover text\")sh transformer zen wake",
+            "Reference": "n\nyogurt nob perish transformer zen wake\n# o\nzen nob peri![alt](ig.png \"hover text\")sh transformer zen wake"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# x\nvigor**salvage** essence zen groot lamb perish",
+            "Reference": "w\nunique essence zen groot**ravish**![alt](pj.png \"hover text\")nce zen groot lamb perish\n# x\nvigor**salvage** essence zen groot lamb perish"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# y\ndentist transformer ha**vigor**lo cafe apple jargon",
+            "Reference": "x\ncafe ![alt](ug.jpg \"hover text\")transformer halo cafe apple jargon\n# y\ndentist transformer ha**vigor**lo cafe apple jargon"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# z\nsalvage groot yogurt groot dentist perish",
+            "Reference": "y\nravish **essence**groot yogurt groot dentist perish\n# z\nsalvage groot yogurt groot dentist perish"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# l\ncafe essence oops vigo![alt](oh.jpeg \"hover text\")r salvage banana",
+            "Reference": "k\nbanana essence oop![alt](nh.gif \"hover text\")s vigor salvage banana\n# l\ncafe essence oops vigo![alt](oh.jpeg \"hover text\")r salvage banana"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# p\nnob dentist kangaroo**jargon** vigor jargon oops",
+            "Reference": "o\nmonkey dentist kangaroo vigo**idiot**![alt](mh.jpg \"hover text\")angaroo vigor jargon oops\n# p\nnob dentist kangaroo**jargon** vigor jargon oops"
+        }
+    ],
+    "RuleHint": "To find the content of certain section, starting from the headings start with one hashtag, and go to the ith heading as specified in number of sections. Then start from that line, look for j-th heading with 2 hashtags as specified in subsection number. For kth subsubsection, look for kth heading with 3 hashtags starting from the located subsubsection. Stop searching early if the subsection or subsubsection is not queried."
+}

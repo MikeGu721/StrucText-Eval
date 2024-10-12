@@ -1,0 +1,26 @@
+{
+    "Question": "What is the object with id p? The content should be an excerpt as it appears in the JSON file.",
+    "Answer": "{\n\"id\":\"p\",\n\"X\":\"o\",\n\"W\":\"n\",\n\"V\":\"m\",\n\"U\":\"l\",\n\"T\":\"k\",\n\"subs\":[]\n}",
+    "Label": {
+        "typename": "json",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "{\n\"id\":\"o\",\n\"Z\":\"q\",\n\"Y\":\"p\",\n\"subs\":[\n {\n \"id\":\"p\",\n \"X\":\"o\",\n \"W\":\"n\",\n \"V\":\"m\",\n \"U\":\"l\",\n \"T\":\"k\",\n \"subs\":[]\n }\n]\n}",
+    "timestamp": "08_28_2024_23_21_26.562575",
+    "input_hash": -5454410195870821827,
+    "examples": [
+        {
+            "Question": "What is the object with id k? The content should be an excerpt as it appears in the JSON file. ",
+            "Answer": "{\n\"id\":\"k\",\n\"Z\":\"e\",\n\"Y\":\"d\",\n\"subs\":[\n {\n \"id\":\"l\",\n \"X\":\"c\",\n \"W\":\"b\",\n \"subs\":[]\n }\n]\n}",
+            "Reference": "{\n\"id\":\"k\",\n\"Z\":\"e\",\n\"Y\":\"d\",\n\"subs\":[\n {\n \"id\":\"l\",\n \"X\":\"c\",\n \"W\":\"b\",\n \"subs\":[]\n }\n]\n}"
+        }
+    ],
+    "RuleHint": "To find the object with specified id, you need to first parse the json file and get the outermost object, starting from which search the subs field recursively and looking for the desired value in id field for each visited object. Retrieve the content of that object once found."
+}

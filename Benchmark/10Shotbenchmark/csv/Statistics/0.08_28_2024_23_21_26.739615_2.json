@@ -1,0 +1,71 @@
+{
+    "Question": "How many people are male?",
+    "Answer": "0",
+    "Label": {
+        "typename": "csv",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 10,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Statistics"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,female,57,o,150,159,black\n\nprimeKey,status,salary,company,location\na,employed,304908,NVIDIA,IL",
+    "timestamp": "08_28_2024_23_21_26.739615",
+    "input_hash": -4919138537083690919,
+    "examples": [
+        {
+            "Question": "\nHow many people are male?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,20,c,160,96,white\n\nprimeKey,status,salary,company,location\na,employed,480890,Meta,NY"
+        },
+        {
+            "Question": "\nHow many people are male?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,42,l,212,132,black\n\nprimeKey,status,salary,company,location\na,retired,462758,Apple,NY"
+        },
+        {
+            "Question": "\nHow many people are female?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,38,d,138,106,white\n\nprimeKey,status,salary,company,location\na,employed,387375,OPENAI,NY"
+        },
+        {
+            "Question": "\nHow many people are female?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,58,w,167,74,white\n\nprimeKey,status,salary,company,location\na,unemployed,598677,OPENAI,WA"
+        },
+        {
+            "Question": "\nHow many people are female?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,52,w,167,98,black\n\nprimeKey,status,salary,company,location\na,retired,944632,Google,IL"
+        },
+        {
+            "Question": "\nHow many people are female?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,16,l,199,174,white\n\nprimeKey,status,salary,company,location\na,unemployed,792278,Meta,WA"
+        },
+        {
+            "Question": "\nHow many people are female?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,65,j,191,174,black\n\nprimeKey,status,salary,company,location\na,retired,973139,OPENAI,TX"
+        },
+        {
+            "Question": "\nHow many people are male?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,12,n,145,156,brown\n\nprimeKey,status,salary,company,location\na,employed,771481,OPENAI,IL"
+        },
+        {
+            "Question": "\nHow many people are female?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,53,g,139,134,white\n\nprimeKey,status,salary,company,location\na,employed,661368,Meta,CA"
+        },
+        {
+            "Question": "\nHow many people are female?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,39,g,216,95,white\n\nprimeKey,status,salary,company,location\na,employed,919925,Apple,IL"
+        }
+    ],
+    "RuleHint": "To get the number of female, first find the table with column name ''. Then check each line for field gender, and count these lines with value 'female' towards your final sum. The process applies to finding number of male too."
+}

@@ -1,0 +1,56 @@
+{
+    "Question": "What is the depth of node g? Answer an integer, root is of depth 0.",
+    "Answer": "1",
+    "Label": {
+        "typename": "tree",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 7,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Tree.Depth"
+        ]
+    },
+    "Reference": "f->g",
+    "timestamp": "08_28_2024_23_21_26.959249",
+    "input_hash": -3791764514621344568,
+    "examples": [
+        {
+            "Question": "What is the depth of node n? Answer an integer, root is of depth 0. ",
+            "Answer": "1",
+            "Reference": "m->n"
+        },
+        {
+            "Question": "What is the depth of node l? Answer an integer, root is of depth 0. ",
+            "Answer": "1",
+            "Reference": "k->l"
+        },
+        {
+            "Question": "What is the depth of node z? Answer an integer, root is of depth 0. ",
+            "Answer": "0",
+            "Reference": "z->ab"
+        },
+        {
+            "Question": "What is the depth of node b? Answer an integer, root is of depth 0. ",
+            "Answer": "0",
+            "Reference": "b->c"
+        },
+        {
+            "Question": "What is the depth of node i? Answer an integer, root is of depth 0. ",
+            "Answer": "0",
+            "Reference": "i->j"
+        },
+        {
+            "Question": "What is the depth of node i? Answer an integer, root is of depth 0. ",
+            "Answer": "1",
+            "Reference": "h->i"
+        },
+        {
+            "Question": "What is the depth of node z? Answer an integer, root is of depth 0. ",
+            "Answer": "0",
+            "Reference": "z->ab"
+        }
+    ],
+    "RuleHint": "To find the depth of a node, you need to find the number of edges from root to node. You have to start from the root with depth 0 and assign the depth for each node recursively. For any given node, it gets depth of current depth. Increment the depth by 1 before go to its subtree and repeat the process until every node gets a depth."
+}

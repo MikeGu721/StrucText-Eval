@@ -1,0 +1,66 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "ravish\nsalvage",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 9,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "x\nyogurt cafe kangaroo groot kang\\textbf{ravish}aroo essence\n\\section{y}\nzen cafe kangaroo groot kanga\\textbf{salvage}roo essence",
+    "timestamp": "08_28_2024_23_21_26.733332",
+    "input_hash": -1219693777722766310,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "yogurt",
+            "Reference": "y\ntransformer transformer zen oops wake idiot\n\\section{z}\nunique\\textbf{yogurt} transfor\\includegraphics[width=0.5\\textwidth]{yd.jpg}mer zen oops wake idiot"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "apple",
+            "Reference": "d\noops ravish ravish monkey yogurt groot\n\\section{e}\n\\textbf{apple}perish ravish ravish monkey yogurt groot"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "q\nravish apple oops wake idiot essence\n\\section{r}\nsalvage apple oops wake idiot essence"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "w\nkangaroo far X-ray banana lamb far\n\\section{x}\nlamb far X-ray banana lamb far"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "halo",
+            "Reference": "c\nidiot far perish k\\textbf{halo}angaroo zen banana\n\\section{d}\njargon far perish kangaroo zen banana"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "l\njargon unique dentist monkey vigor groot\n\\section{m}\nkangaroo unique dentist monkey vigor groot"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "idiot",
+            "Reference": "s\nX-ray perish ze\\includegraphics[width=0.5\\textwidth]{mh.jpg}n halo salvage ravish\n\\section{t}\nyo\\textbf{idiot}gurt perish zen halo salvage ravish"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "idiot\nhalo",
+            "Reference": "w\nX-ray lamb\\textbf{halo}\\includegraphics[width=0.5\\textwidth]{hg.jpeg} lamb far qualify idiot vigor\n\\section{x}\nyogurt lamb far qua\\textbf{idiot}lify idiot vigor"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "unique\ntransformer",
+            "Reference": "j\nj\\textbf{transformer}argon transformer vigor idiot kangaroo dentist\n\\section{k}\nkangaroo transformer vigor idiot kangar\\textbf{unique}\\includegraphics[width=0.5\\textwidth]{ve.gif}o transformer vigor idiot kangaroo dentist"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for macro textbf, and everything after \\\\textbf{ and before the first } encountered is bold text."
+}

@@ -1,0 +1,19 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "lamb\nkangaroo",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "c\nidiot jargon X-ray dentist\\textbf{kangaroo} lamb lamb\n\\section{d}\njargon jargon X-ray\\textbf{lamb} dentist lamb lamb",
+    "timestamp": "08_28_2024_23_21_26.831001",
+    "input_hash": 8775482462933046717,
+    "RuleHint": "To find the bold texts, search for macro textbf, and everything after \\\\textbf{ and before the first } encountered is bold text."
+}

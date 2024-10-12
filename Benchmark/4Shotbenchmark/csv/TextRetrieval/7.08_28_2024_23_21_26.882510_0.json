@@ -1,0 +1,41 @@
+{
+    "Question": "What is the company of record with primeKey b",
+    "Answer": "Meta",
+    "Label": {
+        "typename": "csv",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 4,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,female,50,l,158,87,brown\nb,female,45,m,219,132,white\n\nprimeKey,status,salary,company,location\na,unemployed,765369,Twitter,GA\nb,retired,897669,Meta,CA",
+    "timestamp": "08_28_2024_23_21_26.882510",
+    "input_hash": 810996134455597576,
+    "examples": [
+        {
+            "Question": "\nWhat is the gender of record with primeKey b\n",
+            "Answer": "male",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,22,c,183,142,swarthy\nb,male,57,d,166,104,white\n\nprimeKey,status,salary,company,location\na,employed,843104,Apple,NY\nb,employed,457519,Microsoft,IL"
+        },
+        {
+            "Question": "\nWhat is the age of record with primeKey a\n",
+            "Answer": "23",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,23,p,170,128,swarthy\nb,female,58,q,151,150,brown\n\nprimeKey,status,salary,company,location\na,retired,499762,Twitter,TX\nb,retired,439712,Microsoft,WA"
+        },
+        {
+            "Question": "\nWhat is the color of record with primeKey a\n",
+            "Answer": "white",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,58,a,156,116,white\nb,male,17,b,146,160,black\n\nprimeKey,status,salary,company,location\na,unemployed,533970,Apple,WA\nb,retired,799818,Microsoft,CA"
+        },
+        {
+            "Question": "\nWhat is the name of record with primeKey a\n",
+            "Answer": "q",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,12,q,148,115,swarthy\nb,female,29,r,148,155,mulatto\n\nprimeKey,status,salary,company,location\na,retired,359310,Meta,CA\nb,unemployed,911479,OPENAI,TX"
+        }
+    ],
+    "RuleHint": "To find the value of specific field of record with specified primeKey. You have to first, locate the line with the specific primeKey. Then find the required value under the desired column in that line."
+}

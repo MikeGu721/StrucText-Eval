@@ -1,0 +1,19 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "apple banana\nzen",
+    "Label": {
+        "typename": "org",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "x\nX-ray ravish banana cafe dentist essence lamb vigor dentist X-ray perish*zen* idiot\n* y\nyogurt ravish banana cafe dentist essence lamb vigor dentist X-ray perish idiot\n** z\nzen ravish banana cafe dentist essence lamb vigor dentist X-ray perish idiot\n** ab\napple salvage banana cafe *apple banana*dentist essence lamb vigor dentist X-ray perish idiot\n* bb\nbanana salvage banana cafe dentist [[of.png]]essence lamb vigor dentist X-ray perish idiot\n** cb\ncafe salvage banana ca[[pf.jpg]]fe dentist essence lamb vigor dentist X-ray perish idiot\n** db\ndentist salvage banan[[qf.png]]a cafe dentist essence lamb vigor dentist X-ray perish idiot",
+    "timestamp": "08_28_2024_23_21_26.559941",
+    "input_hash": -1841580776381201313,
+    "RuleHint": "To find the bold texts, search for single star, i.e., *, the content between two occurrences of single star is the bold texts. Note that the bold range should start from the single star occurring at i-th spot throughout the whole input file, where i is odd, and end with single star occurring at jth spot where j is even. For example, text between single star appearing first and second time."
+}

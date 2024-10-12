@@ -1,0 +1,31 @@
+{
+    "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the JSON file, separated by \\n\\n.",
+    "Answer": "{\n\"id\":\"ab\",\n\"N\":\"g\",\n\"M\":\"f\",\n\"L\":\"e\",\n\"K\":\"d\",\n\"J\":\"c\",\n\"I\":\"b\",\n\"subs\":[]\n}\n\n{\n\"id\":\"bb\",\n\"H\":\"a\",\n\"G\":\"zy\",\n\"F\":\"yy\",\n\"E\":\"xy\",\n\"D\":\"wy\",\n\"C\":\"vy\",\n\"subs\":[]\n}\n\n{\n\"id\":\"db\",\n\"ZY\":\"sy\",\n\"YY\":\"ry\",\n\"XY\":\"qy\",\n\"WY\":\"py\",\n\"VY\":\"oy\",\n\"UY\":\"ny\",\n\"TY\":\"my\",\n\"SY\":\"ly\",\n\"RY\":\"ky\",\n\"QY\":\"jy\",\n\"subs\":[]\n}\n\n{\n\"id\":\"eb\",\n\"PY\":\"iy\",\n\"OY\":\"hy\",\n\"NY\":\"gy\",\n\"MY\":\"fy\",\n\"LY\":\"ey\",\n\"KY\":\"dy\",\n\"JY\":\"cy\",\n\"IY\":\"by\",\n\"HY\":\"ay\",\n\"GY\":\"zx\",\n\"subs\":[]\n}",
+    "Label": {
+        "typename": "json",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "{\n\"id\":\"y\",\n\"Z\":\"s\",\n\"Y\":\"r\",\n\"X\":\"q\",\n\"W\":\"p\",\n\"V\":\"o\",\n\"subs\":[\n {\n \"id\":\"z\",\n \"U\":\"n\",\n \"T\":\"m\",\n \"S\":\"l\",\n \"R\":\"k\",\n \"Q\":\"j\",\n \"P\":\"i\",\n \"O\":\"h\",\n \"subs\":[\n  {\n  \"id\":\"ab\",\n  \"N\":\"g\",\n  \"M\":\"f\",\n  \"L\":\"e\",\n  \"K\":\"d\",\n  \"J\":\"c\",\n  \"I\":\"b\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"bb\",\n  \"H\":\"a\",\n  \"G\":\"zy\",\n  \"F\":\"yy\",\n  \"E\":\"xy\",\n  \"D\":\"wy\",\n  \"C\":\"vy\",\n  \"subs\":[]\n  }\n ]\n },\n {\n \"id\":\"cb\",\n \"B\":\"uy\",\n \"A\":\"ty\",\n \"subs\":[\n  {\n  \"id\":\"db\",\n  \"ZY\":\"sy\",\n  \"YY\":\"ry\",\n  \"XY\":\"qy\",\n  \"WY\":\"py\",\n  \"VY\":\"oy\",\n  \"UY\":\"ny\",\n  \"TY\":\"my\",\n  \"SY\":\"ly\",\n  \"RY\":\"ky\",\n  \"QY\":\"jy\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"eb\",\n  \"PY\":\"iy\",\n  \"OY\":\"hy\",\n  \"NY\":\"gy\",\n  \"MY\":\"fy\",\n  \"LY\":\"ey\",\n  \"KY\":\"dy\",\n  \"JY\":\"cy\",\n  \"IY\":\"by\",\n  \"HY\":\"ay\",\n  \"GY\":\"zx\",\n  \"subs\":[]\n  }\n ]\n }\n]\n}",
+    "timestamp": "08_28_2024_23_21_26.852044",
+    "input_hash": 675320556176941676,
+    "examples": [
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the JSON file, separated by \\n\\n. ",
+            "Answer": "{\n\"id\":\"u\",\n\"T\":\"e\",\n\"S\":\"d\",\n\"subs\":[]\n}\n\n{\n\"id\":\"v\",\n\"R\":\"c\",\n\"Q\":\"b\",\n\"P\":\"a\",\n\"O\":\"zy\",\n\"subs\":[]\n}\n\n{\n\"id\":\"x\",\n\"H\":\"sy\",\n\"G\":\"ry\",\n\"F\":\"qy\",\n\"E\":\"py\",\n\"D\":\"oy\",\n\"C\":\"ny\",\n\"B\":\"my\",\n\"A\":\"ly\",\n\"ZY\":\"ky\",\n\"YY\":\"jy\",\n\"subs\":[]\n}\n\n{\n\"id\":\"y\",\n\"XY\":\"iy\",\n\"WY\":\"hy\",\n\"VY\":\"gy\",\n\"UY\":\"fy\",\n\"TY\":\"ey\",\n\"subs\":[]\n}",
+            "Reference": "{\n\"id\":\"s\",\n\"Z\":\"k\",\n\"subs\":[\n {\n \"id\":\"t\",\n \"Y\":\"j\",\n \"X\":\"i\",\n \"W\":\"h\",\n \"V\":\"g\",\n \"U\":\"f\",\n \"subs\":[\n  {\n  \"id\":\"u\",\n  \"T\":\"e\",\n  \"S\":\"d\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"v\",\n  \"R\":\"c\",\n  \"Q\":\"b\",\n  \"P\":\"a\",\n  \"O\":\"zy\",\n  \"subs\":[]\n  }\n ]\n },\n {\n \"id\":\"w\",\n \"N\":\"yy\",\n \"M\":\"xy\",\n \"L\":\"wy\",\n \"K\":\"vy\",\n \"J\":\"uy\",\n \"I\":\"ty\",\n \"subs\":[\n  {\n  \"id\":\"x\",\n  \"H\":\"sy\",\n  \"G\":\"ry\",\n  \"F\":\"qy\",\n  \"E\":\"py\",\n  \"D\":\"oy\",\n  \"C\":\"ny\",\n  \"B\":\"my\",\n  \"A\":\"ly\",\n  \"ZY\":\"ky\",\n  \"YY\":\"jy\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"y\",\n  \"XY\":\"iy\",\n  \"WY\":\"hy\",\n  \"VY\":\"gy\",\n  \"UY\":\"fy\",\n  \"TY\":\"ey\",\n  \"subs\":[]\n  }\n ]\n }\n]\n}"
+        },
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the JSON file, separated by \\n\\n. ",
+            "Answer": "{\n\"id\":\"w\",\n\"K\":\"c\",\n\"J\":\"b\",\n\"subs\":[]\n}\n\n{\n\"id\":\"x\",\n\"I\":\"a\",\n\"H\":\"zy\",\n\"G\":\"yy\",\n\"F\":\"xy\",\n\"E\":\"wy\",\n\"subs\":[]\n}\n\n{\n\"id\":\"z\",\n\"YY\":\"qy\",\n\"XY\":\"py\",\n\"WY\":\"oy\",\n\"VY\":\"ny\",\n\"UY\":\"my\",\n\"TY\":\"ly\",\n\"SY\":\"ky\",\n\"subs\":[]\n}\n\n{\n\"id\":\"ab\",\n\"RY\":\"jy\",\n\"QY\":\"iy\",\n\"PY\":\"hy\",\n\"OY\":\"gy\",\n\"NY\":\"fy\",\n\"subs\":[]\n}",
+            "Reference": "{\n\"id\":\"u\",\n\"Z\":\"r\",\n\"Y\":\"q\",\n\"X\":\"p\",\n\"W\":\"o\",\n\"V\":\"n\",\n\"U\":\"m\",\n\"T\":\"l\",\n\"subs\":[\n {\n \"id\":\"v\",\n \"S\":\"k\",\n \"R\":\"j\",\n \"Q\":\"i\",\n \"P\":\"h\",\n \"O\":\"g\",\n \"N\":\"f\",\n \"M\":\"e\",\n \"L\":\"d\",\n \"subs\":[\n  {\n  \"id\":\"w\",\n  \"K\":\"c\",\n  \"J\":\"b\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"x\",\n  \"I\":\"a\",\n  \"H\":\"zy\",\n  \"G\":\"yy\",\n  \"F\":\"xy\",\n  \"E\":\"wy\",\n  \"subs\":[]\n  }\n ]\n },\n {\n \"id\":\"y\",\n \"D\":\"vy\",\n \"C\":\"uy\",\n \"B\":\"ty\",\n \"A\":\"sy\",\n \"ZY\":\"ry\",\n \"subs\":[\n  {\n  \"id\":\"z\",\n  \"YY\":\"qy\",\n  \"XY\":\"py\",\n  \"WY\":\"oy\",\n  \"VY\":\"ny\",\n  \"UY\":\"my\",\n  \"TY\":\"ly\",\n  \"SY\":\"ky\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"ab\",\n  \"RY\":\"jy\",\n  \"QY\":\"iy\",\n  \"PY\":\"hy\",\n  \"OY\":\"gy\",\n  \"NY\":\"fy\",\n  \"subs\":[]\n  }\n ]\n }\n]\n}"
+        }
+    ],
+    "RuleHint": "To get the most deeply nested objects, start from the outermost object, recursively search along the subs fields. For each object, check its subs field, any object with an empty subs is one most deeply nested object."
+}

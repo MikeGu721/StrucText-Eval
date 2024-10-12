@@ -1,0 +1,31 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "jargon\nidiot\nhalo",
+    "Label": {
+        "typename": "org",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "f\nessence salvage X-ray perish vigor kangaroo oops banana vigor halo oops\n* g\nfar salvage X-ray perish vigor kangaroo oops banana vigor ha[[be.jpg]]lo oops\n** h\ngroot salvage X-ray perish vigor kangaro*halo*[[ce.gif]]erish vigor kangaroo oops banana vigor halo oops\n** i\nhalo salvage X-ray perish vigor ka*idiot*ngaroo oops banana vigor halo oops\n* j\nidiot salvage X-r*jargon*[[de.gif]]ge X-ray perish vigor kangaroo oops banana vigor halo oops\n** k\njargon salvage X-ray perish vigor kangaroo oops banana vigor halo oops\n** l\nkangaroo salvage X-ray perish vigor kangaroo oops banana vigor halo oops",
+    "timestamp": "08_28_2024_23_21_26.862558",
+    "input_hash": 6219518081948442781,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "cafe banana\ndentist banana\nbanana banana\nzen\napple banana\nessence banana",
+            "Reference": "n\ndentist idiot unique salvage vigor qualify salvage bana*zen*[[qi.gif]]diot unique salvage vigor qualify salvage banana oops vigor banana essence\n* o\nes*apple banana*sence idiot unique salvage vigor qualify salvage banana oops vigor banana essence\n** p\nfar idiot unique salvage vigor qual*banana banana*ify salvage banana oops vigor banana essence\n** q\ngroot idiot *cafe banana*unique salvage vigor qualify salvage banana oops vigor banana essence\n* r\nhalo idiot unique salvage vigor qualify salvage banana oops*dentist banana* vigor[[ri.jpeg]] banana essence\n** s\nidiot idiot unique salvage vigor qualify salvage banana oop*essence banana*[[si.png]]t unique salvage vigor qualify salvage banana oops vigor banana essence\n** t\njargon idiot unique salvage vigor qualify salvage banana oops vigor banana e[[ti.gif]]ssence"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "salvage\nravish\ntransformer\nqualify",
+            "Reference": "x\njargon dentist ravish banana groot halo idiot apple lamb essence qualify dentist\n* y\nkangaroo dentist ravish banana groot halo idiot apple lamb e*qualify*ssence qualify dentist\n** z\nlamb dentist ravish banana groot halo idiot apple lamb essence qualify*ravish* den[[ji.jpeg]]tist\n** ab\nmonkey dentist ravish banana groot halo id[[ki.jpg]]iot apple lamb essence qualify dentist\n* bb\nnob dentist ravish banana groot halo idiot apple lamb essence qualify dentist\n** cb\noops dentist ravish banana groot halo idiot apple lamb *salvage*essence qualify dentist\n** db\nperish dentist rav*transformer*ish banana groot halo idiot apple lamb esse[[li.jpeg]]nce qualify dentist"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for single star, i.e., *, the content between two occurrences of single star is the bold texts. Note that the bold range should start from the single star occurring at i-th spot throughout the whole input file, where i is odd, and end with single star occurring at jth spot where j is even. For example, text between single star appearing first and second time."
+}

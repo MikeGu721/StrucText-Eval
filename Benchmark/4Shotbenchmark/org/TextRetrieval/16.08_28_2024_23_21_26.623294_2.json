@@ -1,0 +1,41 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "gh.gif\nfh.jpeg",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 4,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "v\ngroot vigor salvage idiot vigor *jargon*[[fh.jpeg]]lvage idiot vigor yogurt\n* w\nhalo vigor salvage idiot [[gh.gif]]vigor yogurt",
+    "timestamp": "08_28_2024_23_21_26.623294",
+    "input_hash": -2157823800704668063,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "jg.jpeg",
+            "Reference": "z\ni*cafe*diot cafe halo dentist vigor vigor\n* ab\njargon cafe halo den[[jg.jpeg]]tist vigor vigor"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ii.jpeg",
+            "Reference": "c\ntransforme[[ii.jpeg]]r wake monkey nob qualify\n* d\nunique wake monkey nob qualify"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "si.jpeg\nti.png",
+            "Reference": "i\ndentist banana t*yogurt*ran[[si.jpeg]]sformer lamb far nob\n* j\nessence ban[[ti.png]]ana transformer lamb far nob"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "nf.png",
+            "Reference": "b\nja*apple*rgon dentist dentist [[nf.png]]jargon cafe qualify\n* c\nkangaroo dentis*banana*t dentist jargon cafe qualify"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching [[TARGET]], the TARGET part is filename."
+}

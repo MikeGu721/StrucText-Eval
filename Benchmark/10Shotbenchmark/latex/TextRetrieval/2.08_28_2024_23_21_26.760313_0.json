@@ -1,0 +1,71 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "unique\nvigor",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 10,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "n\nmonkey cafe zen essen\\textbf{unique}ce ravish banana\n\\section{o}\nnob cafe zen essence r\\textbf{vigor}\\includegraphics[width=0.5\\textwidth]{og.png}nob cafe zen essence ravish banana",
+    "timestamp": "08_28_2024_23_21_26.760313",
+    "input_hash": -4959891696829048480,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "essence\ndentist",
+            "Reference": "c\nidiot banana ravish nob de\\textbf{dentist}\\includegraphics[width=0.5\\textwidth]{bg.jpg}h nob dentist idiot\n\\section{d}\njargon banana ravish nob den\\textbf{essence}tist idiot"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "p\nnob monkey perish transformer oops cafe\n\\section{q}\noops monkey perish transformer oops cafe"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "perish\noops",
+            "Reference": "w\nzen jargon nob monke\\textbf{oops}\\includegraphics[width=0.5\\textwidth]{qj.gif}ob monkey monkey oops\n\\section{x}\napple kangaroo no\\textbf{perish}\\includegraphics[width=0.5\\textwidth]{rj.jpeg}ple kangaroo nob monkey monkey oops"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "l\nqualify groot perish idiot qualify groot\n\\section{m}\nravish groot \\includegraphics[width=0.5\\textwidth]{re.png}perish idiot qualify groot"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "lamb\nkangaroo",
+            "Reference": "u\nnob jargon cafe yogurt\\textbf{kangaroo} salvage essence\n\\section{v}\noops ja\\textbf{lamb}\\includegraphics[width=0.5\\textwidth]{gj.jpeg}ops jargon cafe yogurt salvage essence"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "m\nidiot lamb transformer banana\\includegraphics[width=0.5\\textwidth]{fj.gif} halo jargon\n\\section{n}\njargon lamb t\\includegraphics[width=0.5\\textwidth]{gj.jpeg}ransformer banana halo jargon"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "u\noops ravish den\\includegraphics[width=0.5\\textwidth]{hj.jpg}tist perish zen jargon\n\\section{v}\nperish ravish dentist perish zen jargon"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "zen",
+            "Reference": "d\noops X-ray dentis\\textbf{zen}t monkey X-ray\\includegraphics[width=0.5\\textwidth]{ai.jpg} zen\n\\section{e}\nperish X-ray dentist monkey X-ray zen"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "jargon",
+            "Reference": "d\nessence X-ray idiot qualify unique ca\\includegraphics[width=0.5\\textwidth]{ij.gif}fe\n\\section{e}\nfar X-ray idiot qualify unique c\\textbf{jargon}\\includegraphics[width=0.5\\textwidth]{jj.jpg}ualify unique cafe"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "unique",
+            "Reference": "d\nfar far qualify kangaroo ravish y\\textbf{unique}ogurt\n\\section{e}\ngr\\includegraphics[width=0.5\\textwidth]{lg.jpg}oot far qualify kangaroo ravish yogurt"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for macro textbf, and everything after \\\\textbf{ and before the first } encountered is bold text."
+}

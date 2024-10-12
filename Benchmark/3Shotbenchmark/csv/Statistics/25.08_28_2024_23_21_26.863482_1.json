@@ -1,0 +1,36 @@
+{
+    "Question": "How many people work with salary more than 790013?",
+    "Answer": "0",
+    "Label": {
+        "typename": "csv",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Statistics"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,male,11,v,125,130,mulatto\n\nprimeKey,status,salary,company,location\na,retired,26616,Microsoft,HI",
+    "timestamp": "08_28_2024_23_21_26.863482",
+    "input_hash": 5625725200943587361,
+    "examples": [
+        {
+            "Question": "\nHow many people work with salary more than 468852?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,58,c,161,83,white\n\nprimeKey,status,salary,company,location\na,retired,240322,Twitter,NY"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 554925?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,27,c,152,95,white\n\nprimeKey,status,salary,company,location\na,retired,247365,Microsoft,GA"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 256035?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,46,p,121,116,swarthy\n\nprimeKey,status,salary,company,location\na,employed,248381,NVIDIA,IL"
+        }
+    ],
+    "RuleHint": "To get the number of people with salary above a threshold, you need to find the table with salary information. Then you go over each line and check the salary field. During the process count only those lines with value of salary strictly greater than the specified threshold towards your final sum. The sum after checking each line is the right answer."
+}

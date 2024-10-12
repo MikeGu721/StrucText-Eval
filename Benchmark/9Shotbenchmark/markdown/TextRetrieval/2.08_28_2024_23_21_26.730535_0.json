@@ -1,0 +1,66 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "nob",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 9,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "p\nqualify cafe transformer dentist unique idiot\n# q\nravish cafe trans**nob**![alt](se.jpeg \"hover text\")transformer dentist unique idiot",
+    "timestamp": "08_28_2024_23_21_26.730535",
+    "input_hash": -7097424762183738715,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "essence\nfar",
+            "Reference": "g\nuni**essence**que groot unique yogurt banana unique\n# h\n**far**vigor groot unique yogurt banana unique"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "monkey",
+            "Reference": "z\nfar vigor v![alt](rf.png \"hover text\")igor perish oops transformer\n# ab\n**monkey**groot vigor vigor perish oops t![alt](sf.png \"hover text\")ransformer"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "lamb",
+            "Reference": "a\noops monkey qualify qualify banana f**lamb**ar\n# b\nperish monkey qualify qualify banana far"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "lamb\nmonkey",
+            "Reference": "f\nbanana idiot wake apple **lamb**![alt](ri.png \"hover text\")t wake apple cafe jargon\n# g\ncaf**monkey**e idiot![alt](si.jpeg \"hover text\") wake apple cafe jargon"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "wake\nX-ray",
+            "Reference": "r\nfar unique far idiot halo quali**wake**fy\n# s\ngroot unique **X-ray**far idiot halo qualify"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "o\nvigor qualify cafe qualify salvage peri![alt](yi.jpg \"hover text\")sh\n# p\nwake qualify cafe qualify salvage perish"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "e\nzen far wa![alt](ni.png \"hover text\")ke jargon wake\n# f\napple groot wake jargon wake"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "far",
+            "Reference": "s\nba**far**nana ravish dentist essence qualify nob\n# t\ncafe ravish den![alt](ff.png \"hover text\")tist essence qualify nob"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "i\nnob zen apple oops far perish\n# j\noops zen apple oops![alt](ke.png \"hover text\") far perish"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for double stars, i.e., **, the content between two occurrences of double stars is the bold texts. Note that the bold range should start from the double stars occurring at i-th spot throughout the whole input file, where i is odd, and end with double stars occurring at jth spot where j is even. For example, text between double stars appearing first and second time."
+}

@@ -1,0 +1,46 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "lf.jpeg",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "j\nqualify**ravish** unique oops vigor cafe far\n# k\nravish unique oops vigor cafe ![alt](lf.jpeg \"hover text\")far",
+    "timestamp": "08_28_2024_23_21_26.638456",
+    "input_hash": -6936831341129335967,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "fg.jpeg\ngg.jpg",
+            "Reference": "g\nidiot h**apple**![alt](fg.jpeg \"hover text\") halo banana salvage cafe essence\n# h\njargon halo banana salvage **banana**![alt](gg.jpg \"hover text\")nana salvage cafe essence"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "No image file is included in the file.",
+            "Reference": "t\nbanana yogurt**qualify** groot salvage qualify kangaroo\n# u\ncafe yogurt groot salvage qualify kangaroo"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "oe.jpg",
+            "Reference": "o\nX**nob**-ray banana apple essence ravish banana\n# p\nyogurt banana appl![alt](oe.jpg \"hover text\")e essence ravish banana"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "No image file is included in the file.",
+            "Reference": "e\nwake X-ray kangaroo unique idiot\n# f\nX-ray X-**vigor**ray kangaroo unique idiot"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "le.jpg",
+            "Reference": "k\nessence![alt](le.jpg \"hover text\") lamb salvage zen unique vigor\n# l\nfar lamb sa**groot**lvage zen unique vigor"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching ![*](TARGET \"*\"), the TARGET part is filename. Star means any text is possible."
+}

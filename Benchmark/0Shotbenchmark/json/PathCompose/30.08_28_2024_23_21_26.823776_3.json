@@ -1,0 +1,19 @@
+{
+    "Question": "How to access value \"d\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+    "Answer": "obj[\"Z\"]",
+    "Label": {
+        "typename": "json",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathCompose"
+        ]
+    },
+    "Reference": "{\n\"id\":\"b\",\n\"Z\":\"d\",\n\"Y\":\"c\",\n\"X\":\"b\",\n\"W\":\"a\",\n\"V\":\"zy\",\n\"U\":\"yy\",\n\"subs\":[\n {\n \"id\":\"c\",\n \"T\":\"xy\",\n \"S\":\"wy\",\n \"subs\":[]\n }\n]\n}",
+    "timestamp": "08_28_2024_23_21_26.823776",
+    "input_hash": 7034954732117406194,
+    "RuleHint": "To get the path to access specified value. You have to do a recursive search along the subs fields, starting from the outermost parsed object. For each visited object, check each fields except for subs, and record the path along the way, i.e., subs inside brackets and index into subs inside brackets, and at which field you find the value."
+}

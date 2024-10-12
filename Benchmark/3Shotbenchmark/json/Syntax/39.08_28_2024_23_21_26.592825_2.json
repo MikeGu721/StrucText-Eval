@@ -1,0 +1,36 @@
+{
+    "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+    "Answer": "True",
+    "Label": {
+        "typename": "json",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Syntax"
+        ]
+    },
+    "Reference": "{\n\"id\":\"a\",\n\"Z\":\"v\",\n\"Y\":\"u\",\n\"X\":\"t\",\n\"subs\":[\n {\n \"id\":\"b\",\n \"W\":\"s\",\n \"subs\":[]\n]",
+    "timestamp": "08_28_2024_23_21_26.592825",
+    "input_hash": 4841661703253847954,
+    "examples": [
+        {
+            "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "{\n\"id\":\"q\",\n\"Z\":\"s\",\n\"Y\":\"r\",\n\"subs\":[\n {\n \"id\":\"r\",\n \"X\":\"q\",\n \"W\":\"p\",\n \"V\":\"o\",\n \"U\":\"n\",\n \"T\":\"m\",\n \"S\":\"l\",\n \"subs\":[]\n]"
+        },
+        {
+            "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "{\n\"id\":\"g\",\n\"Z\":\"t\",\n\"subs\":[\n {\n \"id\":\"h\",\n \"Y\":\"s\",\n \"X\":\"r\",\n \"W\":\"q\",\n \"V\":\"p\",\n \"U\":\"o\",\n \"T\":\"n\",\n \"subs\":[]\n]"
+        },
+        {
+            "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "{\n\"id\":\"p\",\n\"Z\":\"z\",\n\"Y\":\"y\",\n\"X\":\"x\",\n\"subs\":[\n {\n \"id\":\"q\",\n \"W\":\"w\",\n \"V\":\"v\",\n \"U\":\"u\",\n \"T\":\"t\",\n \"S\":\"s\",\n \"R\":\"r\",\n \"subs\":[]\n }\n]"
+        }
+    ],
+    "RuleHint": "To find the error in the json file, you need to parse the json file and report any syntax error if encountered any. Potential errors include missing ending curly braces."
+}

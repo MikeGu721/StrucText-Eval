@@ -1,0 +1,51 @@
+{
+    "Question": "How to access value \"e\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+    "Answer": "obj[\"subs\"][0][\"subs\"][1][\"H\"]",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 6,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathCompose"
+        ]
+    },
+    "Reference": "id: \"c\"\nZ: w,\nY: v,\nX: u,\nW: t,\nV: s,\nU: r,\nT: q,\nsubs: \n- id: \"d\"\n  S: p,\n  R: o,\n  Q: n,\n  P: m,\n  subs: \n  - id: \"e\"\n    O: l,\n    N: k,\n    M: j,\n    L: i,\n    K: h,\n    subs: []\n  - id: \"f\"\n    J: g,\n    I: f,\n    H: e,\n    G: d,\n    F: c,\n    E: b,\n    D: a,\n    C: zy,\n    B: yy,\n    subs: []\n- id: \"g\"\n  A: xy,\n  ZY: wy,\n  YY: vy,\n  XY: uy,\n  WY: ty,\n  VY: sy,\n  UY: ry,\n  TY: qy,\n  subs: \n  - id: \"h\"\n    SY: py,\n    RY: oy,\n    QY: ny,\n    subs: []\n  - id: \"i\"\n    PY: my,\n    OY: ly,\n    NY: ky,\n    MY: jy,\n    LY: iy,\n    subs: []",
+    "timestamp": "08_28_2024_23_21_26.659065",
+    "input_hash": 2379036929550188871,
+    "examples": [
+        {
+            "Question": "How to access value \"lx\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][1][\"subs\"][1][\"ZX\"]",
+            "Reference": "id: \"m\"\nZ: l,\nY: k,\nX: j,\nW: i,\nV: h,\nU: g,\nT: f,\nS: e,\nsubs: \n- id: \"n\"\n  R: d,\n  Q: c,\n  P: b,\n  O: a,\n  N: zy,\n  M: yy,\n  L: xy,\n  subs: \n  - id: \"o\"\n    K: wy,\n    J: vy,\n    I: uy,\n    H: ty,\n    G: sy,\n    F: ry,\n    E: qy,\n    D: py,\n    subs: []\n  - id: \"p\"\n    C: oy,\n    B: ny,\n    A: my,\n    ZY: ly,\n    YY: ky,\n    XY: jy,\n    WY: iy,\n    VY: hy,\n    subs: []\n- id: \"q\"\n  UY: gy,\n  TY: fy,\n  SY: ey,\n  RY: dy,\n  QY: cy,\n  PY: by,\n  subs: \n  - id: \"r\"\n    OY: ay,\n    NY: zx,\n    MY: yx,\n    LY: xx,\n    KY: wx,\n    JY: vx,\n    IY: ux,\n    HY: tx,\n    GY: sx,\n    FY: rx,\n    EY: qx,\n    subs: []\n  - id: \"s\"\n    DY: px,\n    CY: ox,\n    BY: nx,\n    AY: mx,\n    ZX: lx,\n    YX: kx,\n    XX: jx,\n    WX: ix,\n    VX: hx,\n    UX: gx,\n    TX: fx,\n    SX: ex,\n    subs: []"
+        },
+        {
+            "Question": "How to access value \"qx\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][1][\"subs\"][0][\"LY\"]",
+            "Reference": "id: \"m\"\nZ: e,\nY: d,\nX: c,\nW: b,\nV: a,\nsubs: \n- id: \"n\"\n  U: zy,\n  T: yy,\n  S: xy,\n  R: wy,\n  Q: vy,\n  P: uy,\n  O: ty,\n  subs: \n  - id: \"o\"\n    N: sy,\n    M: ry,\n    L: qy,\n    K: py,\n    subs: []\n  - id: \"p\"\n    J: oy,\n    subs: []\n- id: \"q\"\n  I: ny,\n  H: my,\n  G: ly,\n  F: ky,\n  E: jy,\n  D: iy,\n  C: hy,\n  B: gy,\n  A: fy,\n  ZY: ey,\n  YY: dy,\n  XY: cy,\n  subs: \n  - id: \"r\"\n    WY: by,\n    VY: ay,\n    UY: zx,\n    TY: yx,\n    SY: xx,\n    RY: wx,\n    QY: vx,\n    PY: ux,\n    OY: tx,\n    NY: sx,\n    MY: rx,\n    LY: qx,\n    subs: []\n  - id: \"s\"\n    KY: px,\n    JY: ox,\n    subs: []"
+        },
+        {
+            "Question": "How to access value \"m\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"subs\"][0][\"N\"]",
+            "Reference": "id: \"x\"\nZ: y,\nY: x,\nX: w,\nsubs: \n- id: \"y\"\n  W: v,\n  V: u,\n  U: t,\n  T: s,\n  S: r,\n  R: q,\n  Q: p,\n  P: o,\n  O: n,\n  subs: \n  - id: \"z\"\n    N: m,\n    M: l,\n    L: k,\n    subs: []\n  - id: \"ab\"\n    K: j,\n    J: i,\n    I: h,\n    H: g,\n    G: f,\n    F: e,\n    E: d,\n    D: c,\n    C: b,\n    B: a,\n    subs: []\n- id: \"bb\"\n  A: zy,\n  ZY: yy,\n  YY: xy,\n  XY: wy,\n  subs: \n  - id: \"cb\"\n    WY: vy,\n    VY: uy,\n    UY: ty,\n    subs: []\n  - id: \"db\"\n    TY: sy,\n    SY: ry,\n    RY: qy,\n    QY: py,\n    subs: []"
+        },
+        {
+            "Question": "How to access value \"l\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"subs\"][1][\"M\"]",
+            "Reference": "id: \"n\"\nZ: y,\nY: x,\nsubs: \n- id: \"o\"\n  X: w,\n  W: v,\n  V: u,\n  U: t,\n  T: s,\n  subs: \n  - id: \"p\"\n    S: r,\n    R: q,\n    Q: p,\n    P: o,\n    subs: []\n  - id: \"q\"\n    O: n,\n    N: m,\n    M: l,\n    L: k,\n    K: j,\n    subs: []\n- id: \"r\"\n  J: i,\n  I: h,\n  H: g,\n  subs: \n  - id: \"s\"\n    G: f,\n    F: e,\n    E: d,\n    D: c,\n    C: b,\n    B: a,\n    A: zy,\n    ZY: yy,\n    subs: []\n  - id: \"t\"\n    YY: xy,\n    subs: []"
+        },
+        {
+            "Question": "How to access value \"yy\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"U\"]",
+            "Reference": "id: \"t\"\nZ: d,\nY: c,\nX: b,\nsubs: \n- id: \"u\"\n  W: a,\n  V: zy,\n  U: yy,\n  T: xy,\n  S: wy,\n  R: vy,\n  Q: uy,\n  P: ty,\n  O: sy,\n  N: ry,\n  M: qy,\n  L: py,\n  subs: \n  - id: \"v\"\n    K: oy,\n    J: ny,\n    I: my,\n    subs: []\n  - id: \"w\"\n    H: ly,\n    G: ky,\n    F: jy,\n    E: iy,\n    D: hy,\n    C: gy,\n    B: fy,\n    A: ey,\n    ZY: dy,\n    YY: cy,\n    subs: []\n- id: \"x\"\n  XY: by,\n  WY: ay,\n  VY: zx,\n  UY: yx,\n  TY: xx,\n  SY: wx,\n  RY: vx,\n  QY: ux,\n  PY: tx,\n  subs: \n  - id: \"y\"\n    OY: sx,\n    NY: rx,\n    MY: qx,\n    LY: px,\n    KY: ox,\n    JY: nx,\n    IY: mx,\n    HY: lx,\n    GY: kx,\n    FY: jx,\n    EY: ix,\n    DY: hx,\n    subs: []\n  - id: \"z\"\n    CY: gx,\n    BY: fx,\n    AY: ex,\n    subs: []"
+        },
+        {
+            "Question": "How to access value \"ly\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"subs\"][1][\"A\"]",
+            "Reference": "id: \"n\"\nZ: k,\nY: j,\nX: i,\nW: h,\nV: g,\nU: f,\nT: e,\nS: d,\nR: c,\nsubs: \n- id: \"o\"\n  Q: b,\n  P: a,\n  O: zy,\n  N: yy,\n  M: xy,\n  L: wy,\n  K: vy,\n  J: uy,\n  subs: \n  - id: \"p\"\n    I: ty,\n    subs: []\n  - id: \"q\"\n    H: sy,\n    G: ry,\n    F: qy,\n    E: py,\n    D: oy,\n    C: ny,\n    B: my,\n    A: ly,\n    ZY: ky,\n    YY: jy,\n    XY: iy,\n    WY: hy,\n    subs: []\n- id: \"r\"\n  VY: gy,\n  UY: fy,\n  TY: ey,\n  SY: dy,\n  RY: cy,\n  QY: by,\n  PY: ay,\n  OY: zx,\n  subs: \n  - id: \"s\"\n    NY: yx,\n    MY: xx,\n    LY: wx,\n    subs: []\n  - id: \"t\"\n    KY: vx,\n    subs: []"
+        }
+    ],
+    "RuleHint": "To get the path to access specified value. You have to do a recursive search along the subs fields, starting from the outermost parsed object. For each visited object, check each fields except for subs, and record the path along the way, i.e., subs inside brackets and index into subs inside brackets, and at which field you find the value."
+}

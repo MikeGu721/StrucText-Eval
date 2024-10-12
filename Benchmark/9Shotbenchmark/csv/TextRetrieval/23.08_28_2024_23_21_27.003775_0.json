@@ -1,0 +1,66 @@
+{
+    "Question": "What is the location of record with primeKey a",
+    "Answer": "WA",
+    "Label": {
+        "typename": "csv",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 9,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,male,61,q,163,178,olive\nb,male,29,r,175,142,olive\n\nprimeKey,status,salary,company,location\na,unemployed,296431,Meta,WA\nb,employed,937412,NVIDIA,WA",
+    "timestamp": "08_28_2024_23_21_27.003775",
+    "input_hash": 8951838366587381965,
+    "examples": [
+        {
+            "Question": "\nWhat is the salary of record with primeKey b\n",
+            "Answer": "347465",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,26,k,179,92,brown\nb,male,62,l,133,179,olive\n\nprimeKey,status,salary,company,location\na,employed,144802,Meta,HI\nb,unemployed,347465,Twitter,GA"
+        },
+        {
+            "Question": "\nWhat is the color of record with primeKey a\n",
+            "Answer": "mulatto",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,55,h,127,138,mulatto\nb,female,30,i,160,131,mulatto\n\nprimeKey,status,salary,company,location\na,employed,284823,NVIDIA,GA\nb,retired,789930,Meta,IL"
+        },
+        {
+            "Question": "\nWhat is the weight of record with primeKey b\n",
+            "Answer": "179",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,50,y,122,115,white\nb,female,48,z,126,179,mulatto\n\nprimeKey,status,salary,company,location\na,unemployed,350989,Google,HI\nb,retired,782378,Microsoft,HI"
+        },
+        {
+            "Question": "\nWhat is the weight of record with primeKey a\n",
+            "Answer": "84",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,34,h,211,84,swarthy\nb,female,19,i,159,148,brown\n\nprimeKey,status,salary,company,location\na,retired,378913,Microsoft,NY\nb,retired,636271,Microsoft,TX"
+        },
+        {
+            "Question": "\nWhat is the age of record with primeKey a\n",
+            "Answer": "12",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,12,s,216,91,white\nb,male,29,t,179,151,brown\n\nprimeKey,status,salary,company,location\na,retired,230168,Microsoft,IL\nb,retired,782761,Microsoft,IL"
+        },
+        {
+            "Question": "\nWhat is the gender of record with primeKey a\n",
+            "Answer": "male",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,38,x,183,148,brown\nb,male,56,y,202,172,mulatto\n\nprimeKey,status,salary,company,location\na,retired,186242,Microsoft,GA\nb,retired,997100,Apple,WA"
+        },
+        {
+            "Question": "\nWhat is the salary of record with primeKey a\n",
+            "Answer": "79614",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,39,q,185,72,mulatto\nb,male,20,r,127,116,swarthy\n\nprimeKey,status,salary,company,location\na,retired,79614,NVIDIA,GA\nb,employed,966569,Apple,IL"
+        },
+        {
+            "Question": "\nWhat is the age of record with primeKey b\n",
+            "Answer": "20",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,59,l,168,144,white\nb,female,20,m,145,86,mulatto\n\nprimeKey,status,salary,company,location\na,retired,173817,Apple,NY\nb,unemployed,568321,Twitter,GA"
+        },
+        {
+            "Question": "\nWhat is the status of record with primeKey a\n",
+            "Answer": "retired",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,41,q,217,160,white\nb,male,15,r,125,99,swarthy\n\nprimeKey,status,salary,company,location\na,retired,214605,Microsoft,IL\nb,unemployed,367830,Google,WA"
+        }
+    ],
+    "RuleHint": "To find the value of specific field of record with specified primeKey. You have to first, locate the line with the specific primeKey. Then find the required value under the desired column in that line."
+}

@@ -1,0 +1,56 @@
+{
+    "Question": "How many people work with salary more than 84670?",
+    "Answer": "2",
+    "Label": {
+        "typename": "csv",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 7,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Statistics"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,female,21,a,162,119,white\nb,male,38,b,164,122,mulatto\n\nprimeKey,status,salary,company,location\na,unemployed,441628,Google,IL\nb,retired,607962,Meta,NY",
+    "timestamp": "08_28_2024_23_21_26.950356",
+    "input_hash": 3108235813787944613,
+    "examples": [
+        {
+            "Question": "\nHow many people work with salary more than 102198?\n",
+            "Answer": " 2 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,65,k,173,91,olive\nb,male,37,l,219,95,brown\n\nprimeKey,status,salary,company,location\na,unemployed,571907,OPENAI,NY\nb,unemployed,795373,Microsoft,HI"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 838172?\n",
+            "Answer": " 2 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,27,u,164,145,olive\nb,male,26,v,193,78,mulatto\n\nprimeKey,status,salary,company,location\na,retired,996051,Microsoft,HI\nb,retired,981035,Apple,CA"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 414833?\n",
+            "Answer": " 2 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,15,r,169,112,white\nb,female,20,s,135,121,swarthy\n\nprimeKey,status,salary,company,location\na,employed,455295,OPENAI,WA\nb,retired,665322,Microsoft,WA"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 48851?\n",
+            "Answer": " 2 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,62,z,152,155,swarthy\nb,male,54,ab,161,103,mulatto\n\nprimeKey,status,salary,company,location\na,retired,987467,Apple,CA\nb,retired,940757,NVIDIA,WA"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 826239?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,13,y,148,140,brown\nb,male,36,z,209,111,olive\n\nprimeKey,status,salary,company,location\na,unemployed,434477,Google,HI\nb,employed,194114,Google,HI"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 335095?\n",
+            "Answer": " 2 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,39,h,149,171,olive\nb,female,70,i,165,144,black\n\nprimeKey,status,salary,company,location\na,unemployed,599356,Google,GA\nb,retired,434664,Apple,NY"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 55107?\n",
+            "Answer": " 2 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,48,w,192,77,swarthy\nb,female,12,x,209,163,white\n\nprimeKey,status,salary,company,location\na,employed,174252,OPENAI,TX\nb,unemployed,269794,OPENAI,HI"
+        }
+    ],
+    "RuleHint": "To get the number of people with salary above a threshold, you need to find the table with salary information. Then you go over each line and check the salary field. During the process count only those lines with value of salary strictly greater than the specified threshold towards your final sum. The sum after checking each line is the right answer."
+}

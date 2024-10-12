@@ -1,0 +1,31 @@
+{
+    "Question": "What is the tag with attribute of value py?",
+    "Answer": "B",
+    "Label": {
+        "typename": "xml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"a\" Y=\"zy\" X=\"yy\" W=\"xy\" V=\"wy\" U=\"vy\">\n <B T=\"uy\" S=\"ty\" R=\"sy\" Q=\"ry\" P=\"qy\" O=\"py\">\n  banana\n </B>\n apple\n</A>",
+    "timestamp": "08_28_2024_23_21_26.852590",
+    "input_hash": -2527771549322953921,
+    "examples": [
+        {
+            "Question": "What is the tag with attribute of value xy?",
+            "Answer": "B",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"a\" Y=\"zy\">\n <B X=\"yy\" W=\"xy\" V=\"wy\" U=\"vy\" T=\"uy\">\n  banana\n </B>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the tag with attribute of value zy?",
+            "Answer": "B",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"e\">\n <B Y=\"d\" X=\"c\" W=\"b\" V=\"a\" U=\"zy\" T=\"yy\">\n  banana\n </B>\n apple\n</A>"
+        }
+    ],
+    "RuleHint": "To find the tag name of particular attribute value, just search the file for that value and find the surrounding left and right angles, i.e., boundary of tag. The word next to left angle is tag name."
+}

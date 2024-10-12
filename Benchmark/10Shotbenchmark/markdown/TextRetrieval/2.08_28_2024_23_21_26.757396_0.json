@@ -1,0 +1,71 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "No bold texts presented in file.",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 10,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "b\ntransformer idiot perish![alt](dj.jpeg \"hover text\") kangaroo lamb essence\n# c\nunique idiot perish kangaroo lamb essence",
+    "timestamp": "08_28_2024_23_21_26.757396",
+    "input_hash": 1369364788588148344,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "groot\nfar",
+            "Reference": "g\n**far**perish wake perish dentist unique oops\n# h\nqualify **groot**wake perish dentist unique oop![alt](zi.jpeg \"hover text\")s"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "X-ray",
+            "Reference": "j\nwake transformer vigor qualif**X-ray**y wake e![alt](ij.gif \"hover text\")ssence\n# k\nX-ray transformer vigor qualify wake essence"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "vigor",
+            "Reference": "x\nfar nob ha**vigor**![alt](xg.jpeg \"hover text\") halo jargon cafe zen\n# y\ngr![alt](yg.gif \"hover text\")oot nob halo jargon cafe zen"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "lamb",
+            "Reference": "d\nzen monkey yogurt ba![alt](jg.jpeg \"hover text\")nana idiot essence\n# e\nappl**lamb**e nob yogurt banana idiot essence"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "oops",
+            "Reference": "l\nnob i**oops**diot jargon jargon cafe sa![alt](re.png \"hover text\")lvage\n# m\noops idiot jargon jargon ![alt](se.jpeg \"hover text\")cafe salvage"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "wake\nX-ray",
+            "Reference": "p\nkangaroo ravish X-ray lamb zen vi**wake**![alt](sf.png \"hover text\")en vigor\n# q\nlamb ravish X-ray l**X-ray**amb zen vigor"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "essence",
+            "Reference": "a\nkangaroo vigor kangaroo unique peri![alt](sg.gif \"hover text\")sh halo\n# b\nlamb vigor kangaroo u**essence**nique perish halo"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "zen",
+            "Reference": "i\nlamb banana banana qualify ravis**zen**![alt](wg.png \"hover text\")lamb banana banana qualify ravish qualify\n# j\nmonkey banana banana qualify ravish qualify"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "ravish\nqualify",
+            "Reference": "n\njargon far qualify X-ray groot oop**qualify**s\n# o\n**ravish**kangaroo far qualify X-ray groot oops"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "cafe\nbanana",
+            "Reference": "m\ngr**banana**oot unique lamb yogurt qualify monkey\n# n\nhalo unique lamb yogurt **cafe**![alt](gj.jpeg \"hover text\")gurt qualify monkey"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for double stars, i.e., **, the content between two occurrences of double stars is the bold texts. Note that the bold range should start from the double stars occurring at i-th spot throughout the whole input file, where i is odd, and end with double stars occurring at jth spot where j is even. For example, text between double stars appearing first and second time."
+}

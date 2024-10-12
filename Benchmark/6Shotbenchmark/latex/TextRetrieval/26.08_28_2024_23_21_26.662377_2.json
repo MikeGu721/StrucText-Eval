@@ -1,0 +1,51 @@
+{
+    "Question": "Extract all included figure files. Print those file names separated by \\n.",
+    "Answer": "lg.jpg\nkg.png",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 6,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "a\nravish perish far unique k\\textbf{lamb}\\includegraphics[width=0.5\\textwidth]{kg.png}h far unique kangaroo X-ray\n\\section{b}\nsalv\\includegraphics[width=0.5\\textwidth]{lg.jpg}age perish far unique kangaroo X-ray",
+    "timestamp": "08_28_2024_23_21_26.662377",
+    "input_hash": -2613166695782436457,
+    "examples": [
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "No figure file is included in the file.",
+            "Reference": "q\nidiot nob apple jargon unique dentist\n\\section{r}\njargon \\textbf{essence}nob apple jargon unique dentist"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "ii.jpeg\nji.jpg",
+            "Reference": "l\nhalo lamb apple halo ha\\textbf{far}lo\\includegraphics[width=0.5\\textwidth]{ii.jpeg} nob\n\\section{m}\ni\\includegraphics[width=0.5\\textwidth]{ji.jpg}diot lamb apple halo halo nob"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "gj.jpeg",
+            "Reference": "o\nsalvage far salvage dentist ba\\textbf{groot}\\includegraphics[width=0.5\\textwidth]{gj.jpeg}tist banana essence\n\\section{p}\ntransformer far salvage dentist banana essence"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "he.jpeg",
+            "Reference": "v\nwake X-ray halo groot qualify kangar\\textbf{yogurt}\\includegraphics[width=0.5\\textwidth]{he.jpeg}ot qualify kangaroo\n\\section{w}\nX-ray X-ray halo groot qualify kangaroo"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "ai.jpg",
+            "Reference": "o\nvigor transformer\\includegraphics[width=0.5\\textwidth]{ai.jpg} far ravish X-ray groot\n\\section{p}\nwake transformer far ravish X-r\\textbf{far}ay groot"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "No figure file is included in the file.",
+            "Reference": "y\nhalo X-ray yogurt qualify jargon unique\n\\section{z}\nidiot X-ray yogurt qualify jargon\\textbf{transformer} unique"
+        }
+    ],
+    "RuleHint": "To find the image files imported, search for pattern \\\\includegraphics[*]{TARGET}, the TARGET part is the filename. Star means any text is possible."
+}

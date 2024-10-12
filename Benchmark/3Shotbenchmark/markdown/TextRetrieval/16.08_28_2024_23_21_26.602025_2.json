@@ -1,0 +1,36 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "rh.gif",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "v\nlamb transformer idio![alt](rh.gif \"hover text\")t transformer qualify lamb\n# w\nmonkey transformer idiot transformer qualify l**apple**amb",
+    "timestamp": "08_28_2024_23_21_26.602025",
+    "input_hash": -6460490987964090377,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "wh.gif",
+            "Reference": "r\nhalo zen z![alt](wh.gif \"hover text\")en halo idiot banana\n# s\nidiot zen zen halo idiot banana"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ie.jpg",
+            "Reference": "z\nX-ray perish oops gr**X-ray**oot essence\n# ab\nyogurt perish oo![alt](ie.jpg \"hover text\")ps groot essence"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "No image file is included in the file.",
+            "Reference": "o\ndentist perish transformer monkey ravish essence\n# p\nessence perish transformer monkey ravish essence"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching ![*](TARGET \"*\"), the TARGET part is filename. Star means any text is possible."
+}

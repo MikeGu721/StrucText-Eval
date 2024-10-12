@@ -1,0 +1,36 @@
+{
+    "Question": "How many people who work in WA are taller than 175?",
+    "Answer": "0",
+    "Label": {
+        "typename": "csv",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Join"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,female,37,b,190,152,mulatto\nb,male,39,c,200,125,swarthy\n\nprimeKey,status,salary,company,location\na,unemployed,88767,Apple,CA\nb,unemployed,112614,Google,GA",
+    "timestamp": "08_28_2024_23_21_26.591846",
+    "input_hash": -3007896576723434850,
+    "examples": [
+        {
+            "Question": "\nHow many people who work in TX are taller than 174?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,56,y,186,171,mulatto\nb,female,48,z,131,79,brown\n\nprimeKey,status,salary,company,location\na,retired,356210,NVIDIA,CA\nb,employed,500829,OPENAI,IL"
+        },
+        {
+            "Question": "\nHow many people who work in IL are taller than 159?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,49,o,163,78,white\nb,female,48,p,192,164,mulatto\n\nprimeKey,status,salary,company,location\na,retired,960281,Apple,TX\nb,employed,836704,Microsoft,GA"
+        },
+        {
+            "Question": "\nHow many people who work in GA are taller than 173?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,12,w,196,132,mulatto\nb,female,53,x,218,152,mulatto\n\nprimeKey,status,salary,company,location\na,retired,950792,Apple,WA\nb,unemployed,868068,Google,NY"
+        }
+    ],
+    "RuleHint": "To get the number of people living in specified city who are also taller than threshold, you need to first join the two table on primeKey, and check each row of joined table for lines that satisfies both condition, i.e., lines with city specified in query and height strictly greater than threshold. The total number of such rows is the right answer."
+}

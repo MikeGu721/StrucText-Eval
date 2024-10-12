@@ -1,0 +1,31 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "eg.png\nfg.jpeg\ngg.jpg",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "z\nbanana idi![alt](eg.png \"hover text\")ot monkey oops dentist ravish monkey halo wake cafe transformer essence\n# ab\ncafe i![alt](fg.jpeg \"hover text\")diot monkey oops dentist ravish monkey halo wake cafe transformer essence\n## bb\ndentist **jargon**idiot monkey oops dentist ravish monkey halo wake cafe transformer essence\n## cb\nessence idiot monkey oops dentist **kangaroo**ravish monkey halo wake cafe transformer essence\n# db\nfar idiot monkey oops dentist ravish mon**lamb**key halo wake cafe transformer ess![alt](gg.jpg \"hover text\")ence\n## eb\ngroot idiot monkey oops dentist ravish monkey halo wake cafe transformer essence\n## fb\nhalo idiot monkey oops dentist ravish monkey halo wake cafe transfor**monkey**mer essence",
+    "timestamp": "08_28_2024_23_21_26.586490",
+    "input_hash": -7510390715893671951,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "be.jpeg\nae.png\nyd.jpg\nce.png\nzd.jpg",
+            "Reference": "k\noops jargon monke![alt](yd.jpg \"hover text\")y oops yogurt cafe apple qualify X-ray transformer banana banana\n# l\nperish jargon monkey oops yogurt cafe apple qualify X-ray transformer banana![alt](zd.jpg \"hover text\") banana\n## m\nqualify jargon monkey oops yogurt cafe apple qualify X-ray transformer banana b**yogurt**![alt](ae.png \"hover text\")gon monkey oops yogurt cafe apple qualify X-ray transformer banana banana\n## n\nravish jargon monkey oops yogurt cafe apple qualify X-ray transform**zen**er banana banana\n# o\nsalvage jargon monkey oops yogurt cafe apple qualify X-ra**apple banana**y transformer banana banana\n## p\ntransformer jargon monkey oop**banana banana**s yogurt cafe apple qualify X-ray trans![alt](be.jpeg \"hover text\")former banana banana\n## q\nunique jargon monkey oops yogurt cafe apple**cafe banana** qualify X-ray transformer banana b![alt](ce.png \"hover text\")anana"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "yi.jpg\naj.jpg\nbj.gif\nzi.jpeg",
+            "Reference": "d\ncafe ravish monkey essence cafe salv**kangaroo**age groot halo jargon oops zen transformer\n# e\ndentist ravish monkey essence cafe salvage groot halo jargon oops zen tr**lamb**![alt](yi.jpg \"hover text\")oot halo jargon oops zen transformer\n## f\nesse![alt](zi.jpeg \"hover text\")nce ravish monkey essence cafe salvage groot halo jargon oops zen transformer\n## g\nfar ravish monkey essence cafe s![alt](aj.jpg \"hover text\")alvage groot halo jargon oops zen transformer\n# h\ngroot ravish monkey essen**monkey**ce cafe salvage groot halo jargon oops zen transformer\n## i\nhalo ravish monkey essence cafe**nob** salvage groot halo jargon oops zen transformer\n## j\nidiot ravish monkey essence cafe salvage groot halo jargon oops zen transfo![alt](bj.gif \"hover text\")rmer"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching ![*](TARGET \"*\"), the TARGET part is filename. Star means any text is possible."
+}

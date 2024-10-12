@@ -1,0 +1,26 @@
+{
+    "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+    "Answer": "True",
+    "Label": {
+        "typename": "xml",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Syntax"
+        ]
+    },
+    "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"w\" Y=\"v\" X=\"u\" W=\"t\" V=\"s\" U=\"r\" T=\"q\" S=\"p\">\n <B R=\"o\" Q=\"n\" P=\"m\" O=\"l\" N=\"k\" M=\"j\" L=\"i\" K=\"h\" J=\"g\" I=\"f\" H=\"e\">\n  <C G=\"d\" F=\"c\">\n   cafe\n  <D E=\"b\" D=\"a\" C=\"zy\" B=\"yy\" A=\"xy\" ZY=\"wy\" YY=\"vy\" XY=\"uy\" WY=\"ty\" VY=\"sy\" UY=\"ry\" TY=\"qy\">\n   dentist\n  </D>\n  banana\n <E SY=\"py\" RY=\"oy\" QY=\"ny\" PY=\"my\" OY=\"ly\" NY=\"ky\" MY=\"jy\">\n  <F LY=\"iy\" KY=\"hy\" JY=\"gy\" IY=\"fy\" HY=\"ey\" GY=\"dy\" FY=\"cy\" EY=\"by\">\n   far\n  <G DY=\"ay\" CY=\"zx\" BY=\"yx\" AY=\"xx\" ZX=\"wx\" YX=\"vx\" XX=\"ux\">\n   groot\n  </G>\n  essence\n apple",
+    "timestamp": "08_28_2024_23_21_26.566099",
+    "input_hash": -1459311018688982256,
+    "examples": [
+        {
+            "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"f\" Y=\"e\" X=\"d\" W=\"c\" V=\"b\">\n <B U=\"a\">\n  <C T=\"zy\" S=\"yy\" R=\"xy\" Q=\"wy\" P=\"vy\">\n   cafe\n  <D O=\"uy\" N=\"ty\" M=\"sy\" L=\"ry\" K=\"qy\" J=\"py\" I=\"oy\" H=\"ny\" G=\"my\">\n   dentist\n  banana\n <E F=\"ly\">\n  <F E=\"ky\" D=\"jy\" C=\"iy\" B=\"hy\" A=\"gy\">\n   far\n  <G ZY=\"fy\" YY=\"ey\" XY=\"dy\" WY=\"cy\" VY=\"by\" UY=\"ay\">\n   groot\n  essence\n apple\n</A>"
+        }
+    ],
+    "RuleHint": "To find the error in the xml file, you need to parse the xml file and report any syntax error if encountered any. Potential errors include missing ending tags."
+}

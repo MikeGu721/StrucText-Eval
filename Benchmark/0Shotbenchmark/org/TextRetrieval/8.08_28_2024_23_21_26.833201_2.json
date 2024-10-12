@@ -1,0 +1,19 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "ze.jpg\naf.jpg\ncf.jpg\nbf.png\nye.jpg",
+    "Label": {
+        "typename": "org",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "s\ndentist ravish vigo[[ye.jpg]]r nob zen unique transformer zen wake far monkey halo\n* t\nessence ravish vigor nob zen unique transformer zen wake f*dentist*ar monkey halo\n** u\nfar ravish vigor nob zen unique transformer zen wake far m[[ze.jpg]]onkey halo\n** v\ngroot*essence*[[af.jpg]]root ravish vigor nob zen unique transformer zen wake far monkey halo\n* w\nhalo ravish vigor nob zen unique transformer zen wake far monkey*far*[[bf.png]]zen wake far monkey halo\n** x\nidiot ravish vigor nob zen unique transformer zen wake far monkey h[[cf.jpg]]alo\n** y\njargon ravish vig*groot*or nob zen unique transformer zen wake far monkey halo",
+    "timestamp": "08_28_2024_23_21_26.833201",
+    "input_hash": 9121195023874167316,
+    "RuleHint": "To find the image files, look for texts matching [[TARGET]], the TARGET part is filename."
+}

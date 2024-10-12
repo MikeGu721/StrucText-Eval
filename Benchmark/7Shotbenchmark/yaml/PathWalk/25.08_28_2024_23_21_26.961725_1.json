@@ -1,0 +1,56 @@
+{
+    "Question": "What is the first object's id of subs?",
+    "Answer": "w",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 7,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "id: \"v\"\nZ: y,\nY: x,\nX: w,\nsubs: \n- id: \"w\"\n  W: v,\n  V: u,\n  subs: []",
+    "timestamp": "08_28_2024_23_21_26.961725",
+    "input_hash": 1737053185595704491,
+    "examples": [
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "z",
+            "Reference": "id: \"y\"\nZ: g,\nY: f,\nX: e,\nW: d,\nsubs: \n- id: \"z\"\n  V: c,\n  U: b,\n  subs: []"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "m",
+            "Reference": "id: \"l\"\nZ: u,\nY: t,\nX: s,\nW: r,\nV: q,\nU: p,\nsubs: \n- id: \"m\"\n  T: o,\n  S: n,\n  subs: []"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "q",
+            "Reference": "id: \"p\"\nZ: q,\nY: p,\nsubs: \n- id: \"q\"\n  X: o,\n  W: n,\n  V: m,\n  U: l,\n  T: k,\n  S: j,\n  subs: []"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "j",
+            "Reference": "id: \"i\"\nZ: j,\nY: i,\nX: h,\nW: g,\nsubs: \n- id: \"j\"\n  V: f,\n  U: e,\n  T: d,\n  S: c,\n  R: b,\n  Q: a,\n  subs: []"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "j",
+            "Reference": "id: \"i\"\nZ: o,\nsubs: \n- id: \"j\"\n  Y: n,\n  X: m,\n  W: l,\n  V: k,\n  U: j,\n  subs: []"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "y",
+            "Reference": "id: \"x\"\nZ: z,\nY: y,\nsubs: \n- id: \"y\"\n  X: x,\n  W: w,\n  V: v,\n  U: u,\n  T: t,\n  S: s,\n  subs: []"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "o",
+            "Reference": "id: \"n\"\nZ: o,\nY: n,\nsubs: \n- id: \"o\"\n  X: m,\n  W: l,\n  V: k,\n  U: j,\n  subs: []"
+        }
+    ],
+    "RuleHint": "To find the first object's id of subs, first parse the yaml file and get the outermost object, in the outermost object's subs list, get the first element. That element is another object, and its id is the answer."
+}

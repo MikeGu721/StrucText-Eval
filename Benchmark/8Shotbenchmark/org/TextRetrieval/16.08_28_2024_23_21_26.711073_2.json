@@ -1,0 +1,61 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "No image file is included in the file.",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 8,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "v\nlamb apple cafe halo groot X-ray\n* w\nmonkey apple cafe halo groot X-ray",
+    "timestamp": "08_28_2024_23_21_26.711073",
+    "input_hash": 3051240509112429024,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "No image file is included in the file.",
+            "Reference": "q\nqualify groot salvage j*zen*argon nob zen\n* r\nravish groot salvage jargon nob zen"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "No image file is included in the file.",
+            "Reference": "m\nyogurt cafe s*dentist*alvage wake essence transformer\n* n\nzen cafe salvage wake essence t*essence*ransformer"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "No image file is included in the file.",
+            "Reference": "i\nX-*vigor*ray transformer ravish banana qualify oops\n* j\nyogurt transformer ravish banana qualify oops"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "vg.png",
+            "Reference": "i\napple jargon *nob*groot tran[[vg.png]]sformer dentist salvage\n* j\nbanana jargon groot transformer dentist salvage"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "No image file is included in the file.",
+            "Reference": "q\nbanana unique banana *apple*qualify vigor idiot\n* r\ncafe unique banana qualify vigor idiot"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ef.png",
+            "Reference": "h\nfar kangaroo apple monkey jargon sa*yogurt*lvage\n* i\ngr*zen*oot kan[[ef.png]]garoo apple monkey jargon salvage"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "rf.png\nqf.png",
+            "Reference": "u\nh*oops*alo oops kangaroo salv[[qf.png]]age idiot groot\n* v\nidiot oops kan[[rf.png]]garoo salvage idiot groot"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "si.jpeg\nri.png",
+            "Reference": "k\nb*monkey*anana[[ri.png]] vigor zen transformer nob cafe\n* l\ncafe vigor zen transformer *nob*[[si.jpeg]]vigor zen transformer nob cafe"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching [[TARGET]], the TARGET part is filename."
+}

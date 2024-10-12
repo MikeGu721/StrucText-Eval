@@ -1,0 +1,46 @@
+{
+    "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the JSON file, separated by \\n\\n.",
+    "Answer": "{\n\"id\":\"f\",\n\"U\":\"yy\",\n\"T\":\"xy\",\n\"S\":\"wy\",\n\"R\":\"vy\",\n\"Q\":\"uy\",\n\"subs\":[]\n}",
+    "Label": {
+        "typename": "json",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "{\n\"id\":\"e\",\n\"Z\":\"d\",\n\"Y\":\"c\",\n\"X\":\"b\",\n\"W\":\"a\",\n\"V\":\"zy\",\n\"subs\":[\n {\n \"id\":\"f\",\n \"U\":\"yy\",\n \"T\":\"xy\",\n \"S\":\"wy\",\n \"R\":\"vy\",\n \"Q\":\"uy\",\n \"subs\":[]\n }\n]\n}",
+    "timestamp": "08_28_2024_23_21_26.904501",
+    "input_hash": 5551900735812996646,
+    "examples": [
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the JSON file, separated by \\n\\n. ",
+            "Answer": "{\n\"id\":\"n\",\n\"X\":\"w\",\n\"W\":\"v\",\n\"V\":\"u\",\n\"U\":\"t\",\n\"T\":\"s\",\n\"S\":\"r\",\n\"subs\":[]\n}",
+            "Reference": "{\n\"id\":\"m\",\n\"Z\":\"y\",\n\"Y\":\"x\",\n\"subs\":[\n {\n \"id\":\"n\",\n \"X\":\"w\",\n \"W\":\"v\",\n \"V\":\"u\",\n \"U\":\"t\",\n \"T\":\"s\",\n \"S\":\"r\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the JSON file, separated by \\n\\n. ",
+            "Answer": "{\n\"id\":\"k\",\n\"U\":\"a\",\n\"T\":\"zy\",\n\"S\":\"yy\",\n\"R\":\"xy\",\n\"subs\":[]\n}",
+            "Reference": "{\n\"id\":\"j\",\n\"Z\":\"f\",\n\"Y\":\"e\",\n\"X\":\"d\",\n\"W\":\"c\",\n\"V\":\"b\",\n\"subs\":[\n {\n \"id\":\"k\",\n \"U\":\"a\",\n \"T\":\"zy\",\n \"S\":\"yy\",\n \"R\":\"xy\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the JSON file, separated by \\n\\n. ",
+            "Answer": "{\n\"id\":\"b\",\n\"X\":\"k\",\n\"W\":\"j\",\n\"V\":\"i\",\n\"subs\":[]\n}",
+            "Reference": "{\n\"id\":\"a\",\n\"Z\":\"m\",\n\"Y\":\"l\",\n\"subs\":[\n {\n \"id\":\"b\",\n \"X\":\"k\",\n \"W\":\"j\",\n \"V\":\"i\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the JSON file, separated by \\n\\n. ",
+            "Answer": "{\n\"id\":\"w\",\n\"V\":\"k\",\n\"U\":\"j\",\n\"subs\":[]\n}",
+            "Reference": "{\n\"id\":\"v\",\n\"Z\":\"o\",\n\"Y\":\"n\",\n\"X\":\"m\",\n\"W\":\"l\",\n\"subs\":[\n {\n \"id\":\"w\",\n \"V\":\"k\",\n \"U\":\"j\",\n \"subs\":[]\n }\n]\n}"
+        },
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the JSON file, separated by \\n\\n. ",
+            "Answer": "{\n\"id\":\"n\",\n\"X\":\"b\",\n\"W\":\"a\",\n\"V\":\"zy\",\n\"U\":\"yy\",\n\"T\":\"xy\",\n\"S\":\"wy\",\n\"subs\":[]\n}",
+            "Reference": "{\n\"id\":\"m\",\n\"Z\":\"d\",\n\"Y\":\"c\",\n\"subs\":[\n {\n \"id\":\"n\",\n \"X\":\"b\",\n \"W\":\"a\",\n \"V\":\"zy\",\n \"U\":\"yy\",\n \"T\":\"xy\",\n \"S\":\"wy\",\n \"subs\":[]\n }\n]\n}"
+        }
+    ],
+    "RuleHint": "To get the most deeply nested objects, start from the outermost object, recursively search along the subs fields. For each object, check its subs field, any object with an empty subs is one most deeply nested object."
+}

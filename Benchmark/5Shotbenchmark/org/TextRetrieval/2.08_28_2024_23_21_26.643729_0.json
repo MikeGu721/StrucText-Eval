@@ -1,0 +1,46 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "ravish\nsalvage\nqualify",
+    "Label": {
+        "typename": "org",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "u\nfar zen idiot X-ray yogurt qual[[ei.jpeg]]ify ravish monkey perish nob groot groot\n* v\ngroot zen idiot X-ray yogurt qualify r[[fi.jpeg]]avish monkey perish nob groot groot\n** w\nhalo zen idiot X-ray yogurt qualify ravish monkey perish nob groot groot\n** x\nidiot zen*qualify* idiot X-ray yogurt qualify ravish monkey per[[gi.jpeg]]ish nob groot groot\n* y\njargon zen idiot X-ray yogurt qual*ravish*[[hi.jpg]]t X-ray yogurt qualify ravish monkey perish nob groot groot\n** z\nkangaroo zen idiot X-ray yogurt qualify ravis*salvage*h monkey perish nob groot groot\n** ab\nlamb zen idiot X-ray yogurt qualify ravish monkey perish nob groot groot",
+    "timestamp": "08_28_2024_23_21_26.643729",
+    "input_hash": -4725422189836004127,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "lamb\nkangaroo\nmonkey",
+            "Reference": "d\nbanana nob banana essence nob oops kangaroo halo yogurt vig*kangaroo*[[qh.jpg]]rt vigor nob ravish\n* e\ncafe nob banana essence nob oops kangaroo halo yogurt vigor nob ravi*lamb*sh\n** f\ndentist nob banana essence nob oops kangaroo halo yogurt vigor nob ravish\n** g\ne[[rh.gif]]ssence nob banana essence nob oops kangaroo halo yogurt vigor nob ravish\n* h\nfar nob banana essence nob oops kangaroo halo yogurt vigor nob ravish\n** i\ngroot nob banana essence nob oops kangaroo halo yogurt vigor nob ravish\n** j\nhalo nob banana essence nob oops kangaroo ha*monkey*lo yogurt vigor nob ravish"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "unique\ntransformer\nsalvage",
+            "Reference": "d\nX-ray oops halo transformer monkey transformer groot monkey lamb X-ray nob yogurt\n* e\nyogurt oops halo transformer monkey transformer groot monkey lamb X-ray nob yogurt\n** f\nzen oops halo transformer monkey transformer groot monkey lamb X-ray nob yogurt\n** g\napple perish halo transformer monkey transformer groot monkey lamb X-ray no*salvage*b [[og.png]]yogurt\n* h\nbanana perish halo transformer monkey transformer groot monkey lamb X-ray nob yogurt\n** i\ncafe perish halo trans*transformer*former monkey transformer groot monkey lamb X-ray nob yogurt\n** j\ndentist perish halo transformer monkey tran*unique*sformer g[[pg.jpg]]root monkey lamb X-ray nob yogurt"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "wake\nvigor\ntransformer\nX-ray\nunique",
+            "Reference": "y\nvigor salvage zen dentist zen lamb cafe vigor dentis*transformer*t transformer far qua[[xi.jpg]]lify\n* z\nwake salvage zen dentist zen lamb cafe vigor dentist transformer far qualify\n** ab\nX-ray salvage zen dentist zen lamb cafe vigor dentist transfor*unique*mer far qualify\n** bb\nyogurt salvage zen dentist zen lamb cafe vigor dentist transformer far qualif*vigor*[[yi.jpg]]t transformer far qualify\n* cb\nzen salvage zen dentist zen lamb cafe vigor dentist transformer far qualify\n** db\napple transformer zen dentist zen lamb cafe vigor dentist transformer far qual*wake*[[zi.jpeg]]former zen dentist zen lamb cafe vigor dentist transformer far qualify\n** eb\nbanana transformer zen dentist zen la*X-ray*mb cafe vigor dentist transformer far qualify"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "oops\nmonkey\nnob",
+            "Reference": "h\nlamb monkey vigor X-r[[kf.jpeg]]ay nob idiot idiot oops cafe cafe nob yogurt\n* i\nmonkey monkey vigor X-ray nob*monkey*[[lf.jpeg]]monkey vigor X-ray nob idiot idiot oops cafe cafe nob yogurt\n** j\nnob monkey vigor X-ray nob idiot idiot oops *nob*[[mf.png]]ey vigor X-ray nob idiot idiot oops cafe cafe nob yogurt\n** k\noops monkey vigor*oops* X-ray nob idiot idiot oops cafe ca[[nf.png]]fe nob yogurt\n* l\nperish monkey vigor X-ray nob idiot idiot oops cafe cafe nob yogurt\n** m\nqualify monkey vigor X-ray nob idiot idiot oops cafe cafe nob yogurt\n** n\nravish monkey vigor X-ray nob idiot idiot oops cafe cafe nob yo[[of.png]]gurt"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "lamb\nmonkey\nnob",
+            "Reference": "r\nzen far transformer halo banana banana cafe cafe den[[ei.jpeg]]tist nob vigor ravish\n* s\napple groot transf*lamb*[[fi.jpeg]] transformer halo banana banana cafe cafe dentist nob vigor ravish\n** t\nbanana groot transformer halo banana banana caf[[gi.jpeg]]e cafe dentist nob vigor ravish\n** u\ncafe groot transformer halo banana banana cafe cafe dentist nob vigor ravish\n* v\ndentist groot transformer halo banana banana cafe cafe dentist nob vigor ravish\n** w\nessence groot tran*monkey*sfo[[hi.jpg]]rmer halo banana banana cafe cafe dentist nob vigor ravish\n** x\nfar groot transformer halo banana banana cafe cafe dentist nob vigor*nob*[[ii.jpeg]]ot transformer halo banana banana cafe cafe dentist nob vigor ravish"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for single star, i.e., *, the content between two occurrences of single star is the bold texts. Note that the bold range should start from the single star occurring at i-th spot throughout the whole input file, where i is odd, and end with single star occurring at jth spot where j is even. For example, text between single star appearing first and second time."
+}

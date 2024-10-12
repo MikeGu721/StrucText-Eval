@@ -1,0 +1,46 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "dj.jpg",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "g\nidiot transformer halo qualify wake zen\n# h\njargon transformer halo qualify wake ze![alt](dj.jpg \"hover text\")n",
+    "timestamp": "08_28_2024_23_21_26.917414",
+    "input_hash": -6554217269185962617,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "of.jpeg",
+            "Reference": "g\nessence cafe X-ray monkey groot vigor\n# h\nfar cafe X-ray monkey g![alt](of.jpeg \"hover text\")root vigor"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ke.jpg",
+            "Reference": "s\ntransformer banana lamb jargon oops halo\n# t\nunique banana lamb jargon oo![alt](ke.jpg \"hover text\")ps halo"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "tf.png",
+            "Reference": "f\noops monkey oops unique cafe yogurt\n# g\nperish monkey oops unique**qualify**![alt](tf.png \"hover text\") oops unique cafe yogurt"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ii.jpeg",
+            "Reference": "a\napple ravish kangaroo n**monkey**ob lamb lamb\n# b\nbanana ravish ka**nob**ngaro![alt](ii.jpeg \"hover text\")o nob lamb lamb"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "gf.gif",
+            "Reference": "b\ndentist X-ray dentist kangaroo **far**unique cafe\n# c\nessence X-ray dentist kangaroo uni**groot**![alt](gf.gif \"hover text\")ray dentist kangaroo unique cafe"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching ![*](TARGET \"*\"), the TARGET part is filename. Star means any text is possible."
+}

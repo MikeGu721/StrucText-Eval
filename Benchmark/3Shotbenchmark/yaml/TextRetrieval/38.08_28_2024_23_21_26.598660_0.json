@@ -1,0 +1,36 @@
+{
+    "Question": "What is the object with id l? The content should be an excerpt as it appears in the YAML file.",
+    "Answer": "id: \"l\"\nU: u,\nT: t,\nS: s,\nR: r,\nQ: q,\nsubs: []",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "id: \"k\"\nZ: z,\nY: y,\nX: x,\nW: w,\nV: v,\nsubs: \n- id: \"l\"\n  U: u,\n  T: t,\n  S: s,\n  R: r,\n  Q: q,\n  subs: []",
+    "timestamp": "08_28_2024_23_21_26.598660",
+    "input_hash": 6348830390031082023,
+    "examples": [
+        {
+            "Question": "What is the object with id f? The content should be an excerpt as it appears in the YAML file. ",
+            "Answer": "id: \"f\"\nZ: z,\nY: y,\nsubs: \n- id: \"g\"\n  X: x,\n  subs: []",
+            "Reference": "id: \"f\"\nZ: z,\nY: y,\nsubs: \n- id: \"g\"\n  X: x,\n  subs: []"
+        },
+        {
+            "Question": "What is the object with id x? The content should be an excerpt as it appears in the YAML file. ",
+            "Answer": "id: \"x\"\nZ: i,\nY: h,\nX: g,\nW: f,\nsubs: \n- id: \"y\"\n  V: e,\n  U: d,\n  T: c,\n  subs: []",
+            "Reference": "id: \"x\"\nZ: i,\nY: h,\nX: g,\nW: f,\nsubs: \n- id: \"y\"\n  V: e,\n  U: d,\n  T: c,\n  subs: []"
+        },
+        {
+            "Question": "What is the object with id ab? The content should be an excerpt as it appears in the YAML file. ",
+            "Answer": "id: \"ab\"\nU: d,\nT: c,\nS: b,\nR: a,\nsubs: []",
+            "Reference": "id: \"z\"\nZ: i,\nY: h,\nX: g,\nW: f,\nV: e,\nsubs: \n- id: \"ab\"\n  U: d,\n  T: c,\n  S: b,\n  R: a,\n  subs: []"
+        }
+    ],
+    "RuleHint": "To find the object with specified id, you need to first parse the yaml file and get the outermost object, starting from which search the subs field recursively and looking for the desired value in id field for each visited object. Retrieve the content of that object once found."
+}

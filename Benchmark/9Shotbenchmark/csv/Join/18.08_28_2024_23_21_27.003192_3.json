@@ -1,0 +1,66 @@
+{
+    "Question": "How many people who work in TX are taller than 162?",
+    "Answer": "0",
+    "Label": {
+        "typename": "csv",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 9,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Join"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,male,43,f,180,86,mulatto\n\nprimeKey,status,salary,company,location\na,unemployed,784522,Twitter,WA",
+    "timestamp": "08_28_2024_23_21_27.003192",
+    "input_hash": 8368062891302830477,
+    "examples": [
+        {
+            "Question": "\nHow many people who work in NY are taller than 174?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,24,f,196,149,swarthy\n\nprimeKey,status,salary,company,location\na,unemployed,246126,Google,CA"
+        },
+        {
+            "Question": "\nHow many people who work in NY are taller than 157?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,47,t,138,132,olive\n\nprimeKey,status,salary,company,location\na,retired,324213,NVIDIA,NY"
+        },
+        {
+            "Question": "\nHow many people who work in IL are taller than 152?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,36,e,183,141,brown\n\nprimeKey,status,salary,company,location\na,unemployed,312913,OPENAI,GA"
+        },
+        {
+            "Question": "\nHow many people who work in CA are taller than 172?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,55,o,124,165,swarthy\n\nprimeKey,status,salary,company,location\na,retired,713520,Microsoft,NY"
+        },
+        {
+            "Question": "\nHow many people who work in TX are taller than 166?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,66,i,199,174,swarthy\n\nprimeKey,status,salary,company,location\na,retired,812190,OPENAI,NY"
+        },
+        {
+            "Question": "\nHow many people who work in WA are taller than 161?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,25,g,138,85,swarthy\n\nprimeKey,status,salary,company,location\na,employed,89073,Microsoft,CA"
+        },
+        {
+            "Question": "\nHow many people who work in TX are taller than 178?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,23,w,212,120,swarthy\n\nprimeKey,status,salary,company,location\na,unemployed,951287,NVIDIA,HI"
+        },
+        {
+            "Question": "\nHow many people who work in HI are taller than 173?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,60,g,207,155,mulatto\n\nprimeKey,status,salary,company,location\na,unemployed,512880,Google,TX"
+        },
+        {
+            "Question": "\nHow many people who work in CA are taller than 175?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,43,t,168,126,brown\n\nprimeKey,status,salary,company,location\na,unemployed,333356,Meta,GA"
+        }
+    ],
+    "RuleHint": "To get the number of people living in specified city who are also taller than threshold, you need to first join the two table on primeKey, and check each row of joined table for lines that satisfies both condition, i.e., lines with city specified in query and height strictly greater than threshold. The total number of such rows is the right answer."
+}

@@ -1,0 +1,66 @@
+{
+    "Question": "What is the age of record with primeKey a",
+    "Answer": "31",
+    "Label": {
+        "typename": "csv",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 9,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,male,31,v,130,123,white\n\nprimeKey,status,salary,company,location\na,retired,252968,Apple,CA",
+    "timestamp": "08_28_2024_23_21_26.713093",
+    "input_hash": 8970424123690239101,
+    "examples": [
+        {
+            "Question": "\nWhat is the location of record with primeKey a\n",
+            "Answer": "CA",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,64,q,205,90,mulatto\n\nprimeKey,status,salary,company,location\na,unemployed,283072,Twitter,CA"
+        },
+        {
+            "Question": "\nWhat is the age of record with primeKey a\n",
+            "Answer": "62",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,62,r,163,119,white\n\nprimeKey,status,salary,company,location\na,employed,473252,NVIDIA,TX"
+        },
+        {
+            "Question": "\nWhat is the weight of record with primeKey a\n",
+            "Answer": "112",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,65,f,203,112,black\n\nprimeKey,status,salary,company,location\na,employed,861973,Apple,HI"
+        },
+        {
+            "Question": "\nWhat is the status of record with primeKey a\n",
+            "Answer": "employed",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,65,a,148,83,black\n\nprimeKey,status,salary,company,location\na,employed,454152,Microsoft,HI"
+        },
+        {
+            "Question": "\nWhat is the location of record with primeKey a\n",
+            "Answer": "GA",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,30,r,131,101,olive\n\nprimeKey,status,salary,company,location\na,retired,157217,Microsoft,GA"
+        },
+        {
+            "Question": "\nWhat is the height of record with primeKey a\n",
+            "Answer": "184",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,67,n,184,124,brown\n\nprimeKey,status,salary,company,location\na,retired,57143,Microsoft,WA"
+        },
+        {
+            "Question": "\nWhat is the name of record with primeKey a\n",
+            "Answer": "y",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,17,y,214,171,black\n\nprimeKey,status,salary,company,location\na,employed,674474,Apple,HI"
+        },
+        {
+            "Question": "\nWhat is the gender of record with primeKey a\n",
+            "Answer": "female",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,39,p,203,83,mulatto\n\nprimeKey,status,salary,company,location\na,retired,869360,Meta,TX"
+        },
+        {
+            "Question": "\nWhat is the status of record with primeKey a\n",
+            "Answer": "retired",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,33,p,120,73,swarthy\n\nprimeKey,status,salary,company,location\na,retired,534375,Twitter,HI"
+        }
+    ],
+    "RuleHint": "To find the value of specific field of record with specified primeKey. You have to first, locate the line with the specific primeKey. Then find the required value under the desired column in that line."
+}

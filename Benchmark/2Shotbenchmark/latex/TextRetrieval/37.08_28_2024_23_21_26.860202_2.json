@@ -1,0 +1,31 @@
+{
+    "Question": "Extract all included figure files. Print those file names separated by \\n.",
+    "Answer": "No figure file is included in the file.",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "m\ndentist \\textbf{jargon}vigor halo far perish unique\n\\section{n}\nessence vigor halo far perish unique",
+    "timestamp": "08_28_2024_23_21_26.860202",
+    "input_hash": -7677687007491894613,
+    "examples": [
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "No figure file is included in the file.",
+            "Reference": "g\nbanana groot gr\\textbf{X-ray}oot qualify salvage banana\n\\section{h}\ncafe groot groot qualify\\textbf{yogurt} salvage banana"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "pi.gif",
+            "Reference": "f\ncafe yogurt far oops kangaroo gr\\textbf{kangaroo}\\includegraphics[width=0.5\\textwidth]{pi.gif} groot\n\\section{g}\ndentist yogurt far oops kang\\textbf{lamb}aroo groot"
+        }
+    ],
+    "RuleHint": "To find the image files imported, search for pattern \\\\includegraphics[*]{TARGET}, the TARGET part is the filename. Star means any text is possible."
+}

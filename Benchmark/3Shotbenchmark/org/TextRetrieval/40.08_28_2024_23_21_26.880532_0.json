@@ -1,0 +1,36 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "lamb\nkangaroo",
+    "Label": {
+        "typename": "org",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "f\njargon dentist essence zen nob nob dentist wake salvage lamb monkey qualify\n* g\nkangaroo dentist essence zen nob nob dentist wake salvage lamb monkey qualify\n** h\nlamb dentist essence zen nob nob dentist wake salvage lamb monkey qualify\n** i\nmonkey dentist essence zen nob nob dentist wake salvage l*kangaroo*amb monkey qualify\n* j\nnob[[uh.gif]] dentist essence zen nob nob dentist wake salvage lamb monkey qualify\n** k\noops dentist essence zen nob nob d*lamb*entist wake salvage lamb monkey qualify\n** l\nperish dentist essence zen nob nob dentist wake salvage lamb monkey qualify",
+    "timestamp": "08_28_2024_23_21_26.880532",
+    "input_hash": -3671511383540034256,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "jargon\nkangaroo",
+            "Reference": "u\nqualify cafe halo banana X-ray idiot ca*jargon*fe zen dentist kangaroo halo idiot\n* v\nravi[[hg.jpeg]]sh cafe halo banana X-ray idiot cafe zen dentist kangaroo halo idiot\n** w\nsalvage cafe halo banana X-ray idiot cafe zen dentist kangaroo halo idiot\n** x\ntransformer cafe halo banana X-ray idiot cafe zen dentist kangaroo halo id[[ig.jpg]]iot\n* y\nunique cafe halo bana[[jg.jpg]]na X-ray idiot cafe zen dentist kangaroo halo idiot\n** z\nvigor cafe halo banana X-ray idiot cafe zen dentist kangaroo halo idiot\n** ab\nwake cafe halo banana X-ray idiot *kangaroo*[[kg.jpg]] idiot cafe zen dentist kangaroo halo idiot"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "yogurt\nbanana banana\nzen\napple banana\nX-ray",
+            "Reference": "d\nwake banana unique X-ray vigor lamb dentist kangaroo banana unique transformer kan*X-ray*garoo\n* e\nX-ray banana unique X-ray vigor lamb dent[[yd.jpg]]ist kangaroo banana unique transformer kangaroo\n** f\nyogurt banana unique X-ray vigor lamb dentis*yogurt*t kangaroo banana unique transformer kangaroo\n** g\nzen banana unique X-ray vigor lamb dentist kangaroo banana unique transfo*zen*rmer kangaroo\n* h\napple cafe unique X-ray vigor lamb dentist kangaroo banana unique*apple banana* transformer kangaroo\n** i\nbanana cafe unique X-ray vigor lamb dentist kangaroo banana unique*banana banana*[[zd.jpg]]anana cafe unique X-ray vigor lamb dentist kangaroo banana unique transformer kangaroo\n** j\ncafe cafe unique X-ray vigor lamb dentist kangaroo banana unique transformer kangaroo"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "dentist\nfar\nessence\ngroot",
+            "Reference": "e\ntransformer lamb X-ra[[xi.gif]]y ravish nob essence zen monkey zen banana apple yogurt\n* f\n[[yi.gif]]unique lamb X-ray ravish nob essence zen monkey zen banana apple yogurt\n** g\nv*dentist*igor lamb X-ray ravish nob essence zen monkey zen banana apple yogurt\n** h\nwa*essence*ke lamb X-ray ravish nob essence zen monkey zen banana apple yogurt\n* i\nX-ray lamb X-ray ravish nob essence zen monkey zen banana ap*far*ple yogurt\n** j\nyogurt lamb X-ray ravish n*groot*ob essence zen monkey zen banana apple yogurt\n** k\nzen lamb X-ray ravish nob essence zen monkey zen banana apple yogu[[zi.jpeg]]rt"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for single star, i.e., *, the content between two occurrences of single star is the bold texts. Note that the bold range should start from the single star occurring at i-th spot throughout the whole input file, where i is odd, and end with single star occurring at jth spot where j is even. For example, text between single star appearing first and second time."
+}

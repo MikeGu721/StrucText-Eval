@@ -1,0 +1,36 @@
+{
+    "Question": "What is the content of 2th subsection under 2th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section.",
+    "Answer": "\\section{x}\nyogurt halo ravish X-ray cafe far yogurt cafe monkey halo monkey yogurt",
+    "Label": {
+        "typename": "latex",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "r\nsalvage halo ravish X-ray cafe far yogurt cafe monkey \\includegraphics[width=0.5\\textwidth]{hf.jpeg}halo monkey yogurt\n\\section{s}\ntransformer halo ravish X-ray cafe far \\includegraphics[width=0.5\\textwidth]{if.png}yogurt cafe monkey halo monkey yogurt\n\\section{t}\nunique halo ravish X-ray cafe far \\includegraphics[width=0.5\\textwidth]{jf.jpg}yogurt cafe monkey halo monkey yogurt\n\\section{u}\nvigor halo rav\\includegraphics[width=0.5\\textwidth]{kf.jpg}ish X-ray cafe far yogurt cafe monkey halo monkey yogurt\n\\section{v}\nwake halo ravish X-ray cafe far yogurt \\includegraphics[width=0.5\\textwidth]{lf.png}cafe monkey halo monkey yogurt\n\\section{w}\nX-ray halo ravish X-ray cafe far yogurt c\\includegraphics[width=0.5\\textwidth]{mf.jpeg}afe monkey halo monkey yogurt\n\\section{x}\nyogurt halo ravish X-ray cafe far yogurt cafe monkey halo monkey yogurt",
+    "timestamp": "08_28_2024_23_21_26.878995",
+    "input_hash": 7080470477984270577,
+    "examples": [
+        {
+            "Question": "What is the content of 2th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{s}\ntransformer qual\\includegraphics[width=0.5\\textwidth]{wg.png}ify salvage lamb apple transformer zen essence groot yogurt qualify\n\\section{t}\nunique qualify salvage lamb apple transformer zen \\includegraphics[width=0.5\\textwidth]{xg.gif}essence groot yogurt qualify\n\\section{u}\nvigor qualify salvage lamb apple transformer zen essence groot yogur\\textbf{yogurt}\\includegraphics[width=0.5\\textwidth]{yg.jpg}yogurt qualify",
+            "Reference": "o\n\\textbf{wake}perish qualify salvage lamb apple tran\\includegraphics[width=0.5\\textwidth]{ug.png}sformer zen essence groot yogurt qualify\n\\section{p}\nqualify qualify salvage lamb apple transformer zen essence groot yogurt qualify\n\\section{q}\nravish qualify salvage lamb apple transformer zen essence groot yogurt qualify\n\\section{r}\nsalvage qualify salvage lamb apple t\\textbf{X-ray}ransformer zen essence groot yogu\\includegraphics[width=0.5\\textwidth]{vg.png}rt qualify\n\\section{s}\ntransformer qual\\includegraphics[width=0.5\\textwidth]{wg.png}ify salvage lamb apple transformer zen essence groot yogurt qualify\n\\section{t}\nunique qualify salvage lamb apple transformer zen \\includegraphics[width=0.5\\textwidth]{xg.gif}essence groot yogurt qualify\n\\section{u}\nvigor qualify salvage lamb apple transformer zen essence groot yogur\\textbf{yogurt}\\includegraphics[width=0.5\\textwidth]{yg.jpg}yogurt qualify"
+        },
+        {
+            "Question": "What is the content of 1th subsection under 2th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{g}\ntransformer wake dentist monkey monkey oops groot c\\textbf{apple banana}afe jargon kangaroo far\\includegraphics[width=0.5\\textwidth]{ni.gif} halo",
+            "Reference": "b\noops wake dentist monkey monkey oops gro\\textbf{wake}ot cafe jargon kangaroo far halo\n\\section{c}\nperish wake dentist monkey monkey oops groot cafe\\includegraphics[width=0.5\\textwidth]{ki.jpg} jargon kangaroo far halo\n\\section{d}\nqualify wake dentist monkey monkey oops groot cafe jargon kangaroo fa\\textbf{X-ray}\\includegraphics[width=0.5\\textwidth]{li.jpeg}ake dentist monkey monkey oops groot cafe jargon kangaroo far halo\n\\section{e}\nravish wake de\\textbf{yogurt}\\includegraphics[width=0.5\\textwidth]{mi.jpg}ake dentist monkey monkey oops groot cafe jargon kangaroo far halo\n\\section{f}\nsalvage wake dentist monkey monkey oops gr\\textbf{zen}oot cafe jargon kangaroo far halo\n\\section{g}\ntransformer wake dentist monkey monkey oops groot c\\textbf{apple banana}afe jargon kangaroo far\\includegraphics[width=0.5\\textwidth]{ni.gif} halo\n\\section{h}\nunique wake dentist monkey monkey oops groot cafe j\\textbf{banana banana}argon kangaroo far halo"
+        },
+        {
+            "Question": "What is the content of 1th subsection under 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{v}\nwake kangaroo lamb far far nob qualify kangaroo kangaroo banana nob far",
+            "Reference": "t\nun\\textbf{kangaroo}ique kangaroo lamb far\\includegraphics[width=0.5\\textwidth]{zh.gif} far nob qualify kangaroo kangaroo banana nob far\n\\section{u}\nvigor k\\includegraphics[width=0.5\\textwidth]{ai.png}angaroo lamb far far nob qualify kangaroo kangaroo banana nob far\n\\section{v}\nwake kangaroo lamb far far nob qualify kangaroo kangaroo banana nob far\n\\section{w}\n\\textbf{lamb}X-ray kangaroo lamb far far nob qualify kangaroo kangaroo banana n\\includegraphics[width=0.5\\textwidth]{bi.png}ob far\n\\section{x}\nyogurt kangaroo lamb far far nob qualify kangaroo kangaroo banana nob far\n\\section{y}\nzen kangaroo lamb far far nob qualify\\includegraphics[width=0.5\\textwidth]{ci.jpg} kangaroo kangaroo banana nob far\n\\section{z}\napple lamb lamb far far nob qualify kangaroo kangaroo banana nob far"
+        }
+    ],
+    "RuleHint": "Note that section title is enclosed by \\\\section{}, and \\\\subsection for subsection, \\\\subsubsection for subsubsection. To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

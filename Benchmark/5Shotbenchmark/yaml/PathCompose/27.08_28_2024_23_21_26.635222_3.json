@@ -1,0 +1,46 @@
+{
+    "Question": "How to access value \"zy\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+    "Answer": "obj[\"subs\"][0][\"S\"]",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathCompose"
+        ]
+    },
+    "Reference": "id: \"l\"\nZ: g,\nY: f,\nX: e,\nW: d,\nV: c,\nsubs: \n- id: \"m\"\n  U: b,\n  T: a,\n  S: zy,\n  R: yy,\n  subs: []",
+    "timestamp": "08_28_2024_23_21_26.635222",
+    "input_hash": -4596183734100592652,
+    "examples": [
+        {
+            "Question": "How to access value \"j\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"T\"]",
+            "Reference": "id: \"h\"\nZ: p,\nY: o,\nX: n,\nW: m,\nV: l,\nsubs: \n- id: \"i\"\n  U: k,\n  T: j,\n  S: i,\n  subs: []"
+        },
+        {
+            "Question": "How to access value \"j\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"W\"]",
+            "Reference": "id: \"a\"\nZ: m,\nY: l,\nX: k,\nW: j,\nsubs: \n- id: \"b\"\n  V: i,\n  U: h,\n  T: g,\n  S: f,\n  R: e,\n  Q: d,\n  subs: []"
+        },
+        {
+            "Question": "How to access value \"f\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"X\"]",
+            "Reference": "id: \"n\"\nZ: h,\nY: g,\nX: f,\nsubs: \n- id: \"o\"\n  W: e,\n  V: d,\n  U: c,\n  T: b,\n  S: a,\n  R: zy,\n  subs: []"
+        },
+        {
+            "Question": "How to access value \"yy\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"X\"]",
+            "Reference": "id: \"f\"\nZ: a,\nY: zy,\nX: yy,\nsubs: \n- id: \"g\"\n  W: xy,\n  V: wy,\n  U: vy,\n  T: uy,\n  S: ty,\n  subs: []"
+        },
+        {
+            "Question": "How to access value \"f\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"Y\"]",
+            "Reference": "id: \"o\"\nZ: g,\nY: f,\nX: e,\nW: d,\nV: c,\nsubs: \n- id: \"p\"\n  U: b,\n  T: a,\n  S: zy,\n  subs: []"
+        }
+    ],
+    "RuleHint": "To get the path to access specified value. You have to do a recursive search along the subs fields, starting from the outermost parsed object. For each visited object, check each fields except for subs, and record the path along the way, i.e., subs inside brackets and index into subs inside brackets, and at which field you find the value."
+}

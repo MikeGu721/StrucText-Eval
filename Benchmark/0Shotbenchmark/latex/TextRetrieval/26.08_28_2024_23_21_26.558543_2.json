@@ -1,0 +1,19 @@
+{
+    "Question": "Extract all included figure files. Print those file names separated by \\n.",
+    "Answer": "ji.jpg\nki.jpeg",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "n\nperish oops apple \\textbf{groot}\\includegraphics[width=0.5\\textwidth]{ji.jpg}e transformer oops monkey\n\\section{o}\nqua\\includegraphics[width=0.5\\textwidth]{ki.jpeg}lify oops apple transformer oops monkey",
+    "timestamp": "08_28_2024_23_21_26.558543",
+    "input_hash": -3756510393591434185,
+    "RuleHint": "To find the image files imported, search for pattern \\\\includegraphics[*]{TARGET}, the TARGET part is the filename. Star means any text is possible."
+}

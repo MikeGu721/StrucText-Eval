@@ -1,0 +1,36 @@
+{
+    "Question": "What is the first object's id of subs?",
+    "Answer": "g",
+    "Label": {
+        "typename": "json",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "{\n\"id\":\"f\",\n\"Z\":\"n\",\n\"Y\":\"m\",\n\"X\":\"l\",\n\"subs\":[\n {\n \"id\":\"g\",\n \"W\":\"k\",\n \"subs\":[\n  {\n  \"id\":\"h\",\n  \"V\":\"j\",\n  \"U\":\"i\",\n  \"T\":\"h\",\n  \"S\":\"g\",\n  \"R\":\"f\",\n  \"Q\":\"e\",\n  \"P\":\"d\",\n  \"O\":\"c\",\n  \"N\":\"b\",\n  \"M\":\"a\",\n  \"L\":\"zy\",\n  \"K\":\"yy\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"i\",\n  \"J\":\"xy\",\n  \"I\":\"wy\",\n  \"H\":\"vy\",\n  \"G\":\"uy\",\n  \"F\":\"ty\",\n  \"E\":\"sy\",\n  \"D\":\"ry\",\n  \"C\":\"qy\",\n  \"B\":\"py\",\n  \"subs\":[]\n  }\n ]\n },\n {\n \"id\":\"j\",\n \"A\":\"oy\",\n \"subs\":[\n  {\n  \"id\":\"k\",\n  \"ZY\":\"ny\",\n  \"YY\":\"my\",\n  \"XY\":\"ly\",\n  \"WY\":\"ky\",\n  \"VY\":\"jy\",\n  \"UY\":\"iy\",\n  \"TY\":\"hy\",\n  \"SY\":\"gy\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"l\",\n  \"RY\":\"fy\",\n  \"QY\":\"ey\",\n  \"PY\":\"dy\",\n  \"OY\":\"cy\",\n  \"NY\":\"by\",\n  \"MY\":\"ay\",\n  \"LY\":\"zx\",\n  \"KY\":\"yx\",\n  \"JY\":\"xx\",\n  \"IY\":\"wx\",\n  \"HY\":\"vx\",\n  \"GY\":\"ux\",\n  \"subs\":[]\n  }\n ]\n }\n]\n}",
+    "timestamp": "08_28_2024_23_21_26.594312",
+    "input_hash": -278822447307021442,
+    "examples": [
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "c",
+            "Reference": "{\n\"id\":\"b\",\n\"Z\":\"c\",\n\"Y\":\"b\",\n\"X\":\"a\",\n\"W\":\"zy\",\n\"V\":\"yy\",\n\"U\":\"xy\",\n\"T\":\"wy\",\n\"S\":\"vy\",\n\"R\":\"uy\",\n\"subs\":[\n {\n \"id\":\"c\",\n \"Q\":\"ty\",\n \"P\":\"sy\",\n \"O\":\"ry\",\n \"N\":\"qy\",\n \"M\":\"py\",\n \"L\":\"oy\",\n \"K\":\"ny\",\n \"J\":\"my\",\n \"I\":\"ly\",\n \"H\":\"ky\",\n \"G\":\"jy\",\n \"F\":\"iy\",\n \"subs\":[\n  {\n  \"id\":\"d\",\n  \"E\":\"hy\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"e\",\n  \"D\":\"gy\",\n  \"C\":\"fy\",\n  \"subs\":[]\n  }\n ]\n },\n {\n \"id\":\"f\",\n \"B\":\"ey\",\n \"A\":\"dy\",\n \"ZY\":\"cy\",\n \"YY\":\"by\",\n \"XY\":\"ay\",\n \"WY\":\"zx\",\n \"VY\":\"yx\",\n \"UY\":\"xx\",\n \"TY\":\"wx\",\n \"SY\":\"vx\",\n \"RY\":\"ux\",\n \"subs\":[\n  {\n  \"id\":\"g\",\n  \"QY\":\"tx\",\n  \"PY\":\"sx\",\n  \"OY\":\"rx\",\n  \"NY\":\"qx\",\n  \"MY\":\"px\",\n  \"LY\":\"ox\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"h\",\n  \"KY\":\"nx\",\n  \"JY\":\"mx\",\n  \"IY\":\"lx\",\n  \"HY\":\"kx\",\n  \"subs\":[]\n  }\n ]\n }\n]\n}"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "b",
+            "Reference": "{\n\"id\":\"a\",\n\"Z\":\"j\",\n\"Y\":\"i\",\n\"X\":\"h\",\n\"W\":\"g\",\n\"V\":\"f\",\n\"U\":\"e\",\n\"T\":\"d\",\n\"subs\":[\n {\n \"id\":\"b\",\n \"S\":\"c\",\n \"subs\":[\n  {\n  \"id\":\"c\",\n  \"R\":\"b\",\n  \"Q\":\"a\",\n  \"P\":\"zy\",\n  \"O\":\"yy\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"d\",\n  \"N\":\"xy\",\n  \"M\":\"wy\",\n  \"subs\":[]\n  }\n ]\n },\n {\n \"id\":\"e\",\n \"L\":\"vy\",\n \"K\":\"uy\",\n \"J\":\"ty\",\n \"I\":\"sy\",\n \"H\":\"ry\",\n \"G\":\"qy\",\n \"F\":\"py\",\n \"E\":\"oy\",\n \"D\":\"ny\",\n \"C\":\"my\",\n \"subs\":[\n  {\n  \"id\":\"f\",\n  \"B\":\"ly\",\n  \"A\":\"ky\",\n  \"ZY\":\"jy\",\n  \"YY\":\"iy\",\n  \"XY\":\"hy\",\n  \"WY\":\"gy\",\n  \"VY\":\"fy\",\n  \"UY\":\"ey\",\n  \"TY\":\"dy\",\n  \"SY\":\"cy\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"g\",\n  \"RY\":\"by\",\n  \"QY\":\"ay\",\n  \"PY\":\"zx\",\n  \"OY\":\"yx\",\n  \"NY\":\"xx\",\n  \"MY\":\"wx\",\n  \"LY\":\"vx\",\n  \"subs\":[]\n  }\n ]\n }\n]\n}"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "r",
+            "Reference": "{\n\"id\":\"q\",\n\"Z\":\"w\",\n\"subs\":[\n {\n \"id\":\"r\",\n \"Y\":\"v\",\n \"X\":\"u\",\n \"W\":\"t\",\n \"subs\":[\n  {\n  \"id\":\"s\",\n  \"V\":\"s\",\n  \"U\":\"r\",\n  \"T\":\"q\",\n  \"S\":\"p\",\n  \"R\":\"o\",\n  \"Q\":\"n\",\n  \"P\":\"m\",\n  \"O\":\"l\",\n  \"N\":\"k\",\n  \"M\":\"j\",\n  \"L\":\"i\",\n  \"K\":\"h\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"t\",\n  \"J\":\"g\",\n  \"I\":\"f\",\n  \"H\":\"e\",\n  \"G\":\"d\",\n  \"subs\":[]\n  }\n ]\n },\n {\n \"id\":\"u\",\n \"F\":\"c\",\n \"E\":\"b\",\n \"D\":\"a\",\n \"C\":\"zy\",\n \"B\":\"yy\",\n \"A\":\"xy\",\n \"ZY\":\"wy\",\n \"YY\":\"vy\",\n \"XY\":\"uy\",\n \"subs\":[\n  {\n  \"id\":\"v\",\n  \"WY\":\"ty\",\n  \"VY\":\"sy\",\n  \"UY\":\"ry\",\n  \"TY\":\"qy\",\n  \"SY\":\"py\",\n  \"RY\":\"oy\",\n  \"QY\":\"ny\",\n  \"PY\":\"my\",\n  \"OY\":\"ly\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"w\",\n  \"NY\":\"ky\",\n  \"MY\":\"jy\",\n  \"LY\":\"iy\",\n  \"KY\":\"hy\",\n  \"JY\":\"gy\",\n  \"IY\":\"fy\",\n  \"HY\":\"ey\",\n  \"GY\":\"dy\",\n  \"FY\":\"cy\",\n  \"EY\":\"by\",\n  \"subs\":[]\n  }\n ]\n }\n]\n}"
+        }
+    ],
+    "RuleHint": "To find the first object's id of subs, first parse the json file and get the outermost object, in the outermost object's subs list, get the first element. That element is another object, and its id is the answer."
+}

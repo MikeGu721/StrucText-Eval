@@ -1,0 +1,51 @@
+{
+    "Question": "What is the tag with attribute of value qy?",
+    "Answer": "E",
+    "Label": {
+        "typename": "xml",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 6,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"r\" Y=\"q\" X=\"p\" W=\"o\" V=\"n\">\n <B U=\"m\" T=\"l\" S=\"k\" R=\"j\">\n  <C Q=\"i\" P=\"h\" O=\"g\">\n   cafe\n  </C>\n  <D N=\"f\" M=\"e\" L=\"d\" K=\"c\" J=\"b\" I=\"a\" H=\"zy\" G=\"yy\" F=\"xy\" E=\"wy\" D=\"vy\" C=\"uy\">\n   dentist\n  </D>\n  banana\n </B>\n <E B=\"ty\" A=\"sy\" ZY=\"ry\" YY=\"qy\" XY=\"py\" WY=\"oy\" VY=\"ny\" UY=\"my\">\n  <F TY=\"ly\" SY=\"ky\" RY=\"jy\" QY=\"iy\" PY=\"hy\" OY=\"gy\" NY=\"fy\" MY=\"ey\">\n   far\n  </F>\n  <G LY=\"dy\" KY=\"cy\">\n   groot\n  </G>\n  essence\n </E>\n apple\n</A>",
+    "timestamp": "08_28_2024_23_21_26.934319",
+    "input_hash": 3882751369414162033,
+    "examples": [
+        {
+            "Question": "What is the tag with attribute of value c?",
+            "Answer": "B",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"i\" Y=\"h\" X=\"g\" W=\"f\" V=\"e\" U=\"d\">\n <B T=\"c\" S=\"b\" R=\"a\" Q=\"zy\" P=\"yy\">\n  <C O=\"xy\" N=\"wy\" M=\"vy\" L=\"uy\" K=\"ty\" J=\"sy\" I=\"ry\" H=\"qy\">\n   cafe\n  </C>\n  <D G=\"py\" F=\"oy\" E=\"ny\" D=\"my\" C=\"ly\" B=\"ky\" A=\"jy\">\n   dentist\n  </D>\n  banana\n </B>\n <E ZY=\"iy\">\n  <F YY=\"hy\" XY=\"gy\" WY=\"fy\" VY=\"ey\">\n   far\n  </F>\n  <G UY=\"dy\" TY=\"cy\">\n   groot\n  </G>\n  essence\n </E>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the tag with attribute of value px?",
+            "Answer": "F",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"a\" Y=\"zy\" X=\"yy\" W=\"xy\" V=\"wy\" U=\"vy\" T=\"uy\" S=\"ty\" R=\"sy\">\n <B Q=\"ry\" P=\"qy\" O=\"py\" N=\"oy\">\n  <C M=\"ny\" L=\"my\" K=\"ly\" J=\"ky\" I=\"jy\" H=\"iy\" G=\"hy\" F=\"gy\" E=\"fy\">\n   cafe\n  </C>\n  <D D=\"ey\" C=\"dy\" B=\"cy\" A=\"by\" ZY=\"ay\" YY=\"zx\" XY=\"yx\" WY=\"xx\" VY=\"wx\" UY=\"vx\">\n   dentist\n  </D>\n  banana\n </B>\n <E TY=\"ux\" SY=\"tx\" RY=\"sx\" QY=\"rx\">\n  <F PY=\"qx\" OY=\"px\" NY=\"ox\" MY=\"nx\">\n   far\n  </F>\n  <G LY=\"mx\" KY=\"lx\" JY=\"kx\" IY=\"jx\" HY=\"ix\" GY=\"hx\" FY=\"gx\" EY=\"fx\" DY=\"ex\" CY=\"dx\" BY=\"cx\" AY=\"bx\">\n   groot\n  </G>\n  essence\n </E>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the tag with attribute of value b?",
+            "Answer": "A",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"b\" Y=\"a\" X=\"zy\" W=\"yy\">\n <B V=\"xy\">\n  <C U=\"wy\" T=\"vy\" S=\"uy\" R=\"ty\">\n   cafe\n  </C>\n  <D Q=\"sy\" P=\"ry\" O=\"qy\" N=\"py\" M=\"oy\">\n   dentist\n  </D>\n  banana\n </B>\n <E L=\"ny\" K=\"my\" J=\"ly\" I=\"ky\">\n  <F H=\"jy\" G=\"iy\" F=\"hy\" E=\"gy\" D=\"fy\" C=\"ey\" B=\"dy\" A=\"cy\" ZY=\"by\" YY=\"ay\" XY=\"zx\" WY=\"yx\">\n   far\n  </F>\n  <G VY=\"xx\" UY=\"wx\" TY=\"vx\" SY=\"ux\" RY=\"tx\" QY=\"sx\" PY=\"rx\" OY=\"qx\">\n   groot\n  </G>\n  essence\n </E>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the tag with attribute of value my?",
+            "Answer": "F",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"r\" Y=\"q\" X=\"p\" W=\"o\" V=\"n\" U=\"m\">\n <B T=\"l\" S=\"k\" R=\"j\" Q=\"i\" P=\"h\" O=\"g\">\n  <C N=\"f\">\n   cafe\n  </C>\n  <D M=\"e\" L=\"d\" K=\"c\" J=\"b\">\n   dentist\n  </D>\n  banana\n </B>\n <E I=\"a\" H=\"zy\" G=\"yy\" F=\"xy\" E=\"wy\" D=\"vy\" C=\"uy\" B=\"ty\" A=\"sy\" ZY=\"ry\">\n  <F YY=\"qy\" XY=\"py\" WY=\"oy\" VY=\"ny\" UY=\"my\" TY=\"ly\">\n   far\n  </F>\n  <G SY=\"ky\" RY=\"jy\" QY=\"iy\" PY=\"hy\" OY=\"gy\" NY=\"fy\">\n   groot\n  </G>\n  essence\n </E>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the tag with attribute of value iy?",
+            "Answer": "D",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"e\" Y=\"d\" X=\"c\" W=\"b\" V=\"a\" U=\"zy\" T=\"yy\">\n <B S=\"xy\" R=\"wy\" Q=\"vy\" P=\"uy\" O=\"ty\" N=\"sy\" M=\"ry\" L=\"qy\">\n  <C K=\"py\" J=\"oy\" I=\"ny\" H=\"my\" G=\"ly\" F=\"ky\">\n   cafe\n  </C>\n  <D E=\"jy\" D=\"iy\" C=\"hy\" B=\"gy\" A=\"fy\" ZY=\"ey\" YY=\"dy\" XY=\"cy\" WY=\"by\" VY=\"ay\" UY=\"zx\" TY=\"yx\">\n   dentist\n  </D>\n  banana\n </B>\n <E SY=\"xx\" RY=\"wx\">\n  <F QY=\"vx\" PY=\"ux\">\n   far\n  </F>\n  <G OY=\"tx\" NY=\"sx\" MY=\"rx\" LY=\"qx\" KY=\"px\" JY=\"ox\" IY=\"nx\" HY=\"mx\" GY=\"lx\" FY=\"kx\">\n   groot\n  </G>\n  essence\n </E>\n apple\n</A>"
+        },
+        {
+            "Question": "What is the tag with attribute of value d?",
+            "Answer": "C",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"s\" Y=\"r\" X=\"q\" W=\"p\" V=\"o\" U=\"n\" T=\"m\" S=\"l\">\n <B R=\"k\">\n  <C Q=\"j\" P=\"i\" O=\"h\" N=\"g\" M=\"f\" L=\"e\" K=\"d\" J=\"c\" I=\"b\" H=\"a\" G=\"zy\">\n   cafe\n  </C>\n  <D F=\"yy\" E=\"xy\" D=\"wy\" C=\"vy\" B=\"uy\">\n   dentist\n  </D>\n  banana\n </B>\n <E A=\"ty\" ZY=\"sy\" YY=\"ry\" XY=\"qy\" WY=\"py\" VY=\"oy\" UY=\"ny\">\n  <F TY=\"my\" SY=\"ly\" RY=\"ky\" QY=\"jy\" PY=\"iy\" OY=\"hy\" NY=\"gy\" MY=\"fy\" LY=\"ey\">\n   far\n  </F>\n  <G KY=\"dy\" JY=\"cy\" IY=\"by\" HY=\"ay\" GY=\"zx\">\n   groot\n  </G>\n  essence\n </E>\n apple\n</A>"
+        }
+    ],
+    "RuleHint": "To find the tag name of particular attribute value, just search the file for that value and find the surrounding left and right angles, i.e., boundary of tag. The word next to left angle is tag name."
+}

@@ -1,0 +1,31 @@
+{
+    "Question": "What is the first object's id of subs?",
+    "Answer": "t",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "id: \"s\"\nZ: l,\nY: k,\nX: j,\nsubs: \n- id: \"t\"\n  W: i,\n  V: h,\n  U: g,\n  T: f,\n  S: e,\n  R: d,\n  subs: []",
+    "timestamp": "08_28_2024_23_21_26.855745",
+    "input_hash": 7768482786571513609,
+    "examples": [
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "r",
+            "Reference": "id: \"q\"\nZ: r,\nY: q,\nX: p,\nsubs: \n- id: \"r\"\n  W: o,\n  V: n,\n  subs: []"
+        },
+        {
+            "Question": "What is the first object's id of subs?",
+            "Answer": "e",
+            "Reference": "id: \"d\"\nZ: f,\nY: e,\nX: d,\nW: c,\nV: b,\nsubs: \n- id: \"e\"\n  U: a,\n  T: zy,\n  S: yy,\n  R: xy,\n  Q: wy,\n  subs: []"
+        }
+    ],
+    "RuleHint": "To find the first object's id of subs, first parse the yaml file and get the outermost object, in the outermost object's subs list, get the first element. That element is another object, and its id is the answer."
+}

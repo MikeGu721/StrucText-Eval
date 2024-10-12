@@ -1,0 +1,66 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "cafe\ndentist\nessence",
+    "Label": {
+        "typename": "latex",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 9,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "b\nkangaroo vigor perish qualify yogurt apple salvage dentist lamb unique nob mon\\textbf{cafe}key\n\\section{c}\nlamb vigor perish qualify yogu\\textbf{dentist}rt apple salvage dentist lamb unique nob mo\\includegraphics[width=0.5\\textwidth]{rf.png}nkey\n\\section{d}\nmonkey vigor perish qualify yogurt apple salvage dentist lamb unique n\\textbf{essence}\\includegraphics[width=0.5\\textwidth]{sf.gif} dentist lamb unique nob monkey\n\\section{e}\nnob vigor perish qualify yogurt apple salvage dentist lamb unique nob monkey\n\\section{f}\noops vigor perish qualify yogurt apple salvage dentist lamb unique nob monkey\n\\section{g}\nperish vigor perish qual\\includegraphics[width=0.5\\textwidth]{tf.png}ify yogurt apple salvage dentist lamb unique nob monkey\n\\section{h}\nqualify vigor perish qualify yogurt apple salvage d\\includegraphics[width=0.5\\textwidth]{uf.gif}entist lamb unique nob monkey",
+    "timestamp": "08_28_2024_23_21_27.025916",
+    "input_hash": 5831400488704202800,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "salvage\nravish",
+            "Reference": "d\nunique perish jargon transformer perish salvage yogurt dentist idiot unique wake salvage\n\\section{e}\nvigor perish jargon transformer perish salvage yogurt dentist idiot unique wake salvage\n\\section{f}\nwake perish jargon transformer perish\\textbf{ravish} salvage yogurt dentist idiot unique wake salvage\n\\section{g}\nX-ray perish jargon transformer perish salvage yogurt dentist idiot unique wake salvage\n\\section{h}\nyogurt perish jargon transformer perish salvage yogurt dentist idio\\includegraphics[width=0.5\\textwidth]{sg.png}t unique wake salvage\n\\section{i}\nzen peris\\textbf{salvage}h jargon transformer perish salvage yogurt dentist idiot unique wake salvage\n\\section{j}\napple qualify jargon transformer perish salvage yogurt dentist idiot unique wake salvage"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "yogurt\nvigor\nwake\nzen\nX-ray",
+            "Reference": "a\nnob X-ray far cafe transformer jargo\\includegraphics[width=0.5\\textwidth]{mj.png}n jargon far unique dentist kangaroo lamb\n\\section{b}\noops X-ray far cafe transformer jargon jargon far unique dentist kangaroo lam\\textbf{vigor}\\includegraphics[width=0.5\\textwidth]{nj.jpg} X-ray far cafe transformer jargon jargon far unique dentist kangaroo lamb\n\\section{c}\nperish X-ray far cafe transformer jargon jargon far unique dentist kang\\textbf{wake}aroo lamb\n\\section{d}\nqualify X-ray far cafe transformer jargon jargon far unique dentist \\includegraphics[width=0.5\\textwidth]{oj.jpg}kangaroo lamb\n\\section{e}\nravish X-r\\textbf{X-ray}a\\includegraphics[width=0.5\\textwidth]{pj.gif}y far cafe transformer jargon jargon far unique dentist kangaroo lamb\n\\section{f}\nsalvage X-ray far cafe transformer jargon jargon far uniqu\\textbf{yogurt}e dentist kangaroo lam\\includegraphics[width=0.5\\textwidth]{qj.png}b\n\\section{g}\ntransformer X-ray far c\\textbf{zen}afe transformer jargon jargon far unique dentist\\includegraphics[width=0.5\\textwidth]{rj.gif} kangaroo lamb"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "oops\nperish\nnob\nmonkey",
+            "Reference": "w\nunique far jargon\\includegraphics[width=0.5\\textwidth]{cf.jpg} dentist unique kangaroo apple cafe essence vigor far dentist\n\\section{x}\nvigor far jargon dentist unique kangaroo apple cafe essence vigor far dentist\n\\section{y}\nwake far jargon dentist unique kangaroo apple cafe essence vigor far dentist\n\\section{z}\nX-ray far jargon dentist unique kangaroo apple ca\\textbf{monkey}\\includegraphics[width=0.5\\textwidth]{df.png} kangaroo apple cafe essence vigor far dentist\n\\section{ab}\nyogurt far jargon dentist unique kangaroo apple cafe essence vigor f\\textbf{nob}ar dentist\n\\section{bb}\nzen far jargon dentist uniq\\textbf{oops}\\includegraphics[width=0.5\\textwidth]{ef.jpg}ar jargon dentist unique kangaroo apple cafe essence vigor far dentist\n\\section{cb}\napple groot jargon dentist \\textbf{perish}unique kangaroo apple cafe essence vigor far dentist"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "lamb\nkangaroo\nnob\nmonkey",
+            "Reference": "w\nnob salvage cafe far\\textbf{kangaroo}\\includegraphics[width=0.5\\textwidth]{fe.jpg} salvage cafe far cafe essence nob qualify kangaroo perish apple lamb\n\\section{x}\noops salvage cafe far cafe essence nob \\textbf{lamb}qualify kangaroo perish apple lamb\n\\section{y}\nperish sa\\textbf{monkey}lvage cafe far cafe essence nob qualify kangaroo p\\includegraphics[width=0.5\\textwidth]{ge.jpeg}erish apple lamb\n\\section{z}\nqualify salvage cafe far cafe esse\\includegraphics[width=0.5\\textwidth]{he.jpg}nce nob qualify kangaroo perish apple lamb\n\\section{ab}\nravish salvage cafe far cafe essence nob qualify kangaroo perish \\includegraphics[width=0.5\\textwidth]{ie.gif}apple lamb\n\\section{bb}\nsalvage salvage cafe far cafe essence nob qualify kangaroo perish apple lamb\n\\section{cb}\ntransformer \\textbf{nob}salvage cafe far cafe\\includegraphics[width=0.5\\textwidth]{je.gif} essence nob qualify kangaroo perish apple lamb"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "oops\nnob\nmonkey",
+            "Reference": "s\nravish far perish transformer qualify kangaroo transformer groot halo yogurt transformer monkey\n\\section{t}\nsalvage far perish transf\\textbf{monkey}ormer qualify kangaroo transformer groot halo yogurt transformer monkey\n\\section{u}\ntransformer far perish transformer qualify kangaroo transformer groot halo yogurt transformer monkey\n\\section{v}\nunique far perish transformer qualify kangaroo transformer groot halo yogurt transform\\textbf{nob}\\includegraphics[width=0.5\\textwidth]{lj.jpeg}ogurt transformer monkey\n\\section{w}\nvigor fa\\textbf{oops}r perish transformer qualify kangaroo transformer groot halo yogurt transform\\includegraphics[width=0.5\\textwidth]{mj.png}er monkey\n\\section{x}\nwake far perish transformer quali\\includegraphics[width=0.5\\textwidth]{nj.jpg}fy kangaroo transformer groot halo yogurt transformer monkey\n\\section{y}\nX-ray far perish transformer qualify kangaroo transformer groot halo yogurt transformer monkey"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "yogurt\nX-ray\nzen\nwake",
+            "Reference": "q\ngroot i\\textbf{wake}diot dentist banana\\includegraphics[width=0.5\\textwidth]{lj.jpeg} zen idiot X-ray kangaroo X-ray X-ray X-ray zen\n\\section{r}\nhalo idiot dentist banana zen idiot X-ray kangaroo X-ray X-ray X-ray zen\n\\section{s}\nidiot idiot dentist banana zen idiot X-ray kangaroo X-ray X-ray X-ray\\textbf{X-ray}\\includegraphics[width=0.5\\textwidth]{mj.png}iot idiot dentist banana zen idiot X-ray kangaroo X-ray X-ray X-ray zen\n\\section{t}\njargon idiot dentist banana zen i\\textbf{yogurt}\\includegraphics[width=0.5\\textwidth]{nj.jpg}tist banana zen idiot X-ray kangaroo X-ray X-ray X-ray zen\n\\section{u}\nkangaroo idiot dentist banana zen idiot X-ray kang\\includegraphics[width=0.5\\textwidth]{oj.jpg}aroo X-ray X-ray X-ray zen\n\\section{v}\nlamb idiot dentist banana zen idiot X-ray kangaroo X-ray X-ray X-ra\\textbf{zen}\\includegraphics[width=0.5\\textwidth]{pj.gif}ray kangaroo X-ray X-ray X-ray zen\n\\section{w}\nmonkey idi\\includegraphics[width=0.5\\textwidth]{qj.png}ot dentist banana zen idiot X-ray kangaroo X-ray X-ray X-ray zen"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "nob",
+            "Reference": "z\nlamb dentist lamb zen far ravi\\includegraphics[width=0.5\\textwidth]{vh.jpg}sh perish essence yogurt essence yogurt banana\n\\section{ab}\nmonkey dentist lamb zen far ravish perish essence yogurt essence yogurt banana\n\\section{bb}\nnob dentist lamb zen far ravish per\\textbf{nob}\\includegraphics[width=0.5\\textwidth]{wh.png}rish essence yogurt essence yogurt banana\n\\section{cb}\noops dentist lamb zen far ravish perish essence yogurt essence yogurt banana\n\\section{db}\nperish dentist lamb zen far ravish perish essence yogurt essence yogurt banana\n\\section{eb}\nqualify dentist lamb zen far ravish perish essence yogurt essence yogurt banana\n\\section{fb}\nravish dentist lamb zen far ravish perish essence yogurt essence yogurt banana"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "lamb\nkangaroo",
+            "Reference": "i\nunique idiot halo idiot banana nob perish \\textbf{kangaroo}banana cafe dentist groo\\includegraphics[width=0.5\\textwidth]{ei.jpg}t monkey\n\\section{j}\nvigor idiot halo idiot banana nob perish banana cafe dentist groot monkey\n\\section{k}\nwake idiot halo idiot banana nob per\\includegraphics[width=0.5\\textwidth]{fi.jpg}ish banana cafe dentist groot monkey\n\\section{l}\nX-ray idiot halo idiot banana n\\includegraphics[width=0.5\\textwidth]{gi.png}ob perish banana cafe dentist groot monkey\n\\section{m}\nyogurt idiot halo idiot banana nob perish banana cafe dentist groot monkey\n\\section{n}\nzen idiot halo idiot banana n\\textbf{lamb}ob perish banana cafe dentist groot monkey\n\\section{o}\napple jargon halo idiot banana nob perish banana cafe dentist groot monkey"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "far\nhalo\ngroot",
+            "Reference": "f\ngroot kangaroo lamb oops X-ray wake idiot salvage perish apple oops nob\n\\section{g}\nhalo kangaroo lamb oops X-ray wake idiot salvage perish apple oops nob\n\\section{h}\nidiot kangaroo lamb oops X-ray wake idiot salvage perish apple oops nob\n\\section{i}\njargon kangaroo l\\textbf{far}amb oops X-ray wake idiot salvage perish apple oops nob\n\\section{j}\nkangaroo kangaroo lamb oops X-ray wake idiot salvage peris\\textbf{groot}h apple oops nob\n\\section{k}\nlamb kangaroo lamb oops X-ray wake idiot salvage perish apple oops nob\n\\section{l}\nmonkey kangaroo lamb\\textbf{halo} oops X-ray wake idiot salvage perish apple oops nob"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for macro textbf, and everything after \\\\textbf{ and before the first } encountered is bold text."
+}

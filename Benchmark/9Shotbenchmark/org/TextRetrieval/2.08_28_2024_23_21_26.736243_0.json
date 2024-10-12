@@ -1,0 +1,66 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "lamb",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 9,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "j\nvigor qualify yogurt*lamb* salvage banana dent[[jj.jpg]]ist\n* k\nwake qualify yogurt salvage banana dentist",
+    "timestamp": "08_28_2024_23_21_26.736243",
+    "input_hash": -6813477831433109356,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "apple",
+            "Reference": "j\nfar apple essen*apple*[[zd.jpg]]essence groot wake far\n* k\ngroot apple essence groot wake far"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "essence\ndentist",
+            "Reference": "d\nqualify wake apple oops *dentist*[[ri.png]]alify wake apple oops essence halo\n* e\nravish wa*essence*ke apple oops essence halo"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "salvage",
+            "Reference": "u\nnob banana jargon banana banana far\n* v\noops banana jargon bana*salvage*na banana far"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "transformer",
+            "Reference": "l\nkangaroo cafe wake groot perish monkey\n* m\nlamb cafe wake groot perish mon*transformer*[[af.jpg]]h monkey"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "halo",
+            "Reference": "d\ncafe lamb ravish dentist groo[[ah.jpg]]t ravish\n* e\ndentist lamb ravish dentist groot rav*halo*ish"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "a\nyogurt banana nob lamb groot trans[[bi.gif]]former\n* b\nz[[ci.jpeg]]en banana nob lamb groot transformer"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "k\njargon nob vigor monkey idiot idiot\n* l\nkangaroo nob vigor [[fi.jpeg]]monkey idiot idiot"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "q\nlamb[[hj.jpg]] groot vigor lamb qualify halo\n* r\nmonkey groot vigor lamb qualify halo"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "cafe\ndentist",
+            "Reference": "s\nfar lamb nob X-ray transforme*cafe*r transformer\n* t\ngroot lamb nob X-ray transformer transform*dentist*er"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for single star, i.e., *, the content between two occurrences of single star is the bold texts. Note that the bold range should start from the single star occurring at i-th spot throughout the whole input file, where i is odd, and end with single star occurring at jth spot where j is even. For example, text between single star appearing first and second time."
+}

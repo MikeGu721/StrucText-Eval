@@ -1,0 +1,26 @@
+{
+    "Question": "How to access value \"h\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+    "Answer": "obj[\"subs\"][0][\"U\"]",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathCompose"
+        ]
+    },
+    "Reference": "id: \"p\"\nZ: m,\nY: l,\nX: k,\nW: j,\nV: i,\nsubs: \n- id: \"q\"\n  U: h,\n  T: g,\n  subs: []",
+    "timestamp": "08_28_2024_23_21_26.841061",
+    "input_hash": -1896172110584097505,
+    "examples": [
+        {
+            "Question": "How to access value \"a\"? Answer should be like obj[key or index 1][key or index 2][key or index 3]...",
+            "Answer": "obj[\"subs\"][0][\"T\"]",
+            "Reference": "id: \"f\"\nZ: g,\nY: f,\nX: e,\nW: d,\nsubs: \n- id: \"g\"\n  V: c,\n  U: b,\n  T: a,\n  S: zy,\n  subs: []"
+        }
+    ],
+    "RuleHint": "To get the path to access specified value. You have to do a recursive search along the subs fields, starting from the outermost parsed object. For each visited object, check each fields except for subs, and record the path along the way, i.e., subs inside brackets and index into subs inside brackets, and at which field you find the value."
+}

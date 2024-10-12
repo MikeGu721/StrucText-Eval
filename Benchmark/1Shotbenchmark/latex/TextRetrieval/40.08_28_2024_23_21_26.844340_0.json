@@ -1,0 +1,26 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "jargon",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "t\nunique lamb oops X-ray ravish banana\n\\section{u}\nvigor lamb \\textbf{jargon}\\includegraphics[width=0.5\\textwidth]{ki.jpg}mb oops X-ray ravish banana",
+    "timestamp": "08_28_2024_23_21_26.844340",
+    "input_hash": 1224672030808669148,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "yogurt\nzen",
+            "Reference": "a\nzen idiot cafe nob lamb quali\\textbf{yogurt}fy\n\\section{b}\napple jargon cafe\\textbf{zen}\\includegraphics[width=0.5\\textwidth]{nf.jpeg}afe nob lamb qualify"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for macro textbf, and everything after \\\\textbf{ and before the first } encountered is bold text."
+}

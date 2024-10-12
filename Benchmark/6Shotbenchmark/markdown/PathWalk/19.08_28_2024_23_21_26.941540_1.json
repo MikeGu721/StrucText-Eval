@@ -1,0 +1,51 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section.",
+    "Answer": "# v\nzen**transformer** oops wak![alt](ng.png \"hover text\")e banana essence far",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 6,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "u\nyogurt oops![alt](mg.gif \"hover text\") wake banana essence far\n# v\nzen**transformer** oops wak![alt](ng.png \"hover text\")e banana essence far",
+    "timestamp": "08_28_2024_23_21_26.941540",
+    "input_hash": 4180938699653090582,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# k\nbanana uni![alt](aj.gif \"hover text\")que vigor idiot monkey lamb",
+            "Reference": "j\napple u**cafe**nique vigor idiot mon![alt](zi.jpeg \"hover text\")key lamb\n# k\nbanana uni![alt](aj.gif \"hover text\")que vigor idiot monkey lamb"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# i\ndentist essence cafe halo **dentist**kangaroo salvage",
+            "Reference": "h\ncafe essence cafe halo kangaroo salvage\n# i\ndentist essence cafe halo **dentist**kangaroo salvage"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# k\nunique vigor wake ravish monkey transformer",
+            "Reference": "j\ntransformer vigor wake ravish monkey transformer\n# k\nunique vigor wake ravish monkey transformer"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# i\ntransfo![alt](je.gif \"hover text\")rmer essence apple nob apple halo",
+            "Reference": "h\nsalvage essence app**yogurt**le nob apple halo\n# i\ntransfo![alt](je.gif \"hover text\")rmer essence apple nob apple halo"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# g\napple essence salvage s![alt](bf.png \"hover text\")alvage far idiot",
+            "Reference": "f\nzen dentist salvage sal**vigor**![alt](af.jpg \"hover text\") dentist salvage salvage far idiot\n# g\napple essence salvage s![alt](bf.png \"hover text\")alvage far idiot"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# m\nwake transformer lamb nob ravish ravish",
+            "Reference": "l\nvigor transforme![alt](wf.jpeg \"hover text\")r lamb nob ravish ravish\n# m\nwake transformer lamb nob ravish ravish"
+        }
+    ],
+    "RuleHint": "To find the content of certain section, starting from the headings start with one hashtag, and go to the ith heading as specified in number of sections. Then start from that line, look for j-th heading with 2 hashtags as specified in subsection number. For kth subsubsection, look for kth heading with 3 hashtags starting from the located subsubsection. Stop searching early if the subsection or subsubsection is not queried."
+}

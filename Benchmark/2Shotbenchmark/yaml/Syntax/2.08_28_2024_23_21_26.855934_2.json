@@ -1,0 +1,31 @@
+{
+    "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+    "Answer": "True",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Syntax"
+        ]
+    },
+    "Reference": "id: \"s\"\nZ: l,\nY: k,\nX: j,\nsubs: \n- id: \"t\"\n  W: i,\n  V: h,\n  U: g,\n  T: f,\n  S: e,\n  R: d,\n  subs: []\n  :a\n:b",
+    "timestamp": "08_28_2024_23_21_26.855934",
+    "input_hash": 6792362420237208548,
+    "examples": [
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"q\"\nZ: r,\nY: q,\nX: p,\nsubs: \n- id: \"r\"\n  W: o,\n  V: n,\n  subs: []\n  :o\n:p"
+        },
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"d\"\nZ: f,\nY: e,\nX: d,\nW: c,\nV: b,\nsubs: \n- id: \"e\"\n  U: a,\n  T: zy,\n  S: yy,\n  R: xy,\n  Q: wy,\n  subs: []\n  :n\n:o"
+        }
+    ],
+    "RuleHint": "To find the error in the yaml file, you need to parse the yaml file and report any syntax error if encountered any. Potential errors include missing key before colon."
+}

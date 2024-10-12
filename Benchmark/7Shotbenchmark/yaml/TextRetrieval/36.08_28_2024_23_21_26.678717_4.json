@@ -1,0 +1,56 @@
+{
+    "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the YAML file, separated by \\n\\n.",
+    "Answer": "id: \"c\"\nY: r,\nX: q,\nW: p,\nsubs: []",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 7,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "id: \"b\"\nZ: s,\nsubs: \n- id: \"c\"\n  Y: r,\n  X: q,\n  W: p,\n  subs: []",
+    "timestamp": "08_28_2024_23_21_26.678717",
+    "input_hash": 6908231922510974389,
+    "examples": [
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the YAML file, separated by \\n\\n. ",
+            "Answer": "id: \"q\"\nU: b,\nsubs: []",
+            "Reference": "id: \"p\"\nZ: g,\nY: f,\nX: e,\nW: d,\nV: c,\nsubs: \n- id: \"q\"\n  U: b,\n  subs: []"
+        },
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the YAML file, separated by \\n\\n. ",
+            "Answer": "id: \"i\"\nX: m,\nW: l,\nV: k,\nU: j,\nT: i,\nS: h,\nsubs: []",
+            "Reference": "id: \"h\"\nZ: o,\nY: n,\nsubs: \n- id: \"i\"\n  X: m,\n  W: l,\n  V: k,\n  U: j,\n  T: i,\n  S: h,\n  subs: []"
+        },
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the YAML file, separated by \\n\\n. ",
+            "Answer": "id: \"ab\"\nY: o,\nX: n,\nW: m,\nsubs: []",
+            "Reference": "id: \"z\"\nZ: p,\nsubs: \n- id: \"ab\"\n  Y: o,\n  X: n,\n  W: m,\n  subs: []"
+        },
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the YAML file, separated by \\n\\n. ",
+            "Answer": "id: \"b\"\nU: p,\nT: o,\nS: n,\nR: m,\nQ: l,\nsubs: []",
+            "Reference": "id: \"a\"\nZ: u,\nY: t,\nX: s,\nW: r,\nV: q,\nsubs: \n- id: \"b\"\n  U: p,\n  T: o,\n  S: n,\n  R: m,\n  Q: l,\n  subs: []"
+        },
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the YAML file, separated by \\n\\n. ",
+            "Answer": "id: \"h\"\nY: b,\nX: a,\nW: zy,\nV: yy,\nU: xy,\nT: wy,\nsubs: []",
+            "Reference": "id: \"g\"\nZ: c,\nsubs: \n- id: \"h\"\n  Y: b,\n  X: a,\n  W: zy,\n  V: yy,\n  U: xy,\n  T: wy,\n  subs: []"
+        },
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the YAML file, separated by \\n\\n. ",
+            "Answer": "id: \"u\"\nY: g,\nX: f,\nsubs: []",
+            "Reference": "id: \"t\"\nZ: h,\nsubs: \n- id: \"u\"\n  Y: g,\n  X: f,\n  subs: []"
+        },
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the YAML file, separated by \\n\\n. ",
+            "Answer": "id: \"v\"\nT: a,\nS: zy,\nR: yy,\nsubs: []",
+            "Reference": "id: \"u\"\nZ: g,\nY: f,\nX: e,\nW: d,\nV: c,\nU: b,\nsubs: \n- id: \"v\"\n  T: a,\n  S: zy,\n  R: yy,\n  subs: []"
+        }
+    ],
+    "RuleHint": "To get the most deeply nested objects, start from the outermost object, recursively search along the subs fields. For each object, check its subs field, any object with an empty subs is one most deeply nested object."
+}

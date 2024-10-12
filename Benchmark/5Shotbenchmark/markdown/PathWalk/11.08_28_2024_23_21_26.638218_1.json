@@ -1,0 +1,46 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section.",
+    "Answer": "# k\nravish unique oops vigor cafe ![alt](lf.jpeg \"hover text\")far",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "j\nqualify**ravish** unique oops vigor cafe far\n# k\nravish unique oops vigor cafe ![alt](lf.jpeg \"hover text\")far",
+    "timestamp": "08_28_2024_23_21_26.638218",
+    "input_hash": -6936831341129335967,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# h\njargon halo banana salvage **banana**![alt](gg.jpg \"hover text\")nana salvage cafe essence",
+            "Reference": "g\nidiot h**apple**![alt](fg.jpeg \"hover text\") halo banana salvage cafe essence\n# h\njargon halo banana salvage **banana**![alt](gg.jpg \"hover text\")nana salvage cafe essence"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# u\ncafe yogurt groot salvage qualify kangaroo",
+            "Reference": "t\nbanana yogurt**qualify** groot salvage qualify kangaroo\n# u\ncafe yogurt groot salvage qualify kangaroo"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# p\nyogurt banana appl![alt](oe.jpg \"hover text\")e essence ravish banana",
+            "Reference": "o\nX**nob**-ray banana apple essence ravish banana\n# p\nyogurt banana appl![alt](oe.jpg \"hover text\")e essence ravish banana"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# f\nX-ray X-**vigor**ray kangaroo unique idiot",
+            "Reference": "e\nwake X-ray kangaroo unique idiot\n# f\nX-ray X-**vigor**ray kangaroo unique idiot"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# l\nfar lamb sa**groot**lvage zen unique vigor",
+            "Reference": "k\nessence![alt](le.jpg \"hover text\") lamb salvage zen unique vigor\n# l\nfar lamb sa**groot**lvage zen unique vigor"
+        }
+    ],
+    "RuleHint": "To find the content of certain section, starting from the headings start with one hashtag, and go to the ith heading as specified in number of sections. Then start from that line, look for j-th heading with 2 hashtags as specified in subsection number. For kth subsubsection, look for kth heading with 3 hashtags starting from the located subsubsection. Stop searching early if the subsection or subsubsection is not queried."
+}

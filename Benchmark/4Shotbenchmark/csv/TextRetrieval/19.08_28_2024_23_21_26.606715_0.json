@@ -1,0 +1,41 @@
+{
+    "Question": "What is the gender of record with primeKey a",
+    "Answer": "male",
+    "Label": {
+        "typename": "csv",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 4,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,male,69,i,149,114,swarthy\n\nprimeKey,status,salary,company,location\na,employed,290308,Apple,TX",
+    "timestamp": "08_28_2024_23_21_26.606715",
+    "input_hash": -8910026986990907793,
+    "examples": [
+        {
+            "Question": "\nWhat is the company of record with primeKey a\n",
+            "Answer": "NVIDIA",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,56,a,182,162,white\n\nprimeKey,status,salary,company,location\na,unemployed,735335,NVIDIA,IL"
+        },
+        {
+            "Question": "\nWhat is the location of record with primeKey a\n",
+            "Answer": "WA",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,32,n,129,141,mulatto\n\nprimeKey,status,salary,company,location\na,employed,875920,OPENAI,WA"
+        },
+        {
+            "Question": "\nWhat is the salary of record with primeKey a\n",
+            "Answer": "502447",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,49,t,156,124,olive\n\nprimeKey,status,salary,company,location\na,retired,502447,Google,IL"
+        },
+        {
+            "Question": "\nWhat is the company of record with primeKey a\n",
+            "Answer": "OPENAI",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,44,q,172,105,brown\n\nprimeKey,status,salary,company,location\na,employed,666669,OPENAI,CA"
+        }
+    ],
+    "RuleHint": "To find the value of specific field of record with specified primeKey. You have to first, locate the line with the specific primeKey. Then find the required value under the desired column in that line."
+}

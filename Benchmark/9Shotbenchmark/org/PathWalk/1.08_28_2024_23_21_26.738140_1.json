@@ -1,0 +1,66 @@
+{
+    "Question": "What is the content of 1th subsection under 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section.",
+    "Answer": "** u\nwake yogurt monkey qualify transformer nob yogurt la[[ig.png]]mb X-ray kangaroo lamb ravish",
+    "Label": {
+        "typename": "org",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 9,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "s\nunique yogurt mo*banana*[[hg.jpeg]] yogurt monkey qualify transformer nob yogurt lamb X-ray kangaroo lamb ravish\n* t\nvigor yogurt monkey qualify transformer nob yogurt lamb X-ray kangaroo lamb ravish\n** u\nwake yogurt monkey qualify transformer nob yogurt la[[ig.png]]mb X-ray kangaroo lamb ravish\n** v\nX-ray yogurt monkey qualify transformer nob yogurt lamb X-ray kangaroo lamb ravish\n* w\nyogurt yogurt monkey qualify transformer nob yogurt lamb X-ray kangaroo lamb ravish\n** x\nzen yogu*cafe*rt[[jg.jpeg]] monkey qualify transformer nob yogurt lamb X-ray kangaroo lamb ravish\n** y\napple zen monkey qualify transformer n*dentist*ob yogurt lamb X-ray kangaroo lamb ravish",
+    "timestamp": "08_28_2024_23_21_26.738140",
+    "input_hash": -8300587992388939805,
+    "examples": [
+        {
+            "Question": "What is the content of 2th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* e\nca*idiot*fe dentist idiot X-ray idiot zen unique unique essence nob halo cafe\n** f\ndentist dentist idiot X-ray idiot zen unique unique ess[[ri.png]]ence nob halo cafe\n** g\nessence dentist idiot X-ray idio*jargon*t zen unique unique essence [[si.jpeg]]nob halo cafe",
+            "Reference": "a\nyogurt cafe idi*far*ot X-ray idiot zen unique unique essence nob halo cafe\n* b\nzen cafe idiot X-ray idiot zen unique unique essence nob halo caf*groot*e\n** c\napple dentist idiot X-ray idiot zen unique unique essence nob halo c*halo*afe\n** d\nbanana dentist idiot X-ray idiot ze[[qi.jpg]]n unique unique essence nob halo cafe\n* e\nca*idiot*fe dentist idiot X-ray idiot zen unique unique essence nob halo cafe\n** f\ndentist dentist idiot X-ray idiot zen unique unique ess[[ri.png]]ence nob halo cafe\n** g\nessence dentist idiot X-ray idio*jargon*t zen unique unique essence [[si.jpeg]]nob halo cafe"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 2th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "** j\nnob essen*salvage*ce cafe banana banana transformer dentist [[rh.gif]]transformer idiot salvage transformer unique",
+            "Reference": "d\nhalo essence cafe banana banana transformer dentist transformer idiot salvage t[[oh.jpeg]]ransformer unique\n* e\nidio[[ph.jpg]]t essence cafe banana banana transformer dentist transformer idiot salvage transformer unique\n** f\njargon esse[[qh.jpg]]nce cafe banana banana transformer dentist transformer idiot salvage transformer unique\n** g\nkangaroo essence cafe banana banana transformer dentist transformer idiot salvage transformer unique\n* h\nlamb essence cafe banana banana transformer dentist transformer idiot salvage transformer unique\n** i\nmonkey essence cafe banana banana transformer denti*ravish*st transformer idiot salvage transformer unique\n** j\nnob essen*salvage*ce cafe banana banana transformer dentist [[rh.gif]]transformer idiot salvage transformer unique"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "** p\nbanana transformer halo halo*lamb* wake apple perish unique oops lamb jargon perish",
+            "Reference": "m\nyogurt salvage halo halo wake apple perish unique oops lamb jargon perish\n* n\nzen salvage halo hal*kangaroo*o wake apple perish unique oops lamb jargon perish\n** o\napple transformer halo halo wake apple perish unique oops lamb jargon perish\n** p\nbanana transformer halo halo*lamb* wake apple perish unique oops lamb jargon perish\n* q\ncafe transformer halo halo wake apple *monkey*[[bj.gif]]transformer halo halo wake apple perish unique oops lamb jargon perish\n** r\ndentist transformer hal[[cj.jpeg]]o halo wake apple perish unique oops lamb jargon perish\n** s\nessence transformer halo halo wake apple perish unique oops lamb jargon perish"
+        },
+        {
+            "Question": "What is the content of 1th subsection under 2th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "** m\nunique transformer cafe zen *unique*[[bi.gif]]er cafe zen ravish perish halo zen idiot far essence unique",
+            "Reference": "h\nperish transformer cafe zen ravish perish halo zen idiot far essence unique\n* i\nqualify transformer cafe zen ravish perish halo zen idiot far essence unique\n** j\nravish transformer cafe zen ravish perish halo zen idiot far essence unique\n** k\nsalvage transformer cafe zen ravish perish halo ze*transformer*n idiot far essence u[[ai.jpg]]nique\n* l\ntransformer transformer cafe zen ravish perish halo zen idiot far essence unique\n** m\nunique transformer cafe zen *unique*[[bi.gif]]er cafe zen ravish perish halo zen idiot far essence unique\n** n\nvigor transformer cafe zen ravish perish halo zen i*vigor*diot far essence unique"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 2th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "** fb\nyogurt per[[ij.gif]]ish banana groot far monkey kangaroo far dentist salvage halo jargon",
+            "Reference": "z\nsalvage perish banana groot far monkey kangaroo far dentist sa*idiot*lvage halo jargon\n* ab\ntransformer perish banana groot far monkey kangaroo far dentist salvage halo jargon\n** bb\nunique perish banan*jargon*[[fj.gif]]nique perish banana groot far monkey kangaroo far dentist salvage halo jargon\n** cb\nvigor perish banana groot far monkey kangaroo far dentist salvage halo jargon\n* db\nwake perish banana groot far monke*kangaroo*y kangaroo far dentist salvage halo ja[[gj.jpeg]]rgon\n** eb\nX-ray perish banana groot far monkey kangaroo far dentist salvag*lamb*[[hj.jpg]]banana groot far monkey kangaroo far dentist salvage halo jargon\n** fb\nyogurt per[[ij.gif]]ish banana groot far monkey kangaroo far dentist salvage halo jargon"
+        },
+        {
+            "Question": "What is the content of 1th subsection under 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "** e\nunique far kangaroo apple vigor *qualify*salvage banana lamb wake idiot yogurt groot",
+            "Reference": "c\nsalvage far kangaroo apple vigor salvage banana lamb wake idiot yogurt gro*perish*[[ah.jpg]]salvage far kangaroo apple vigor salvage banana lamb wake idiot yogurt groot\n* d\ntransformer far kangaroo apple vigor salvage banana lamb wake idiot yogurt groot\n** e\nunique far kangaroo apple vigor *qualify*salvage banana lamb wake idiot yogurt groot\n** f\nvigor far kangaroo apple *ravish*vigor salvage ban[[bh.jpeg]]ana lamb wake idiot yogurt groot\n* g\nwake far kangaroo *salvage*apple vigor salvage banana lamb wake idiot yogurt groot\n** h\nX-ray far kangaroo apple vigor salvage *transformer*[[ch.png]] vigor salvage banana lamb wake idiot yogurt groot\n** i\nyogurt far kangaroo apple vigor salvage banana lamb wake idiot yogurt groot"
+        },
+        {
+            "Question": "What is the content of 1th subsection under 2th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "** p\nperish yogurt apple zen lamb wake zen apple wake essence lamb qualify",
+            "Reference": "k\nkangaroo yogurt apple zen lamb wake zen apple wake essence lamb qualify\n* l\nlamb yogurt apple zen lamb wake zen apple wake *ravish*essence lamb qualify\n** m\nmonkey yogurt apple zen lamb wake zen apple wake essence lamb qualify\n** n\nnob yogurt apple zen [[xh.jpg]]lamb wake zen apple wake essence lamb qualify\n* o\noops yogurt apple zen lamb wake zen apple wake essence lamb qua*salvage*lify\n** p\nperish yogurt apple zen lamb wake zen apple wake essence lamb qualify\n** q\nqualify yogurt apple zen lamb wake zen apple wake essence lamb qualify"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* r\nkangaroo wake salvage qualify monkey oops ravish essence yogurt groot *banana*unique yogurt\n** s\nlamb wake salvage qualify*cafe* monkey oops ravish essence yogurt groot unique yogurt\n** t\nmonkey wake salvage qualify monkey oops ravish essence yogurt[[se.jpeg]] groot unique yogurt",
+            "Reference": "q\njargon wak[[re.png]]e salvage qualify monkey oops ravish essence yogurt groot unique yogurt\n* r\nkangaroo wake salvage qualify monkey oops ravish essence yogurt groot *banana*unique yogurt\n** s\nlamb wake salvage qualify*cafe* monkey oops ravish essence yogurt groot unique yogurt\n** t\nmonkey wake salvage qualify monkey oops ravish essence yogurt[[se.jpeg]] groot unique yogurt\n* u\nnob wake salvage qualify monkey oops ravish essence yogurt gr[[te.jpg]]oot unique yogurt\n** v\noops wake salvage qualify monkey oops ravish essence yogurt groot unique yogurt\n** w\nperish wake salvage qualify monkey oops*dentist* ravish essence yogurt groot unique yogurt"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "** q\nlamb qualify X-ray idiot t*ravish*ransformer X-ray qualify pe[[ne.jpeg]]rish wake zen halo dentist",
+            "Reference": "n\nidiot qualify X-ray idiot transformer X-ray qualify perish wake zen hal*oops*o dentist\n* o\njargon qualify X-ray idiot transformer X-ray qualify perish wa*perish*ke zen halo dentist\n** p\nkangaroo*qualify* qualify X-ray idiot transformer X-ray quali[[me.png]]fy perish wake zen halo dentist\n** q\nlamb qualify X-ray idiot t*ravish*ransformer X-ray qualify pe[[ne.jpeg]]rish wake zen halo dentist\n* r\nmonkey qualify X-ray idiot transformer X-ray qualify perish wake zen halo dentist\n** s\nnob qualify X-ray idiot transformer X-ray qualify perish wake zen h*salvage*[[oe.jpg]] transformer X-ray qualify perish wake zen halo dentist\n** t\noops qualify X-ray idiot transformer X-ray qualify perish wake zen halo dentist"
+        }
+    ],
+    "RuleHint": "Note that section, subsection, subsubsection titles are preceded by *, **, *** respectively, with one or more whitespaces in between.  To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

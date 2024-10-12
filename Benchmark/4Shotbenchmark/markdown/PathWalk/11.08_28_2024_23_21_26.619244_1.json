@@ -1,0 +1,41 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section.",
+    "Answer": "# p\nsalvage lamb yogurt essence salvage unique",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 4,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "o\nravish lamb yogurt essence salvage unique\n# p\nsalvage lamb yogurt essence salvage unique",
+    "timestamp": "08_28_2024_23_21_26.619244",
+    "input_hash": 2362166061245319124,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# n\nX-**wake**![alt](ig.png \"hover text\")X-ray apple lamb vigor halo monkey",
+            "Reference": "m\nwake apple lamb vigor halo monkey\n# n\nX-**wake**![alt](ig.png \"hover text\")X-ray apple lamb vigor halo monkey"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# s\nuniqu**oops**![alt](qf.png \"hover text\")que salvage groot unique far monkey",
+            "Reference": "r\ntransformer salvage groot unique far monkey\n# s\nuniqu**oops**![alt](qf.png \"hover text\")que salvage groot unique far monkey"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# q\nqualify qualify zen unique cafe idi![alt](yf.jpg \"hover text\")ot",
+            "Reference": "p\nperish qualify zen**essence**![alt](xf.jpeg \"hover text\")ualify zen unique cafe idiot\n# q\nqualify qualify zen unique cafe idi![alt](yf.jpg \"hover text\")ot"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section. ",
+            "Answer": "# t\napple jargon banana kangaroo kangaroo essence",
+            "Reference": "s\nzen idiot banana kangaroo kangaroo essen![alt](ei.jpeg \"hover text\")ce\n# t\napple jargon banana kangaroo kangaroo essence"
+        }
+    ],
+    "RuleHint": "To find the content of certain section, starting from the headings start with one hashtag, and go to the ith heading as specified in number of sections. Then start from that line, look for j-th heading with 2 hashtags as specified in subsection number. For kth subsubsection, look for kth heading with 3 hashtags starting from the located subsubsection. Stop searching early if the subsection or subsubsection is not queried."
+}

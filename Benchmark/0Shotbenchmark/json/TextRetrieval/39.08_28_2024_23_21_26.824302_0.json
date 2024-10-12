@@ -1,0 +1,19 @@
+{
+    "Question": "What is the object with id g? The content should be an excerpt as it appears in the JSON file.",
+    "Answer": "{\n\"id\":\"g\",\n\"Y\":\"s\",\n\"X\":\"r\",\n\"W\":\"q\",\n\"V\":\"p\",\n\"subs\":[\n {\n \"id\":\"h\",\n \"U\":\"o\",\n \"T\":\"n\",\n \"S\":\"m\",\n \"R\":\"l\",\n \"Q\":\"k\",\n \"P\":\"j\",\n \"subs\":[]\n },\n {\n \"id\":\"i\",\n \"O\":\"i\",\n \"N\":\"h\",\n \"M\":\"g\",\n \"L\":\"f\",\n \"K\":\"e\",\n \"J\":\"d\",\n \"I\":\"c\",\n \"H\":\"b\",\n \"G\":\"a\",\n \"F\":\"zy\",\n \"subs\":[]\n }\n]\n}",
+    "Label": {
+        "typename": "json",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "{\n\"id\":\"f\",\n\"Z\":\"t\",\n\"subs\":[\n {\n \"id\":\"g\",\n \"Y\":\"s\",\n \"X\":\"r\",\n \"W\":\"q\",\n \"V\":\"p\",\n \"subs\":[\n  {\n  \"id\":\"h\",\n  \"U\":\"o\",\n  \"T\":\"n\",\n  \"S\":\"m\",\n  \"R\":\"l\",\n  \"Q\":\"k\",\n  \"P\":\"j\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"i\",\n  \"O\":\"i\",\n  \"N\":\"h\",\n  \"M\":\"g\",\n  \"L\":\"f\",\n  \"K\":\"e\",\n  \"J\":\"d\",\n  \"I\":\"c\",\n  \"H\":\"b\",\n  \"G\":\"a\",\n  \"F\":\"zy\",\n  \"subs\":[]\n  }\n ]\n },\n {\n \"id\":\"j\",\n \"E\":\"yy\",\n \"D\":\"xy\",\n \"C\":\"wy\",\n \"B\":\"vy\",\n \"A\":\"uy\",\n \"ZY\":\"ty\",\n \"subs\":[\n  {\n  \"id\":\"k\",\n  \"YY\":\"sy\",\n  \"XY\":\"ry\",\n  \"WY\":\"qy\",\n  \"VY\":\"py\",\n  \"UY\":\"oy\",\n  \"TY\":\"ny\",\n  \"SY\":\"my\",\n  \"RY\":\"ly\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"l\",\n  \"QY\":\"ky\",\n  \"PY\":\"jy\",\n  \"OY\":\"iy\",\n  \"NY\":\"hy\",\n  \"MY\":\"gy\",\n  \"LY\":\"fy\",\n  \"KY\":\"ey\",\n  \"JY\":\"dy\",\n  \"subs\":[]\n  }\n ]\n }\n]\n}",
+    "timestamp": "08_28_2024_23_21_26.824302",
+    "input_hash": -855993787686749077,
+    "RuleHint": "To find the object with specified id, you need to first parse the json file and get the outermost object, starting from which search the subs field recursively and looking for the desired value in id field for each visited object. Retrieve the content of that object once found."
+}

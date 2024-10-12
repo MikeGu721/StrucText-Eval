@@ -1,0 +1,66 @@
+{
+    "Question": "What is the content of 1th subsection under 2th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section.",
+    "Answer": "** q\nvigor fa*qualify*r perish perish cafe halo jargon banana salvage kangaroo X-ray den[[kj.gif]]tist",
+    "Label": {
+        "typename": "org",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 9,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "l\nqualify far [[gj.jpeg]]perish perish cafe halo jargon banana salvage kangaroo X-ray dentist\n* m\nravish far perish perish cafe halo jargon banana salvage kangaroo X-ray dentis*oops*t\n** n\nsalvag*perish*e far perish perish cafe halo [[hj.png]]jargon banana salvage kangaroo X-ray dentist\n** o\ntransformer far perish perish cafe halo jargon banana salvage kangaro[[ij.jpg]]o X-ray dentist\n* p\nunique far perish perish cafe halo jargon banana salvage kanga[[jj.png]]roo X-ray dentist\n** q\nvigor fa*qualify*r perish perish cafe halo jargon banana salvage kangaroo X-ray den[[kj.gif]]tist\n** r\nwake far perish perish cafe halo jargon bana[[lj.jpeg]]na salvage kangaroo X-ray dentist",
+    "timestamp": "08_28_2024_23_21_27.029113",
+    "input_hash": -1428173168262660946,
+    "examples": [
+        {
+            "Question": "What is the content of 1th subsection under 2th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "** k\nzen ravish nob yogurt X-ra*lamb*y halo dentist oops idiot unique yogurt qualify",
+            "Reference": "f\nunique ravish nob yogurt X-ray halo dentist oops idiot unique yogurt qualify\n* g\nvigor ravish nob yogurt X-ray halo dentist oops idiot unique yogurt qualify\n** h\nwake ravish nob yogurt *jargon*X-ray halo dentist oops idiot [[qf.jpg]]unique yogurt qualify\n** i\nX-ray ravish nob yogurt X-ray halo dentist oops idiot unique y[[rf.png]]ogurt qualify\n* j\nyogurt ravish nob yogurt X-ray halo dentist oops idiot uniq*kangaroo*ue yogurt qualify\n** k\nzen ravish nob yogurt X-ra*lamb*y halo dentist oops idiot unique yogurt qualify\n** l\napple salvage nob yogurt X-ray halo dentist oops idiot unique yogurt qualify"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 2th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "** bb\nessence monkey essence idiot lamb vigor denti*yogurt*st salvage nob salvage ravish",
+            "Reference": "v\nyogurt lamb essence idiot lamb vigor dentist salvage nob salvage ravish\n* w\nzen lamb essence idiot lamb *vigor*vigor [[bj.jpeg]]dentist salvage nob salvage ravish\n** x\napple monkey essence idiot lamb vigor dentist salvage nob salvage*wake*[[cj.jpeg]]le monkey essence idiot lamb vigor dentist salvage nob salvage ravish\n** y\nbanana monkey essence idiot lamb vigor dentist salvage nob salvage ravish\n* z\ncafe monkey essence id*X-ray*iot lamb vigor dentist salvage nob salvage ravish\n** ab\ndentist monkey essence idiot lamb vigor dentist salvage nob salvage ravish\n** bb\nessence monkey essence idiot lamb vigor denti*yogurt*st salvage nob salvage ravish"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 2th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "** k\ngroot cafe groot X-ray quali*yogurt*fy X-ray unique oops vigor far caf[[wg.png]]e vigor",
+            "Reference": "e\napple cafe groot X-ray qualify X-ray unique o*unique*ops vigor far cafe vigor\n* f\nbanana cafe groot X-ray qualify X-ra*vigor*[[tg.png]]fe groot X-ray qualify X-ray unique oops vigor far cafe vigor\n** g\ncafe cafe groot X-ray qualify X-ray un*wake*ique oops vigor far cafe vigor\n** h\ndentist cafe groot X-ray qualify X-ray unique oops vigor far cafe vigor\n* i\nessence cafe groot X-ray qualify X-ray unique oops vi*X-ray*[[ug.png]]que oops vigor far cafe vigor\n** j\nfar cafe groo[[vg.png]]t X-ray qualify X-ray unique oops vigor far cafe vigor\n** k\ngroot cafe groot X-ray quali*yogurt*fy X-ray unique oops vigor far caf[[wg.png]]e vigor"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "** n\nravish banana qualify ravish zen kangaroo jargon salvage nob unique apple [[sf.gif]]dentist",
+            "Reference": "k\noops banana qualify ravish zen k*vigor*angaroo jargon salvage nob unique apple dentist\n* l\nperish banana qualify rav*wake*ish zen kangaroo jargon salvage nob unique apple dentist\n** m\nqualify banana qualify ravish zen kangaroo jargon salvage nob unique apple den*X-ray*[[rf.png]]jargon salvage nob unique apple dentist\n** n\nravish banana qualify ravish zen kangaroo jargon salvage nob unique apple [[sf.gif]]dentist\n* o\nsalvage banana qualify ravish zen kangaroo jargon salvage nob unique apple dentist\n** p\ntransformer banana qualify ravish zen kangaroo jargon salvage *yogurt*nob unique apple dentist\n** q\nuniqu*zen*e banana qualify ravish zen kangaroo jargon sal[[tf.png]]vage nob unique apple dentist"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 2th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "** w\nzen unique[[ih.png]] cafe oops halo wake banana cafe transformer apple yogurt qualify",
+            "Reference": "q\ntransformer unique cafe oops halo wake banana cafe trans*transformer*form[[eh.gif]]er apple yogurt qualify\n* r\nunique unique cafe oops halo wake banana cafe transformer apple yogurt quali*unique*fy\n** s\nvigor unique cafe oops halo w*vigor*ake banana cafe transformer apple yogurt qualify\n** t\nwake unique cafe oops halo wak[[fh.png]]e banana cafe transformer apple yogurt qualify\n* u\nX-ray unique cafe oops halo wake banana cafe tran*wake*[[gh.gif]]ique cafe oops halo wake banana cafe transformer apple yogurt qualify\n** v\nyogurt unique cafe oops halo wake banana cafe tr[[hh.jpeg]]ansformer apple yogurt qualify\n** w\nzen unique[[ih.png]] cafe oops halo wake banana cafe transformer apple yogurt qualify"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* w\nzen dentist cafe far cafe far ravish zen monkey apple salvage dentist\n** x\napple essence cafe far cafe far ravish zen monkey apple salvage dentist\n** y\nbanana essence cafe far cafe far ravish zen monkey apple salvage dentist",
+            "Reference": "v\nyogurt dentist cafe far cafe far ravish zen mo[[aj.gif]]nkey apple salvage dentist\n* w\nzen dentist cafe far cafe far ravish zen monkey apple salvage dentist\n** x\napple essence cafe far cafe far ravish zen monkey apple salvage dentist\n** y\nbanana essence cafe far cafe far ravish zen monkey apple salvage dentist\n* z\ncafe essence cafe far ca*yogurt*fe f[[bj.jpeg]]ar ravish zen monkey apple salvage dentist\n** ab\ndentist*zen* essence cafe far cafe [[cj.jpeg]]far ravish zen monkey apple salvage dentist\n** bb\nessence essence cafe far cafe far ravish zen mo*apple banana*[[dj.jpg]]far cafe far ravish zen monkey apple salvage dentist"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 2th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "** fb\nzen transformer salvage halo dentist kangaroo apple ravi*X-ray*sh nob groot kangaroo idiot",
+            "Reference": "z\ntransformer transformer salvage halo dentist kangaroo apple ravish nob groot kangaro[[sg.png]]o idiot\n* ab\nunique transformer salvage halo dentist kangaroo apple ravish nob groot kangaroo idiot\n** bb\nvigor transformer salvage halo dentist kangaroo apple ravish nob groot kangaroo idiot\n** cb\nwake transformer salvage halo dentist kangaroo apple ravish nob*unique*[[tg.png]]b groot kangaroo idiot\n* db\nX-ray transformer salvage halo dentist kangaroo apple ravish nob groot kangaroo idio*vigor*[[ug.png]]age halo dentist kangaroo apple ravish nob groot kangaroo idiot\n** eb\nyogurt transformer salvage halo dentist kangaro*wake*o apple ravish nob groot kangaroo idiot\n** fb\nzen transformer salvage halo dentist kangaroo apple ravi*X-ray*sh nob groot kangaroo idiot"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 2th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "** t\nessence zen lamb nob kangaroo qualify banana denti*nob*st lamb perish jargon groot",
+            "Reference": "n\nyogurt yogurt lamb nob kangaroo qualify [[ji.jpeg]]banana dentist lamb perish jargon groot\n* o\nzen yogurt lam*lamb*[[ki.jpg]]zen yogurt lamb nob kangaroo qualify banana dentist lamb perish jargon groot\n** p\napple zen lamb nob kangaroo qualify banana dentist lamb [[li.jpeg]]perish jargon groot\n** q\nbanana zen lamb nob kang*monkey*aroo qualify banana dentist la[[mi.jpg]]mb perish jargon groot\n* r\ncafe zen lamb nob kangaroo qualify banana dentist lamb perish jargon groot\n** s\ndentis[[ni.gif]]t zen lamb nob kangaroo qualify banana dentist lamb perish jargon groot\n** t\nessence zen lamb nob kangaroo qualify banana denti*nob*st lamb perish jargon groot"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 2th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "** s\ngroot dentist essence kangaroo wake dentist dentist X-ray perish qualify qualify caf*transformer*e",
+            "Reference": "m\napple dentist ess*ravish*ence kangaroo wake dentist dentist X-ray perish qualify qu[[yf.jpg]]alify cafe\n* n\nbanana dentist essence kangaroo wake dentist dentist X-ray perish qualify qualify cafe\n** o\ncafe dentist essence kangaroo wake dentist dentist X-ray perish qualify qualify cafe\n** p\ndentist dentist essence kangaroo wake dentist dentist X-ray perish qualify qualify cafe\n* q\nessence dentist essence kangaroo wake dentist dentist X-ray perish qualify qualify cafe\n** r\nfar dentist essence kangar*salvage*[[zf.gif]] kangaroo wake dentist dentist X-ray perish qualify qualify cafe\n** s\ngroot dentist essence kangaroo wake dentist dentist X-ray perish qualify qualify caf*transformer*e"
+        }
+    ],
+    "RuleHint": "Note that section, subsection, subsubsection titles are preceded by *, **, *** respectively, with one or more whitespaces in between.  To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

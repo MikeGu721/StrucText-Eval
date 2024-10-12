@@ -1,0 +1,31 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section.",
+    "Answer": "\\section{n}\nessence vigor halo far perish unique",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "m\ndentist \\textbf{jargon}vigor halo far perish unique\n\\section{n}\nessence vigor halo far perish unique",
+    "timestamp": "08_28_2024_23_21_26.860006",
+    "input_hash": -7677687007491894613,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{h}\ncafe groot groot qualify\\textbf{yogurt} salvage banana",
+            "Reference": "g\nbanana groot gr\\textbf{X-ray}oot qualify salvage banana\n\\section{h}\ncafe groot groot qualify\\textbf{yogurt} salvage banana"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{g}\ndentist yogurt far oops kang\\textbf{lamb}aroo groot",
+            "Reference": "f\ncafe yogurt far oops kangaroo gr\\textbf{kangaroo}\\includegraphics[width=0.5\\textwidth]{pi.gif} groot\n\\section{g}\ndentist yogurt far oops kang\\textbf{lamb}aroo groot"
+        }
+    ],
+    "RuleHint": "Note that section title is enclosed by \\\\section{}, and \\\\subsection for subsection, \\\\subsubsection for subsubsection. To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

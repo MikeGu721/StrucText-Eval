@@ -1,0 +1,36 @@
+{
+    "Question": "What is the status of record with primeKey a",
+    "Answer": "retired",
+    "Label": {
+        "typename": "csv",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 3,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,male,11,v,125,130,mulatto\n\nprimeKey,status,salary,company,location\na,retired,26616,Microsoft,HI",
+    "timestamp": "08_28_2024_23_21_26.863275",
+    "input_hash": 5625725200943587361,
+    "examples": [
+        {
+            "Question": "\nWhat is the salary of record with primeKey a\n",
+            "Answer": "240322",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,58,c,161,83,white\n\nprimeKey,status,salary,company,location\na,retired,240322,Twitter,NY"
+        },
+        {
+            "Question": "\nWhat is the name of record with primeKey a\n",
+            "Answer": "c",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,27,c,152,95,white\n\nprimeKey,status,salary,company,location\na,retired,247365,Microsoft,GA"
+        },
+        {
+            "Question": "\nWhat is the salary of record with primeKey a\n",
+            "Answer": "248381",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,46,p,121,116,swarthy\n\nprimeKey,status,salary,company,location\na,employed,248381,NVIDIA,IL"
+        }
+    ],
+    "RuleHint": "To find the value of specific field of record with specified primeKey. You have to first, locate the line with the specific primeKey. Then find the required value under the desired column in that line."
+}

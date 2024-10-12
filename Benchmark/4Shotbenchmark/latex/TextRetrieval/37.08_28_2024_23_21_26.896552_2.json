@@ -1,0 +1,41 @@
+{
+    "Question": "Extract all included figure files. Print those file names separated by \\n.",
+    "Answer": "aj.gif\nzi.jpeg",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 4,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "o\nessence cafe qualify salvage banana salv\\includegraphics[width=0.5\\textwidth]{zi.jpeg}age\n\\section{p}\nfar cafe qualify salvage banana \\includegraphics[width=0.5\\textwidth]{aj.gif}salvage",
+    "timestamp": "08_28_2024_23_21_26.896552",
+    "input_hash": 9185946520360266236,
+    "examples": [
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "pi.gif",
+            "Reference": "f\nzen jargon banana dent\\includegraphics[width=0.5\\textwidth]{pi.gif}ist lamb zen\n\\section{g}\napple kangaroo banana dentist lamb zen"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "No figure file is included in the file.",
+            "Reference": "w\nwake oops ravish dentist kangaroo halo\n\\section{x}\nX-ray oops ravish dentist kangaroo halo"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "aj.gif",
+            "Reference": "c\nbanana ha\\textbf{zen}lo zen yogurt p\\includegraphics[width=0.5\\textwidth]{aj.gif}erish jargon\n\\section{d}\ncafe halo zen yogurt perish jargon"
+        },
+        {
+            "Question": "Extract all included figure files. Print those file names separated by \\n. ",
+            "Answer": "No figure file is included in the file.",
+            "Reference": "p\nnob transformer perish qualify banana jargon\n\\section{q}\noops transformer perish qualify b\\textbf{monkey}anana jargon"
+        }
+    ],
+    "RuleHint": "To find the image files imported, search for pattern \\\\includegraphics[*]{TARGET}, the TARGET part is the filename. Star means any text is possible."
+}

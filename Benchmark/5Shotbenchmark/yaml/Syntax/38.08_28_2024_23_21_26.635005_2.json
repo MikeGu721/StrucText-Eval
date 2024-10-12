@@ -1,0 +1,46 @@
+{
+    "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+    "Answer": "True",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Syntax"
+        ]
+    },
+    "Reference": "id: \"l\"\nZ: g,\nY: f,\nX: e,\nW: d,\nV: c,\nsubs: \n- id: \"m\"\n  U: b,\n  T: a,\n  S: zy,\n  R: yy,\n  subs: []\n  :r\n:s",
+    "timestamp": "08_28_2024_23_21_26.635005",
+    "input_hash": 3754960295076498300,
+    "examples": [
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"h\"\nZ: p,\nY: o,\nX: n,\nW: m,\nV: l,\nsubs: \n- id: \"i\"\n  U: k,\n  T: j,\n  S: i,\n  subs: []\n  :f\n:g"
+        },
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"a\"\nZ: m,\nY: l,\nX: k,\nW: j,\nsubs: \n- id: \"b\"\n  V: i,\n  U: h,\n  T: g,\n  S: f,\n  R: e,\n  Q: d,\n  subs: []\n  :t\n:u"
+        },
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"n\"\nZ: h,\nY: g,\nX: f,\nsubs: \n- id: \"o\"\n  W: e,\n  V: d,\n  U: c,\n  T: b,\n  S: a,\n  R: zy,\n  subs: []\n:t"
+        },
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"f\"\nZ: a,\nY: zy,\nX: yy,\nsubs: \n- id: \"g\"\n  W: xy,\n  V: wy,\n  U: vy,\n  T: uy,\n  S: ty,\n  subs: []\n  :g\n:h"
+        },
+        {
+            "Question": "Is there any structural error in this YAML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "id: \"o\"\nZ: g,\nY: f,\nX: e,\nW: d,\nV: c,\nsubs: \n- id: \"p\"\n  U: b,\n  T: a,\n  S: zy,\n  subs: []\n  :h\n:i"
+        }
+    ],
+    "RuleHint": "To find the error in the yaml file, you need to parse the yaml file and report any syntax error if encountered any. Potential errors include missing key before colon."
+}

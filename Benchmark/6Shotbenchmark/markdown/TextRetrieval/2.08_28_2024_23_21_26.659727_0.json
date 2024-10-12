@@ -1,0 +1,51 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "banana",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 6,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "y\noops idiot unique jargon qualify wake\n# z\nperish idiot u**banana**nique jargon![alt](lj.jpeg \"hover text\") qualify wake",
+    "timestamp": "08_28_2024_23_21_26.659727",
+    "input_hash": 4784589463770992088,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "perish",
+            "Reference": "t\nvi**perish**gor zen yogurt jargon apple monkey\n# u\nwake zen yogurt jargon apple monkey"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "yogurt",
+            "Reference": "q\ny**yogurt**ogurt dentist idiot kan![alt](bh.jpeg \"hover text\")garoo X-ray monkey\n# r\nzen dentist idiot kangaroo X-ray monkey"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "h\nhalo salvage yogurt a![alt](ne.jpeg \"hover text\")pple jargon\n# i\nidiot salvage yogurt apple ja![alt](oe.jpg \"hover text\")rgon"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "zen",
+            "Reference": "l\nfar nob nob dentist monkey jargon\n# m\ngroot nob nob **zen**dentis![alt](ni.png \"hover text\")t monkey jargon"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "cafe\ndentist",
+            "Reference": "w\nunique salvage far ravish halo o**cafe**ops\n# x\nvi**dentist**gor salvage far ravish halo oops"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "e\nravish dentist jargon X-ray dentist zen\n# f\nsalvage dentist jargon X-ray dentist zen"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for double stars, i.e., **, the content between two occurrences of double stars is the bold texts. Note that the bold range should start from the double stars occurring at i-th spot throughout the whole input file, where i is odd, and end with double stars occurring at jth spot where j is even. For example, text between double stars appearing first and second time."
+}

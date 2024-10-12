@@ -1,0 +1,19 @@
+{
+    "Question": "What is the content of 2th subsection under 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section.",
+    "Answer": "\\section{bb}\nqualify essence lamb groot ravish banana oops \\textbf{perish}unique far perish monkey lamb",
+    "Label": {
+        "typename": "latex",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "y\nnob essence lamb groot ravish banana oops unique far perish monkey lamb\n\\section{z}\noops essence lamb groot ravish banana oops unique far perish monkey lamb\n\\section{ab}\nperish essence lamb groot ravish banana oops u\\textbf{oops}\\includegraphics[width=0.5\\textwidth]{kh.png}oot ravish banana oops unique far perish monkey lamb\n\\section{bb}\nqualify essence lamb groot ravish banana oops \\textbf{perish}unique far perish monkey lamb\n\\section{cb}\n\\includegraphics[width=0.5\\textwidth]{lh.jpg}ravish essence lamb groot ravish banana oops unique far perish monkey lamb\n\\section{db}\nsalvage essence lamb\\includegraphics[width=0.5\\textwidth]{mh.jpg} groot ravish banana oops unique far perish monkey lamb\n\\section{eb}\ntransformer essence lamb groot ravish banana oops unique far perish monkey lamb",
+    "timestamp": "08_28_2024_23_21_26.558946",
+    "input_hash": 4243293841681037947,
+    "RuleHint": "Note that section title is enclosed by \\\\section{}, and \\\\subsection for subsection, \\\\subsubsection for subsubsection. To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

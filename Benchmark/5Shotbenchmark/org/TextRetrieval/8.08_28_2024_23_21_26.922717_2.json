@@ -1,0 +1,46 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "jj.png",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 5,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "f\nfar perish c[[jj.png]]afe idiot zen halo\n* g\n*lamb*groot perish cafe idiot zen halo",
+    "timestamp": "08_28_2024_23_21_26.922717",
+    "input_hash": -8303283307246643523,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "be.jpg\nae.jpeg",
+            "Reference": "z\nX-ray jargon halo perish transformer fa*dentist*[[ae.jpeg]]ray jargon halo perish transformer far\n* ab\nyogurt jargon halo*essence*[[be.jpg]]alo perish transformer far"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "vh.jpg\nwh.png",
+            "Reference": "x\nlamb halo oops groot kanga[[vh.jpg]]roo\n* y\nmonkey halo oops [[wh.png]]groot kangaroo"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "jh.jpg",
+            "Reference": "k\nlamb g*X-ray*root qualify vigor ravish qualify\n* l\nmonkey groot qualify vigor ravi[[jh.jpg]]sh qualify"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "uf.gif",
+            "Reference": "p\nnob wake far apple X-[[uf.gif]]ray lamb\n* q\noops wake far apple X-ray lamb"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "hg.jpeg",
+            "Reference": "i\nfar nob yogurt cafe oops qualify\n* j\ngroot nob yogurt cafe oops qu*vigor*[[hg.jpeg]]nob yogurt cafe oops qualify"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching [[TARGET]], the TARGET part is filename."
+}

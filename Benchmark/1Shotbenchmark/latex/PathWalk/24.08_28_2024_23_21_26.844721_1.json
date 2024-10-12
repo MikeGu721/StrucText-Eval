@@ -1,0 +1,26 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section.",
+    "Answer": "\\section{u}\nvigor lamb \\textbf{jargon}\\includegraphics[width=0.5\\textwidth]{ki.jpg}mb oops X-ray ravish banana",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "t\nunique lamb oops X-ray ravish banana\n\\section{u}\nvigor lamb \\textbf{jargon}\\includegraphics[width=0.5\\textwidth]{ki.jpg}mb oops X-ray ravish banana",
+    "timestamp": "08_28_2024_23_21_26.844721",
+    "input_hash": 1224672030808669148,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{b}\napple jargon cafe\\textbf{zen}\\includegraphics[width=0.5\\textwidth]{nf.jpeg}afe nob lamb qualify",
+            "Reference": "a\nzen idiot cafe nob lamb quali\\textbf{yogurt}fy\n\\section{b}\napple jargon cafe\\textbf{zen}\\includegraphics[width=0.5\\textwidth]{nf.jpeg}afe nob lamb qualify"
+        }
+    ],
+    "RuleHint": "Note that section title is enclosed by \\\\section{}, and \\\\subsection for subsection, \\\\subsubsection for subsubsection. To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

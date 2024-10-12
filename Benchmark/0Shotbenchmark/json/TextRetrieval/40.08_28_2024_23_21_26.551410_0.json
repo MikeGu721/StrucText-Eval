@@ -1,0 +1,19 @@
+{
+    "Question": "What is the object with id n? The content should be an excerpt as it appears in the JSON file.",
+    "Answer": "{\n\"id\":\"n\",\n\"Q\":\"zy\",\n\"P\":\"yy\",\n\"subs\":[]\n}",
+    "Label": {
+        "typename": "json",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "{\n\"id\":\"l\",\n\"Z\":\"i\",\n\"Y\":\"h\",\n\"X\":\"g\",\n\"subs\":[\n {\n \"id\":\"m\",\n \"W\":\"f\",\n \"V\":\"e\",\n \"U\":\"d\",\n \"T\":\"c\",\n \"S\":\"b\",\n \"R\":\"a\",\n \"subs\":[\n  {\n  \"id\":\"n\",\n  \"Q\":\"zy\",\n  \"P\":\"yy\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"o\",\n  \"O\":\"xy\",\n  \"N\":\"wy\",\n  \"M\":\"vy\",\n  \"L\":\"uy\",\n  \"K\":\"ty\",\n  \"J\":\"sy\",\n  \"I\":\"ry\",\n  \"H\":\"qy\",\n  \"G\":\"py\",\n  \"subs\":[]\n  }\n ]\n },\n {\n \"id\":\"p\",\n \"F\":\"oy\",\n \"E\":\"ny\",\n \"D\":\"my\",\n \"C\":\"ly\",\n \"B\":\"ky\",\n \"A\":\"jy\",\n \"subs\":[\n  {\n  \"id\":\"q\",\n  \"ZY\":\"iy\",\n  \"YY\":\"hy\",\n  \"XY\":\"gy\",\n  \"WY\":\"fy\",\n  \"VY\":\"ey\",\n  \"UY\":\"dy\",\n  \"TY\":\"cy\",\n  \"SY\":\"by\",\n  \"RY\":\"ay\",\n  \"QY\":\"zx\",\n  \"PY\":\"yx\",\n  \"subs\":[]\n  },\n  {\n  \"id\":\"r\",\n  \"OY\":\"xx\",\n  \"NY\":\"wx\",\n  \"MY\":\"vx\",\n  \"LY\":\"ux\",\n  \"KY\":\"tx\",\n  \"JY\":\"sx\",\n  \"IY\":\"rx\",\n  \"HY\":\"qx\",\n  \"GY\":\"px\",\n  \"FY\":\"ox\",\n  \"subs\":[]\n  }\n ]\n }\n]\n}",
+    "timestamp": "08_28_2024_23_21_26.551410",
+    "input_hash": 7363660895938779228,
+    "RuleHint": "To find the object with specified id, you need to first parse the json file and get the outermost object, starting from which search the subs field recursively and looking for the desired value in id field for each visited object. Retrieve the content of that object once found."
+}

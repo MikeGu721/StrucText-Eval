@@ -1,0 +1,41 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "No image file is included in the file.",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 4,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "y\nmonkey q**groot**ualify ravish salvage halo X-ray\n# z\nnob qualify**halo** ravish salvage halo X-ray",
+    "timestamp": "08_28_2024_23_21_26.894559",
+    "input_hash": 5186140670010360169,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "nf.jpeg",
+            "Reference": "q\nessence transformer ravish transformer**halo**![alt](nf.jpeg \"hover text\")ence transformer ravish transformer oops essence\n# r\nfar transformer ravish transformer oops esse**idiot**nce"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ai.png",
+            "Reference": "h\nbanana n**ravish**ob kangaroo nob jargon zen\n# i\ncafe nob kangaroo nob jarg**salvage**![alt](ai.png \"hover text\")e nob kangaroo nob jargon zen"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "bg.jpeg",
+            "Reference": "c\nmonkey zen groot**ravish**![alt](bg.jpeg \"hover text\")ot salvage wake jargon\n# d\nnob zen groot salvage wake jargon"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "No image file is included in the file.",
+            "Reference": "f\nyogurt yogurt wake oops salv**oops**age far\n# g\nzen yogurt wake oops salvage far"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching ![*](TARGET \"*\"), the TARGET part is filename. Star means any text is possible."
+}

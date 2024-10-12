@@ -1,0 +1,61 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section.",
+    "Answer": "* j\nsalvage groot *unique*idiot X-ray nob X-ray",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 8,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "i\nravish groot idiot X-ray nob X-r*transformer*ay\n* j\nsalvage groot *unique*idiot X-ray nob X-ray",
+    "timestamp": "08_28_2024_23_21_26.999941",
+    "input_hash": -9076875932208054026,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* p\nperish transformer apple lamb apple *ravish*[[jf.jpg]]er apple lamb apple qualify",
+            "Reference": "o\noops transformer apple lamb apple qualify\n* p\nperish transformer apple lamb apple *ravish*[[jf.jpg]]er apple lamb apple qualify"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* p\nqualify yogurt monke*banana*y groot transformer [[lj.jpeg]]zen",
+            "Reference": "o\nperish yogurt monkey groot transformer zen\n* p\nqualify yogurt monke*banana*y groot transformer [[lj.jpeg]]zen"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* e\nyogurt vigor dentist idiot monkey perish",
+            "Reference": "d\nX-ray vigor dentist *halo*[[wg.png]]ray vigor dentist idiot monkey perish\n* e\nyogurt vigor dentist idiot monkey perish"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* f\nwake vigor monkey perish monkey *jargon*[[zi.jpeg]]key essence",
+            "Reference": "e\nvigor vigor mo[[yi.gif]]nkey perish monkey essence\n* f\nwake vigor monkey perish monkey *jargon*[[zi.jpeg]]key essence"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* x\nwake perish unique vigor wake[[yh.jpeg]] cafe",
+            "Reference": "w\nvigor perish unique vi[[xh.jpeg]]gor wake cafe\n* x\nwake perish unique vigor wake[[yh.jpeg]] cafe"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* d\noops perish salvage [[nf.jpeg]]perish apple far",
+            "Reference": "c\nnob perish salvage perish apple fa*jargon*[[mf.jpeg]]ge perish apple far\n* d\noops perish salvage [[nf.jpeg]]perish apple far"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* u\nperish far banan*ravish*a nob transformer transformer",
+            "Reference": "t\noops far banana nob tr*qualify*ansformer transformer\n* u\nperish far banan*ravish*a nob transformer transformer"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* l\noops jarg*perish*on X-ray X[[ai.png]]-ray perish unique",
+            "Reference": "k\nnob jargon X-ra*oops*y X-ray perish [[zh.gif]]unique\n* l\noops jarg*perish*on X-ray X[[ai.png]]-ray perish unique"
+        }
+    ],
+    "RuleHint": "Note that section, subsection, subsubsection titles are preceded by *, **, *** respectively, with one or more whitespaces in between.  To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

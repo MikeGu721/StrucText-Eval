@@ -1,0 +1,71 @@
+{
+    "Question": "How many people work with salary more than 316665?",
+    "Answer": "1",
+    "Label": {
+        "typename": "csv",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 10,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Statistics"
+        ]
+    },
+    "Reference": "primeKey,gender,age,name,height,weight,color\na,female,23,n,143,130,brown\n\nprimeKey,status,salary,company,location\na,retired,881007,Microsoft,NY",
+    "timestamp": "08_28_2024_23_21_27.030184",
+    "input_hash": -3575171073641230901,
+    "examples": [
+        {
+            "Question": "\nHow many people work with salary more than 221209?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,20,j,193,78,brown\n\nprimeKey,status,salary,company,location\na,retired,497210,Apple,WA"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 60973?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,28,o,156,124,black\n\nprimeKey,status,salary,company,location\na,employed,567278,Google,WA"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 879791?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,61,i,219,85,black\n\nprimeKey,status,salary,company,location\na,retired,203060,Microsoft,GA"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 982015?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,50,h,192,83,brown\n\nprimeKey,status,salary,company,location\na,employed,546275,OPENAI,CA"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 97407?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,20,d,168,167,mulatto\n\nprimeKey,status,salary,company,location\na,employed,239920,Google,WA"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 285336?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,32,q,213,102,mulatto\n\nprimeKey,status,salary,company,location\na,retired,528649,NVIDIA,NY"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 75018?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,42,v,125,161,olive\n\nprimeKey,status,salary,company,location\na,employed,594414,NVIDIA,TX"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 265559?\n",
+            "Answer": " 1 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,40,v,154,125,mulatto\n\nprimeKey,status,salary,company,location\na,retired,488223,Apple,TX"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 722392?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,male,32,a,140,158,swarthy\n\nprimeKey,status,salary,company,location\na,retired,609924,Microsoft,NY"
+        },
+        {
+            "Question": "\nHow many people work with salary more than 310528?\n",
+            "Answer": " 0 ",
+            "Reference": "primeKey,gender,age,name,height,weight,color\na,female,65,v,211,127,brown\n\nprimeKey,status,salary,company,location\na,retired,174272,Meta,IL"
+        }
+    ],
+    "RuleHint": "To get the number of people with salary above a threshold, you need to find the table with salary information. Then you go over each line and check the salary field. During the process count only those lines with value of salary strictly greater than the specified threshold towards your final sum. The sum after checking each line is the right answer."
+}

@@ -1,0 +1,19 @@
+{
+    "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the YAML file, separated by \\n\\n.",
+    "Answer": "id: \"m\"\nN: a,\nM: zy,\nL: yy,\nK: xy,\nJ: wy,\nI: vy,\nH: uy,\nG: ty,\nF: sy,\nE: ry,\nD: qy,\nC: py,\nsubs: []\n\nid: \"n\"\nB: oy,\nA: ny,\nZY: my,\nYY: ly,\nsubs: []\n\nid: \"p\"\nMY: zx,\nLY: yx,\nKY: xx,\nJY: wx,\nIY: vx,\nsubs: []\n\nid: \"q\"\nHY: ux,\nGY: tx,\nFY: sx,\nEY: rx,\nDY: qx,\nCY: px,\nBY: ox,\nAY: nx,\nZX: mx,\nYX: lx,\nXX: kx,\nWX: jx,\nsubs: []",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "id: \"k\"\nZ: m,\nY: l,\nX: k,\nW: j,\nV: i,\nU: h,\nsubs: \n- id: \"l\"\n  T: g,\n  S: f,\n  R: e,\n  Q: d,\n  P: c,\n  O: b,\n  subs: \n  - id: \"m\"\n    N: a,\n    M: zy,\n    L: yy,\n    K: xy,\n    J: wy,\n    I: vy,\n    H: uy,\n    G: ty,\n    F: sy,\n    E: ry,\n    D: qy,\n    C: py,\n    subs: []\n  - id: \"n\"\n    B: oy,\n    A: ny,\n    ZY: my,\n    YY: ly,\n    subs: []\n- id: \"o\"\n  XY: ky,\n  WY: jy,\n  VY: iy,\n  UY: hy,\n  TY: gy,\n  SY: fy,\n  RY: ey,\n  QY: dy,\n  PY: cy,\n  OY: by,\n  NY: ay,\n  subs: \n  - id: \"p\"\n    MY: zx,\n    LY: yx,\n    KY: xx,\n    JY: wx,\n    IY: vx,\n    subs: []\n  - id: \"q\"\n    HY: ux,\n    GY: tx,\n    FY: sx,\n    EY: rx,\n    DY: qx,\n    CY: px,\n    BY: ox,\n    AY: nx,\n    ZX: mx,\n    YX: lx,\n    XX: kx,\n    WX: jx,\n    subs: []",
+    "timestamp": "08_28_2024_23_21_26.556548",
+    "input_hash": 7947788678235838426,
+    "RuleHint": "To get the most deeply nested objects, start from the outermost object, recursively search along the subs fields. For each object, check its subs field, any object with an empty subs is one most deeply nested object."
+}

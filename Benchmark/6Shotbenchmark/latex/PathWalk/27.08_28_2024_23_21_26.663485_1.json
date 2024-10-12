@@ -1,0 +1,51 @@
+{
+    "Question": "What is the content of 2th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section.",
+    "Answer": "\\section{y}\nyogurt jargon ravish jargon \\textbf{far}zen jargon wa\\includegraphics[width=0.5\\textwidth]{vi.png}ke ravish banana far zen unique\n\\section{z}\nzen jargon ravish jargon zen jargon wake ravish banana far zen unique\n\\section{ab}\napple kangaroo ravish j\\textbf{groot}argon zen jargon wake ravish banana far zen unique",
+    "Label": {
+        "typename": "latex",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 6,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "u\nunique jargon ravish jargon zen jargon wake ravish banana far zen unique\n\\section{v}\nvigor jargon ravish jargon \\textbf{essence}zen jargon wake ravish banana far zen unique\n\\section{w}\nwake jargon ravish jargon zen jargon wake ravi\\includegraphics[width=0.5\\textwidth]{ui.png}sh banana far zen unique\n\\section{x}\nX-ray jargon ravish jargon zen jargon wake ravish banana far zen unique\n\\section{y}\nyogurt jargon ravish jargon \\textbf{far}zen jargon wa\\includegraphics[width=0.5\\textwidth]{vi.png}ke ravish banana far zen unique\n\\section{z}\nzen jargon ravish jargon zen jargon wake ravish banana far zen unique\n\\section{ab}\napple kangaroo ravish j\\textbf{groot}argon zen jargon wake ravish banana far zen unique",
+    "timestamp": "08_28_2024_23_21_26.663485",
+    "input_hash": -854584773947985930,
+    "examples": [
+        {
+            "Question": "What is the content of 2th subsection under 2th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{p}\nmonkey vigor far unique salvage tr\\textbf{vigor}ansformer i\\includegraphics[width=0.5\\textwidth]{bf.jpeg}diot salvage salvage perish ravish zen",
+            "Reference": "j\ngroot vigor far unique salvage transformer idiot salvage salvage perish ravish zen\n\\section{k}\nhalo vigor far unique salvage transformer idiot salvage salvage perish ravish zen\n\\section{l}\nidiot vigor far unique salvage transformer idiot salvage salvage perish ravish \\includegraphics[width=0.5\\textwidth]{ze.gif}zen\n\\section{m}\njargon vigor far unique salvage transformer idiot salvage salvage peris\\textbf{salvage}\\includegraphics[width=0.5\\textwidth]{af.jpg}e perish ravish zen\n\\section{n}\nkangaroo vigor far unique salvage transformer idiot salvage salvage perish ravish\\textbf{transformer} zen\n\\section{o}\nlamb vigor far unique salvage trans\\textbf{unique}former idiot salvage salvage perish ravish zen\n\\section{p}\nmonkey vigor far unique salvage tr\\textbf{vigor}ansformer i\\includegraphics[width=0.5\\textwidth]{bf.jpeg}diot salvage salvage perish ravish zen"
+        },
+        {
+            "Question": "What is the content of 2th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{h}\nfar monkey kangaroo y\\includegraphics[width=0.5\\textwidth]{zg.jpeg}ogurt banana essence wake jargon cafe apple groot ravish\n\\section{i}\ngroot monkey kangaroo yogurt banana essence wake jargon cafe apple groot ravish\n\\section{j}\nhalo monkey kangaroo yogurt banana es\\textbf{monkey}sence wake jargon cafe apple groot ravish",
+            "Reference": "d\nbanana monkey kangaroo yogurt banana essence wak\\textbf{jargon}\\includegraphics[width=0.5\\textwidth]{yg.gif}aroo yogurt banana essence wake jargon cafe apple groot ravish\n\\section{e}\ncafe monkey kangaroo yogurt banana esse\\textbf{kangaroo}nce wake jargon cafe apple groot ravish\n\\section{f}\ndentist monkey kangaroo yogurt banana essence wake jargon cafe ap\\textbf{lamb}ple groot ravish\n\\section{g}\nessence monkey kangaroo yogurt banana essence wake jargon cafe apple groot ravish\n\\section{h}\nfar monkey kangaroo y\\includegraphics[width=0.5\\textwidth]{zg.jpeg}ogurt banana essence wake jargon cafe apple groot ravish\n\\section{i}\ngroot monkey kangaroo yogurt banana essence wake jargon cafe apple groot ravish\n\\section{j}\nhalo monkey kangaroo yogurt banana es\\textbf{monkey}sence wake jargon cafe apple groot ravish"
+        },
+        {
+            "Question": "What is the content of 1th subsection under 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{p}\njargo\\textbf{X-ray}n vigor monkey yogurt idiot far X-ray jargon far X-ray vigor kangaroo",
+            "Reference": "n\nhalo vigor monkey yogurt idiot far X-ray jargon far X-ray vigor kangaroo\n\\section{o}\nidiot vig\\includegraphics[width=0.5\\textwidth]{yh.jpg}or monkey yogurt idiot far X-ray jargon far X-ray vigor kangaroo\n\\section{p}\njargo\\textbf{X-ray}n vigor monkey yogurt idiot far X-ray jargon far X-ray vigor kangaroo\n\\section{q}\nkangaroo vigor monkey yogurt idiot far X-ray jargon far \\includegraphics[width=0.5\\textwidth]{zh.gif}X-ray vigor kangaroo\n\\section{r}\nlamb vigor monkey yogurt idiot far X-ray jargon far X-ray vigor kangaroo\n\\section{s}\nmonkey vigor \\includegraphics[width=0.5\\textwidth]{ai.jpg}monkey yogurt idiot far X-ray jargon far X-ray vigor kangaroo\n\\section{t}\nnob vigor monkey yogurt idiot far X-ray jargon far X-ray v\\includegraphics[width=0.5\\textwidth]{bi.gif}igor kangaroo"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 2th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{h}\nessence groot ravish salvag\\textbf{unique}\\includegraphics[width=0.5\\textwidth]{tf.jpeg}ge transformer idiot apple banana yogurt yogurt cafe monkey",
+            "Reference": "b\nyogurt far ravish salvage transformer idiot apple banana yogur\\includegraphics[width=0.5\\textwidth]{of.png}t yogurt cafe monkey\n\\section{c}\nzen far ravish salvage transformer idiot a\\textbf{qualify}pple banana yogurt yogurt cafe monkey\n\\section{d}\napple groot ravish salvage transfor\\textbf{ravish}\\includegraphics[width=0.5\\textwidth]{pf.jpg}ransformer idiot apple banana yogurt yogurt cafe monkey\n\\section{e}\nbanana groot ravish salvage transformer idiot apple banana yogurt yog\\textbf{salvage}\\includegraphics[width=0.5\\textwidth]{qf.png}na yogurt yogurt cafe monkey\n\\section{f}\ncafe groot ravish\\includegraphics[width=0.5\\textwidth]{rf.png} salvage transformer idiot apple banana yogurt yogurt cafe monkey\n\\section{g}\ndentist groot ravish salvage transformer idiot appl\\textbf{transformer}e banana yogurt yogu\\includegraphics[width=0.5\\textwidth]{sf.png}rt cafe monkey\n\\section{h}\nessence groot ravish salvag\\textbf{unique}\\includegraphics[width=0.5\\textwidth]{tf.jpeg}ge transformer idiot apple banana yogurt yogurt cafe monkey"
+        },
+        {
+            "Question": "What is the content of 2th subsection under 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{y}\nidiot unique essence nob groot cafe far monkey jargon ba\\textbf{monkey}nana dentist lam\\includegraphics[width=0.5\\textwidth]{if.gif}b",
+            "Reference": "v\nfar unique essence nob groot cafe far monk\\textbf{kangaroo}ey jargon banana dentist lamb\n\\section{w}\ngroot un\\includegraphics[width=0.5\\textwidth]{hf.png}ique essence nob groot cafe far monkey jargon banana dentist lamb\n\\section{x}\nhalo unique essence nob groot cafe far monkey jargon ba\\textbf{lamb}nana dentist lamb\n\\section{y}\nidiot unique essence nob groot cafe far monkey jargon ba\\textbf{monkey}nana dentist lam\\includegraphics[width=0.5\\textwidth]{if.gif}b\n\\section{z}\njargon unique essence nob groot cafe far monkey jargon ba\\textbf{nob}nana dentist lamb\n\\section{ab}\nkangaroo unique essence nob groot cafe far monk\\textbf{oops}ey jargon banana dentist lamb\n\\section{bb}\nlamb unique essence nob groot cafe far monkey jargon banana dentist lamb"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the LaTeX file, including the heading line and any sub-section. ",
+            "Answer": "\\section{s}\nhalo oops nob ravish transformer halo dentist perish lamb salvage oops r\\textbf{idiot}avish\n\\section{t}\nidiot oops nob ravish transformer halo dentist perish lamb salvage oops ravis\\includegraphics[width=0.5\\textwidth]{he.jpeg}h\n\\section{u}\njargon oops nob ravish transformer halo dentist perish lamb salvage oops ravish",
+            "Reference": "r\ngroot oo\\textbf{halo}ps nob ravish transformer halo dentist perish lamb salvage oops ravish\n\\section{s}\nhalo oops nob ravish transformer halo dentist perish lamb salvage oops r\\textbf{idiot}avish\n\\section{t}\nidiot oops nob ravish transformer halo dentist perish lamb salvage oops ravis\\includegraphics[width=0.5\\textwidth]{he.jpeg}h\n\\section{u}\njargon oops nob ravish transformer halo dentist perish lamb salvage oops ravish\n\\section{v}\nkangaroo oops nob ravish transformer halo\\includegraphics[width=0.5\\textwidth]{ie.jpg} dentist perish lamb salvage oops ravish\n\\section{w}\nlamb oops nob ravish transformer halo dentist perish lamb salvage oops ravis\\textbf{jargon}\\includegraphics[width=0.5\\textwidth]{je.png}amb salvage oops ravish\n\\section{x}\nmonkey oops nob ravish transformer halo den\\textbf{kangaroo}tist perish lamb salvage oops ravish"
+        }
+    ],
+    "RuleHint": "Note that section title is enclosed by \\\\section{}, and \\\\subsection for subsection, \\\\subsubsection for subsubsection. To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

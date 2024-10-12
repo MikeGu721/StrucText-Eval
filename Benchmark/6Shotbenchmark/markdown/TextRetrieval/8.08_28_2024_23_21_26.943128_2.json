@@ -1,0 +1,51 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "qj.png\noj.jpg\npj.gif",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 6,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "n\nbanana kangaroo essence zen wake vigor groot oops banana far dentist halo\n# o\ncafe kangaroo essence zen wake v**nob**igor groot oops banana![alt](oj.jpg \"hover text\") far dentist halo\n## p\ndentist kangaroo essence zen wake vigor groot oops banana far dentist halo\n## q\nessence kangaroo essence zen wake vigor groot oops banana far dentist halo\n# r\nfar kangaroo essence zen wake v**oops**![alt](pj.gif \"hover text\")aroo essence zen wake vigor groot oops banana far dentist halo\n## s\ngroot kangaroo essence zen wake v**perish**igor groot oops banana far de![alt](qj.png \"hover text\")ntist halo\n## t\nhalo kangaroo essence zen wake vigor groot oops banana far dentist halo",
+    "timestamp": "08_28_2024_23_21_26.943128",
+    "input_hash": -2828360218249823730,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "zi.jpeg\naj.gif\nyi.gif",
+            "Reference": "l\nzen halo oops essence yogurt jargon ravish transformer qualify wake vigor transformer\n# m\napple idiot oops essence yogurt jargon ravish transformer qual**halo**![alt](yi.gif \"hover text\") yogurt jargon ravish transformer qualify wake vigor transformer\n## n\nbanana idiot oops essence yogurt jargon ravish transformer qualify wake **idiot**vigor transformer\n## o\ncafe idiot **jargon**oops essence yogurt jargon ravish transformer qualify wake vigor transformer\n# p\ndentist idiot oops essence **kangaroo**yo![alt](zi.jpeg \"hover text\")gurt jargon ravish transformer qualify wake vigor transformer\n## q\nessence idiot oops essence yogurt j**lamb**argon ravish transfor![alt](aj.gif \"hover text\")mer qualify wake vigor transformer\n## r\nfar idiot oops essence yogurt jargon ravish transformer qua**monkey**lify wake vigor transformer"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "hg.jpeg\ngg.jpg\nfg.gif\nig.jpg",
+            "Reference": "b\ndentist banana ca![alt](fg.gif \"hover text\")fe yogurt qualify banana nob banana X-ray oops essence dentist\n# c\nessence banana cafe yogurt qualify banana nob banana X-ray oops essence dentist\n## d\nfar bana![alt](gg.jpg \"hover text\")na cafe yogurt qualify banana nob banana X-ray oops essence dentist\n## e\ngroot banana cafe yogurt qualify bana**transformer**![alt](hg.jpeg \"hover text\")na nob banana X-ray oops essence dentist\n# f\nhalo banana cafe yogurt qualify banana nob banana X-ray oops essence**unique** dentist\n## g\nidiot banana cafe yogurt qualify banana nob banana X-ray oo**vigor**![alt](ig.jpg \"hover text\") banana nob banana X-ray oops essence dentist\n## h\nj**wake**argon banana cafe yogurt qualify banana nob banana X-ray oops essence dentist"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "zi.jpeg\nxi.gif\naj.gif\nyi.gif",
+            "Reference": "n\ncafe zen groot monkey quali![alt](xi.gif \"hover text\")fy qualify kangaroo groot unique transformer dentist halo\n# o\ndentist zen groot monkey quali![alt](yi.gif \"hover text\")fy qualify kangaroo groot unique transformer dentist halo\n## p\nessence zen groot m![alt](zi.jpeg \"hover text\")onkey qualify qualify kangaroo groot unique transformer dentist halo\n## q\nfar z**qualify**en groot monkey qualify qualify kangaroo groot unique transformer dentist halo\n# r\ngroot zen groot monkey qualify qualify kangaroo groot unique tr**ravish**ansformer dentist halo\n## s\nhalo zen groot monkey qualify qualify kangaroo groot unique transformer dentist halo\n## t\nidiot zen groot monkey qualify qua![alt](aj.gif \"hover text\")lify kangaroo groot unique transformer dentist halo"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ej.jpeg\ndj.jpg",
+            "Reference": "i\ncafe tra![alt](dj.jpg \"hover text\")nsformer cafe oops nob kangaroo idiot cafe wake salvage jargon zen\n# j\ndentist tr**idiot**ansformer cafe oops nob kangaroo idiot cafe wake salvage jargon zen\n## k\nessence transformer cafe oops nob kangaroo idi![alt](ej.jpeg \"hover text\")ot cafe wake salvage jargon zen\n## l\nfar transformer cafe oops nob kangaroo idiot cafe wake salvage jargon zen\n# m\ngroot transformer cafe oops nob kangaroo idiot cafe wake salvage jargon zen\n## n\nha**jargon**lo transformer cafe oops nob kangaroo idiot cafe wake salvage jargon zen\n## o\nidiot transformer cafe oops nob kangaroo idiot cafe wake salvage jargon zen"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "hg.jpeg\njg.jpg\ngg.jpg\nig.jpg",
+            "Reference": "b\ndentist ravish oops monkey oops ravish qua**qualify**![alt](gg.jpg \"hover text\")tist ravish oops monkey oops ravish qualify kangaroo wake oops idiot X-ray\n# c\nessence ravish oops monkey **ravish**![alt](hg.jpeg \"hover text\")avish oops monkey oops ravish qualify kangaroo wake oops idiot X-ray\n## d\nfar ravish oops monkey oops ravish qualify kangaroo wake oops i**salvage**![alt](ig.jpg \"hover text\")alify kangaroo wake oops idiot X-ray\n## e\ngroot**transformer** ravish oops monkey oops ravish qualify kangaroo wake oops idiot X-ray\n# f\nhalo ravish oops monkey oops ravish qualify kangaroo**unique** wake oops idiot X-ray\n## g\nidiot ravish oops monkey oops ravish qualify kangaroo![alt](jg.jpg \"hover text\") wake oops idiot X-ray\n## h\njargon ravish oops monkey oops ravish quali**vigor**fy kangaroo wake oops idiot X-ray"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ag.jpeg\ncg.png\nbg.jpeg",
+            "Reference": "z\nkangaroo salvage oops apple kangaroo salvage jargon unique zen essence idiot X-ray\n# ab\nlamb salvage oops apple kangaroo salvage jarg![alt](ag.jpeg \"hover text\")on unique zen essence idiot X-ray\n## bb\nmonkey salvage oops apple kangaroo salvage jargon unique zen essence i![alt](bg.jpeg \"hover text\")diot X-ray\n## cb\nnob salvage oops apple kangaroo salvage jargon unique zen essence idiot X-ray\n# db\noops salvage oops apple kangaroo salvage jargon unique zen essence id**lamb**![alt](cg.png \"hover text\") kangaroo salvage jargon unique zen essence idiot X-ray\n## eb\nperish salvage oops ap**monkey**ple kangaroo salvage jargon unique zen essence idiot X-ray\n## fb\nqualify salvage oops apple kangaroo salvage jargon unique zen essence idiot X-ray"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching ![*](TARGET \"*\"), the TARGET part is filename. Star means any text is possible."
+}

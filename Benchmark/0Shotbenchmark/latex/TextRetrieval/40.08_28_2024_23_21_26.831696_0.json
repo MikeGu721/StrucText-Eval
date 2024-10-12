@@ -1,0 +1,19 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "yogurt\nwake\nzen\napple banana\nX-ray",
+    "Label": {
+        "typename": "latex",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "d\napple far idiot banana \\textbf{wake}nob perish transformer salvage nob cafe cafe t\\includegraphics[width=0.5\\textwidth]{ng.png}ransformer\n\\section{e}\nbanana far idiot banana nob perish transformer salvage n\\textbf{X-ray}ob cafe cafe transformer\n\\section{f}\ncafe far idiot banana nob perish transformer salvage nob cafe caf\\includegraphics[width=0.5\\textwidth]{og.jpeg}e transformer\n\\section{g}\ndentist far idiot banana nob perish transformer salvage nob caf\\textbf{yogurt}\\includegraphics[width=0.5\\textwidth]{pg.jpeg}tist far idiot banana nob perish transformer salvage nob cafe cafe transformer\n\\section{h}\nessence far idiot banana nob peris\\textbf{zen}\\includegraphics[width=0.5\\textwidth]{qg.jpg}anana nob perish transformer salvage nob cafe cafe transformer\n\\section{i}\nfar far idiot banana nob perish transformer salvage nob cafe cafe transfo\\textbf{apple banana}rmer\n\\section{j}\ngroot far idiot banana nob per\\includegraphics[width=0.5\\textwidth]{rg.jpg}ish transformer salvage nob cafe cafe transformer",
+    "timestamp": "08_28_2024_23_21_26.831696",
+    "input_hash": 3797577798293378771,
+    "RuleHint": "To find the bold texts, search for macro textbf, and everything after \\\\textbf{ and before the first } encountered is bold text."
+}

@@ -1,0 +1,26 @@
+{
+    "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+    "Answer": "True",
+    "Label": {
+        "typename": "xml",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Syntax"
+        ]
+    },
+    "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"x\" Y=\"w\" X=\"v\">\n <B W=\"u\" V=\"t\" U=\"s\" T=\"r\">\n  <C S=\"q\" R=\"p\" Q=\"o\" P=\"n\">\n   cafe\n  <D O=\"m\">\n   dentist\n  banana\n <E N=\"l\" M=\"k\" L=\"j\" K=\"i\" J=\"h\" I=\"g\" H=\"f\" G=\"e\">\n  <F F=\"d\" E=\"c\" D=\"b\" C=\"a\" B=\"zy\" A=\"yy\" ZY=\"xy\" YY=\"wy\" XY=\"vy\" WY=\"uy\">\n   far\n  <G VY=\"ty\" UY=\"sy\" TY=\"ry\" SY=\"qy\" RY=\"py\" QY=\"oy\">\n   groot\n  essence\n apple\n</A>",
+    "timestamp": "08_28_2024_23_21_26.838992",
+    "input_hash": 4407235981051817138,
+    "examples": [
+        {
+            "Question": "Is there any structural error in this XML? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<A Z=\"d\">\n <B Y=\"c\" X=\"b\" W=\"a\" V=\"zy\">\n  <C U=\"yy\" T=\"xy\" S=\"wy\" R=\"vy\" Q=\"uy\" P=\"ty\" O=\"sy\" N=\"ry\">\n   cafe\n  <D M=\"qy\" L=\"py\" K=\"oy\" J=\"ny\" I=\"my\" H=\"ly\" G=\"ky\" F=\"jy\">\n   dentist\n  banana\n <E E=\"iy\" D=\"hy\" C=\"gy\" B=\"fy\" A=\"ey\">\n  <F ZY=\"dy\" YY=\"cy\" XY=\"by\" WY=\"ay\" VY=\"zx\" UY=\"yx\" TY=\"xx\" SY=\"wx\">\n   far\n  <G RY=\"vx\" QY=\"ux\" PY=\"tx\" OY=\"sx\">\n   groot\n  essence\n apple"
+        }
+    ],
+    "RuleHint": "To find the error in the xml file, you need to parse the xml file and report any syntax error if encountered any. Potential errors include missing ending tags."
+}

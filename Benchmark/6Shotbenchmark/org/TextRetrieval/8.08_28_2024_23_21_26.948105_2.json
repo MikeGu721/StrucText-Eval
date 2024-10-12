@@ -1,0 +1,51 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "qj.png\noj.jpg\npj.gif\nrj.gif",
+    "Label": {
+        "typename": "org",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 6,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "r\nmonkey halo zen qualify idiot ravish banana salvage yogurt far jargon X-ray\n* s\nnob halo zen qualify idiot ravish banana salvage yogurt far jargon X-ray\n** t\noops halo zen qualify idi*groot*[[oj.jpg]]zen qualify idiot ravish banana salvage yogurt far jargon X-ray\n** u\nperish halo zen qualify idiot [[pj.gif]]ravish banana salvage yogurt far jargon X-ray\n* v\nqualify halo ze*halo*[[qj.png]]o zen qualify idiot ravish banana salvage yogurt far jargon X-ray\n** w\nravish halo zen qualify idiot ravish banana salvage yogurt f[[rj.gif]]ar jargon X-ray\n** x\nsalvage halo zen qualify idiot ravish banana salvage yogurt far jargon X-ray",
+    "timestamp": "08_28_2024_23_21_26.948105",
+    "input_hash": 8346431490518299624,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "qj.png\npj.gif\nrj.gif",
+            "Reference": "v\ntransformer zen yogurt qualify idiot qualify oops kangaroo oops transformer gro*banana*[[pj.gif]] idiot qualify oops kangaroo oops transformer groot groot\n* w\nunique zen yogurt qualify idiot qualify oops kangaroo oops transformer groot groot\n** x\nvigor zen yogurt qualify idiot qualify oops kangaroo oops transforme*cafe*r groot groot\n** y\nwake zen yogurt qualify idiot qualify oops kangaroo oops transformer groot g*dentist*[[qj.png]]ps transformer groot groot\n* z\nX-ray zen yogur*essence*t qualify idiot qualify oops kangaroo oops transformer groot groot\n** ab\nyogurt zen yogurt qualify idiot qualify oops kangaroo oops transformer groot g[[rj.gif]]root\n** bb\nzen zen yogurt qualify idiot qualify oops kangaroo oops transformer gro*far*ot groot"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "nj.jpg",
+            "Reference": "d\nmonkey salvage nob far zen wake banana transformer jargon qualify nob vigor\n* e\nnob salvage nob far zen wake ban*halo*ana transformer jargon qualify nob vigor\n** f\noops salvage nob far zen wake banana transformer jargon q*idiot*ualify nob vigor\n** g\nperish salvage nob far zen wake banana transformer jargon qualify nob vigor\n* h\nqualify salva*jargon*ge nob far zen wake banana transformer jargon [[nj.jpg]]qualify nob vigor\n** i\nravish salvage nob far zen wake banana transformer jargon qualify nob vigor\n** j\nsalvage salvage nob far zen wake banana transformer jargon qualify nob vigor"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ff.gif\nhf.jpeg\ngf.gif",
+            "Reference": "d\npe[[ff.gif]]rish X-ray lamb cafe qualify banana qualify X-ray vigor oops essence jargon\n* e\nqualify X-ray lamb cafe qualify banana qualify X-ray vigor oops essence jargon\n** f\nravish X-ray lamb cafe qualify banana qualify X-ray vigor oops essence jargon\n** g\nsalvage X-ray lamb cafe[[gf.gif]] qualify banana qualify X-ray vigor oops essence jargon\n* h\ntransformer X-ray lamb cafe qualify [[hf.jpeg]]banana qualify X-ray vigor oops essence jargon\n** i\nunique X-ray lamb cafe qualify banana qualify X-ray vigor oops essence jargon\n** j\nvigor X-ray lamb cafe qualify banana qualify X-ray vigor oops essence jargon"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "ej.jpeg\ndj.jpg\nfj.gif\ngj.jpeg",
+            "Reference": "p\nunique salvage banana essence wake lamb salvage groot apple b*wake*[[dj.jpg]]le banana cafe qualify\n* q\nvigor salvage banana essence wake lamb salvage groot apple banana cafe qualify\n** r\nwake salvage banana essence wake lamb salvage groot apple banana cafe qualify\n** s\nX-ray salvage banana essence wake lamb salvage groot apple banana cafe qualify\n* t\nyogurt salvage banana essence *X-ray*wake lamb s[[ej.jpeg]]alvage groot apple banana cafe qualify\n** u\nzen salvage banana essence wake lamb salvage [[fj.gif]]groot apple banana cafe qualify\n** v\napple transformer banana essence wake lamb salvage groot apple banana c*yogurt*[[gj.jpeg]]transformer banana essence wake lamb salvage groot apple banana cafe qualify"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "di.png\nai.png\nbi.png\nci.jpg",
+            "Reference": "l\nper*unique*ish halo perish kangaroo lamb salvage far salvage X-ray oops jargon perish\n* m\nqualify halo[[ai.png]] perish kangaroo lamb salvage far salvage X-ray oops jargon perish\n** n\nravish halo perish kangaroo lamb salvage far salvage X-ray oops jargon perish\n** o\nsalvage halo perish kangaroo lamb salvage far salvage X-ray oops jargon pe*vigor*[[bi.png]] X-ray oops jargon perish\n* p\ntran*wake*sf[[ci.jpg]]ormer halo perish kangaroo lamb salvage far salvage X-ray oops jargon perish\n** q\nunique halo perish kang*X-ray*aroo lamb salvage far salvage X-ray oops jargon perish\n** r\nvigor halo perish kangaroo lamb salvage *yogurt*[[di.png]]r halo perish kangaroo lamb salvage far salvage X-ray oops jargon perish"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "jj.png\nhj.png\nij.jpg\ngj.jpeg",
+            "Reference": "c\nwake idiot nob essence nob oops r*nob*a[[gj.jpeg]]vish yogurt monkey lamb banana unique\n* d\nX-ra*oops*y idiot nob essence nob oops ravish yogurt monkey lamb banana unique\n** e\nyogurt idiot[[hj.png]] nob essence nob oops ravish yogurt monkey lamb banana unique\n** f\nzen idiot nob essence nob oops ravish yogurt monkey lamb banana unique\n* g\napple jargon nob esse[[ij.jpg]]nce nob oops ravish yogurt monkey lamb banana unique\n** h\nbanana jargon nob essence nob oops ravish yogurt monkey lamb banana[[jj.png]] unique\n** i\ncafe jargon nob essence nob oops ravish yogurt monkey lamb banana unique"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching [[TARGET]], the TARGET part is filename."
+}

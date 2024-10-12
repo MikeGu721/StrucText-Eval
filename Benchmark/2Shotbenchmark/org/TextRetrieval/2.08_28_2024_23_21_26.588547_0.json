@@ -1,0 +1,31 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "No bold texts presented in file.",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "r\nuni[[lg.jpg]]que yogurt transformer jargon transformer ravish\n* s\nvigor yogurt transformer jargon transformer ravish",
+    "timestamp": "08_28_2024_23_21_26.588547",
+    "input_hash": 5123520268846004241,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "cafe\ndentist",
+            "Reference": "g\nyogurt *cafe*unique cafe oops unique far\n* h\nzen unique cafe oops un*dentist*[[ke.png]] unique far"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "apple",
+            "Reference": "e\nzen groot wake monkey lamb wake\n* f\nappl*apple*e halo wake [[ei.jpeg]]monkey lamb wake"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for single star, i.e., *, the content between two occurrences of single star is the bold texts. Note that the bold range should start from the single star occurring at i-th spot throughout the whole input file, where i is odd, and end with single star occurring at jth spot where j is even. For example, text between single star appearing first and second time."
+}

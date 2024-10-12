@@ -1,0 +1,66 @@
+{
+    "Question": "What is the depth of node cb? Answer an integer, root is of depth 0.",
+    "Answer": "2",
+    "Label": {
+        "typename": "tree",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 9,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Tree.Depth"
+        ]
+    },
+    "Reference": "w->x\nx->y\nx->z\nw->ab\nab->bb\nab->cb",
+    "timestamp": "08_28_2024_23_21_26.724754",
+    "input_hash": -3240996618513281284,
+    "examples": [
+        {
+            "Question": "What is the depth of node i? Answer an integer, root is of depth 0. ",
+            "Answer": "2",
+            "Reference": "c->d\nd->e\nd->f\nc->g\ng->h\ng->i"
+        },
+        {
+            "Question": "What is the depth of node l? Answer an integer, root is of depth 0. ",
+            "Answer": "2",
+            "Reference": "f->g\ng->h\ng->i\nf->j\nj->k\nj->l"
+        },
+        {
+            "Question": "What is the depth of node z? Answer an integer, root is of depth 0. ",
+            "Answer": "2",
+            "Reference": "w->x\nx->y\nx->z\nw->ab\nab->bb\nab->cb"
+        },
+        {
+            "Question": "What is the depth of node bb? Answer an integer, root is of depth 0. ",
+            "Answer": "2",
+            "Reference": "y->z\nz->ab\nz->bb\ny->cb\ncb->db\ncb->eb"
+        },
+        {
+            "Question": "What is the depth of node v? Answer an integer, root is of depth 0. ",
+            "Answer": "1",
+            "Reference": "u->v\nv->w\nv->x\nu->y\ny->z\ny->ab"
+        },
+        {
+            "Question": "What is the depth of node cb? Answer an integer, root is of depth 0. ",
+            "Answer": "2",
+            "Reference": "w->x\nx->y\nx->z\nw->ab\nab->bb\nab->cb"
+        },
+        {
+            "Question": "What is the depth of node r? Answer an integer, root is of depth 0. ",
+            "Answer": "2",
+            "Reference": "m->n\nn->o\nn->p\nm->q\nq->r\nq->s"
+        },
+        {
+            "Question": "What is the depth of node i? Answer an integer, root is of depth 0. ",
+            "Answer": "2",
+            "Reference": "f->g\ng->h\ng->i\nf->j\nj->k\nj->l"
+        },
+        {
+            "Question": "What is the depth of node v? Answer an integer, root is of depth 0. ",
+            "Answer": "2",
+            "Reference": "q->r\nr->s\nr->t\nq->u\nu->v\nu->w"
+        }
+    ],
+    "RuleHint": "To find the depth of a node, you need to find the number of edges from root to node. You have to start from the root with depth 0 and assign the depth for each node recursively. For any given node, it gets depth of current depth. Increment the depth by 1 before go to its subtree and repeat the process until every node gets a depth."
+}

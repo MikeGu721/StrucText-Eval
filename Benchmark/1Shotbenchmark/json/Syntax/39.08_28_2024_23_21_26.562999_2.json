@@ -1,0 +1,26 @@
+{
+    "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+    "Answer": "False",
+    "Label": {
+        "typename": "json",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "Syntax"
+        ]
+    },
+    "Reference": "{\n\"id\":\"o\",\n\"Z\":\"q\",\n\"Y\":\"p\",\n\"subs\":[\n {\n \"id\":\"p\",\n \"X\":\"o\",\n \"W\":\"n\",\n \"V\":\"m\",\n \"U\":\"l\",\n \"T\":\"k\",\n \"subs\":[]\n }\n]\n}",
+    "timestamp": "08_28_2024_23_21_26.562999",
+    "input_hash": -5454410195870821827,
+    "examples": [
+        {
+            "Question": "Is there any structural error in this JSON? If so, give the answer 'True' and spot them out. If it is free from error, just give the answer 'False'.",
+            "Answer": "True",
+            "Reference": "{\n\"id\":\"k\",\n\"Z\":\"e\",\n\"Y\":\"d\",\n\"subs\":[\n {\n \"id\":\"l\",\n \"X\":\"c\",\n \"W\":\"b\",\n \"subs\":[]\n]"
+        }
+    ],
+    "RuleHint": "To find the error in the json file, you need to parse the json file and report any syntax error if encountered any. Potential errors include missing ending curly braces."
+}

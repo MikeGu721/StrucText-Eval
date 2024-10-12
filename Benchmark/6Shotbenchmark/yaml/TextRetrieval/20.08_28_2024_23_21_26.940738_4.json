@@ -1,0 +1,51 @@
+{
+    "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the YAML file, separated by \\n\\n.",
+    "Answer": "id: \"bb\"\nE: my,\nsubs: []\n\nid: \"cb\"\nD: ly,\nC: ky,\nB: jy,\nA: iy,\nZY: hy,\nsubs: []\n\nid: \"eb\"\nSY: ay,\nRY: zx,\nQY: yx,\nPY: xx,\nOY: wx,\nNY: vx,\nMY: ux,\nLY: tx,\nKY: sx,\nJY: rx,\nIY: qx,\nHY: px,\nsubs: []\n\nid: \"fb\"\nGY: ox,\nsubs: []",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 6,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "id: \"z\"\nZ: h,\nY: g,\nX: f,\nW: e,\nV: d,\nU: c,\nT: b,\nS: a,\nR: zy,\nQ: yy,\nP: xy,\nsubs: \n- id: \"ab\"\n  O: wy,\n  N: vy,\n  M: uy,\n  L: ty,\n  K: sy,\n  J: ry,\n  I: qy,\n  H: py,\n  G: oy,\n  F: ny,\n  subs: \n  - id: \"bb\"\n    E: my,\n    subs: []\n  - id: \"cb\"\n    D: ly,\n    C: ky,\n    B: jy,\n    A: iy,\n    ZY: hy,\n    subs: []\n- id: \"db\"\n  YY: gy,\n  XY: fy,\n  WY: ey,\n  VY: dy,\n  UY: cy,\n  TY: by,\n  subs: \n  - id: \"eb\"\n    SY: ay,\n    RY: zx,\n    QY: yx,\n    PY: xx,\n    OY: wx,\n    NY: vx,\n    MY: ux,\n    LY: tx,\n    KY: sx,\n    JY: rx,\n    IY: qx,\n    HY: px,\n    subs: []\n  - id: \"fb\"\n    GY: ox,\n    subs: []",
+    "timestamp": "08_28_2024_23_21_26.940738",
+    "input_hash": -6997571680156636905,
+    "examples": [
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the YAML file, separated by \\n\\n. ",
+            "Answer": "id: \"c\"\nI: qy,\nH: py,\nG: oy,\nsubs: []\n\nid: \"d\"\nF: ny,\nE: my,\nD: ly,\nC: ky,\nB: jy,\nA: iy,\nZY: hy,\nYY: gy,\nXY: fy,\nWY: ey,\nsubs: []\n\nid: \"f\"\nRY: zx,\nQY: yx,\nPY: xx,\nOY: wx,\nNY: vx,\nsubs: []\n\nid: \"g\"\nMY: ux,\nLY: tx,\nKY: sx,\nJY: rx,\nIY: qx,\nHY: px,\nGY: ox,\nFY: nx,\nEY: mx,\nDY: lx,\nCY: kx,\nsubs: []",
+            "Reference": "id: \"a\"\nZ: h,\nY: g,\nX: f,\nW: e,\nV: d,\nU: c,\nT: b,\nS: a,\nR: zy,\nQ: yy,\nP: xy,\nsubs: \n- id: \"b\"\n  O: wy,\n  N: vy,\n  M: uy,\n  L: ty,\n  K: sy,\n  J: ry,\n  subs: \n  - id: \"c\"\n    I: qy,\n    H: py,\n    G: oy,\n    subs: []\n  - id: \"d\"\n    F: ny,\n    E: my,\n    D: ly,\n    C: ky,\n    B: jy,\n    A: iy,\n    ZY: hy,\n    YY: gy,\n    XY: fy,\n    WY: ey,\n    subs: []\n- id: \"e\"\n  VY: dy,\n  UY: cy,\n  TY: by,\n  SY: ay,\n  subs: \n  - id: \"f\"\n    RY: zx,\n    QY: yx,\n    PY: xx,\n    OY: wx,\n    NY: vx,\n    subs: []\n  - id: \"g\"\n    MY: ux,\n    LY: tx,\n    KY: sx,\n    JY: rx,\n    IY: qx,\n    HY: px,\n    GY: ox,\n    FY: nx,\n    EY: mx,\n    DY: lx,\n    CY: kx,\n    subs: []"
+        },
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the YAML file, separated by \\n\\n. ",
+            "Answer": "id: \"f\"\nP: e,\nO: d,\nN: c,\nM: b,\nL: a,\nK: zy,\nJ: yy,\nsubs: []\n\nid: \"g\"\nI: xy,\nH: wy,\nG: vy,\nF: uy,\nsubs: []\n\nid: \"i\"\nWY: ly,\nVY: ky,\nUY: jy,\nTY: iy,\nSY: hy,\nsubs: []\n\nid: \"j\"\nRY: gy,\nQY: fy,\nPY: ey,\nOY: dy,\nNY: cy,\nMY: by,\nLY: ay,\nKY: zx,\nJY: yx,\nsubs: []",
+            "Reference": "id: \"d\"\nZ: o,\nY: n,\nX: m,\nW: l,\nsubs: \n- id: \"e\"\n  V: k,\n  U: j,\n  T: i,\n  S: h,\n  R: g,\n  Q: f,\n  subs: \n  - id: \"f\"\n    P: e,\n    O: d,\n    N: c,\n    M: b,\n    L: a,\n    K: zy,\n    J: yy,\n    subs: []\n  - id: \"g\"\n    I: xy,\n    H: wy,\n    G: vy,\n    F: uy,\n    subs: []\n- id: \"h\"\n  E: ty,\n  D: sy,\n  C: ry,\n  B: qy,\n  A: py,\n  ZY: oy,\n  YY: ny,\n  XY: my,\n  subs: \n  - id: \"i\"\n    WY: ly,\n    VY: ky,\n    UY: jy,\n    TY: iy,\n    SY: hy,\n    subs: []\n  - id: \"j\"\n    RY: gy,\n    QY: fy,\n    PY: ey,\n    OY: dy,\n    NY: cy,\n    MY: by,\n    LY: ay,\n    KY: zx,\n    JY: yx,\n    subs: []"
+        },
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the YAML file, separated by \\n\\n. ",
+            "Answer": "id: \"q\"\nM: sy,\nL: ry,\nK: qy,\nJ: py,\nI: oy,\nH: ny,\nG: my,\nsubs: []\n\nid: \"r\"\nF: ly,\nsubs: []\n\nid: \"t\"\nXY: dy,\nWY: cy,\nVY: by,\nUY: ay,\nTY: zx,\nSY: yx,\nRY: xx,\nQY: wx,\nPY: vx,\nsubs: []\n\nid: \"u\"\nOY: ux,\nNY: tx,\nMY: sx,\nLY: rx,\nKY: qx,\nJY: px,\nsubs: []",
+            "Reference": "id: \"o\"\nZ: f,\nY: e,\nsubs: \n- id: \"p\"\n  X: d,\n  W: c,\n  V: b,\n  U: a,\n  T: zy,\n  S: yy,\n  R: xy,\n  Q: wy,\n  P: vy,\n  O: uy,\n  N: ty,\n  subs: \n  - id: \"q\"\n    M: sy,\n    L: ry,\n    K: qy,\n    J: py,\n    I: oy,\n    H: ny,\n    G: my,\n    subs: []\n  - id: \"r\"\n    F: ly,\n    subs: []\n- id: \"s\"\n  E: ky,\n  D: jy,\n  C: iy,\n  B: hy,\n  A: gy,\n  ZY: fy,\n  YY: ey,\n  subs: \n  - id: \"t\"\n    XY: dy,\n    WY: cy,\n    VY: by,\n    UY: ay,\n    TY: zx,\n    SY: yx,\n    RY: xx,\n    QY: wx,\n    PY: vx,\n    subs: []\n  - id: \"u\"\n    OY: ux,\n    NY: tx,\n    MY: sx,\n    LY: rx,\n    KY: qx,\n    JY: px,\n    subs: []"
+        },
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the YAML file, separated by \\n\\n. ",
+            "Answer": "id: \"ab\"\nP: m,\nO: l,\nN: k,\nM: j,\nL: i,\nK: h,\nJ: g,\nI: f,\nsubs: []\n\nid: \"bb\"\nH: e,\nG: d,\nF: c,\nE: b,\nD: a,\nC: zy,\nB: yy,\nA: xy,\nZY: wy,\nsubs: []\n\nid: \"db\"\nWY: ty,\nVY: sy,\nUY: ry,\nTY: qy,\nSY: py,\nRY: oy,\nQY: ny,\nPY: my,\nOY: ly,\nNY: ky,\nMY: jy,\nLY: iy,\nsubs: []\n\nid: \"eb\"\nKY: hy,\nJY: gy,\nIY: fy,\nsubs: []",
+            "Reference": "id: \"y\"\nZ: w,\nY: v,\nX: u,\nW: t,\nV: s,\nU: r,\nT: q,\nS: p,\nsubs: \n- id: \"z\"\n  R: o,\n  Q: n,\n  subs: \n  - id: \"ab\"\n    P: m,\n    O: l,\n    N: k,\n    M: j,\n    L: i,\n    K: h,\n    J: g,\n    I: f,\n    subs: []\n  - id: \"bb\"\n    H: e,\n    G: d,\n    F: c,\n    E: b,\n    D: a,\n    C: zy,\n    B: yy,\n    A: xy,\n    ZY: wy,\n    subs: []\n- id: \"cb\"\n  YY: vy,\n  XY: uy,\n  subs: \n  - id: \"db\"\n    WY: ty,\n    VY: sy,\n    UY: ry,\n    TY: qy,\n    SY: py,\n    RY: oy,\n    QY: ny,\n    PY: my,\n    OY: ly,\n    NY: ky,\n    MY: jy,\n    LY: iy,\n    subs: []\n  - id: \"eb\"\n    KY: hy,\n    JY: gy,\n    IY: fy,\n    subs: []"
+        },
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the YAML file, separated by \\n\\n. ",
+            "Answer": "id: \"w\"\nM: ry,\nL: qy,\nsubs: []\n\nid: \"x\"\nK: py,\nJ: oy,\nI: ny,\nH: my,\nG: ly,\nF: ky,\nE: jy,\nsubs: []\n\nid: \"z\"\nWY: by,\nsubs: []\n\nid: \"ab\"\nVY: ay,\nUY: zx,\nsubs: []",
+            "Reference": "id: \"u\"\nZ: e,\nY: d,\nX: c,\nsubs: \n- id: \"v\"\n  W: b,\n  V: a,\n  U: zy,\n  T: yy,\n  S: xy,\n  R: wy,\n  Q: vy,\n  P: uy,\n  O: ty,\n  N: sy,\n  subs: \n  - id: \"w\"\n    M: ry,\n    L: qy,\n    subs: []\n  - id: \"x\"\n    K: py,\n    J: oy,\n    I: ny,\n    H: my,\n    G: ly,\n    F: ky,\n    E: jy,\n    subs: []\n- id: \"y\"\n  D: iy,\n  C: hy,\n  B: gy,\n  A: fy,\n  ZY: ey,\n  YY: dy,\n  XY: cy,\n  subs: \n  - id: \"z\"\n    WY: by,\n    subs: []\n  - id: \"ab\"\n    VY: ay,\n    UY: zx,\n    subs: []"
+        },
+        {
+            "Question": "What are the most deeply nested objects, i.e., no value of type list or dict?The content should be an excerpt as they appear in the YAML file, separated by \\n\\n. ",
+            "Answer": "id: \"n\"\nQ: p,\nsubs: []\n\nid: \"o\"\nP: o,\nsubs: []\n\nid: \"q\"\nH: g,\nG: f,\nsubs: []\n\nid: \"r\"\nF: e,\nE: d,\nD: c,\nC: b,\nB: a,\nA: zy,\nZY: yy,\nYY: xy,\nXY: wy,\nsubs: []",
+            "Reference": "id: \"l\"\nZ: y,\nY: x,\nX: w,\nW: v,\nV: u,\nsubs: \n- id: \"m\"\n  U: t,\n  T: s,\n  S: r,\n  R: q,\n  subs: \n  - id: \"n\"\n    Q: p,\n    subs: []\n  - id: \"o\"\n    P: o,\n    subs: []\n- id: \"p\"\n  O: n,\n  N: m,\n  M: l,\n  L: k,\n  K: j,\n  J: i,\n  I: h,\n  subs: \n  - id: \"q\"\n    H: g,\n    G: f,\n    subs: []\n  - id: \"r\"\n    F: e,\n    E: d,\n    D: c,\n    C: b,\n    B: a,\n    A: zy,\n    ZY: yy,\n    YY: xy,\n    XY: wy,\n    subs: []"
+        }
+    ],
+    "RuleHint": "To get the most deeply nested objects, start from the outermost object, recursively search along the subs fields. For each object, check its subs field, any object with an empty subs is one most deeply nested object."
+}

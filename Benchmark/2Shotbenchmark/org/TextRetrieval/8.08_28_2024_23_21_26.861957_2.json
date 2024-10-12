@@ -1,0 +1,31 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "No image file is included in the file.",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 2,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "u\nhalo banana transformer essence kangaroo\n* v\nidiot banana transformer essence kan*far*garoo",
+    "timestamp": "08_28_2024_23_21_26.861957",
+    "input_hash": 1861170506344767481,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "oh.jpg",
+            "Reference": "k\nzen apple no*yogurt*[[oh.jpg]]e nob dentist zen transformer\n* l\napple banana nob dentist zen transformer"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "No image file is included in the file.",
+            "Reference": "x\nperish essence lamb apple ravis*jargon*h transformer\n* y\nqualify essence lamb apple ravish transformer"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching [[TARGET]], the TARGET part is filename."
+}

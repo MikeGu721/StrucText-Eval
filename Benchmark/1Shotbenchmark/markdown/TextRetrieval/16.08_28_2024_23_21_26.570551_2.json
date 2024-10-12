@@ -1,0 +1,26 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "oi.gif\npi.jpeg",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 1,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "p\napple kangaroo qualify ![alt](oi.gif \"hover text\")jargon far zen\n# q\nbanana kangaroo qualify ja**zen**![alt](pi.jpeg \"hover text\")anana kangaroo qualify jargon far zen",
+    "timestamp": "08_28_2024_23_21_26.570551",
+    "input_hash": -7524609037180458251,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "yf.jpg",
+            "Reference": "j\nravish dentist qualify qualify salvage ja![alt](yf.jpg \"hover text\")rgon\n# k\nsalvage dentis**yogurt**t qualify qualify salvage jargon"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching ![*](TARGET \"*\"), the TARGET part is filename. Star means any text is possible."
+}

@@ -1,0 +1,61 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "unique\ntransformer",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 8,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "i\nravish groot idiot X-ray nob X-r*transformer*ay\n* j\nsalvage groot *unique*idiot X-ray nob X-ray",
+    "timestamp": "08_28_2024_23_21_26.999674",
+    "input_hash": -9076875932208054026,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "ravish",
+            "Reference": "o\noops transformer apple lamb apple qualify\n* p\nperish transformer apple lamb apple *ravish*[[jf.jpg]]er apple lamb apple qualify"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "banana",
+            "Reference": "o\nperish yogurt monkey groot transformer zen\n* p\nqualify yogurt monke*banana*y groot transformer [[lj.jpeg]]zen"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "halo",
+            "Reference": "d\nX-ray vigor dentist *halo*[[wg.png]]ray vigor dentist idiot monkey perish\n* e\nyogurt vigor dentist idiot monkey perish"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "jargon",
+            "Reference": "e\nvigor vigor mo[[yi.gif]]nkey perish monkey essence\n* f\nwake vigor monkey perish monkey *jargon*[[zi.jpeg]]key essence"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "w\nvigor perish unique vi[[xh.jpeg]]gor wake cafe\n* x\nwake perish unique vigor wake[[yh.jpeg]] cafe"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "jargon",
+            "Reference": "c\nnob perish salvage perish apple fa*jargon*[[mf.jpeg]]ge perish apple far\n* d\noops perish salvage [[nf.jpeg]]perish apple far"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "ravish\nqualify",
+            "Reference": "t\noops far banana nob tr*qualify*ansformer transformer\n* u\nperish far banan*ravish*a nob transformer transformer"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "perish\noops",
+            "Reference": "k\nnob jargon X-ra*oops*y X-ray perish [[zh.gif]]unique\n* l\noops jarg*perish*on X-ray X[[ai.png]]-ray perish unique"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for single star, i.e., *, the content between two occurrences of single star is the bold texts. Note that the bold range should start from the single star occurring at i-th spot throughout the whole input file, where i is odd, and end with single star occurring at jth spot where j is even. For example, text between single star appearing first and second time."
+}

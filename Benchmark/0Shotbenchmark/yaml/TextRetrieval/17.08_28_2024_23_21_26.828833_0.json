@@ -1,0 +1,19 @@
+{
+    "Question": "What is the object with id y? The content should be an excerpt as it appears in the YAML file.",
+    "Answer": "id: \"y\"\nMY: tx,\nLY: sx,\nKY: rx,\nJY: qx,\nIY: px,\nHY: ox,\nsubs: []",
+    "Label": {
+        "typename": "yaml",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "id: \"s\"\nZ: g,\nY: f,\nX: e,\nW: d,\nV: c,\nU: b,\nT: a,\nS: zy,\nR: yy,\nQ: xy,\nsubs: \n- id: \"t\"\n  P: wy,\n  O: vy,\n  N: uy,\n  M: ty,\n  L: sy,\n  K: ry,\n  J: qy,\n  I: py,\n  subs: \n  - id: \"u\"\n    H: oy,\n    G: ny,\n    F: my,\n    E: ly,\n    D: ky,\n    C: jy,\n    B: iy,\n    A: hy,\n    ZY: gy,\n    YY: fy,\n    XY: ey,\n    subs: []\n  - id: \"v\"\n    WY: dy,\n    VY: cy,\n    UY: by,\n    TY: ay,\n    subs: []\n- id: \"w\"\n  SY: zx,\n  subs: \n  - id: \"x\"\n    RY: yx,\n    QY: xx,\n    PY: wx,\n    OY: vx,\n    NY: ux,\n    subs: []\n  - id: \"y\"\n    MY: tx,\n    LY: sx,\n    KY: rx,\n    JY: qx,\n    IY: px,\n    HY: ox,\n    subs: []",
+    "timestamp": "08_28_2024_23_21_26.828833",
+    "input_hash": 294848046438930452,
+    "RuleHint": "To find the object with specified id, you need to first parse the yaml file and get the outermost object, starting from which search the subs field recursively and looking for the desired value in id field for each visited object. Retrieve the content of that object once found."
+}

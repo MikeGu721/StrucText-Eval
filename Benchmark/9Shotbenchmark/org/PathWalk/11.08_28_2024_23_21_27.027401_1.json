@@ -1,0 +1,66 @@
+{
+    "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section.",
+    "Answer": "* x\nvigor kangaroo zen X-r[[fg.gif]]ay salvage salvage",
+    "Label": {
+        "typename": "org",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 9,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "w\nunique kangaro[[eg.jpg]]o zen X-ray salvage salvage\n* x\nvigor kangaroo zen X-r[[fg.gif]]ay salvage salvage",
+    "timestamp": "08_28_2024_23_21_27.027401",
+    "input_hash": 6240913166154499949,
+    "examples": [
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* h\njargon *banana*apple lamb unique banana unique",
+            "Reference": "g\nidiot apple lamb unique banana unique\n* h\njargon *banana*apple lamb unique banana unique"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* o\ndentist essence idiot yogurt wake qualify",
+            "Reference": "n\ncafe essence idiot*cafe* yogurt wake qualify\n* o\ndentist essence idiot yogurt wake qualify"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* ab\nuniq[[cf.jpg]]ue monkey halo apple perish zen",
+            "Reference": "z\ntransformer monkey halo apple perish zen\n* ab\nuniq[[cf.jpg]]ue monkey halo apple perish zen"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* s\nbanan[[be.jpg]]a unique perish oops apple idiot",
+            "Reference": "r\napple *nob*unique perish oops apple idiot\n* s\nbanan[[be.jpg]]a unique perish oops apple idiot"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* k\nfar perish salvage dentist halo banana",
+            "Reference": "j\nessence perish salvage dentist halo banana\n* k\nfar perish salvage dentist halo banana"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* o\nessence dentist perish transformer far perish",
+            "Reference": "n\ndentist dentist perish transformer [[xf.gif]]far perish\n* o\nessence dentist perish transformer far perish"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* y\nwake vigor qualify [[ki.jpg]]essence monkey kangaroo",
+            "Reference": "x\nvigor vigor quali*cafe*fy essence monkey kangaroo\n* y\nwake vigor qualify [[ki.jpg]]essence monkey kangaroo"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* o\nfar peri*essence*sh banana far i[[xd.png]]diot idiot",
+            "Reference": "n\nessence perish banana far idi*dentist*[[wd.jpeg]]ana far idiot idiot\n* o\nfar peri*essence*sh banana far i[[xd.png]]diot idiot"
+        },
+        {
+            "Question": "What is the content of 1th section? The content should be an excerpt as it appears in the org file, including the heading line and any sub-section. ",
+            "Answer": "* ab\napple halo salvage fa*dentist*r dentist halo",
+            "Reference": "z\nzen groot salvage far dentist halo\n* ab\napple halo salvage fa*dentist*r dentist halo"
+        }
+    ],
+    "RuleHint": "Note that section, subsection, subsubsection titles are preceded by *, **, *** respectively, with one or more whitespaces in between.  To find the content of certain section, look for ith section as specified, and start from there look for jth subsection. And from located subsection, look for kth subsubsection as queried. Search may stop early if subsection or subsubsection is not queried."
+}

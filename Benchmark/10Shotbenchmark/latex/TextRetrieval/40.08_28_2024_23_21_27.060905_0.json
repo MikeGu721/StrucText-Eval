@@ -1,0 +1,71 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "salvage",
+    "Label": {
+        "typename": "latex",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 10,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "y\nunique salvage cafe vigor halo perish unique oops groot\\includegraphics[width=0.5\\textwidth]{oh.jpg} perish qualify dentist\n\\section{z}\nvigor salvage cafe vigor halo perish unique oops groot perish qualify dentist\n\\section{ab}\nwake salvage cafe vigor halo perish unique oops groot perish qualify dentist\n\\section{bb}\nX-ray salvage cafe vigor halo perish unique oops gro\\textbf{salvage}ot peri\\includegraphics[width=0.5\\textwidth]{ph.jpg}sh qualify dentist\n\\section{cb}\nyogurt salvage cafe vigor halo perish unique oops groot perish qualify dentist\n\\section{db}\nzen salvage cafe vigor halo perish unique oops groot perish qualify dentist\n\\section{eb}\napple transformer cafe v\\includegraphics[width=0.5\\textwidth]{qh.jpg}igor halo perish unique oops groot perish qualify dentist",
+    "timestamp": "08_28_2024_23_21_27.060905",
+    "input_hash": -4867788466807301513,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "salvage\nvigor\nunique\ntransformer",
+            "Reference": "t\nhalo idiot groot halo cafe monkey perish apple far qualify lamb ravish\n\\section{u}\nid\\includegraphics[width=0.5\\textwidth]{ci.jpg}iot idiot groot halo cafe monkey perish apple far qualify lamb ravish\n\\section{v}\njargon idiot groot halo cafe monkey per\\textbf{salvage}ish apple far qualify lamb ravish\n\\section{w}\nkangaroo idiot groot halo cafe monkey perish apple far qualify lamb ravi\\textbf{transformer}sh\n\\section{x}\nlamb idiot groot halo cafe monkey perish apple far qu\\textbf{unique}alify l\\includegraphics[width=0.5\\textwidth]{di.png}amb ravish\n\\section{y}\nmonkey idiot groot halo cafe mo\\includegraphics[width=0.5\\textwidth]{ei.jpg}nkey perish apple far qualify lamb ravish\n\\section{z}\nnob idiot groot halo cafe\\textbf{vigor} monkey perish \\includegraphics[width=0.5\\textwidth]{fi.jpg}apple far qualify lamb ravish"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "jargon\nidiot\nhalo\nfar\ngroot",
+            "Reference": "k\nperish nob cafe banana ravish monkey unique nob monkey halo kangaroo oops\n\\section{l}\nqualify nob cafe banana r\\textbf{far}avish monkey unique nob monkey halo kangar\\includegraphics[width=0.5\\textwidth]{se.jpg}oo oops\n\\section{m}\nravis\\textbf{groot}h nob cafe banana\\includegraphics[width=0.5\\textwidth]{te.png} ravish monkey unique nob monkey halo kangaroo oops\n\\section{n}\nsalvage nob cafe banana ravish monkey unique nob monkey halo kangaroo oops\n\\section{o}\ntr\\textbf{halo}ansformer nob cafe banana ravish monkey unique nob\\includegraphics[width=0.5\\textwidth]{ue.png} monkey halo kangaroo oops\n\\section{p}\nunique nob cafe banana ravish monkey uniq\\textbf{idiot}ue nob monkey halo kangaroo oops\n\\section{q}\nvigor nob cafe banana ravish monkey unique n\\textbf{jargon}\\includegraphics[width=0.5\\textwidth]{ve.png}sh monkey unique nob monkey halo kangaroo oops"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "yogurt\nX-ray\nzen\nwake",
+            "Reference": "q\ndentist transformer salvage\\includegraphics[width=0.5\\textwidth]{kh.jpg} idiot banana wake banana zen unique far kangaroo\n\\section{r}\nessence transformer salvage id\\textbf{wake}\\includegraphics[width=0.5\\textwidth]{lh.jpeg}ce transformer salvage idiot banana wake banana zen unique far kangaroo\n\\section{s}\nfar transformer salvage idiot banana wake banana zen unique far kangaroo\n\\section{t}\ngroot transformer salvage idio\\textbf{X-ray}\\includegraphics[width=0.5\\textwidth]{mh.jpeg}er salvage idiot banana wake banana zen unique far kangaroo\n\\section{u}\nhalo transfor\\includegraphics[width=0.5\\textwidth]{nh.gif}mer salvage idiot banana wake banana zen unique far kangaroo\n\\section{v}\nidiot transformer salvage idiot banana \\textbf{yogurt}\\includegraphics[width=0.5\\textwidth]{oh.jpg}anana wake banana zen unique far kangaroo\n\\section{w}\njargon transformer salvag\\textbf{zen}e idiot banana wake banana zen unique far kangaroo"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "salvage\nvigor\nunique\ntransformer",
+            "Reference": "h\nkangaroo monkey banana salvage unique unique kangaroo vigor cafe far perish r\\textbf{salvage}avish\n\\section{i}\nlamb monkey banana salvage unique unique kangaro\\textbf{transformer}o vigor cafe far peri\\includegraphics[width=0.5\\textwidth]{kg.jpg}sh ravish\n\\section{j}\nmonke\\textbf{unique}y mon\\includegraphics[width=0.5\\textwidth]{lg.jpeg}key banana salvage unique unique kangaroo vigor cafe far perish ravish\n\\section{k}\nnob monkey banana salvage unique unique kangaroo vigor cafe far perish r\\includegraphics[width=0.5\\textwidth]{mg.gif}avish\n\\section{l}\noops monkey banana salvage unique unique kangaroo vigor cafe far perish ravish\n\\section{m}\nperish monkey banana salvage unique unique kangaroo vigor cafe far perish ravish\n\\section{n}\nqualify monkey banana salvage unique unique kangaroo v\\textbf{vigor}igor cafe far perish ravish"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "oops\nlamb\nnob\nmonkey",
+            "Reference": "b\nyogurt cafe essence ravish perish groot zen banana essence es\\includegraphics[width=0.5\\textwidth]{ij.jpg}sence transformer wake\n\\section{c}\nzen cafe essence ravish perish groot zen banana essence essence tr\\textbf{lamb}\\includegraphics[width=0.5\\textwidth]{jj.png}ot zen banana essence essence transformer wake\n\\section{d}\napple dentist essence ravish perish groot zen banana \\textbf{monkey}essence essence transformer wake\n\\section{e}\nbanana dentist essence ravish perish groot zen banana essence essence transformer wake\n\\section{f}\ncafe dentist essence ravish pe\\includegraphics[width=0.5\\textwidth]{kj.gif}rish groot zen banana essence essence transformer wake\n\\section{g}\ndentist dentist essence ravish perish groot zen banana\\textbf{nob}\\includegraphics[width=0.5\\textwidth]{lj.jpeg}n banana essence essence transformer wake\n\\section{h}\nessence dentist essence ravish perish groot zen\\textbf{oops} banana essence essence tr\\includegraphics[width=0.5\\textwidth]{mj.png}ansformer wake"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "jargon\nidiot\nkangaroo\nhalo\nlamb",
+            "Reference": "r\njargon dentist qualify banana oops qualify groot oops qualify transformer zen groot\n\\section{s}\nkangaroo dentist qualif\\textbf{halo}y banana oops qualify groot oops qualify transformer \\includegraphics[width=0.5\\textwidth]{hg.jpeg}zen groot\n\\section{t}\nlamb dentist qualify banana oops qualify groot oop\\textbf{idiot}s qualify transformer zen groot\n\\section{u}\nmonkey dentist qualify banana oops qualify groot oops qua\\textbf{jargon}lify transformer zen groot\n\\section{v}\nnob dentist qualify banana oo\\textbf{kangaroo}ps qualify groot oops qualify transformer zen groot\n\\section{w}\noops dentist qualify banana oops qualify groot oops qualify transformer zen groot\n\\section{x}\nperish dentist qualify banana oops qualify groot oops qualify tra\\textbf{lamb}\\includegraphics[width=0.5\\textwidth]{ig.jpg}qualify banana oops qualify groot oops qualify transformer zen groot"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "X-ray\nvigor\nunique\nwake",
+            "Reference": "b\nravish wake transformer halo transformer dentist h\\textbf{unique}alo banana banana essence idiot dentist\n\\section{c}\nsalvage wake transformer halo transformer dentist halo banana banana essence idi\\textbf{vigor}ot dentist\n\\section{d}\ntransformer wake transformer halo transformer dentist halo banana banana essence idiot dentist\n\\section{e}\nunique wake transformer hal\\textbf{wake}o transformer dentist halo banana banana essence idiot dentist\n\\section{f}\nvigor wake transformer halo transformer dentist halo banana banana essence idiot dentist\n\\section{g}\nwake wake transformer halo transformer dentist halo banana banana essen\\textbf{X-ray}ce idiot dentist\n\\section{h}\nX-ray wake transformer halo transformer dentist halo banana banana essence idiot dentist"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "yogurt\nzen\napple banana",
+            "Reference": "y\nmonkey qualify banana banana far dentist zen dentist idiot groot idiot halo\n\\section{z}\nnob qualify banana banana far dentist zen dentist idiot groot idiot halo\n\\section{ab}\noops qualify banana banana far dentist zen den\\textbf{yogurt}tist idiot groot idiot halo\n\\section{bb}\nperish qualify banana banana far denti\\textbf{zen}st zen dentist idiot groot idiot halo\n\\section{cb}\nqualify qualify banana banana far dentist zen dentist idiot groot idiot h\\textbf{apple banana}\\includegraphics[width=0.5\\textwidth]{ei.jpg}dentist idiot groot idiot halo\n\\section{db}\nravish qualify banana banana far dentist zen dentist idiot groot idiot halo\n\\section{eb}\nsalvage qualify banana banana far dentist zen dentist idiot groot idiot halo"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "halo\nfar\nessence\ngroot",
+            "Reference": "m\nqualify transformer zen apple X-ray nob lamb dentist monkey perish vigor kangaroo\n\\section{n}\nravish transformer zen apple X-ray nob lamb dentist monkey \\includegraphics[width=0.5\\textwidth]{oe.gif}perish vigor kangaroo\n\\section{o}\nsalvage transformer zen apple X-ray nob lamb dentist monkey perish vigor kangaroo\n\\section{p}\ntransformer transformer zen apple X-ray nob lamb dent\\textbf{essence}ist monkey perish vigor kangaroo\n\\section{q}\nunique transformer zen a\\textbf{far}pple X-ray nob lamb dentist monkey perish vigor kangaroo\n\\section{r}\nvigor transform\\textbf{groot}er zen apple X-ray nob lamb dentist monkey perish vigor kangaroo\n\\section{s}\nwake transformer zen apple X-r\\textbf{halo}ay nob lamb dentist monkey perish vigor kan\\includegraphics[width=0.5\\textwidth]{pe.png}garoo"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "kangaroo",
+            "Reference": "o\nX-ray nob kangaroo wake vigor dentist X-ray un\\includegraphics[width=0.5\\textwidth]{gh.gif}ique ravish essence cafe banana\n\\section{p}\nyogurt nob ka\\includegraphics[width=0.5\\textwidth]{hh.jpeg}ngaroo wake vigor dentist X-ray unique ravish essence cafe banana\n\\section{q}\nzen nob kangaroo wake vigor dentist X-ray unique ravish essence cafe banana\n\\section{r}\napple oops kangaroo wake vigor dentist X-ray unique ravish essence cafe banana\n\\section{s}\nbanan\\includegraphics[width=0.5\\textwidth]{ih.png}a oops kangaroo wake vigor dentist X-ray unique ravish essence cafe banana\n\\section{t}\ncafe oops kangaroo wake vigor dentist X-ray unique ravish essence cafe banana\n\\section{u}\ndentist oops kangaroo wake \\textbf{kangaroo}vigor dentist X-ray unique ravish essence cafe banana"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for macro textbf, and everything after \\\\textbf{ and before the first } encountered is bold text."
+}

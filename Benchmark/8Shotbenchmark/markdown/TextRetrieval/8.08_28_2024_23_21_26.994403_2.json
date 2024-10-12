@@ -1,0 +1,61 @@
+{
+    "Question": "Extract all included image files. Print those file names separated by \\n.",
+    "Answer": "bj.jpeg\ncj.jpeg",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 8,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "m\noops vigor uni**halo**![alt](bj.jpeg \"hover text\")ique lamb salvage lamb\n# n\nperis**idiot**h vigor unique la![alt](cj.jpeg \"hover text\")mb salvage lamb",
+    "timestamp": "08_28_2024_23_21_26.994403",
+    "input_hash": -6578602510235039103,
+    "examples": [
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "df.png",
+            "Reference": "l\ngroot banana nob **kangaroo**banana wake banana\n# m\nhalo**lamb** banana nob banana wake![alt](df.png \"hover text\") banana"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "hi.jpeg",
+            "Reference": "d\nwake yogur**essence**t monkey oops banana dentist\n# e\nX-ray yogurt **far**monkey ![alt](hi.jpeg \"hover text\")oops banana dentist"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "qe.gif\nre.jpeg",
+            "Reference": "v\ngroot transformer ravish oops essen![alt](qe.gif \"hover text\")ce zen\n# w\nhalo transformer![alt](re.jpeg \"hover text\") ravish oops essence zen"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "li.jpeg",
+            "Reference": "k\nX-ray essence dentist wake jarg**idiot**![alt](li.jpeg \"hover text\")argon wake\n# l\nyogu**jargon**rt essence dentist wake jargon wake"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "No image file is included in the file.",
+            "Reference": "y\ndentist yogurt dentist lamb jargon salvage\n# z\nessence yogurt dentist lamb jargon salvage"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "nj.jpg",
+            "Reference": "j\ncafe essence kangaroo halo far idiot\n# k\ndentist essence kangaroo **perish**![alt](nj.jpg \"hover text\")ce kangaroo halo far idiot"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "lg.jpeg",
+            "Reference": "f\nqualify zen monkey kangaroo unique ![alt](lg.jpeg \"hover text\")halo\n# g\nravish zen monkey kangaroo unique halo"
+        },
+        {
+            "Question": "Extract all included image files. Print those file names separated by \\n. ",
+            "Answer": "we.jpeg",
+            "Reference": "f\nX-ray**monkey** monkey oops jargon idi![alt](we.jpeg \"hover text\")ot vigor\n# g\nyogurt monkey oops jargon idiot vigor"
+        }
+    ],
+    "RuleHint": "To find the image files, look for texts matching ![*](TARGET \"*\"), the TARGET part is filename. Star means any text is possible."
+}

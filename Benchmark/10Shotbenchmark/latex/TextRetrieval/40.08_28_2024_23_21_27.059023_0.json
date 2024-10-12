@@ -1,0 +1,71 @@
+{
+    "Question": "Extract all bold texts. Print those raw texts separated by \\n.",
+    "Answer": "wake",
+    "Label": {
+        "typename": "latex",
+        "node_number": 1,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 10,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "TextRetrieval"
+        ]
+    },
+    "Reference": "r\nperish v\\textbf{wake}igor halo kangaroo groot zen\n\\section{s}\nqualify vigor halo kangaroo g\\includegraphics[width=0.5\\textwidth]{bh.jpg}root zen",
+    "timestamp": "08_28_2024_23_21_27.059023",
+    "input_hash": -3809827162539659586,
+    "examples": [
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "idiot",
+            "Reference": "o\njargon vigor X-ray banana esse\\textbf{idiot}nce idiot\n\\section{p}\nkangaroo vigor X-ray banana esse\\includegraphics[width=0.5\\textwidth]{ti.gif}nce idiot"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "far\nessence",
+            "Reference": "x\nqualify qualify banana ravish lamb sa\\textbf{essence}\\includegraphics[width=0.5\\textwidth]{lf.png} banana ravish lamb salvage\n\\section{y}\nravish qualify ban\\textbf{far}ana ravish lamb salvage"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "groot",
+            "Reference": "p\nfar apple dentist vigor yog\\textbf{groot}urt qualify\n\\section{q}\ngroot apple dentist vigor yo\\includegraphics[width=0.5\\textwidth]{oh.jpg}gurt qualify"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "monkey",
+            "Reference": "b\n\\textbf{monkey}lamb jargon apple perish zen halo\n\\section{c}\nmonkey jargon apple pe\\includegraphics[width=0.5\\textwidth]{mi.jpg}rish zen halo"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "salvage",
+            "Reference": "k\njargon vigor yogurt lamb unique transformer\n\\section{l}\nkanga\\textbf{salvage}roo vigor yogurt lamb unique transformer"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "k\nvigor far qualify halo idiot \\includegraphics[width=0.5\\textwidth]{oj.jpg}far\n\\section{l}\nwake far qualify halo idiot far"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "wake",
+            "Reference": "v\n\\textbf{wake}cafe yogurt kangaroo halo salvage ravish\n\\section{w}\ndentist\\includegraphics[width=0.5\\textwidth]{nf.jpeg} yogurt kangaroo halo salvage ravish"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "far",
+            "Reference": "f\nbanana wake perish X-ray oops\\includegraphics[width=0.5\\textwidth]{wi.jpeg} ravish\n\\section{g}\ncafe \\textbf{far}wake perish X-ray oops ravish"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "No bold texts presented in file.",
+            "Reference": "f\nyogurt salvage qualify monkey groot perish\n\\section{g}\nzen salvage qualify monkey g\\includegraphics[width=0.5\\textwidth]{th.gif}root perish"
+        },
+        {
+            "Question": "Extract all bold texts. Print those raw texts separated by \\n. ",
+            "Answer": "jargon",
+            "Reference": "i\nwa\\includegraphics[width=0.5\\textwidth]{wd.jpeg}ke apple salvage X-ray ravish zen\n\\section{j}\nX-ray apple salv\\textbf{jargon}age X-ray ravish zen"
+        }
+    ],
+    "RuleHint": "To find the bold texts, search for macro textbf, and everything after \\\\textbf{ and before the first } encountered is bold text."
+}

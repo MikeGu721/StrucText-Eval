@@ -1,0 +1,19 @@
+{
+    "Question": "What is the content of 2th section? The content should be an excerpt as it appears in the markdown file, including the heading line and any sub-section.",
+    "Answer": "# db\ngroot X-ray jargon yogurt nob c![alt](xh.jpg \"hover text\")afe ravish lamb X-ray dentist groot banana\n## eb\nhalo X-ray jargon yogurt nob cafe ravish lamb X-ray ![alt](yh.jpg \"hover text\")dentist groot banana\n## fb\nidiot X-ray jargon yogurt nob cafe ravish lamb X-ray dentist groot banana",
+    "Label": {
+        "typename": "markdown",
+        "node_number": 2,
+        "n_ary_ratio": 1,
+        "para_len_ratio": 6,
+        "few_shot_num": 0,
+        "with_rule_hint": true,
+        "other_label_list": [
+            "PathWalk"
+        ]
+    },
+    "Reference": "z\ncafe X-ray jargon yogurt nob cafe ravish lamb X-ra**idiot**y dentist groot ban![alt](vh.jpg \"hover text\")ana\n# ab\ndentist X-ray jargon yogurt nob cafe ravish![alt](wh.gif \"hover text\") lamb X-ray dentist groot banana\n## bb\nessence X-ray jargon yogurt nob cafe ravish lamb X-ray dentist groot banana\n## cb\nfar X-ray jargon yogurt nob cafe ravish lamb X-ray dent**jargon**ist groot banana\n# db\ngroot X-ray jargon yogurt nob c![alt](xh.jpg \"hover text\")afe ravish lamb X-ray dentist groot banana\n## eb\nhalo X-ray jargon yogurt nob cafe ravish lamb X-ray ![alt](yh.jpg \"hover text\")dentist groot banana\n## fb\nidiot X-ray jargon yogurt nob cafe ravish lamb X-ray dentist groot banana",
+    "timestamp": "08_28_2024_23_21_26.557583",
+    "input_hash": 7839176777476273987,
+    "RuleHint": "To find the content of certain section, starting from the headings start with one hashtag, and go to the ith heading as specified in number of sections. Then start from that line, look for j-th heading with 2 hashtags as specified in subsection number. For kth subsubsection, look for kth heading with 3 hashtags starting from the located subsubsection. Stop searching early if the subsection or subsubsection is not queried."
+}
